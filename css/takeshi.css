@@ -260,7 +260,7 @@ h2 {
 	display:none;
 }
 
-.page-node .with-teaserimage {
+.page-node #node {
 	min-height:350px;
 }
 
@@ -278,9 +278,7 @@ h2 {
 	min-height:6em;	
 }
 
-.with-teaserimage {
-	min-height:275px;
-}
+
 
 
 
@@ -307,10 +305,6 @@ h2 {
  width:1050px;
 }
 
-.page-term .with-teaserimage,
-.page-archive .with-teaserimage {
-	min-height:80px;
-}
 
 
 
@@ -380,13 +374,13 @@ h2 {
 	border:1px solid lightgrey;
 }
 
-.full .teaserimage  {	
+.page-node  .teaserimage  {	
 	position:absolute;
 	left:800px;
 	top:35px;
 }
 
-.full .teaserimage img {
+.page-node .teaserimage img {
 	width:330px;
 }
 
