@@ -1,0 +1,271 @@
+html 
+{
+font-family: Verdana,Tahoma,Arial;
+font-size: 8pt;
+text-align: justify;
+}
+
+body  { background-color: white;}
+
+b 
+{
+color:gray;
+}
+
+b.vio
+{
+color:darkmagenta;
+}
+
+b.lightgrey
+{
+color:lightgrey;
+}
+
+b.technodroid
+{
+color:green;
+}
+
+i.kap{
+text-transform:uppercase;
+}
+
+i.kap-vio
+{
+text-transform:uppercase;
+color:darkmagenta;
+}
+
+
+div.text
+{
+font-family: Verdana,Tahoma,Arial;
+font-size: 8pt;
+color: purple;
+border-style: none;
+border-width: thin;
+padding: 5pt;
+text-align: justify;
+left: 330pt;
+top: 90pt;
+width: 150pt;
+align: left;
+position: absolute;
+}
+
+div.textchoose
+{
+font-family: Verdana,Tahoma,Arial;
+font-size: 8pt;
+color: purple;
+border-style: none;
+border-width: thin;
+padding: 5pt;
+text-align: justify;
+left: 330pt;
+top: 160pt;
+width: 150pt;
+align: left;
+position: absolute;
+}
+
+div.text-poem
+{
+font-family: Verdana,Tahoma,Arial;
+font-size: 7pt;
+color: gray;
+border-style: none;
+border-width: thin;
+padding: 5pt;
+text-align: justify;
+left: 150pt;
+top: 160pt;
+width: 400pt;
+align: left;
+position: absolute;
+}
+
+div.topic
+{
+font-family: Verdana,Tahoma,Arial;
+font-size: 8pt;
+color: darkgray;
+border-style: none;
+border-width: thin;
+padding: 5pt;
+text-align: justify;
+left: 525pt;
+top: 120pt;
+width: 150pt;
+align: left;
+position: absolute;
+}
+
+div.dnbbook
+{
+font-family: Verdana,Tahoma,Arial;
+font-size: 8pt;
+color: gray;
+text-align: justify;
+left: 125pt;
+top: 325pt;
+width: 150pt;
+align: left;
+position: absolute;
+}
+
+div.dnbbookentry
+{
+font-family: Verdana,Tahoma,Arial;
+font-size: 8pt;
+color: darkgray;
+border-style: none;
+border-width: thin;
+padding: 5pt;
+text-align: right;
+top:175px; 
+right:30px;
+align: right;
+position: absolute;
+}
+
+
+div.dnblog
+{
+font-family: Verdana,Tahoma,Arial;
+font-size: 8pt;
+color: gray;
+border-style: none;
+border-width: thin;
+padding: 5pt;
+text-align: justify;
+left: 325pt;
+top: 110pt;
+width: 200pt;
+align: left;
+position: absolute;
+}
+
+div.dnblogentry
+{
+font-family: Verdana,Tahoma,Arial;
+font-size: 8pt;
+color: darkgray;
+border-style: none;
+border-width: thin;
+padding: 5pt;
+text-align: justify;
+left: 150pt;
+top: 150pt;
+width: 150pt;
+align: left;
+position: absolute;
+}
+
+div.rand
+{
+left: 305pt;
+borderstyle: none;
+border-width: thin;
+width: 8pt;
+padding: 2pt;
+background-color: gainsboro;
+top: 90pt;
+position: absolute;
+font-family: verdana;
+color: white;
+font-size: 5pt;
+}
+
+div.randchoose
+{
+left: 305pt;
+borderstyle: none;
+border-width: thin;
+width: 8pt;
+padding: 2pt;
+background-color: gainsboro;
+top: 160pt;
+position: absolute;
+font-family: verdana;
+color: white;
+font-size: 5pt;
+}
+
+div.rand-poem
+{
+margin-left: 30pt;
+borderstyle: none;
+border-width: thin;
+width: 8pt;
+padding: 2pt;
+background-color: lightgrey;
+top: 160pt;
+left: 100pt;
+position: absolute;
+font-family: verdana;
+color: white;
+font-size: 5pt;
+margin-bottom: 10%;
+}
+
+div.super
+{
+left: 95pt;
+borderstyle: none;
+border-width: thin;
+width: 200pt;
+top: 90pt;
+position: absolute;
+font-family: verdana;
+color: gray;
+font-size: 8pt;
+margin-bottom: 10%;
+}
+
+div.sourcechoose
+{
+left: 95pt;
+borderstyle: none;
+border-width: thin;
+width: 200px;
+top: 160pt;
+position: absolute;
+font-family: verdana;
+color: gray;
+font-size: 8pt;
+font-weight:bold 
+}
+
+div.source-poem
+{
+left: 95pt;
+borderstyle: none;
+border-width: thin;
+width: 500px;
+top: 120pt;
+position: absolute;
+font-family: verdana;
+color: gray;
+font-size: 8pt;
+font-weight:bold 
+}
+
+div.line
+{
+font-size: 6pt;
+left:70pt;
+top:30pt;
+position: absolute;
+letter-spacing:1pt;
+}
+
+
+
+ a:link                 { text-decoration: none; color:gray; }
+ a:visited              { text-decoration: none; color: gray; }
+ a:active               { text-decoration: none; color:gray; }
+ A:bb:hover             { text-decoration: underline; }
+
+

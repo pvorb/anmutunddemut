@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Wordpressimport, die dritte, vierte und fünfte | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2007/12/06/r2d2-translator" />
+  <link rel="next" href="/2007/12/07/hoc-signo-vinces" />
+  <meta name="path" content="/2007/12/07/wordpressimport-die-dritte-vierte-und-fuenfte" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="69" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1197019184" />
+  <meta name="created-string" content="07. 12. 2007 - 10:19" />
+  <meta name="changed-timestamp" content="1197028112" />
+  <meta name="changed-string" content="07. 12. 2007 - 12:48" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/uploads/2007/11/drupaltothebones.jpg" />
+  <meta name="path" content="/2007/12/07/wordpressimport-die-dritte-vierte-und-fuenfte" />
+  <meta name="node-id" content="69" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1197019184" />
+  <meta name="created-string" content="07. 12. 2007 - 10:19" />
+  <meta name="changed-timestamp" content="1197028112" />
+  <meta name="changed-string" content="07. 12. 2007 - 12:48" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Maschinen" href="../../../ressort/maschinen" />
+  <link rel="index" title="Drupallernen" href="../../../serie/drupallernen" />
+  <link rel="index" title="Drupal" href="../../../lexikon/drupal" />
+  <link rel="index" title="Export" href="../../../lexikon/export" />
+  <link rel="index" title="Import" href="../../../lexikon/import" />
+  <link rel="index" title="Migration" href="../../../lexikon/migration" />
+  <link rel="index" title="Wordpress" href="../../../lexikon/wordpress" />
+  <meta name="keywords" content="Maschinen, Drupallernen, Drupal, Export, Import, Migration, Wordpress" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-69 arg01-node-69" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2007/12/06/r2d2-translator.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2007/12/07/hoc-signo-vinces.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-2">  
+      <!-- start:node -->
+      <h2>Wordpressimport, die dritte, vierte und fünfte</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/uploads/2007/11/drupaltothebones.jpg' alt='Wordpressimport, die dritte, vierte und fünfte'/></p>
+<!-- ende:teaserimage -->
+<p>Eigentlich ließ sich der Import der Wordpressdaten ja ganz gut an. Die Idee war einfach: Wordpress und drupal und die gleiche Datenbank installieren und aus Drupal einfach über Queries auf die WP-Daten zugreifen und dann schritt für Schritt in Drupal importieren.</p>
+<p>Soweit so gut. Wäre da nicht das Encodung gewesen. Wordpress interessiert sich einen Scheiß für das Encoding der DB und nimmt einfach was voreingestellt ist, und das ist bei MySQL latin1_swedish_ci, weil die MySQLer aus Schweden sind. Super. Drupal hingegen macht alles in UTF8 - so wie es sein sollte. Auch das wäre noch kein Problem gewesen, kann man ja hin und her verwandeln. Aaaaber Wordpress encodiert und decodiert scheinbar das was aus der Datenbank kommt selber noch mehrfach, auf dem Weg in die DB und wieder heraus und v.a.  werden unteschiedliche Tabelle unterschiedliche kodiert. Wie Wordpress das macht ist nicht nachzuvollziehen.</p>
+<p>Der einzige Weg ist die Export Funktion von Wordpress, sie erzeugt eine riesige XML Datei in einem erweiterten RSS Format genannt WXR. Weil bei erstellen dieses Exportes alle Filter angeschmissen werden bis die Wordpress ordentlich das klappern anfängt, sieht das Ergebnis dann auch gut aus, wennn ... ja wenn normale Hoster nicht eine Rechenzeitbegrenzung hätten, die verhindert, dass der Prozess zuende kommt.</p>
+<p>Also Datenbankbackup gemacht. Wordpress lokal installiert. Export laufen lassen. Fertig ist der 12 MB Export. </p>
+<p>Aber auch das wäre zu schön um wahr zu sein. Den wollte ich gerne mit SimpleXML einlesen, das scheiterte aber daran, dass Simple-XML sich auf für Entitäten in CDATA-Sections interessiert, sofern man diese denn bearbeiten will, was im überigen des extra Parameters LIBXML_NOCDATA in der Funktion simplexml_load_file() bedarf. Und überhaupt hat SimpleXML auch wenige Freude an Namespaces, und anderem extra XML-Schnickschnack. Also erstmal mit dem Textmate diverseste Suchen-Ersetzen-Operationen über der Datei aufen gelassen, bis die nur noch einfachstes, wohlgeformtes XML war.</p>
+<p>Aaaber - und jetzt kommt endlich auch mal eine gute Nachricht - diese 12 MB schluckt SimpleXML ohne mit der Wimper zu zucken: <a href="http://cybersamurai.de/admin/settings/wordpressimport">admin/settings/wordpressimport</a>. Zucker! Jetzt muss ich nur noch alle Daten ordentlich in Nodes umwandeln und speicher und dann hätte ich das auch hinter mir. Drei Kreuze.</p>
+<p>Weil aber auf diesem Weg des statischen Imports gezwungen war, musste ich anmut und demut erstmal zumachen, damit ich nicht nachher zuviele Kommentare undoder auch Artikel von mir nochmal importieren muss. Das treibt ja auch zu Eile an.</p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 7. 12. 2007</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Ressort:</span>
+        <a href="../../../ressort/maschinen.html" rel="ressort">Maschinen</a>
+        <span class='somespace'> </span>
+        <span class='title'>Serie:</span>
+        <a href="../../../serie/drupallernen" rel="series">Drupallernen</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/drupal.html" rel="lexicon">Drupal</a>, 
+        <a href="../../../lexikon/export.html" rel="lexicon">Export</a>, 
+        <a href="../../../lexikon/import.html" rel="lexicon">Import</a>, 
+        <a href="../../../lexikon/migration.html" rel="lexicon">Migration</a>, 
+        <a href="../../../lexikon/wordpress.html" rel="lexicon">Wordpress</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://rausgebloggt.de/">Nils SaH</a> <a href="/2007/12/07/wordpressimport-die-dritte-vierte-und-fuenfte#comment-4155" id="comment-4155" class="active">#</a>      </p>
+    <p>... und hat alles geklappt?</p><p>Du scheinst es ja einigermaßen hinbekommen zu haben mit der Migration. Da ich nicht so ein Code-Samurai bin interessiert mich, warum Du nicht ein <a href="http://wp2drupal.teodorani.com/#">Modul</a> oder das <a href="http://superjacent.net/cms/?q=node/509">Conversion Program</a> genutzt hast? Bestimmte Gründe oder waren Dir die Sachen nur nicht bekannt?</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

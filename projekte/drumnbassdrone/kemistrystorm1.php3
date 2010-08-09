@@ -1,0 +1,858 @@
+<html>
+<head>
+<title>drum::n::bassdrone[Kemistry & Storm]</title>
+
+<link rel="stylesheet" href="dnbdrone.css" type="text/css">
+
+</head>
+<body>
+<br>
+<div class="line">
+..................................................................................................................................................................................................................<br>
+</div>
+
+<div class="topic">
+<a href="kemistrystorm1.php3?flag=I">Intro</a><br>
+<a href="kemistrystorm1.php3?flag=1">I</a><br>
+<a href="kemistrystorm1.php3?flag=2">II</a><br>
+<a href="kemistrystorm1.php3?flag=3">III</a><br>
+<a href="kemistrystorm1.php3?flag=4">IV</a><br>
+<a href="kemistrystorm1.php3?flag=5">V</a><br>
+<a href="kemistrystorm1.php3?flag=6">VI</a><br>
+<a href="kemistrystorm1.php3?flag=7">VII</a><br>
+<a href="kemistrystorm1.php3?flag=8">VIII</a><br>
+<a href="kemistrystorm1.php3?flag=9">IX</a><br>
+<a href="kemistrystorm1.php3?flag=10">X</a><br>
+<a href="kemistrystorm1.php3?flag=11">XI</a><br>
+<a href="kemistrystorm1.php3?flag=12">XII</a><br>
+<b class="vio">[</b><a href="mailto:drumnbassdrone@uboot.com">Contact</a></a><b class="vio">]</b>
+</div>
+
+
+<?php
+	
+	if ($flag=="" ){
+		echo "<div class=super>";
+		echo "<a href='index.html'>";
+		echo "<img src='dnbdrone.jpg' border=no border></a><br>";
+		echo "</div>";
+		echo "<div class=randchoose>";
+		include ("rand.xml");
+		echo "</div>";
+		echo "<div class=textchoose>";
+		echo "
+		<b>\"Oh this is ladies night, and the feel is right Oh this is ladies night, 
+		oh what a night.\"</b><br>
+		(Lil' Kim & Konsorten, \"Ladies Night [Not Tonight]\")<br>
+		";
+		echo "</div>";
+		echo "<div class=sourcechoose>::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		<img src=\"kemi.jpg\"><br>
+		Kemi Olusanya \"DJ Kemistry\"<br>
+		starb am<br>
+		26.IV.1999<br>
+		</div>";
+	}
+
+	if ($flag ==I) {
+		echo "<div class=randchoose>";
+		include ("rand.xml");
+		echo "</div>";
+		echo "<div class=textchoose>";
+		echo "Sehr verehrte Damen und Herren, willkommen im wohl empfindlichsten Sektor der 
+vor sich hinschwafelnden Diskurswelt, dem Kap der guten Hoffnung der politischen 
+Meinungsäußerung, der Hölle von Verdun der gesellschaftstheorethischen Wissenschaft, 
+dem Ort, an dem ein falsches Wort Generationskonflikte entbrennen lassen kann, wo 
+Kommunikation zu einem Minenfeld gerät, das den ehemaligen Grenzstreifen wie 
+einen Kinderspiel-platz aussehen läßt: Die Beziehung zwischen Männlein und 
+Weiblein, Weiblein und Männlein und die Welten dazwischen. Da wollen wir 
+natürlich nicht fehlen. Nicht, wo unser kleiner Clubkulturglobus doch bei jeder 
+wochenendlichen Umdrehung mit mindestens einem der großen 
+Frauenkalenderthemen kollidiert, im Berufsfeld des DJs, wo die 26,3%-Quote von 
+weiblichen Abgeordneten des neuen deutschen Bundestages im Vergleich zur 
+Frauenbeteilung im internationalen Deejay-Zirkus doch wie eine ferne Verheißung 
+klingen müßte. Wie ist das mit der Gleichbehandlung von Herren und Damen, hier, 
+im Club, werden Frauen tatsächlich als Ravemäuschen ausgebremst oder fehlt der 
+Damenwelt schlicht das Interesse? All' das könnte Kemistry und Storm nicht 
+weniger interessieren. Unbeeindruckt von der in zeitgenössischen Jugendkulturkreisen 
+rulenden Vaterherrschaft und ohne nur eine Sekunde daran zu verschwenden, mit 
+der Jungswelt vorbehaltenen Posen und sonstigem Leergetue wetteifern zu wollen,
+haben sie im Stillen durch Attitüde, Charme und Fertigkeiten das Modell 
+\"weibliches Drum'n'Bass-Duo\" auf ein Level gehoben, das sich um Anerkennung 
+einen feuchten Kehricht scheren möchte. Als die guten Geister der Firma 
+Metalheadz, 24 Stunden-Krankenschwestern und Hobby-Missionare im 
+Auftrag ihrer Musik und der britischen Kolonialtradition haben sie dafür keinen 
+Gedanken zuviel. Und doch, wenn die couragierten jungen Damen, inzwischen mit 
+allen handwerklichen Fähigkeiten eines Vollzeitplattendrehers ausgestattet, mit einem
+Mischung-aus-alterndem Ehepaar-und-Mädchen-auf-Schulausflug-Vibe ihr 
+Drum'n'Bass-Ding der Welt präsentieren, scheint da irgendetwas anders. Da wird 
+in Hinblick auf die egomanen Tendenzen, mit denen 
+sich manch anderer Kopf meinte, zu Wort melden zu müssen, eine ganz andere 
+Athletik spürbar. Die Wahl der Worte, die Wahl der Platten – Damenwahl?		
+		";
+		echo "</div>";
+		echo "<div class=super>";
+		echo "<a href='index.html'>";
+		echo "<img src='dnbdrone.jpg' border=no border></a></div>";
+		echo "<div class=sourcechoose>
+		<b class='vio'>[</b>Intro</b><b class='vio'>]</b><br><br>
+		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		<img src=\"kemi.jpg\"><br>
+		Kemi Olusanya \"DJ Kemistry\"<br>
+		starb am<br>
+		26.IV.1999<br>
+		</div>";
+	} 
+	
+	
+	if ($flag ==1) {
+		echo "<div class='randchoose'>";
+		include ("rand.xml");
+		echo "</div>";
+		echo "<div class='textchoose'>";
+		echo "<br><b>Storm:</b> Gerade läuft unser \"McDonald's Europa-Test\". Bislang ist das Hähnchen in 
+Wien immer noch das Beste, weil es diese trockene, knusprige Haut hat. In 
+Deutschland haben wir Frankfurt leider noch auslassen müssen, aber wir haben 
+Berlin gemacht, die haben einen Neuner aus Zehn bekommen. 
+
+<br><b>Groove:</b> Wer befindet sich am unteren Ende der Skala? 
+
+<br><b>Storm:</b> Montreal. Horror. Haben sich geweigert, in Englisch mit uns zu reden. 
+Französisch. Wie war das noch? Le BigMac? Die waren nicht sehr nett, 
+ziemlich übel sogar. Japan ist ganz cool, Tokyo ist sehr cool. Da gibt es 
+den Teriaki-Burger. Das ist Teriaki-Hähnchen, ähm, in einem Burger. Und 
+dann, was gab es nochmal in Neuseeland? 
+
+<br><b>Kemistry:</b> Schaf-Burger. 
+
+<br><b>Storm:</b> Schaf-Burger. 
+
+<br><b>Groove:</b> Bei McDonald's, lokale Spezialitäten? 
+
+<br><b>Storm:</b> Jaja, das ist wie Kentucky in Japan: einfach ganz anders. 
+Das schmeckt nicht mal wie Kentucky, es ist richtig gutes Hähnchen 
+und alles schmeckt sehr gut. 
+
+<br><b>Groove:</b> Ihr wart also viel unterwegs in 
+den letzten Monaten. 
+
+<br><b>Storm:</b> Das ganze Jahr. Es war unglaublich viel 
+los. Angefangen mit Tel Aviv, das war superinteressant, wir sind noch 
+nie in diesen Teil der Welt gebucht worden. Wir haben Australien und 
+Neuseeland in diesem Jahr gemacht, das war unglaublich. Der Vibe 
+dort ist so frisch, jeder ist einfach absolut dabei. Wir haben eine 
+Menge Europa gemacht, die Schweiz war gut, in Ibiza im Sommer 
+sind uns die Leute fast dafür um den Hals gefallen, daß mal etwas 
+anderes lief. Wir waren auch wieder viel in Deutschland, das war 
+alles sehr gut. Die Deutschen sind ohnehin total in Drum'n'Bass involviert. 
+Wir sagen immer, daß Deutschland längst sowas wie die zweite Heimat 
+von Drum'n'Bass ist. Ihr habt mittlerweile ziemlich respektable Labels, 
+ihr habt eure eigene Clubszene, ihr habt eigene DJs, eigene MCs. 
+Deutschland ist dicht dran.
+		";
+		echo "</div>";
+		echo "<div class=super>";
+		echo "<a href='index.html'>";
+		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
+		echo "<div class=sourcechoose>
+		<b class='vio'>[</b>I</b><b class='vio'>]</b><br><br>
+		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		<img src=\"kemi.jpg\"><br>
+		Kemi Olusanya \"DJ Kemistry\"<br>
+		starb am<br>
+		26.IV.1999<br>
+		</div>";
+	} 
+	if ($flag ==2) {
+		echo "<div class='randchoose'>";
+		include ("rand.xml");
+		echo "</div>";
+		echo "<div class='textchoose'>";
+		echo "<br><b>Groove:</b> Eigentlich hat man immer eher das Gefühl, daß die Begeisterung 
+überall etwas nachläßt. 
+
+<br><b>Kemistry:</b> Ja, das Drum'n'Bass-Fieber hat seinen Höhepunkt längst 
+erreicht, und allem wird nun ein bißchen weniger Beachtung geschenkt. 
+Aber im Moment macht Drum'n'Bass eigentlich nur, was es immer 
+getan hat: es versucht einfach weiterzumachen, weiterzugehen. 
+Und dafür spielt es keine Rolle, ob es in irgendwelchen Zeitschriften 
+ist oder nicht. Niemand muß es sehen, und niemand muß in der 
+Tageszeitung darüber lesen, wer ein DJ ist und was er macht. Wer 
+sich für das, was wir machen, interessiert, ist sowieso auf seine ganz 
+eigene Art drin und dabei. 
+
+<br><b>Storm:</b> Wir haben dieses Problem ja 
+besonders mit der britischen Presse, wenn nicht alles 
+\"Hype! Hype! Hype!\" ist, wollen sie es nicht wissen und es ist 
+vollkommen uninteressant. Irgendwann kann man sie dann auch 
+nicht mehr hören, diese Leute, wenn sie zu dir kommen mit all' ihren 
+Ideen und dir erzählen, was sie nicht alles für die Musik empfinden. 
+Und nach einem Jahr, wenn es nicht mehr so viel gibt, worüber man 
+sich den Kopf zerbrechen kann, lassen sie es links liegen. 
+
+<br><b>Groove:</b> Ist doch auch schön.
+
+<br><b>Storm:</b> Du mußt nur mal den Verlauf von 
+Goldies Medienkarriere anschauen, um zu sehen, daß es immer wieder 
+und mit allem passiert. Was haben sie nicht alles über Roni Size gesagt, 
+als er den Mercury Music Prize gewonnen hat. Das geht dann so: 
+\"Wow! Roni Size dies, Roni Size das!\" Und jetzt, wenn Roni sich vielleicht 
+nicht mehr ganz so oft zeigt, hörst du die eine oder andere Person sagen: 
+\"Hähä, war doch alles arrangiert mit Roni Size und dem Mercury Prize\" oder 
+\"Roni Size: Wird es überhaupt ein zweites Album geben?\". Das ist alles 
+so unnötig. Unnötiger Streß und Druck, und wir geben doch eigentlich eh 
+alle einen Scheiß darauf, ob über uns geschrieben wird. Da trifft man immer 
+wieder auf so eine unausgeglichene Haltung, daß man mittlerweile einfach 
+keinem mehr trauen will.
+		";
+		echo "</div>";
+		echo "<div class=super>";
+		echo "<a href='index.html'>";
+		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
+		echo "<div class=sourcechoose>
+		<b class='vio'>[</b>II</b><b class='vio'>]</b><br><br>
+		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		<img src=\"kemi.jpg\"><br>
+		Kemi Olusanya \"DJ Kemistry\"<br>
+		starb am<br>
+		26.IV.1999<br>
+		</div>";
+	} 
+	
+	if ($flag ==3) {
+		echo "<div class='randchoose'>";
+		include ("rand.xml");
+		echo "</div>";
+		echo "<div class='textchoose'>";
+		echo "<br><b>Groove:</b> Eine Theorie ist ja, daß es an dem Mangel von Personen liegt, die 
+sich diesen öffentlichen Druck aussetzen und als Rolemodels für die 
+Masse herhalten, daß andere Genres möglicherweise bisher nicht die 
+gleichen Ausmaße erreicht haben wie z.B. Drum'n'Bass. 
+
+<br><b>Storm:</b> Man hätte sich zumindest für Drum'n'Bass keinen besseren Verkäufer 
+wünschen können als Goldie. Ich meine, Goldie ist so ein Typ, wenn der an 
+etwas glaubt, und wenn er glaubt, daß er von diesem Etwas ein Teil sein und 
+etwas dazu beitragen kann, dann trägt er es soweit, wie er es irgendwie tragen 
+kann. Auf diese Art hat er so unglaublich viele Türen geöffnet. Wieviele Leute 
+hatten vor ihm einen großen Plattenvertrag und dennoch hat es bis zu seinem 
+Vertrag und der Veröffentlichung von \"Timeless\" gedauert, bis plötzlich allen ein 
+Licht aufging: \"So setzt man also Drum'n'Bass in Albumformat um\". Und, ja klar, 
+Goldie hat seine Momente, ein paar Hochs und Tiefs. Im Moment macht er ja 
+wieder langsamer, geht ein paar Schritte zurück, spielt fast nur noch in kleinen 
+Clubs. Ich glaube, so fühlen einige Drum'n'Bass-Leute und deshalb zieht 
+sich viel in den Untergrund zurück, nach unten, down to that basics of 
+dropping tracks in a club. Darum geht es doch eigentlich. Goldie ist ein 
+Frontmann von Natur aus, sein Rückgrat ist seine Persönlichkeit und er, 
+er ist einfach rude, wirklich. Aber ich glaube, Goldie hat realisiert, daß es 
+um die Leute geht. Besonders, wenn du es mit solchen Sachen wie den großen 
+Plattenfirmen zu tun kriegst, mußt du darauf achten, daß deine Leute da sind. 
+Da macht es keinen Unterschied wie stark deine Persönlichkeit ist, an 
+irgendeinem Punkt kann der Druck zu stark werden, und wenn dann deine 
+Leute nicht da sind, bist du in Gefahr. Dann wirst du vielleicht in etwas 
+hineinmanipuliert, was du niemals sein wolltest. Man kann das an einigen 
+Dingen sehen, die bei Drum'n'Bass passiert sind. Aber die Leute lernen 
+immer mehr, sie unterhalten sich mit Leuten wie Goldie und Roni und 
+Groove, die schon einige Erfahrungen gesammelt haben und vielleicht 
+wissen, wie man mit manchen Sachen umgeht. 
+		";
+		echo "</div>";
+		echo "<div class=super>";
+		echo "<a href='index.html'>";
+		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
+		echo "<div class=sourcechoose>
+		<b class='vio'>[</b>III</b><b class='vio'>]</b><br><br>
+		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		<img src=\"kemi.jpg\"><br>
+		Kemi Olusanya \"DJ Kemistry\"<br>
+		starb am<br>
+		26.IV.1999<br>
+		</div>";
+	}
+	
+	if ($flag ==4) {
+		echo "<div class='randchoose'>";
+		include ("rand.xml");
+		echo "</div>";
+		echo "<div class='textchoose'>";
+		echo "<br><b>Groove:</b> Ihr sollt ja nicht 
+wenig Einfluß auf den jungen Herrn Goldie gehabt haben. 
+
+<br><b>Storm:</b> Haha, 
+ja, sie war seine Freundin. 
+
+<br><b>Kemistry:</b> Als er gerade vom Graffitimalen aus Amerika zurückkam, 
+hat er sich eigentlich nur mit HipHop beschäftigt. Wir sind damals immer 
+zu Rage ins Heaven gegangen, um Fabio und Grooverider zu sehen. Wir 
+haben ihn eingeladen mitzukommen, sagten \"Komm' einfach, keine Ahnung, 
+es könnte dir gefallen\". Er ist mitgekommen, aber es hat ihm nicht gefallen. 
+
+<br><b>Storm:</b> Er ist nicht mal runter gegangen. Er ist einfach oben geblieben. Ich 
+denke, er war ein bißchen... er war dort ein bißchen verloren. In so einer Art 
+von Club war er noch nie gewesen. 
+
+<br><b>Kemistry:</b> Während Goldie in Amerika war hat er diese ganze 
+Acid House-Explosion komplett verpaßt, es ist in Amerika ja nicht passiert. 
+Als er dann zurückkam, gab es diese Ravekultur, die gerade vor seinen 
+Augen losging. Erst als wir zum zweiten Mal mit ihm bei Rage waren, 
+ist er mit runter gekommen, hat Fabio und Groove gehört und das war's 
+dann. 
+
+<br><b>Storm:</b> In der nächsten Minute wollte er Musik machen. Wir haben 
+immer zusammengesessen und an diesem Traum gesponnen, daß 
+Kemi und ich berühmte DJs würden, und Goldie ein berühmter 
+Produzent. Und daß wir dann überall seine Musik spielen 
+würden... ehrlich, eigentlich wird dieser Traum immer noch 
+weitergesponnen. Jeder von uns hat seine Ziele erreicht, aber schau, 
+genau wie Goldie denken wir, daß wir es noch besser machen können. 
+Daß wir mehr versuchen müssen.
+		";
+		echo "</div>";
+		echo "<div class=super>";
+		echo "<a href='index.html'>";
+		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
+		echo "<div class=sourcechoose>
+		<b class='vio'>[</b>IV</b><b class='vio'>]</b><br><br>
+		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		<img src=\"kemi.jpg\"><br>
+		Kemi Olusanya \"DJ Kemistry\"<br>
+		starb am<br>
+		26.IV.1999<br>
+		</div>";
+	}
+	
+	if ($flag ==5) {
+		echo "<div class='randchoose'>";
+		include ("rand.xml");
+		echo "</div>";
+		echo "<div class='textchoose'>";
+		echo "<br><b>Groove:</b> Von Metalheadz hatte man bei der Handvoll Releases dieses 
+Jahr nicht unbedingt den Eindruck, daß da noch sehr viel passiert. 
+
+<br><b>Storm:</b> Metalheadz haben gerade erst ihr Personal ausgetauscht. 
+Kemi und ich haben da für zwei, zweieinhalb Jahre gearbeitet. Als 
+Kemi dann irgendwann aufgehört hat, habe ich noch etwa ein Jahr 
+weitergemacht. Dann wurde alles ziemlich viel, ich habe mich 
+ausgebrannt gefühlt und bin dann auch gegangen. Nun, sie haben 
+jetzt ein paar neue Leute da. Und ja, ein paar Dinge sind mit Metalheadz 
+schiefgelaufen, dies und das, aber sie starten einfach gerade neu. Man 
+kann nicht mehr machen, was wir getan haben. Aber ich denke, wir haben 
+dieses Label sehr schön aufgebaut, jeder von uns hat sehr viel 
+hineingesteckt. Goldie muß jetzt einfach mal einen Schritt zurücktreten 
+und einen Blick auf das Ganze werfen. Metalheadz ist es immer noch 
+wert, weitergeführt zu werden. Es waren vielleicht nicht viele Releases 
+dieses Jahr, aber nächstes Jahr könnte das eine andere Geschichte sein. 
+Das Gesicht verändert sich, aber es steckt das gleiche Ethos dahinter. 
+
+<br><b>Groove:</b> Ist es euch da nicht schwergefallen, euer \"Werk\" einfach so 
+zu übergeben? 
+
+<br><b>Storm:</b> Oh, schon. Aber wir haben unseren Teil auch 
+geleistet. Ich glaube nicht, daß man auf bessere Voraussetzungen treffen 
+könnte, als wir sie diesem Label auf den Weg gegeben haben. Wir 
+haben an diese Firma geglaubt. Es war unsere Erfahrung und ein Teil 
+unseres Traums. Als wir starteten, wußten wir ja nicht mal, wie das 
+geht: eine Plattenfirma machen. Aber die Begeisterung hat das alles 
+wettgemacht. Als Goldie seinen Vertrag bekommen hat, und jemanden 
+für das Label brauchte, klar, haben wir sofort zugesagt, irgendwie mußten 
+wir ja an die Tunes kommen. Und von da an war es einfach ein 
+Selbstläufer, wir haben getan, was wir getan haben. 
+
+<br><b>Groove:</b> Und so sieht man euch immer noch Metalheadz-Aufkleber 
+hinbappen, wo ihr geht und steht. 
+
+<br><b>Storm:</b> Das ist unser Zeichen, unsere \"Metalheadz protection\". 
+Wir haben ein sehr starkes Gefühl für das ganze Ding und es ist 
+ein sehr starker Vibe, wenn du weißt, was ich meine. Und ich denke, 
+wir waren schon Kemistry und Storm bevor es Metalheadz gab. 
+Wir spielen auch gerne noch in ihrem Club und sind da, wo immer 
+wir gebraucht werden. In jedem Club, wo wir eine Chance sehen, 
+fragen wir \"Wollt ihr nicht vielleicht mal eine Metalheadz-Nacht machen?\"... 
+dieser ganze Kram, wir kümmern uns wirklich noch sehr darum.
+		";
+		echo "</div>";
+		echo "<div class=super>";
+		echo "<a href='index.html'>";
+		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
+		echo "<div class=sourcechoose>
+		<b class='vio'>[</b>V</b><b class='vio'>]</b><br><br>
+		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		<img src=\"kemi.jpg\"><br>
+		Kemi Olusanya \"DJ Kemistry\"<br>
+		starb am<br>
+		26.IV.1999<br>
+		</div>";
+	}
+	
+	if ($flag ==6) {
+		echo "<div class='randchoose'>";
+		include ("rand.xml");
+		echo "</div>";
+		echo "<div class='textchoose'>";
+		echo "<br><b>Groove:</b> Ich kenne auch eigentlich keinen anderen DJ, der überall 
+als offizieller Repräsentant eines Labels anerkannt wird, ohne auch 
+nur eine Platte auf diesem herausgebracht zu haben. 
+
+<br><b>Storm:</b> Goldie und wir hatten einfach dieselben Vorstellungen davon, 
+wohin diese Musik noch führen wird, was sie uns bedeutet. Keine 
+Ahnung, aber das leben wir einfach. 
+
+<br><b>Kemistry:</b> Weil wir die Musik, die auf dem Label erschien, geliebt haben, 
+wollten wir, daß jeder sie lieben kann. 
+
+<br><b>Storm:</b> Auch wenn es harte 
+Arbeit war, diese Musik zu promoten. Kein Mensch hat am Anfang 
+an Metalheadz geglaubt, wir haben immer nur gesagt: \"Nun, du wirst 
+noch daran glauben, du wirst noch daran glauben, du wirst noch 
+daran glauben. Wir wissen, daß du das wirst, weil es gut ist.\" 
+Und dann, auf einmal, anderthalb Jahre später, gab es Tracks, 
+die ... ich meine, als Goldie \"Drumz/Ryders Ghost\" rausbrachte, 
+hat es etwa tausend Stück verkauft und jetzt hat sich fast jede einzelne 
+Platte auf Metalheadz fünfzehntausendmal verkauft. 
+
+<br><b>Groove:</b> Was ist eigentlich mit eigenen Produktionen? 
+
+<br><b>Kemistry:</b> Jaaa, das fragt ja immer jeder. Wann fangt ihr an zu 
+produzieren und so? Wir legen lieber auf, das haben wir gelernt. 
+Es macht uns viel mehr Spaß solche Mix-CDs zu machen, wie 
+die \"DJ-Kicks\", für die wir gerade noch Tracks zusammensuchen. 
+Und wenn wir jetzt mit dem Produzieren anfangen wollten, müßten 
+wir erstmal lernen, mit den Geräten umzugehen. Das braucht Zeit. 
+
+<br><b>Groove:</b> Man könnte ja auch mit einem Techniker arbeiten. 
+
+<br><b>Kemistry:</b> Wir wollen aber die Kontrolle haben. Also müßten wir 
+selbst Techniker werden. 
+
+<br><b>Storm:</b> Wenn du jemanden hast, der wirklich umsetzt, was du meinst, 
+aber... naja mit Dego haben wir mal was gemacht, den kennen wir ja 
+schon 'ne Weile, das war ganz gut. Wir haben ihm die ganze Zeit solche 
+Sachen gesagt wie \"Kannst Du es nicht ein bißchen fetter machen?\" und 
+er meinte \"Ja, und was genau soll das heißen?\" und wir \"Aha, ja, alles klar, 
+ähm ... dicker?\" und er dann \"Kann mal bitte jemand die Mädchen aus 
+dem Studio schmeißen?\". Wir hatten richtig was zu lachen. Dann kam 
+Goldie noch und wollte einfach unseren Track weitermachen und ihn 
+hat Dego dann wirklich rausgeschmissen
+		";
+		echo "</div>";
+		echo "<div class=super>";
+		echo "<a href='index.html'>";
+		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
+		echo "<div class=sourcechoose>
+		<b class='vio'>[</b>VI</b><b class='vio'>]</b><br><br>
+		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		<img src=\"kemi.jpg\"><br>
+		Kemi Olusanya \"DJ Kemistry\"<br>
+		starb am<br>
+		26.IV.1999<br>
+		</div>";
+	}
+	
+	if ($flag ==7) {
+		echo "<div class='randchoose'>";
+		include ("rand.xml");
+		echo "</div>";
+		echo "<div class='textchoose'>";
+		echo "<br><b>Groove:</b> Wenn euer Leben sich nach wie vor so von dem Kick aus 
+eurer Arbeit nährt, versteht ihr dann diesen allgemeinen Depressionswahn? 
+
+<br><b>Storm:</b> Ach ja, jeder kriegt dieses Gefühl hin und wieder, ein bißchen 
+Panik. Jeder hat Befürchtungen, daß alles irgendwie zusammenbricht. 
+Aber wir kriegen jeden Abend, an dem wir auflegen, soviele Beweise 
+dafür, daß das, was wir machen, wichtig ist. Und wie oft haben wir das 
+schon gehört: \"Tja, nun ist alles vorbei\". Im Moment zum Beispiel 
+haben wir einfach nur mal genug vom Two Step. Wir hatten es, es 
+wurde gespielt, bis zum Abkotzen hoch- und runtergenudelt, vielen 
+Dank, können wir jetzt bitte alle ein kleines Stück weitergehen? 
+Two Step ist toll, das meine ich nicht, aber bitte kein ganzes Set davon. 
+Kemi und ich sind da, glaube ich, ohnehin ein wenig speziell. Wir haben
+immer sehr viele verschiedene Stile gespielt. Wenn jeder irgendwann nur 
+noch dem Stil des anderen hinterherschnüffelt und sich nicht mehr traut, 
+etwas eigenes oder fremdartig klingendes zu produzieren... Ich denke, das 
+ist der Grund, warum wir Leute wie Source Direct, Photek oder Dego so 
+respektieren. Die halten ihren Kopf hin für den Kram, den sie machen. Wenn 
+es nicht gespielt wird, ist es ihnen egal. Okay, Photek würde vielleicht nicht 
+unbedingt eingestehen, daß sein Zeug nicht gespielt wird, aber es wäre ihm 
+auch egal. Hauptsache er hat seinen Nacken in den Wind gehalten. Und wir, 
+wie auch viele andere DJs, werden solche Sachen immer spielen. Und es 
+hängt nur von dir ab, wie gut du auflegen kannst, ob du der Menge ein 
+außergewöhnliches Stück präsentieren kannst. 
+ 
+ <br><b>Groove:</b> Komisch, daß diese Leute von denen ihr da redet, 
+ eigentlich genau dieselben Leute sind, von denen man auch immer 
+ wieder ein klares Wort hören kann. 
+ 
+ <br><b>Storm:</b> Komisch, oder. 
+ 
+ <br><b>Groove:</b> Zum Beispiel zum Thema Majordeals und Kreativität. 
+ 
+ <br><b>Kemistry:</b> Ja... ja. So ist das. Das passiert immer, mit allen 
+ möglichen Bewegungen. Man kommt an diesen Sättigungspunkt. 
+ Aber dann verändert es sich wieder, entwickelt sich weiter. 
+ 
+ <br><b>Storm:</b> Und die besten Sachen einer Entwicklung werden in der 
+ nächsten fortgeführt. So geht es immer weiter.
+		";
+		echo "</div>";
+		echo "<div class=super>";
+		echo "<a href='index.html'>";
+		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
+		echo "<div class=sourcechoose>
+		<b class='vio'>[</b>VII</b><b class='vio'>]</b><br><br>
+		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		<img src=\"kemi.jpg\"><br>
+		Kemi Olusanya \"DJ Kemistry\"<br>
+		starb am<br>
+		26.IV.1999<br>
+		</div>";
+	}
+	
+	if ($flag ==8) {
+		echo "<div class='randchoose'>";
+		include ("rand.xml");
+		echo "</div>";
+		echo "<div class='textchoose'>";
+		echo "<br><b>Groove:</b> Und leider 
+ bleiben immer Leute auf der Strecke, die den nächsten Sprung nicht 
+ mitbekommen haben. 
+ 
+ <br><b>Kemistry:</b> Viele ziehen sich auch zurück. DJing 
+ zum Beispiel ist ja mittlerweile ein ordentlicher Beruf geworden. Alles 
+ muß offiziell sein, du mußt Steuern zahlen undsoweiter. Es ist schwieriger 
+ geworden, dein Geld für Rechnungen und Miete zusammenzubekommen, 
+ als DJ. Wir mußten lange unsere Jobs behalten, als wir anfingen 
+ aufzulegen. 
+ 
+ <br><b>Storm:</b> Kemi war Visagistin und ich war Röntgentherapeutin. 
+ Aber sobald wir uns für's Auflegen entschieden hatten, war's das 
+ auch. Das ist ein komplett anderer Lebensstil. 
+ 
+ <br><b>Kemistry:</b> Es gab  Zeiten, da mußten wir ohne Geld leben. 
+ 
+ <br><b>Storm:</b> Und nicht gerade  kurz. Wir hatten Löcher in den Schuhen 
+ und alles... 
+ 
+ <br><b>Kemistry:</b> Es ging halt alles für Platten drauf. 
+ 
+ <br><b>Groove:</b> Da muß man schonmal an sich glauben können. 
+ 
+ <br><b>Kemistry:</b> Tjaa, es war einfach das Leben. Wir haben getan, an was 
+ wir geglaubt haben. Was immer es gekostet hätte, wir waren bereit, es zu tun. 
+
+<br><b>Storm:</b> Wenn wir mal einen Gig bekommen haben, dann mußten wir zuerst 
+mal ein Auto auftreiben, wir hatten keins. Meistens hieß das: eins 
+mieten, um in die Stadt und zurück zu kommen. Da wir nicht aus 
+der Stadt kamen, waren wir Außenseiter, es gab also kein Netzwerk, 
+das uns geholfen hätte. Was blieb am Ende eines solchen Abends 
+dann schon übrig? Vielleicht zehn Pfund? Es war... du fährst 
+Ewigkeiten und... aber du mußt solche Sachen machen und wir 
+haben unsere Jobs fast zweieinhalb, drei Jahre behalten, bevor 
+wir endlich sagen konnten: \"Okay, jetzt können wir vom Auflegen leben\". 
+Der eine Gig im Monat, den du am Anfang vielleicht mal bekommst, 
+kann dich nicht über Wasser halten. In unserem Fall sowieso nicht, 
+wir sind schon immer zu zweit, kriegen aber nur eine Gage, weil 
+wir ein DJ sind, wir machen ein Set. 
+
+<br><b>Storm:</b> Ich glaube, eine ganze Menge DJs haben in Sachen Geld ein 
+bißchen den Durchblick verloren. Ab einem gewissen Zeitpunkt, 
+ja okay, kannst du vielleicht eine Menge Geld verlangen. Vielen 
+geht es aber nur darum, die Gagen möglichst höher und höher 
+zu schrauben, ohne zu verstehen, daß man viele Dinge berücksichtigen 
+muß, wenn etwas Erfolg haben soll. Du mußt daran denken, daß dieser 
+Typ, der diesen Club macht, wenn du dem die Summe X in Rechnung 
+stellst und sein Event in die Hose geht, dann kann er wahrscheinlich 
+so schnell nichts mehr machen. Vielleicht nimmst du ein bißchen weniger 
+Geld und er hat die Möglichkeit etwas aufzubauen, von dem du später 
+auch wieder profitierst. Eine Menge DJs denken nicht soweit, die 
+denken sich \"Och, jeder hat doch Geld\". Das ist aber nicht so. 
+Und wenn du willst, daß dieses Ding überlebt, solltest du dir ein 
+paar Gedanken machen. Von mir aus hast du deinen Majordeal, 
+jetzt bist du berühmt und sogar auf ein paar Magazinen, und der 
+Promotor des Clubs denkt, wenn er dich bucht, ziehst du eine Menge 
+Leute. Vielleicht tust du das aber nicht. Wir haben Zeiten gesehen, 
+in denen große Namen da draußen waren und keinen Mensch 
+interessierten. Das passiert einem Event einmal und dann ist es 
+für immer verschwunden. 
+		";
+		echo "</div>";
+		echo "<div class=super>";
+		echo "<a href='index.html'>";
+		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
+		echo "<div class=sourcechoose>
+		<b class='vio'>[</b>VIII</b><b class='vio'>]</b><br><br>
+		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		<img src=\"kemi.jpg\"><br>
+		Kemi Olusanya \"DJ Kemistry\"<br>
+		starb am<br>
+		26.IV.1999<br>
+		</div>";
+	}
+	
+	if ($flag ==9) {
+		echo "<div class='randchoose'>";
+		include ("rand.xml");
+		echo "</div>";
+		echo "<div class='textchoose'>";
+		echo "<br><b>Groove:</b> Läßt euch das Auflegen eigentlich Zeit für andere Sachen? 
+
+<br><b>Storm:</b> Nee. Es ist ziemlich beanspruchend. Besonders in England, 
+wo du ein ganzes Netz von Leuten hast. Allein bei Metalheadz gibt's 
+zwölf Künstler, von denen jeder gerne persönliche Aufmerksamkeit 
+hätte. Und die meisten leben ja ein obskures Leben, stehen um vier 
+Uhr nachmittags mal auf, kommen zu uns und sind morgens um 
+sechs immer noch da. Das gehört alles dazu, du brauchst die 
+Kontakte zu den Leuten, mußt neue Tunes auftreiben, in den 
+Plattenladen gehen. Das verschlingt deine Zeit. Und obwohl du 
+niemals genug Zeit haben wirst, mußt du bereit sein, alle und jeden 
+immer wieder zu sehen, alle zu besuchen. Mußt du einfach. Und die 
+ganzen Leute sind mit der Zeit ja auch unsere Freunde geworden. 
+Wir leben in einer ganz schönen Drum'n'Bass-Blase. Alles, was 
+wir machen, ist über Musik reden, mit den Leuten 
+telefonieren: \"Wo war J.Majik letzte Woche, war der Auftritt 
+okay? An was arbeitet er gerade? Spiel's mal vor. Okay, 
+cool. Komm' vorbei.\" Das geht einfach immer so weiter, wirklich. 
+
+<br><b>Groove:</b> Und offensichtlich seid ihr nicht gelangweilt. 
+
+<br><b>Storm:</b> Überhaupt nicht. Überhaupt nicht. 
+
+<br><b>Groove:</b> Wie lange kennt ihr euch denn schon? 
+
+<br><b>Storm:</b> Wir kennen uns 'ne Weile. Schon länger als wir auflegen, 
+und länger als wir in London wohnen. Wir kommen aus Sheerwich, 
+das ist so in der Mitte von England. 
+
+<br><b>Kemistry</b> Du warst dann aber in Oxford. 
+
+<br><b>Storm:</b> Ja, ich habe in 
+Oxford meine Ausbildung gemacht. Und Kemi ist irgendwann nach 
+Sheffield gezogen, damals haben wir uns schon vier Jahre gekannt, oder? 
+
+<br><b>Kemistry:</b> Ja. 
+
+<br><b></b>Storm:</b> Ja, und es war einfach wicked, daß zur selben Zeit als 
+Kemi nach London gezogen ist, ich dort einen Job gefunden hab'. 
+Ich habe dann erstmal bei ihr gewohnt. Damals haben wir noch 
+richtig geravet. Jeden Abend und am Wochenende. Ja. Das war alles 
+so interessant, damals, es war illegal und auf jedem Rave hatten wir das 
+Gefühl, der Regierung richtig einen reinzudrücken. Herrlich. Man 
+hat über einen Rave irgendwas im Radio gehört, einen kleinen 
+Hinweis, wo man hinfahren soll. Dann bist du ins Auto gestiegen 
+und gleich dort hingefahren, um dir weitere Anweisungen abzuholen. 
+Irgendwann findest du dich auf irgendeinem Tankstellenparkplatz 
+mitten in der Pampa wieder, und ein Typ schleicht um dein Auto, 
+vornerum, hintenrum, und steckt dir einen Zettel mit den letzten 
+Hinweisen zu. Und dann fährst du weiter, über irgendeinen verlassenen 
+Feldweg und plötzlich stehen da irgendwo hunderte von 
+Autos. Ja, das war sehr gut.  
+		";
+		echo "</div>";
+		echo "<div class=super>";
+		echo "<a href='index.html'>";
+		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
+		echo "<div class=sourcechoose>
+		<b class='vio'>[</b>IX</b><b class='vio'>]</b><br><br>
+		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		<img src=\"kemi.jpg\"><br>
+		Kemi Olusanya \"DJ Kemistry\"<br>
+		starb am<br>
+		26.IV.1999<br>
+		</div>";
+	}
+	
+	if ($flag ==10) {
+		echo "<div class='randchoose'>";
+		include ("rand.xml");
+		echo "</div>";
+		echo "<div class='textchoose'>";
+		echo "<br><b>Groove:</b> Kann man da verstehen, daß manch
+einem die Motivation ausgeht, heute noch wegzugehen? 
+
+<br><b>Kemistry:</b> Manche Leute sagen, die Tage von Festivals und 
+Raves sind gezählt. Die Leute, die die Ursprünge von Rave 
+mitbekommen haben, sind vielleicht älter geworden und sehen 
+das so. Aber als junger Mensch willst du dich auf Abenteuer 
+einlassen, willst was erleben. Und ich hoffe, die jungen Menschen 
+da draußen werden sich diese Erlebnisse nicht nehmen lassen. 
+
+<br><b>Storm:</b> Die jungen Leute sind dabei.-- 
+
+<br><b>Kemistry:</b> Ganz sicher. 
+
+<br><b>Storm:</b> Drum'n'Bass ist die Musik 
+der Jugend. Jeder kann es zwar hören, aber es ist sehr jung. 
+
+<br><b>Kemistry:</b> Junge Menschen brauchen die Energie dieser Musik. 
+Wenn du jung bist, ist es das, was du brauchst: Energie und Emotionen. 
+
+<br><b>Storm:</b> Jawohl. 
+
+<br><b>Kemistry:</b> Und genau das findest du in Drum'n'Bass. 
+
+<br><b>Groove:</b> Einem House-DJ würden in eurem Set sofort die 
+eindeutigen Ravesignale auffallen, die in dieser Form in jeder 
+anderen elektronischen Musik heutzutage ja als verpönt gelten. 
+
+<br><b>Storm:</b> Mag sein. Aber sicherlich willst du ausgehen und deine 
+Welt gerockt bekommen. Also, wenn ich ausgehe, will ich an 
+meine Grenzen gebracht werden. Ich will es von überall auf mich 
+zukommen hören: \"Auf jetzt!\". Das ganze Programm.
+		";
+		echo "</div>";
+		echo "<div class=super>";
+		echo "<a href='index.html'>";
+		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
+		echo "<div class=sourcechoose>
+		<b class='vio'>[</b>X</b><b class='vio'>]</b><br><br>
+		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		<img src=\"kemi.jpg\"><br>
+		Kemi Olusanya \"DJ Kemistry\"<br>
+		starb am<br>
+		26.IV.1999<br>
+		</div>";
+	}
+	
+	if ($flag ==11) {
+		echo "<div class='randchoose'>";
+		include ("rand.xml");
+		echo "</div>";
+		echo "<div class='textchoose'>";
+		echo "<br><b>Groove:</b> Betrachtet ihr von dieser Warte auch eure Aufgabe als 
+DJ?
+ 
+<br><b>Storm:</b> Wir hoffen, daß wir gleichzeitig den Leuten ein 
+kleines bißchen den Horizont erweitern können und sie trotzdem 
+bekommen, was sie brauchen. Ich denke, man hofft, daß es am 
+Ende jedem einfach gefallen hat. 
+
+<br><b>Kemistry:</b> Weil wir die Musik so 
+lieben, wollen wir, daß ihr sie hört, damit ihr sie genauso lieben könnt. 
+
+<br><b>Storm:</b> Das ist unser purer Enthusiasmus. 
+
+<br><b>Kemistry:</b> Dieses: \"Wir lieben diesen Track. Wir wollen, daß du ihn 
+auch liebst. Weil er wirklich gut ist.\" 
+
+<br><b>Storm:</b> So ungefähr ist das. 
+
+<br><b>Kemistry:</b> Wir möchten gerne etwas anderes zeigen als das, was Leute 
+ein offensichtiches Set nennen. Wenn du durch unser Set gehst, 
+wird da jeder drin sein. Von allen möglichen Baustellen des Drum'n'Bass. 
+Wir sagen immer: Du sollst deine Crowd nicht unterschätzen. 
+In Deutschland sowieso nicht. 
+		";
+		echo "</div>";
+		echo "<div class=super>";
+		echo "<a href='index.html'>";
+		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
+		echo "<div class=sourcechoose>
+		<b class='vio'>[</b>XI</b><b class='vio'>]</b><br><br>
+		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		<img src=\"kemi.jpg\"><br>
+		Kemi Olusanya \"DJ Kemistry\"<br>
+		starb am<br>
+		26.IV.1999<br>
+		</div>";
+	} 
+	
+	if ($flag ==12) {
+		echo "<div class='randchoose'>";
+		include ("rand.xml");
+		echo "</div>";
+		echo "<div class='textchoose'>";
+		echo "<br><b>Groove:</b> Das ist bestimmt ein Trauma von euren ersten Auftritten in 
+Deutschland z.B. im XS. Da wart ihr, glaube ich, noch nicht ganz so fit. 
+
+<br><b>Storm:</b> Wir sind die nervösesten DJs, die ich kenne. Du solltest uns mal 
+sehen, bevor wir auflegen. Wir sind wirklich... puuuuuuh... heute zeigen 
+wir es nicht mehr so sehr, aber ... ich erinnere mich an einen Gig in 
+London als wir beide noch recht neu waren, da haben wir echt gedacht, 
+heute packen wir es nicht. Goldie war uns da einen Gefallen schuldig. 
+Er hatte einen ganz guten Draht zum Veranstalter des AWOL und hat 
+ihn einfach mal gefragt \"Kannst du nicht meine Mädels mal im Club 
+spielen lassen?\". Und dann sollten wir nach Randall auflegen. Der war 
+zu der Zeit der Top-DJ dort. Wir waren total steif, wir konnten gar 
+nichts mehr ... wir haben echt gesagt \"Nein, wir gehen da heute nicht 
+raus\"... ich bin zu Randall gegangen und hab' zu ihm gesagt: 
+\"Tschuldigung, kann ich dir bitte unsere Gage geben und du machst 
+weiter, wir werden heute auf keinen Fall auflegen\". Er sagte nur: 
+\"Was'n los?\". Aber wir haben immer gewußt, daß sie in Deutschland 
+das echte Ding wollen. Sie wollen wissen, was jetzt los ist. Sie wollen 
+es gebracht bekommen. Und sie gucken dir auf die Finger beim 
+Mixing. In Deutschland herrscht ein ernsthafter Vibe, und ich hoffe, 
+daß wir dem gerecht werden. 
+
+<br><b>Groove:</b> Ich würde mal annehmen, daß die durchschnittliche 
+Crowd in einem deutschen D'n'B-Club mal locker zur Hälfte aus 
+Heim-DJs oder Produzenten besteht. Die gucken euch nicht nur 
+auf die Finger. 
+
+<br><b>Storm:</b> Dabei spielen wir garnicht so viele Dubplates. 
+Meistens ist es etwa zur Hälfte Vinyl, zur Hälfte Plates. Eigentlich 
+sollte es mehr Vinyl sein, jaa, aber wir sind nun schon eine Weile 
+DJs und wir kriegen die meisten Sachen eben ziemlich früh. Klar 
+kommen uns die Leute \"So'n Scheiß, das kommt doch nie im Leben 
+raus, das werde ich mir doch nie kaufen können\". Doch, es 
+wird rauskommen. Halte deine Augen offen, es wird rauskommen. 
+
+<br><b>Kemistry:</b> Wenn Dubplates richtig benutzt werden sind sie eine gute 
+Sache. Am Ende des Tages kommen wir ja irgendwo auch aus England 
+hier rüber, um den Leuten neue Sachen vorzustellen. Wenn sie nur hören 
+wollten, was es hier ohnehin gibt, könnten sie ihre eigenen DJs spielen lassen. 
+
+<br><b>Storm:</b> Und wir haben schon eine Menge guter DJs in Deutschland gehört. 
+Technisch sehr versiert und es herrscht eine positive Einstellung zum
+Auflegen hier. Sie haben wohl endlich ihren Kopf darüber 
+hinwegbekommen, daß sie wahrscheinlich niemals in England 
+spielen werden. Was ja auch überhaupt keine Aussagekraft darüber hat, 
+ob du jetzt ein guter oder ein schlechter DJ bist. Es ist einfach schwer 
+in England, in London. Ich denke, ihr habt hier das richtige gemacht, 
+euer eigenes Ding. 
+
+<br><b>Kemistry:</b> Stimmt. 
+
+<br><b>Storm:</b> Wir hatten in keinem Club 
+in Deutschland dieses Jahr einen schlechten Gig. Es scheint also zu 
+funktionieren und die Menge war immer enthusiastisch. 
+
+<br><b>Kemistry:</b> Und darum denke ich, sollte man sich nicht so viel 
+Kopfzerbrechen machen, wo sich was jetzt hinentwickelt und warum. 
+
+<br><b>Storm:</b> Genau. Erfahrung ist ohnehin der beste Weg. 
+
+<br><b>Kemistry:</b> Geht aus und fühlt die Musik. Wirklich.
+		";
+		echo "</div>";
+		echo "<div class=super>";
+		echo "<a href='index.html'>";
+		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
+		echo "<div class=sourcechoose>
+		<b class='vio'>[</b>XII</b><b class='vio'>]</b><br><br>
+		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		<img src=\"kemi.jpg\"><br>
+		Kemi Olusanya \"DJ Kemistry\"<br>
+		starb am<br>
+		26.IV.1999<br>
+		</div>";
+	} 
+	
+	if ($flag ==x) {
+		echo "<div class='randchoose'>";
+		include ("rand.xml");
+		echo "</div>";
+		echo "<div class='textchoose'>";
+		echo "
+		";
+		echo "</div>";
+		echo "<div class=super>";
+		echo "<a href='index.html'>";
+		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
+		echo "<div class=sourcechoose>::Kemistry & Storm::<br>Groove[55]<br><br>Groove[55]<br>
+		<img src=\"kemi.jpg\"><br>
+		Kemi Olusanya \"DJ Kemistry\"<br>
+		starb am<br>
+		26.IV.1999<br>
+		</div>";
+	} 
+?>
+
+</body>

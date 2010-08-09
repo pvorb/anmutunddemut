@@ -1,0 +1,136 @@
+Elven Gator Shaman
+
+## Priorities ##
+
+A 	Magic 		Full Magician
+B	Resourcen	400.000
+C	Race		Elf
+D	Attributes	21
+F	Skills		27
+
+## Attributes ##
+
+Body 			3			(9 - 2)		(see "Edges and Flaws")
+Quickness 		3 + 1		(11 - 2)	(see "Edges and Flaws")
+Strenght 		2			(9 - 2)		(see "Edges and Flaws")
+Charism 		2 + 2		(12)
+Intelligence 	5			(9)
+Willpower		6			(9)
+Reaction		4			(Q+I / 2)
+Initiative		5			(R+1)
+
+Combat Pool 	7			((Q + I + W) / 2 )
+Spell Pool		4 + 1W6		((I + W + M) / 3)
+Astral Pool		25 + 1W6	((I + W + C) / 2)
+
+
+## Active Skills (27) ##
+
+Magic		Aura Reading	(Int)			2
+Magic		Sorcery			(Wil)			5
+Magic		Conjuring		(Wil)			6
+Body		Stealth			(Qui)			3
+Combat		Pistols			(Qui)			4
+Combat		Shotguns		(Qui)			3
+Social		Etiquette		(Cha) 			3
+Social		Intimidation	(Cha)			1
+
+
+## Knowledge Skills (25 + 7) ##
+
+Street	 		Cheap Food					3
+Street	 		Seattle Ork Underground		2
+Sixth World		Bug City					2
+Background		Conjuring 					5
+Background		Spirits						6
+Academic		Elven History				4
+Language		English						4
+Language		English / Read and Write	3
+Language		Sperethil					2
+Language		Sperethil / Read'n'Write	1
+
+## Edges and Flaws ##
+City Gator Shaman
+	+ 2D6 für Stadtgeister
+	+ 2D6 für Kampf- und Wahrnehmungszauber
+	- 1W6 für Illusionszauber
+	- Willenskraft(6) Probe bei Abbruch von direkten und Kampfhandlungen  
+Infirm - 2 Points
+
+## Spells (25 Sell Points) ##
+
+Combat 					Deathtouch				4
+Combat					Manabolt				2
+Combat					Powerbolt				4
+Detection				Analyze Truth			3
+Detection				Detect Life				3
+Detection				Detect Elves			3
+Healing 				Treat					4
+Healing					Increase Relfexes		3	
+= Summe											26
+
+Extra Spellpoint								1											25.000	
+
+
+## Gear ##
+
+Lifestyle				Low	(for one year)									12.000 
+Doc Wagon Basic																5.000
+Medkit																		200	
+= Summe																						17.200
+
+## Guns ##
+						Conc	Ammo		Mode	Damage		Weight		Cost
+Ares Predtor			5		15(c) 		SA		9M			2.25		450
+- Standard Ammo (300)														600
+Enfield AS 6			2		10(c) 		SA/BF	8S			4			1000
+- Standard Ammo (200)														400
+= Summe																						2.450
+
+## Clothing ##
+						Conc	Ballistic 	Impact 				Weigth		Cost
+Armor Jacket			6		5			3					2			900
+Leather Jacket			-		0			2					1			750
+Ordinary Clothing (4x)	-		0			0					1			200
+Shamans Clothin			-		0			0					2			1000
+= Summe																						2.850
+
+## Magic ##
+
+Shamanistic Lodge (7)														3.500
+Power Focus																	210.000	
+= Summe																						213.500
+
+## Contacts ##
+
+Fixer																		included
+Talismonger																	included
+Shark Shaman																5000
+Combat Mage																	5000
+Tribal Chief																5000
+Tribl Shaman																5000
+Former Tribal Paramedic														5000
+Elven Scientist																5000
+Tir Tairngire Politician													5000	
+Weapon Dealer																5000
+Smuggler																	5000
+Pirate																		5000
+Bartender																	5000
+Lone Star D.P.I. Seargent													5000
+Covert Ops Specialist														5000
+Doc Worker																	5000
+Ork Underground Guard														5000
+Mafia Don																	5000
+Plain Cloth Cop																5000
+Street Kid																	5000
+Saeder-Krupp Manager														5000
+Bug-City Bear Shaman														5000
+= Summe																						100.000
+
+
+## Vehicles ##
+
+Landrover Model 2046 - Short												35.000			35.000
+		
+== Supersumme
+																							396.000

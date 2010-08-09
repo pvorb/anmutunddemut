@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>D7 | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2009/11/23/death-at-a-funeral" />
+  <link rel="next" href="/2009/11/23/bug" />
+  <meta name="path" content="/2009/11/23/d7" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="8234" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1259001686" />
+  <meta name="created-string" content="23. 11. 2009 - 19:41" />
+  <meta name="changed-timestamp" content="1279214477" />
+  <meta name="changed-string" content="15. 07. 2010 - 19:21" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/d7-teaser.jpg" />
+  <meta name="path" content="/2009/11/23/d7" />
+  <meta name="node-id" content="8234" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1259001686" />
+  <meta name="created-string" content="23. 11. 2009 - 19:41" />
+  <meta name="changed-timestamp" content="1279214477" />
+  <meta name="changed-string" content="15. 07. 2010 - 19:21" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Maschinen" href="../../../ressort/maschinen" />
+  <link rel="index" title="Drupal" href="../../../lexikon/drupal" />
+  <meta name="keywords" content="Maschinen, Drupal" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-8234 arg01-node-8234" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2009/11/23/death-at-a-funeral.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2009/11/23/bug.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-0">  
+      <!-- start:node -->
+      <h2>D7</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/d7-teaser.jpg' alt='D7'/></p>
+<!-- ende:teaserimage -->
+<p>So. Das musste auch mal sein. Drupal 7 is ja nun nicht mehr sooo weit weg. Also hab ick mir am Wochenende mal den aktuellen Development-Snapshot installiert. Die Neuerungen sind ausgesprochen manigfaltig.</p>
+<h3>Installation</h3>
+<p>Mal ein paar wichtig Sachen vorne weg. D7 ließ sich bei mir nur mit einer MySQl 5 installieren. MySQL wollte nicht.</p>
+<p>Wie immer musste ich eine php.ini mit ins Hauptverzeichnis legen, um die register_globals auszuschalten. Keine Ahnung, warum das nicht über die .htaccess geht.</p>
+<p>Man kann inzwischen zwischen zwei Installationen unterscheiden: Minimal und Standard. Ich hab mal Standard genommen.</p>
+<h3>Admin-Leiste</h3>
+<p>D7 kommt per Default wieder mit Garland daher. Aaaber, wenn man Admin ist, bekommt man eine Admin Leiste über die Seite. </p>
+<p class="volleBreitseite"><img src="http://anmutunddemut.de/files/d7-adminbar.png" alt="" /></p>
+<p>Die Admin-Leiste teilt sich dabei in zwei Leisten. Oben, weiß auf schwarz, die harte Admin-Leiste. Die Links dadrin scheinen fix zu sein. Darunter, einklappbar, die Shortcut-Leiste. Perse sind hier das Dashboard, Add Content und Find Content verlinkt. Aber man kann jede Seite im Backend mit dem kleinen Plus-Icon hinter dem Titel der Seite zu den Shortcuts hinzufügen und den ganzen Spaß sortieren.</p>
+<h3>Administratoren</h3>
+<p>Ich nehme an, die Admin-Leiste bekommt nur zu sehen, wer Administrator ist. Zu dem Zweck (und zu vielen anderen Zwecken) gibt es neben Anonymous User, und Authenticated User noch eine dritte Rolle, die per Default mit dabei ist: Administrator.</p>
+<h3>Backend</h3>
+<p>Das frühere Startseite des Backends /admin wurde durch eine ganze Reihe von Einstiegsseiten ersetzt und sogar durch ein – frei konfigurierbares – Dashboard ergänzt. Da kann ich meines ja wegwerfen. Alles unter /admin/* sieht jetzt auch optisch anders aus, kommt mit einem dezenten beigen Header daher.</p>
+<p><img src="http://anmutunddemut.de/files/d7-confnmodules.png" alt="" /></p>
+<h3>Blöcke</h3>
+<p>Eine weitere Neuerung: Blöcke in der Seitenspalte lassen sich jetzt vom Frontend aus bearbeiten, wenn man als Admin eingelogt ist. Das haben sie wohl bei Views abgeschaut.</p>
+<p><img src="http://anmutunddemut.de/files/d7-blocks.jpg" alt="" /></p>
+<h3>Vertical Tabs</h3>
+<p>Das Vertical Tabs Modul, das ich hier seit <a href="http://blog.fymmie.de/09/11/2009/f5-dr%C3%BCcken-alles-neu-gemacht%E2%80%A6">einem Tip von Fym</a> auch verwende, ist wie angekündigt in den Kern gewandert und erleichtert dort u.a. das Node-Creation Formular.</p>
+<p><img src="http://anmutunddemut.de/files/d7-node-creation.jpg" alt="" /></p>
+<p>Was auf dem Screenshot auch zu sehen ist: Für Artikel-Nodes ist ein Teaserbild per Default mit dabei. Hier zieht man mit Wordpress gleich, die das auch seit kurzem haben.</p>
+<h3>Fields in Core</h3>
+<p>In … der … Tat sind Fields jetzt im Kern. Ich kann an so ziemlich alles weitere Felder dranklatschen und die Reihenfolge der Felder sortieren.</p>
+<p><img src="http://anmutunddemut.de/files/d7-fields-add.jpg" alt="" /></p>
+<p>Mann, Mann, Mann hier haben die Jungs und Mädels echt ganze Arbeit geleistet.</p>
+<p><img src="http://anmutunddemut.de/files/d7-fields-display.png" alt="" /><br />
+Man beachte die Reiter "Basic, RSS, und Search" oben rechts! Außerdem gibt es scheinbar einen Haufen "Labels" und "Formate", die dem geneigten Themer dann vermutlich zur Verfügung stehen … irgendwie. Das werde ich mir mal in der nächsten Zeit ansehen.</p>
+<h3>Unter der Motorhaube</h3>
+<p>Die etwas mehr als zwei MB große Zip-Datei entpuppt sich 905 Dateien und Ordnern die 10 MB auf der Platte fressen. Die Datenbank hat – nachdem ich alle Module angeworfen habe, die ich im Kern für nötig halte – 79 Tabellen. Die meisten neuen Tabellen dürften wohl auf der Konto von Fields gehen.</p>
+<p>Was ich auch gesehen habe: Die Tabelle, die Term-Relationen enthalten kann, wurde ebenso wie die Synonym Tabelle ersatzlos gestrichen. Den Spaß kann man ja jetzt mit Fields machen.</p>
+<h3>RDFa</h3>
+<p>Das RDF-Modul im Kern ist auch da, zeichnet sich aber scheinbar nur für den RDFa Output der semantisch bekannten Einheiten aus. </p>
+<p class="volleBreitseite"><img src="http://anmutunddemut.de/files/d7-rdfa.jpg" alt="" /></p>
+<p>Nagut. Fields in Core UND ein RDF-Triple-Store wäre auch wirklich ein bisschen zu viel verlangt für eine Version.</p>
+<h3>Theming</h3>
+<p>Während ich mich so durch Backend geklickert hab', wuchs in meinem Hinterkopf unweigerlich eine dunkle Frage: "Oh mein Gott, wer soll dafür je ein zweites Theme schreiben?". Ein Blick in die tpl-Dateien offenbart keine große Hexerei. Es gibt jetzt zwei lustige neue Funktionen:<br />
+<a href="http://morten.dk/blog/awesomeness-redefined-drupal-7-theming-0">render() und hide()</a> (ich verkneife mir Wortwitze). Ich hab noch keine Ahnung, was die machen wollen und was die machen sollen.</p>
+<h3>Schluck … gmpf</h3>
+<p>Ich will ehrlich sein … Fields in Core ist krasser Scheiß … ich stehe da noch ein bisschen vor, wie das Kaninchen vor der Schlange. Und ich schätze, da dürfte ich nicht der Einzige bleiben. Die Entwicklung ist deutlich: Drupal ist schicker geworden. Vor allem aber ist Drupal mächtige geworden. Drupal hat seinen Ruf als CMS von Entwicklern für Entwickler weiter gefestigt und damit gleichzeitig seinem Anspruch als "Linux für's Web" Nachdruck verliehen. Es ist nicht einfacher geworden, bei Leibe nicht. Aber mit einem guten Sys-/CMS-Admin kann man für Redakteure ein weit brauchbareres CMS basteln, zusammenklickern. </p>
+<p>Fields in Core wird viele Contrib-Module überflüssig machen und die Weiterentwicklung einzelner Sites erheblich beschleunigen. Nicht umsonst war lautete die Standard-Antwort, wie man dieses oder jenes mit Drupal machen könne "CCK und Views". </p>
+<p>Ich gebe zu, ich weiß nicht, ob ich davon begeistert oder gelähmt sein soll. Mein Eindruck ist, dass ich in D7 noch weniger davon verstehen werde, was hinter der Bühne passiert. Gleichzeitig weiß ich, dass ziemlich viele von den Sachen, die ich früher hätte programmieren müssen, jetzt zusammenklickern kann.</p>
+<p>Um der Wahrheit die volle Ehre zu geben … ich hab ein bisken Angst.</p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 23. 11. 2009</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Ressort:</span>
+        <a href="../../../ressort/maschinen.html" rel="ressort">Maschinen</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/drupal.html" rel="lexicon">Drupal</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://blog.fymmie.de">fym</a> <a href="/2009/11/23/d7#comment-7272" id="comment-7272" class="active">#</a>      </p>
+    <p>Danke schön für den bebilderten Einblick. Mir ist beim mehrmaligen Versuch den Development-Snapshot lokal zu installieren (lustigerweise ebenso just am vergangenen WE), ständig der Apache abgeschmiert, weshalb auch immer.</p>
+<p>Du hast ein bisschen Angst, ich kommentierte das für mich mit einem "Fuck!?". Ui, das wird was. Aber verdammt, ich hab mich den Lern-Abhang (das ist <strong>keine</strong> Kurve, nein, nein, nein) schonmal hochgehangelt, dann eben ein zweites Mal. Auch wenn man nicht jünger wird ;)</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/11/23/d7#comment-7273" id="comment-7273" class="active">#</a>      </p>
+    <p>"Abhang" ist da schon das richtige Wort. Mein Angst bezieht sich aber weniger darauf ob der denn zu schaffen ist. Nein, da mache ich mir wenig Sorgen. Nein, die spannende Frage ist, wohin uns der wohl führen wird.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://blog.fymmie.de">fym</a> <a href="/2009/11/23/d7#comment-7274" id="comment-7274" class="active">#</a>      </p>
+    <p>Das unterscheidet eben den Nichtskönner ;) Mein erster Gedanke gilt automatisch der "Werd ich das packen?"-Frage. Nja.</p>
+<p>Ok, ich hab den Snapshot jetzt installiert bekommen. Komme mir wieder wie das kleine dumme Drupal-Kind vor, dass von nichts (hey...) etwas versteht. Fängt schon damit an, dass ich - abgesehen von meinem lerrraum-Theme - D7 nicht dazu bringen kann, eines meiner Module testeshalber  zur Aktivierung zuzulassen. (Sollte es nicht ausreichen, die Versionsangabe zu ändern?) Hmpf.</p>
+<p>Dass sie jetzt endlich ein Dashboard im Gepäck haben ist super. Drupal goes Wordpress, wie du ja schon meintest, aber sympathischerweise wird dem gemeinen Klicki-Bunti-Nutzer ebenso erstmal der Zeigefinger entgegengestreckt. Wunderbar. Aber re Dashboard: Da hätte ich mir den Aufwand meines eigenen drag&amp;drop Dashboards auch sparen können- nein, eigentlich nicht. Trotzdem ein kleines "Hmpf".</p>
+<p>Ich weiß außerdem nicht, was ich von dieser Admin-Leiste halten soll. Ich hab schon während der Nutzung von Wordpress davon abgesehen, solch ein prominentes Seitenelement zu nutzen. Hm. Solange ich das leerraum-Theme für D7 wieder so drehen kann, dass ich kein separates Admin-Theme brauche, kann es mir ja egal sein.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/11/23/d7#comment-7275" id="comment-7275" class="active">#</a>      </p>
+    <p>Ah. Kuhl. Ich hätte Dir sonst gleich einen Zugang auf meiner Testinstallation angeboten.</p>
+<p>Was Module angeht: Es gibt <a href="http://drupal.org/node/224333">einen laaaaangen Converting 6.x modules to 7.x</a> Artikel auf Drupal.org. DAS wäre in der Tat angsteinjagend, wenn, ja wenn Drupalgott Stefan mir nicht erzählt hätte, dass es ein Modul bzw. einen Service gibt, der Module automatisch von D6 nach D7 portiert. Das muss ich nochmal ausgraben.</p>
+<p>Ja, bei der Admin-Leiste und den ganzen "Configure" Links im Frontend bin ich auch noch hin und hergerissen. Das Frontend will ich so sehen, wie meine Besucher. No Administrative Debris. Ich schätze entweder werde ich den ganzen Rotz übers dem Takeshi Theme rauswerfen, oder es läuft auf zwei User hinaus: Einen Admin und einen Autor. Das ist ja der empfohlene Weg.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://blog.fymmie.de">fym</a> <a href="/2009/11/23/d7#comment-7283" id="comment-7283" class="active">#</a>      </p>
+    <p>Ah, danke für den Link. Den hatte ich in der Zwischenzeit verlegt. Und klar, dass D7 meine Module wenigstens nicht freigeben wollte - die Dateien müssen jetzt ja explizit in der .info angegeben werden.</p>
+<p>Du kannst mir gerade nicht zufällig auf die Sprünge helfen und sagen, wo die Admin-Leiste überhaupt herkommt? Ich bin wohl gerade sehr blind und sehe nichts in den Templatedateien.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/11/23/d7#comment-7284" id="comment-7284" class="active">#</a>      </p>
+    <p>Öhm. Keine Ahung, wo die Adminbar herkommt. Aber Morten.dk hat den neuen <a href="http://morten.dk/blog/awesomeness-redefined-drupal-7-theming-0">hook_page_alter</a> erwähnt mit dem man angeblich an ALLES rankommt, bevor auch nur der ersten Buchstabe HTML gerendert wird. Schau Dir den doch mal an und guck mir dprint_r oder krumo, was da so drin ist … ansonsten würde ich vermuten, dass man die auch über ein Recht abschalten kann.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/11/23/d7#comment-7287" id="comment-7287" class="active">#</a>      </p>
+    <p>Das Modul zur automatischen Migration von Modulen heißt "Deadwood" [sic!].<br />
+<a href="http://drupal.org/project/deadwood" title="http://drupal.org/project/deadwood">http://drupal.org/project/deadwood</a><br />
+Wird zu Drupal 7 aber mit Coder verschmelzen:<br />
+<a href="http://drupal.org/project/coder" title="http://drupal.org/project/coder">http://drupal.org/project/coder</a></p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://blog.fymmie.de">fym</a> <a href="/2009/11/23/d7#comment-7290" id="comment-7290" class="active">#</a>      </p>
+    <p>In der Beschreibung von Deadwood steht nur was von 5.x zu 6.x. Die Beta von Coder scheint aber 6.x zu 7.x drauf zu haben(?).</p>
+<p>Und übrigens zur obigen kurzsichtigen Frage nachgereicht: Die Adminleiste kommt - duh, wie sollte es auch anders sein - vom Tooltip-Module. Da hatte ich vorhin nicht gesucht, tsts. Im Prinzip könnte ich mit der Admin-Toolbar leben. Ich verstehe nur nicht, warum sie die so prominent platziert haben? Ein paar Zeilen mehr jQuery und man hätte die doch bestimmt unaufdringlicher haben können (Einblenden per Klick auf ein Link/Symbol/whatever oben rechts/links/whatever, oder beim Mouseover des Seitenanfangs ect.) Hm, da kann man vielleicht was dran drehen?</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/11/23/d7#comment-7291" id="comment-7291" class="active">#</a>      </p>
+    <p>Klar kann man sicher was drehen. Aber damit würde ich warten, bis D7 zumindest einen Release Candidate hat. Ich sag mal … erstmal die nächsten Wochen beobachten und erkunden …</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://blog.fymmie.de">fym</a> <a href="/2009/11/23/d7#comment-7292" id="comment-7292" class="active">#</a>      </p>
+    <p>Ja, das sowieso. Das erste Reinschauen hat für mich gerade nur den blöden Nebeneffekt, mir ein wenig die Lust an etwaigen Basteleien am aktuellen Drupal zu dämpfen. Böser Snapshot, böse.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/11/23/d7#comment-7293" id="comment-7293" class="active">#</a>      </p>
+    <p>Das kann ich bestätigen. Ich würde am liebsten sofort migrieren.<br />
+Haste Dir schon die hooks <a href="http://api.drupal.org/api/function/hook_page_alter/7">page_alter()</a> und <a href="http://api.drupal.org/api/function/hook_page_build/7">page_build()</a> angesehen? Wenn die halten, was sie versprechen … *tränenindieaugensteig*</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von H.i.r.s.m. <a href="/2009/11/23/d7#comment-7297" id="comment-7297" class="active">#</a>      </p>
+    <p>Was ja auch mal nett wäre: Eine bessere Volltext-Suche. Weißt du, ob es da Fortschritte gibt?</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/11/23/d7#comment-7301" id="comment-7301" class="active">#</a>      </p>
+    <p>Was ist denn daran nicht gut? Hab ich nie Sorgen mit gehabt.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://blog.fymmie.de">fym</a> <a href="/2009/11/23/d7#comment-7307" id="comment-7307" class="active">#</a>      </p>
+    <p>@Suche: Ich finde damit selten das, was ich wirklich suche. Entweder sind die Suchbegriffe für die indizierten Worte zu kurz oder die Suche stellt sich sonst zickig an. Die Such-Indizes sind überhaupt mehr schlecht als recht. Entweder ich lasse jeden Scheiß indizieren (was weiß ich, Wortlängen Minimum auf 2 Buchstaben oder dergleichen), dann mäste ich meine Datenbank unnötig oder ich lasse weniger indizieren und muss mit den noch schlechteren Suchergebnissen leben. Suboptimal.</p>
+<p>Jedenfalls zu D7. Ui. Also wenn ich das richtig sehe:</p>
+<p>- hook_form_alter() kann jetzt in der template.php benutzt werden, fällt somit schonmal aus einem möglicherweise nötigen, themespezifischen Modul heraus(?)<br />
+- hook_page_alter() - also wenn ich das so überfliege, dann ist da in der Tat alles drin. Und wenn nicht alles, dann doch trotzdem verdammt, verdammt viel. Ui. Uuuuund ja, ja! ja ich kann das Ding ebenso in der template.php verwenden. ... Meine Augen werden feucht, hach.<br />
+-hook_page_build() - noch nicht nachgeschaut, aber wenn ich das richtig verstehe, ist das auch einzig zur Verwendung in Modulen gedacht(?)<br />
+- render(), hide() und Co. Das hat mich ja erst verschreckt. Die Nutzung ist erstmal (und immer noch) gewöhnungsbedürftig - aber verdammt: das ist klasse. Genau das, worüber ich mich letztens noch bei mir beschwert hatte. Damit hat man schlicht und ergreifend mehr Kontrolle darüber, was wo im Seitentemplate aufzutauchen hat, ohne gleich auf Modul und/oder Funktionsüberschreiben abdriften zu müssen. Wunder-voll.</p>
+<p>Ich muss mich gerade fast schon zwingen, nicht sofort an einem D7-leerraum rumzuwerkeln.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/11/23/d7#comment-7333" id="comment-7333" class="active">#</a>      </p>
+    <p>@Suche: Also wie gesagt. Ich bin damit ziiimelich zufrieden, mit zwei Einschränkungen.<br />
+1. Ab und zu würde ich gerne auch mal im HTML suchen, also wenn ich Bild-URLS oder CSS-Klassen weiß und den Artikel damit finden möchte.<br />
+2. Auch nur ab und zu hätte ich für einen Suchbegriff gerne einen chronologische Sortierung.</p>
+<p>Ansonsten: Ja! Ja, ja, ja! JAAA! Ich würde auch am liebsten heute als morgen migrieren.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

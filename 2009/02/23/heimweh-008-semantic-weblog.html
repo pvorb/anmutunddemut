@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Heimweh 0.0.8 – Semantic Weblog | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2009/02/23/heimweh-007-%E2%80%93-github" />
+  <link rel="next" href="/2009/02/23/heimweh-009-suchen" />
+  <meta name="path" content="/2009/02/23/heimweh-008-semantic-weblog" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="7412" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1235412749" />
+  <meta name="created-string" content="23. 02. 2009 - 19:12" />
+  <meta name="changed-timestamp" content="1235412598" />
+  <meta name="changed-string" content="23. 02. 2009 - 19:09" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/heimweh008.jpg" />
+  <meta name="path" content="/2009/02/23/heimweh-008-semantic-weblog" />
+  <meta name="node-id" content="7412" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1235412749" />
+  <meta name="created-string" content="23. 02. 2009 - 19:12" />
+  <meta name="changed-timestamp" content="1235412598" />
+  <meta name="changed-string" content="23. 02. 2009 - 19:09" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="On my way to Heimweh" href="../../../serie/on-my-way-to-heimweh" />
+  <link rel="index" title="Association" href="../../../lexikon/association" />
+  <link rel="index" title="Quicktags" href="../../../lexikon/quicktags" />
+  <link rel="index" title="Semantic Weblog" href="../../../lexikon/semantic-weblog" />
+  <link rel="index" title="Topic" href="../../../lexikon/topic" />
+  <link rel="index" title="Topic Maps" href="../../../lexikon/topic-maps" />
+  <link rel="index" title="XML" href="../../../lexikon/xml" />
+  <meta name="keywords" content="On my way to Heimweh, Association, Quicktags, Semantic Weblog, Topic, Topic Maps, XML" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-7412 arg01-node-7412" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2009/02/23/heimweh-007-%E2%80%93-github.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2009/02/23/heimweh-009-suchen.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-1">  
+      <!-- start:node -->
+      <h2>Heimweh 0.0.8 – Semantic Weblog</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/heimweh008.jpg' alt='Heimweh 0.0.8 – Semantic Weblog'/></p>
+<!-- ende:teaserimage -->
+<p>Lange, lange, lange schon sehne ich mich nach dem <a href="http://anmutunddemut.de/taxonomy/term/306">Semantic Weblog</a>, dessen Idee eigentlich ganz einfach ist: Ich schreibe Artikel. Die Artikel handeln von Themen, die ich in Stich- und Schlagworten explizt mache. Diese Themen bekommen ebenso wie Artikel eigene Seiten und eigene, lexikonhafte Texte. Uuuund (und jetzt kommts), diese Themen stehen zueinander in einer getypten Beziehung.</p>
+<p>Wie mache ich das mit Heimweh? Stich und Schlagworte auszeichnen sit ganz einfach. Einfach ein XML-Element definieren. Im Dokument verwenden. Fertig. Ich glaube ich werde dafür das Element &lt;topic&gt; oder &lt;t&gt; verwenden. Das könnte man sogar im Fließtext, oder auch im Head oder am Ende des Dokumentes setzen. Egal, denn <a href="http://anmutunddemut.de/2009/02/22/heimweh-004-meta-datastore">mein Metadaten-Parser</a> zieht ja eh <i>alle</i> XML-Elemente und deren Inhalte raus.</p>
+<p>Was an dieser Stelle bemerkenswert ist: &lt;topic&gt; beinhaltet nur einen String. Keine IDs. Das habe ich mir von der Wikipedia abgeschaut. Homonyme werden dort über Begriffsdiffrenzierungen in Klammern aufgelöst. Voll ok he. Außerdem hab ich eh fast gar keine Homonyme. Also scheiß was drauf.</p>
+<h3>Getypte Relationen und Tripel</h3>
+<p>Jetzt fehlen noch die getypten Relationen. Der einfachste Weg ist ein XML-Element pro Relations-Typ. Diese Elemente verwendet man dann sinnvollerweise nur in Topic-Artikel. </p>
+<p class="volleBreitseite">Einfach in das Topic "Ivan Illich" &lt;isa&gt;Person&lt;/isa&gt;<br />
+Oder in das Topic "Internet" &lt;subclass&gt;Medium&lt;/subclass&gt;<br />
+Oder in das Topic "Bielefeld" &lt;partof&gt;Deutschland&lt;/partof&gt;</p>
+<p>Auf diese Weise kann ich aber nur innerhalb eines Topics Relationen für dieses Topic definieren und v.a. immernur in die Richtung, die das Tag vorgibt. Im Topic "Bielefeld" könnte ich nicht einfach "&lt;partof&gt;Heepen&lt;/partof&gt; schreiben, weil Bielefeld ja nicht ein Teil Heepen ist, sondern anders herum. Ich bräuchte also noch ein zweites Tag &lt;contains&gt;Heepen&lt;/contains&gt; das aber die selbe Semantic hat, das selbe Tripel beschreibt, nur anders herum.</p>
+<p>Deswegen scheint mir ein generisches Element sinnvoll, dass ich einfach immer überall verwenden kann.</p>
+<p class="volleBreitseite">&lt;association member1="Bielefeld" type="contains" member2="Heepen" /&gt;</p>
+<p>Und dann ab damit in die Metadatenbank! Einziger Hacken: Die erste Spalte der Metadatenbank ist ja bis jetzt eigentlich eine ID eines Artikels. Hiernach müßte sie eigentlich auch einen String eines Stich- oder Schlagwortes aufnehmen können. Lösung dafür: URL rein. Darf man nur an den URLs nicht mehr soviel drehen und man braucht eine ziemlich, ziemlich eindeutige Abbildung eines Stich-/Schlagwortes auf eine URL. Aber was die Wikipedia kann, das kann ich auch.</p>
+<p>Und extrakuhl: Das könnte ich auch in normalen Artikeln verwenden, weil es sich ja nicht mehr auf den Artikel selber beziehen muss. Und es kommt noch besser: Quicktags bietet schon die Möglichkeit Tags einzufügen und dabei über Javascript-Dialoge mehrere Felder abzufragen; siehe <a href="http://alexking.org/projects/js-quicktags/demo/index.html">Image-Button</a>. Dann müsste ich nur in meinem Meta-Datenparser eine Ausnahme reinprogrammieren, dass er das association-Tag anders behandelt als normale Tags. Solches Ausnahmeverhalten ist aber so oder so nötig, wie ich inzwischen erkannt habe, weil es Tags gibt, die man möglicherweise nicht in der Metadatenbank haben möchte – wie z.B. die Suchsyntax.</p>
+<p>Könnte klappen, könnte klappen.</p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 23. 2. 2009</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Serie:</span>
+        <a href="../../../serie/on-my-way-to-heimweh" rel="series">On my way to Heimweh</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/association.html" rel="lexicon">Association</a>, 
+        <a href="../../../lexikon/quicktags.html" rel="lexicon">Quicktags</a>, 
+        <a href="../../../lexikon/semantic-weblog.html" rel="lexicon">Semantic Weblog</a>, 
+        <a href="../../../lexikon/topic.html" rel="lexicon">Topic</a>, 
+        <a href="../../../lexikon/topic-maps.html" rel="lexicon">Topic Maps</a>, 
+        <a href="../../../lexikon/xml.html" rel="lexicon">XML</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://gruenebananen.blogspot.com/">Markus Lux</a> <a href="/2009/02/23/heimweh-008-semantic-weblog#comment-6206" id="comment-6206" class="active">#</a>      </p>
+    <p>Und warum reichen die guten, altbewährten, einfachen <em>Tags</em> nicht aus? So wie ich das verstanden habe, willst du pro Artikel ein Thema festlegen und alle Themen dann wiederum selbst mit eigenen Texten versehen und sie ausserdem noch miteinander verbinden. Und das bidirektional. Ich weiß nicht - irgendwie steige ich nicht ganz dahinter wofür das alles gut sein soll und warum es besser sein sollte als Tags.<br />
+Die Themen der Artikel kann man als einzelnen oder mehrere Tags festlegen. Haben z.B. zwei Artikel den gleichen Tag, sieht man, dass sie zueinander gehören (mehr oder weniger vom gleichen Thema handeln). Außerdem kann man mithilfe von Funktionen (welche im Endeffekt auch nur auf der Auswertung von Tags und Inhalt der Artikel basieren) wie z.B. "verwandte Artikel anzeigen" gleichzeitig auch themenähnliche Artikel finden.<br />
+Und die von dir gebrachten Beispiele für getypte Relationen finde ich auch irgendwie "überflüssig". Wenn man "Ivan Illich" mit dem Tag "Person" verbindet, weiß doch eigentlich jeder, wie er das im Kopf zu verbinden hat, oder? Die Richtung würde also auch einfach wegfallen.</p>
+<p>Oder: Du willst auf etwas ganz anderes hinaus, dass ich bis jetzt noch nicht kapiert habe? :)</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://www.relativwenigbartwuchs.de">wolfgang</a> <a href="/2009/02/23/heimweh-008-semantic-weblog#comment-6208" id="comment-6208" class="active">#</a>      </p>
+    <p>Hier bin ich jetzt auch kurz ausgestiegen :)</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

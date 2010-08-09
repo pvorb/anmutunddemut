@@ -1,0 +1,19 @@
+html {font-size:8pt; font-family:Verdana; margin:5%; line-height:150%;}
+body  { background-color: lightgrey; color:slategray}
+h1 {font-size:125%; font-weight:900; font-family:Verdana; letter-spacing:1em; color:snow; text-align:center; }
+h2 {font-size:120%; font-weight:900; font-family:Verdana; letter-spacing:1ex; color:snow; text-align:center; }
+h3 {font-size:115%; font-weight:900; font-family:Verdana; letter-spacing:0.5ex; color:snow; text-align:center; }
+h4 {font-size:110%; font-weight:900; font-family:Verdana; letter-spacing:0.5ex; color:snow; text-align:center; }
+h5 {font-size:105%; font-weight:900; font-family:Verdana; letter-spacing:0.5ex; color:snow; text-align:center; }
+p.img {text-align:center;}
+p.menu {text-align:center;}
+div.content {color:black; text-align:center;}
+div.form {color:black; text-align:left;}
+div.sample {text-indent:0%; line-height:100%;}
+a:link {text-decoration:none; color:slategray}
+a:visited {text-decoration:none; color:slategray}
+a:active {text-decoration:none; color:slategray}
+a:link.xl {font-family:Verdana; font-weight:bold; font-size:90%; text-decoration:none; color:slategray}
+a:visited.xl {font-family:Verdana; font-weight:bold; font-size:90%; text-decoration:none; color:slategray}
+a:active.xl {font-family:Verdana; font-weight:bold; font-size:90%; text-decoration:none; color:slategray}
+

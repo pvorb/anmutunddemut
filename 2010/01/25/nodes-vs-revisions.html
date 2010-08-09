@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Nodes vs. Revisions oder Hübschmachen für D7 | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2010/01/24/vorgezogene-neuwahlen-jetzt" />
+  <link rel="next" href="/2010/01/25/cyberwar" />
+  <meta name="path" content="/2010/01/25/nodes-vs-revisions" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="8388" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1264402861" />
+  <meta name="created-string" content="25. 01. 2010 - 08:01" />
+  <meta name="changed-timestamp" content="1264404013" />
+  <meta name="changed-string" content="25. 01. 2010 - 08:20" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/nodes-vs-revisions.jpg " />
+  <meta name="path" content="/2010/01/25/nodes-vs-revisions" />
+  <meta name="node-id" content="8388" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1264402861" />
+  <meta name="created-string" content="25. 01. 2010 - 08:01" />
+  <meta name="changed-timestamp" content="1264404013" />
+  <meta name="changed-string" content="25. 01. 2010 - 08:20" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Maschinen" href="../../../ressort/maschinen" />
+  <link rel="index" title="CCK" href="../../../lexikon/cck" />
+  <link rel="index" title="Drupal" href="../../../lexikon/drupal" />
+  <link rel="index" title="SQL" href="../../../lexikon/sql" />
+  <link rel="index" title="Views" href="../../../lexikon/views" />
+  <meta name="keywords" content="Maschinen, CCK, Drupal, SQL, Views" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-8388 arg01-node-8388" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2010/01/24/vorgezogene-neuwahlen-jetzt.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2010/01/25/cyberwar.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-68">  
+      <!-- start:node -->
+      <h2>Nodes vs. Revisions oder Hübschmachen für D7</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/nodes-vs-revisions.jpg ' alt='Nodes vs. Revisions oder Hübschmachen für D7'/></p>
+<!-- ende:teaserimage -->
+<p>Ein kleines Inside-Drupal-Thema noch. In Drupal kann man ja schon seit der Version 5 glaub ich Revisionen von Artikeln anlegen. Das führt dazu, dass jede Node zwei wichtige IDs hat. Die Node-ID und die jeweils aktuelle Revisions-ID. Viele Module, einschließlich der von mir programmierten, arbeiten nur mit der Node-ID, weil es sich dabei i.d.R. nicht um Inhalte oder Funktionen handelt, die man revisionieren möchte. Intern verwendet Drupal aber an vielen Stellen die Revisions-ID. Terms, Uploads und CKK. Und hier wird's häßlich. </p>
+<p>In Vorbereitung auf Drupal 7 wollte ich die Funktionen von ein paar meiner selbstgestrickten Module nach CCK und Views überführen. Der Hacken an der Sache: Meine Node-IDs sind ab irgendeiner Nummer nicht mehr identisch mit einen Revisions-IDs, weil ich wohl irgendwann mal eine Revision verwendet habe. Das macht den Import schwer, weil man die RevisionsID ja braucht. Also dachte ich, ich bin ein Schlaufuchs und setze einfach in allen Tabellen, die Revisions-IDs auf die Node-IDs. </p>
+<pre>UPDATE tabelle SET `vid` = `nid`</pre><p>
+Das hätte auch dufte geklappt, wenn auf den Tabellen, nicht ständig Keys gewesen wären. Und wenn ich nicht die Hälfte der nötigen Tabellen übersehen hätte. Und wenn auf der Revisions-Tabelle nicht ein Auto-Increment gewesen wäre. Jetzt läufts aber. Das Teaserimage Modul ist ersetzt. Das Feedimporter Modul folgt noch. Ebenfalls schon weggeworfen hab ich das Dashboard Modul. Das mache ich jetzt mit Views und Blöcken auf der Admin-Seite.</p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 25. 1. 2010</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Ressort:</span>
+        <a href="../../../ressort/maschinen.html" rel="ressort">Maschinen</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/cck.html" rel="lexicon">CCK</a>, 
+        <a href="../../../lexikon/drupal.html" rel="lexicon">Drupal</a>, 
+        <a href="../../../lexikon/sql.html" rel="lexicon">SQL</a>, 
+        <a href="../../../lexikon/views.html" rel="lexicon">Views</a>
+      </p><p id='meta-teaser'>~ Aufmacherbild: ffffound</p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://konnexus.net">Konstantin</a> <a href="/2010/01/25/nodes-vs-revisions#comment-7603" id="comment-7603" class="active">#</a>      </p>
+    <p>sehr gut. dieses aufräumen steht mir noch bevor. auf konnexus.net läuft ebenfalls teaserimage, feedimporter und dashboard.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://blog.fymmie.de">fym</a> <a href="/2010/01/25/nodes-vs-revisions#comment-7604" id="comment-7604" class="active">#</a>      </p>
+    <p>Habe heute Nacht im Traum verschroben entschieden: Mein Dashboard-Modul bleibt. Egal ob D7, D9 oder D13A. Aber was den Feedimporter angeht: Sag bitte Bescheid, wenn da was Neueres bei rauskommt.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2010/01/25/nodes-vs-revisions#comment-7605" id="comment-7605" class="active">#</a>      </p>
+    <p>@Konnexus: Ich weiß. Deswegen hab ich den Artikel geschrieben.</p>
+<p>@Fym: Entwicklungsentscheidungen im Traum fällen … das ist mit Sicherheit nicht die schlechteste Lösung, wobei mir meine erweiterte Adminseite gut gefällt.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://blog.fymmie.de">fym</a> <a href="/2010/01/25/nodes-vs-revisions#comment-7610" id="comment-7610" class="active">#</a>      </p>
+    <p>Ich würde an deiner Stelle das Dashboard vermissen. So einfach auf /admin draufgepappt - das ist doch unschön. Das ist geteilter Raum. Seufzend.</p>
+<p>Ich wollte mich aber eigentlich auch nur selbst korrigieren: Bescheid geben, wenn der Feedimporter aktualisiert ist? Pustekuchen. Klingt ja so, als hätte es die letzten paar Wochen mit dem SW-Modul nicht gegeben. Wie konnte ich nur? Also: Wenn du den Feedimporter mal aktualisiert haben solltest, pack's bitte als Repos auf github.</p>
+<p>&hellip; so fühlt sich das schon besser an :)</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2010/01/25/nodes-vs-revisions#comment-7614" id="comment-7614" class="active">#</a>      </p>
+    <p>Oh. Ne. Keine Neuerungen im Feedimporter.<br />
+Aber den könnte ich in der Tat mal hochspielen.</p>
+<p>Und was soll denn "Klingt ja so, als hätte es die letzten paar Wochen mit dem SW-Modul nicht gegeben." heißen … ich glaub ich bin gerade irgendwie … daneben.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

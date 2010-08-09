@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Semantic Weblog - mit Drupal 6 | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/impressum" />
+  <link rel="next" href="/2007/11/23/von-sargnagelschmiedehandwerk" />
+  <meta name="path" content="/2007/11/23/semantic-weblog-mit-drupal-6" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="5447" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1195837592" />
+  <meta name="created-string" content="23. 11. 2007 - 18:06" />
+  <meta name="changed-timestamp" content="1198230142" />
+  <meta name="changed-string" content="21. 12. 2007 - 10:42" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/uploads/2007/11/drupaltothebones.jpg" />
+  <meta name="path" content="/2007/11/23/semantic-weblog-mit-drupal-6" />
+  <meta name="node-id" content="5447" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1195837592" />
+  <meta name="created-string" content="23. 11. 2007 - 18:06" />
+  <meta name="changed-timestamp" content="1198230142" />
+  <meta name="changed-string" content="21. 12. 2007 - 10:42" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Bloggen" href="../../../lexikon/bloggen" />
+  <link rel="index" title="Drupal" href="../../../lexikon/drupal" />
+  <link rel="index" title="Semantic Web" href="../../../lexikon/semantic-web" />
+  <link rel="index" title="Semantic Weblog" href="../../../lexikon/semantic-weblog" />
+  <meta name="keywords" content="Bloggen, Drupal, Semantic Web, Semantic Weblog" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-5447 arg01-node-5447" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../impressum.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2007/11/23/von-sargnagelschmiedehandwerk.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-2">  
+      <!-- start:node -->
+      <h2>Semantic Weblog - mit Drupal 6</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/uploads/2007/11/drupaltothebones.jpg' alt='Semantic Weblog - mit Drupal 6'/></p>
+<!-- ende:teaserimage -->
+<p>Ok. <a href="http://anmutunddemut.de/2007/11/22/fertig-machen-zum-entern/">Es wird gewechselt</a>. Ich habe eben kurzentschlossen meine Drupal 5 Installation unter cybersamurai.de plattgemacht, um schon mal die 6er drauf zu ziehen. In diesem Artikel hier werde ich Schritt für Schritt erklären, wie ich mir Drupal eingerichtet habe, um damit so Bloggen zu können, wie ich will. </p>
+<p><strong>Semantic Weblog, voran!</strong></p>
+<h3>Inhalt</h3>
+<ul>
+<li>1. <a href="http://anmutunddemut.de/2007/11/23/semantic-weblog-mit-drupal-6/#installation">Drupal Installieren</a></li>
+<li>Exkurs: <a href="http://anmutunddemut.de/2007/11/23/semantic-weblog-mit-drupal-6/#module">Drupal-Module</a></li>
+<li>2. <a href="http://anmutunddemut.de/2007/11/23/semantic-weblog-mit-drupal-6/#urls">Schöne URLs</a></li>
+<li>Exkurs: <a href="http://anmutunddemut.de/2007/11/23/semantic-weblog-mit-drupal-6/#q">Die Variable q</a></li>
+<li>3. <a href="http://anmutunddemut.de/2007/11/23/semantic-weblog-mit-drupal-6/#favicon">Favicon setzen</a></li>
+<li>4. <a href="http://anmutunddemut.de/2007/11/23/semantic-weblog-mit-drupal-6/#user">Einstellungen für User</a></li>
+<li>5. <a href="http://anmutunddemut.de/2007/11/23/semantic-weblog-mit-drupal-6/#cron">Cronjob einrichten</a></li>
+<li>6. <a href="http://anmutunddemut.de/2007/11/23/semantic-weblog-mit-drupal-6/#locale">Lokalisierung</a></li>
+<li>7. <a href="http://anmutunddemut.de/2007/11/23/semantic-weblog-mit-drupal-6/#taxonomy">Kategorien, Taxonomien</a></li>
+<li>8. <a href="http://anmutunddemut.de/2007/11/23/semantic-weblog-mit-drupal-6/#nodetypes">Node-Typen</a></li>
+<li>9. <a href="http://anmutunddemut.de/2007/11/23/semantic-weblog-mit-drupal-6/#drafts">Drafts</a></li>
+<li>10. <a href="http://anmutunddemut.de/2007/11/23/semantic-weblog-mit-drupal-6/#comments">Kommentare einrichten</a></li>
+<li>11. <a href="http://anmutunddemut.de/2007/11/23/semantic-weblog-mit-drupal-6/#datumse">Datum und Uhrzeit</a></li>
+<li><a href="http://anmutunddemut.de/2007/11/23/semantic-weblog-mit-drupal-6/#dank">Dank und Respekt</a></li>
+</ul>
+<h3><a name="installation" id="installation"></a>1. Drupal installieren </h3>
+<p>Die gerade aktuelle Version ist die <a href="http://drupal.org/drupal-6.0-beta3">Drupal 6 Beta</a>, bald schon aber wird es den Download-Link auf der <a href="http://drupal.org">Drupal.org Startseite</a> geben. Drupal 6 hat gegenüber der 5 einiges an MB zugelegt, hat mit 4 MB aber immer noch einen verdammt sexy BMI.</p>
+<ul>
+<li>Dann den ganzen Spaß per FTP hochladen.</li>
+<li>Dem Ordner einen gefälligen Namen geben.</li>
+<li>Im Ordner einen Ordner mit dem Namen "files" anlegen und schreibbar machen.</li>
+<li>Jetzt eine Domain auf den Ordner legen und die Domain über den Browser.</li>
+<li>Den Anweisungen folgen und beim Punkt "Database Configuration / Advanced Options" empfehle ich, ein Prefix wie "drupal_" zu verwenden. Ich mache das auf jeden Fall, weil meine Drupal Tabellen in der Datenbank landen, in der auch mein Wordpress Tabellen liegen, damit ich auf die von Drupal aus möglichst einfachen Zugriff habe.</li>
+</ul>
+<p>By the way: die Installation by Drupal 6 ist wirklich slick. Da haben sie sich echt Mühe gegeben.</p>
+<h3><a name="module" id="module"></a>Exkurs: Drupal-Module</h3>
+<p>Drupal-Module lassen sich wie Wordpressplugins über ein Menü an und ausschalten, das sich unter <strong>admin/build/modules</strong> befindet. Dort sieht man gleich, dass Drupal nach der Installation viel mehr Module hat als Wordpress Plugins und von diesen Module bereits einige aktiviert sind. Das liegt daran, dass Module so tief in der Architektur von Drupal verankert sind, dass bereits viele Kernfunktionen als Modul umgesetzt wurden.<br />
+Schon hier schimmert Drupal Überlegenheit.</p>
+<h3><a name="urls" id="urls"></a>2. Schöne URLs</h3>
+<p>Bei meinem Mac ist latürnich die .htaccess Datei hängen geblieben. Darum habe ich sobuz bei Drupal die <a href="http://cvs.drupal.org/viewcvs/drupal/drupal/.htaccess?view=markup">Drupal .htaccess Datei</a> kopiert, auf dem Server angelegt. Ich musste noch folgende Zeile einkommentieren:<br />
+# RewriteBase /<br />
+Danach konnte ich problemlos unter <strong>admin/settings/clean-urls</strong> die schönen URLs anschalten.</p>
+<p>Damit Artikel und Benutzer und alles andere aber richtig schöne URLs bekommen, benötigt man noch das Modul <a href="http://drupal.org/project/pathauto">Pathauto</a> das findet man - wie alle Module, die nicht zum Kern gehören - unter <a href="http://drupal.org/project/Modules/name">drupal.org/project/Modules/name</a>.<br />
+Hat man das Modul runtergeladen und ausgepackt, lädt man es par FTP wieder hoch uns zwar am besten in den Ordner <strong>sites/all/modules</strong>.</p>
+<p>Danach kann man in unter <strong>admin/build/modules</strong> sehen, dass Drupal 5 Module nicht kompatibel sind zu Drupal 6. Wer hätte das gedacht? Damnit. Damit wird der Wechsel für's erst etwas ausgebremst. <a href="http://drupal.org/node/114774">Die Liste</a>, der Dinge die man beim Konvertieren von 5er Modulen nach 6 beachten muss ist auch nicht zu kurz.</p>
+<p>Nichtsdestotrotz kann man das zum Kern gehörige Modul <strong>Path</strong> schon mal anschalten. Es erlaubt, dass Benutzer von Hand Alias Pfade zu den von Drupal automatisch angelegten Pfaden erstellen können. Das muss ich vielleicht erklären. </p>
+<h3><a name="q" id="q"></a>Exkurs: Die Variable q</h3>
+<p>Drupal hat per Default für fast alle Anfragen und Seiten eine einzige Variable, nämlich $q. Der Inhalt von $q ist all das was nach der Domain kommt und was ich hier immer so hin schreibe, wie z.B. <strong>admin/build/modules</strong> oder <strong>node/1</strong> oder <strong>user/1/edit</strong>. Drupal zerlegt $q an Hand der Schrägstriche und schaut nach, welches Modul für sich den von links gesehen ersten Teil von $q registriert hat und übergibt dann $q an das Modul zu weiterverarbeitung. </p>
+<p>So kann man als Modul-Entwickler sehr sehr einfach eigene URLs bei Drupal anmelden, die dann von ganz alleine funktionieren. Keine Regexe und Modrewrites. Brillant oder? Drupal hat per Default schon einen Haufen eigener URLs und diese sind fast immer so einfach gehalten wie möglich. Die Node (grundlegende Beitragsform, sowas wie Artikel) mit der ID 1 ist über <strong>node/1</strong>.</p>
+<p>Weil man aber für die Node 1 lieber die URL <strong>kolophon/impressum</strong> hätte, gibt es in Drupal eine Alias Mechanismus, der es erlaubt beliebige Werte für $q auf irgendeinen anderen Wert umzuschreiben. Und das sogar mehrfach. So könnte ich für <strong>node/1</strong> folgende Aliase anlegen <strong>kolophon/impressum</strong> und <strong>2001/09/10/impressum</strong> und <strong>seiten/impressum</strong>. Und unter allen URLs würd das gleiche Impressum gefunden werden. Brillant oder?</p>
+<p>Das Modul <strong>Path</strong> sorgt dafür, dass man überhaupt alternative Aliase anlegen kann und das Modul <strong>Pathauto</strong> erlaubt es Aliase automatisch nach bestimmte Regel anlegen zu lassen, so wie man in Wordpress im Backend die Struktur der Permalinks ändern kann.</p>
+<h3><a name="favicon" id="favicon"></a>3. Favicon ersetzen</h3>
+<p>Das Favicon findet sich unter <strong>misc/favicon.ico</strong> und läßt sich entsprechen einfach per FTP ersetzen.</p>
+<h3><a name="user" id="user"></a>4. Einstellungen für User</h3>
+<p>Drupal ist als Community-System bekannt und so ist es kein Wunder, dass sich per Default Besucher als Mitglieder registrieren lassen können. Weil ich das sooo frei auf meinem Blog aber erstmal nicht will, schalte ich die Option "<em>Public registrations</em>" unter <strong>admin/user/settings</strong> einfach auf <em>"Visitors can create accounts but administrator approval is required.</em>".</p>
+<h3><a name="cron" id="cron"></a>5. Cronjob einrichten</h3>
+<p>Drupal hat einen eigenen Cronjob, der regelmäßig ausgeführt werden sollte. Der Cronjob wird kann über "cron.php" auch von Hand angestoßen werden. Mein Hoster allerdings bietet die Möglichkeit einemal am Tag eine beliebige URL aufzurufen. Da habe ich einfach "cybersamurai.de/cron.php" eingetragen.<br />
+Über den Cronjob wir bei Drupal u.a. der eigene Suchindex erstellt und die Feeds im Aggregator (dem Drupal internen Feedreader) aktualisiert. Seit der Version 5.2 prüft der Cronjob auch, ob es für den Kern oder einzelne Module Updates gibt.</p>
+<h3><a name="locale" id="locale"></a>6. Lokalisierung</h3>
+<p>Ich habe Drupal erstmal auf Englisch installiert, was aber auch bedeutet, das im Frontend, für meine Leser einige englische Begriffe angezeigt werden. Anders als bei Wordpress wird bei Drupal praktisch jede Textausgabe über eine Funktion gesteuert, die für die entsprechende Sprache sorgt. Dafür sorgt das <strong>Locale</strong>  Modul, das zum Kern gehört, aber nach der Installation noch nicht angeschaltet ist. </p>
+<p>Einfach einen Hacken vor "Locale" machen und das Lokalisierungs-Modul ist aktiv. Unter <strong>admin/settings/language</strong> kann man jetzt weitere Interface-Sprache aktivieren und verwalten. Dort kann man jetzt über den Menüpunkt "Add Language" eine weitere Sprache hinzufügen. Da habe ich fein "German" gewählt, was aber noch nicht bedeutet, dass nun alles in Deutsch ist. Dafür muss man zunächst die Deutsche Übersetzungsdatei von <a href="http://drupal.org/project/translations">drupal.org/project/translations</a> herunter laden. Dort gibt es aber noch keine 6er Übersetzungsdateien für German, so dass ich da auch erstmal die Finger von lasse.</p>
+<h3><a name="taxonomy" id="taxonomy"></a>7. Kategorien, Taxonomien</h3>
+<p>Durpal bringt ein sehr mächtiges Modul mit zur Verwaltung von Kategorien. Während es bei Wordpress erst seit der Version 2.3 Kategorien und Tags gibt, ist Drupal mit dem Taxonomy-Modul schon sehr lange sehr flexibel augestellt und es bildet eine wichtige Säule für das Semantic Weblog. </p>
+<p>Ein wichtiger Punkt ist, dass man bei Drupal für unterschiedliche Zwecke unterschiedliche Vokabulare anlegen kann. Ein Vokabular - so die Theorie - sollte nach Möglichkeit Begriff je eines "Typs" enthalten. Ich werde einfach mal erklären, welche Vokabulare ich mir mit welchem Zweck eingerichtet habe. Die Taxonomie-Verwaltung befindet sich unter <strong>admin/content/taxonomy</strong>. Über den Link "<strong>Add Vocabulary</strong>" in der Reiternavigation der Seite kann man unter <strong>admin/content/taxonomy/add/vocabulary</strong> ein neues Vokabular anlegen.</p>
+<ol>
+<li><strong>Lexikon.</strong> - Das erste Vokabular, das ich anlegt ist auch gleichzeitg das wichtigste für das Semantic Weblog. Ich nenne es Lexikon, weil es alle Begriffe enthalten soll, die später mein persönliches Lexikon bilden sollen. Damit das anlegen einfach wird, habe ich bei den Settings "Tags" gewählt. Dadurch habe ich im Formula nur ein Freitextfeld in das ich Begriffe für das Lexikon - mit type-ahead - kommasepariert eingeben kann. Weil man ja auch mal Unfug schreibt, der keine Zuordnung zu einem Lexikon setze ich das Vokabular nicht auf "Required".
+</li>
+<li><strong>Ressort</strong> - Das sind die klassischen Kategorien, die man auf Blogs und in Nachrichtenseiten findet. Meine Ressorts, haben sich im Laufe der Zeit "herausgebildet":
+<ul>
+<li>Denken</li>
+<li>Leben</li>
+<li>Menschen</li>
+<li>Maschinen</li>
+<li>Kultur</li>
+</ul>
+<p>Weil ein Artikel ja mal in mehr als ein Ressort passt und damit auch jeder Artikel ein Ressort bekommt, habe ich dafür "Multiple Select" und "Required" gewählt.
+</p></li>
+<li><strong>Format</strong> - Man weiß das ja auch so: Nicht jeder Text in einer Zeitung oder Zeitschrift hat das gleiche journalistische Genre. Ein Text ist eine Meldung oder Nachricht, ein Text eine Meinung oder ein Kommentar, ein anderer Text ein Interview oder eine Rezension. <a href="http://anmutunddemut.de/2007/04/10/was-gutes-blogdesign-ist-journalistische-darstellungsform/">Vor ein paar Monaten</a> habe ich bei Wikipedia dann mal eine List mit Journalistischen Darstellungsformen gefunden, und dachte: Das ist super. Das kann ich prima für mein Blog gebrauchen, die benutz' ich. Leider gibt es in Wordpress nur eine Taxonomie und die Ressorts und Formate zu mischen, fand ich irgendwie häßlich und hab es dann doch gelassen. In Drupal kann ich sie aber in zwei unterschiedliche Vokabulare stecken und glücklich sein.
+<p>Die Liste meiner Formate sieht wie folgt aus:</p>
+<ul>
+<li>Nachricht</li>
+<li>Lesezeichen</li>
+<li>Moblog</li>
+<li>Leitartikel</li>
+<li>Bericht</li>
+<li>Reportage</li>
+<li>Porträt</li>
+<li>Interview</li>
+<li>Kommentar</li>
+<li>Rezension</li>
+<li>Lektion</li>
+<li>Liste</li>
+<li>Zitat</li>
+<li>Manifest</li>
+</ul>
+<p>Weil sich die einzelnen Format ausschließen, jeder Beitrag aber eine Form haben soll, habe ich "<strong>Multiple Select</strong>" <strong>nicht</strong> angehackt dafür aber "<strong>Required</strong>".
+</p></li>
+<li><strong>Serie</strong> - Weil manchmal mehrere Artikel eine zusammenhängende Serie bilden, habe ich vorsorglich noch ein Vokabular "Serie" angelegt. Mögliche Serien bei mir dafür könnten "Drupallernen" oder "<a href="http://anmutunddemut.de/index/register?letter=T#Totgeburt">Nacht der lebenden Totgeburten</a>" sein.</li>
+</ol>
+<p>Ich hoffe, aus der Erklärung ist klar geworden, wofür unterschiedliche Vokabulare nützlich und warum sie richtig sind. Aus der sicht des Semantic Weblog kann man auch sagen, dass die semantischen Gemeinsamkeiten der Begriffe nahelegen, sie gemeinsam zu gruppieren.</p>
+<h3><a name="nodetypes" id="nodetypes"></a>8. Node-Typen</h3>
+<p>Wordrpress bringt im großen und ganzen drei unterschiedlichen Typen von Beiträgen mit: Posts, Pages und Attachments (ja, die werden auch in der Post-Tabelle gespeichert.) Damit ist dann auch schon das Ende der Fahnenstange erreicht und der durchschnittliche Blogger braucht auch gar nicht mehr. Um aus einem Bog aber ein Semantic Weblog, ein KMS zu machen, bedarf es ein bischen mehr.<br />
+Bei Drupal heißen alle Beiträge "Nodes". Ein Node ist soz. ein abstrakte Oberklasse für alle Inhalte. Drupal 6 bringt zwei node Typen mit "Page" und "Story". Page ist ziemlich identisch zu verwenden, wie Pages bei Wordpress, für Vorworte, Impressumse, und dergl. mehr. Drupal aber hat bereits im Kern eine Funktion, die es dem Admin erlaubt selber über ein Interface neue Node-Typen anzulegen. Gleichzeitig kann man auch über ein Modul neue Nodetypen erzeugen, quasie aus dem Code heraus. Ich bin mir noch nicht sicher, welchen Weg ich gehe, aber ich kenne schon die wichtigesten Node Typen, die ich für das Semantic Weblog brauche und ich weiß, was sie können sollen.</p>
+<p><strong>1. Blog-Artikel</strong><br />
+Blog-Artikel bilden latürnich das Rückgrat eines jeden Blogs und damit auch den Semantic Weblogs. Sie bestehen ganz regulär aus einer Überschrift und einem Textteil. Fertig. Sie bilden den Strom und die Masse der Beiträge. Auf sie werden die Vokabulare "Lexikon", "Ressort", "Format" und "Serie" angewendet. (Ja, dem einen oder anderen ist es vielleicht schon aufgefallen: man kann in Drupal definieren, für welche Nodeypen ein Vokabular gelten soll. Extrem Praktisch.)<br />
+Die Blogartikel sind der Strom der über die Semantische Landkarte meines Wissens fließt.</p>
+<p><strong>2. Lesezeichen</strong><br />
+Zwischen dem Strom und der Karte gibt es noch eine Grauzone in der es mehrere teil-semantische und halb-nachhaltige Nodetypen gibt. Der erste davon sind Lesezeichen:<br />
+Ich bin ja raus bei Delicious. Mein Content ist mein Content. Deshalb will ich meine Bookmarks jetzt bei mir selber verwalten. Ein Lesezeichen ist im Grunde wie ein Blog-Artikel, besteht also aus Titel, Text und einem extra Feld für die URL. Auf das Lesezeichen können die Vokabulare "Lexikon", "Ressort" und "Format"" angewendet werden.</p>
+<p><strong>3. Quellen</strong><br />
+Während des Studium und meiner Promotion habe ich, wie wohl jeder Student ein nette Quellensammlung aufgebaut. Bücher, Artikel, Antologien und dergl. mehr. Das schöne an meinem Studium war, dass ich praktisch alles, was ich lernen durfte aus tiefstem Eigeninteresse und schierer Neugier gelernt habe. Und da wo ich heute stehe; der, der ich heute bin, bin ich <strong>weil</strong> ich all das lesen, aufsaugen konnte. Dementsprechend gehören all die tollen Quellen auch in mein Blog, in mein Semantic Weblog.<br />
+Ich muss mal schauen, wie strukturiert ich hier Quellenangaben sammeln möchte. Die klassischen Quellenverwaltungen haben ja für jede diskrete Information ein eigenes Textfeld. Das könnte ein bisschen aufwendig werden und ist ehrlich gesagt nicht nötig wie ich finde. Ich glaube ich werde einen aussagekräftigen Titel wählen, dann die Quellenangabe in einer Standard-Zitation in den Textkörper schreiben und Autoren, Titel und Stichwörter als Tags in das Vokabular "Lexikon" eintragen. Ja, so werde ich das glaube ich machen.</p>
+<p><strong>4. Lexikon-Artikel</strong><br />
+Lexikon-Artikel bilden das Rückgrat des Semantischen Netzes. Die Idee ist, dass automatisch, für jeden Eintrag im Vokabular "Lexikon" ein Lexikon-Node mit dem selben Titel erstellt wird. In den Text kann ich dann nach Belieben einen lexikonesquen Text zu dem Begriff schreiben. Die Zuorndung zum Begriff im Lexikon-Vokabular, soll aber explizit in einem eigenen Feld gespeichert werden, damit ich den Titel des Artikel ggf. verständlicher machen kann.<br />
+Zusätzlich zum Titel und der Stichwort-Zuordnung soll ein Lexikon-Artikel noch ein Feld mit "Sortierungs-Titel" bekommen. Das habe ich in meiner Zeit im Lexikon-Verlag gelernt: man will Lexikon-Artikel immer gerne mal in einer anderen Reihenfolge als das Alphabetischen sortieren. Personen bspw, da wären Stichwort und Title wohl eher in der Form "Vorname Nachname". Einsortieren möchte man die aber nach "Nachname Vorname". Außerdem hat man immer Freude mit Homonymen. Adler z.b. gibt es Personen, Orte, Eisenbahnen und ach ja, Tiere, die so heißen. Die Wikipedie lößt Homonyme durch Ergänzungen in Klammern auf, was aber nicht die Sortierreihenfolge verändert. Deshalb, wird's bei mir dafür ein extra Feld geben.</p>
+<h3><a name="drafts" id="drafts"></a>9. Drafts</h3>
+<p>Drupal kennt das Konzept "Draft" nicht so richtig. Aber, es gibt die Möglichkeit, im Formular in dem man eine Node nuter <strong>node/add/[nodetype]</strong> anlegt unter den "Publishing Options", den Hacken bei "Published" wegzumachen. Das hat defakto den gleichen Effekt. Möchte man später alle Drafts sehen, kann man unter <strong>admin/content/node</strong> als <strong>status</strong> den Wert <strong>unpublished</strong> wählen.</p>
+<h3><a name="comments" id="comments"></a>Kommentare einrichten</h3>
+<p>Man möchte natürlich gerne Kommentare zu den Nodes dazu haben. Anders als bei Drupal 5 werden die globalen Einstellungen in 6 pro Node-Type gemacht. Dafür muss man unter <strong>admin/content/types</strong> bei dem Content-Type "edit" drücken, dessen Kommentareinstellungen man bearbeiten möchte, also bspw. <strong>admin/content/types/story</strong>. Die Kommentareinstellungen finden sich dann im zugeklappten Menüpunkt "Comment settings" und sind vielfältig. Sie reichen von der Anzahl der Kommentare pro Seite, über die Sortierungbis hin zu einem Kontrollpanel, dass jeden Benutzer selber entscheiden läßt, wie er die Kommentare gerne dargestellt hätte. So Wordpress, und jetzt kommst Du!</p>
+<p>Ich mag meine Kommentare ja chronologisch sortiert, die ältesten zuerst, ohne Vorschau, für alle.</p>
+<p>Was jetzt noch fehlt ist eine Funktion die, wie bei Wordpress, dem Autor eine Email zuschickt, wenn es einen neuen Kommentar zu einem seiner Nodes gibt. Da habe ich schon ein Modul für gesehen, das muss ich aber nochmal eruieren, sobald die D6 gelauncht und die meisten Module portiert wurden.</p>
+<h3><a name="datumse" id="datumse"></a>Datum und Uhrzeit</h3>
+<p>Drupal hat per Default Amerikanische Datumsformate und formatiert die meinsten Datumse auch schon selber in einer der drei KAtegorien <strong>short</strong>, <strong>medium</strong> und <strong>long</strong>, was wann angewendet wird, entscheiden Modul- oder Themeentwickler, je nach dem. Wie die jeweiligen Formate allerdings aussehen, kann man selber einstellen unter <strong>admin/settings/date-time</strong>, entweder aus vorangebotenen, oder mittels der Syntax der PHP funktion <a href="http://de.php.net/manual/de/function.date.php">date()</a> nach eigenem Dafürhalten.</p>
+<h3><a name="dank" id="dank"></a>Dank und Respekt</h3>
+<p>Drupal to the Bones Logo crafted by the mighty <a href="http://morten.dk/blog/mortendk/playing-around-druplicon">Morten.dk</a>.</p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 23. 11. 2007</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/bloggen.html" rel="lexicon">Bloggen</a>, 
+        <a href="../../../lexikon/drupal.html" rel="lexicon">Drupal</a>, 
+        <a href="../../../lexikon/semantic-web.html" rel="lexicon">Semantic Web</a>, 
+        <a href="../../../lexikon/semantic-weblog.html" rel="lexicon">Semantic Weblog</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://www.patmo.de/">Patrick M.</a> <a href="/2007/11/23/semantic-weblog-mit-drupal-6#comment-4102" id="comment-4102" class="active">#</a>      </p>
+    <p>Nach dem Lesen deines Artikels bin ich schon richtig auf die finale 6er Version gespannt, aber bis die draußen ist, werde ich mich noch ein wenig gedulden. Zwar habe ich das damals bei meiner 5er auch so gemacht, aber es heisst ja nicht umsonst "Never change a running system".</p>
+<p>Deiner Begeisterung für Drupal kann ich mich nur anschließen. Ich habe den Schritt von Joomla zu Drupal niemals bereut. Joomla war schon sehr gut, aber es hat mich gestört, dass es dort keine vernünftige Möglichkeit für Trackbacks und Kommentare gab und wenn nur gegen Bares. Eine Zeit lang hatte ich zwar auch mal an Wordpress gedacht, aber nein, ich würde mein Drupal heute nicht mehr gegen andere Systeme tauschen wollen :)</p>
+<p>Vielen Dank für diesen wirklich sehr guten Beitrag.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2007/11/23/semantic-weblog-mit-drupal-6#comment-4103" id="comment-4103" class="active">#</a>      </p>
+    <p>Da die 6er in der Tat noch Bugs hat, wie ich auch schon feststellen musste und da bisher v.a. fast kein Modul portiert wurde, würde ich auch jetzt dringend von einem Wechsel oder Upgrade abraten. Ich mach das jetzt nur schonmal, damit ich diese Doku schreiben kann. Später möchte ich daraus nämlich evtl ein  machen.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>XHTML CSS and the purity of Markup | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2004/03/13/sonnenuntergang-3" />
+  <link rel="next" href="/2004/03/15/of-cones-und-pompeln" />
+  <meta name="path" content="/2004/03/14/xhtml-css-and-the-purity-of-markup" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="1025" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1079278860" />
+  <meta name="created-string" content="14. 03. 2004 - 16:41" />
+  <meta name="changed-timestamp" content="1197125919" />
+  <meta name="changed-string" content="08. 12. 2007 - 15:58" />
+  <meta name="creator" content="ben_" />
+  <meta name="path" content="/2004/03/14/xhtml-css-and-the-purity-of-markup" />
+  <meta name="node-id" content="1025" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1079278860" />
+  <meta name="created-string" content="14. 03. 2004 - 16:41" />
+  <meta name="changed-timestamp" content="1197125919" />
+  <meta name="changed-string" content="08. 12. 2007 - 15:58" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Markup Remarks" href="../../../ressort/markup-remarks" />
+  <meta name="keywords" content="Markup Remarks" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-1025 arg01-node-1025" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2004/03/13/sonnenuntergang-3.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2004/03/15/of-cones-und-pompeln.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full age-6">  
+      <!-- start:node -->
+      <h2>XHTML CSS and the purity of Markup</h2>
+
+<div>
+<p>During the past Months I had to polish my knowledge and abilities in HTML. As I am at first place working with XML-technoliges and only at the second place familiar wih HTML and CSS for a few years now, I was quite happy, the webdesigners all around the web, are more and mor interested in making their websites valid to some documentgrammar, and what's more important to keep it free from tagabuse.</p>
+<p>But, what's quite funny, is the fact, that there are some problems with keeping XHTML valid, free of tagabuse AND stay true to the concept of "semantic markup":<br /><br />
+HTML was designed to markup linear scientific text, that could form a hypertext. And if you've ever seen a scientific article, you shure know, that it's not [typo]graphically challanging.<br />
+So HTML was desing to markup Texts, which presentations were meant to be very close to printtext. As HTML had a rocket-like carreer not only being the main Language of the WWW but also coming into the computer-age of multimedia and highly-sophisticated Interfaces, HTML quickly had to do much more than only structure and present scientifc articles:</p>
+<p>Webdesigners and User developed Intros, Menus, Navigations, Orientations, complex Informationarchitectures for huge Websites, gamelike plugins; in a few words:<br /><br />
+An almost whole new 2D [and sometimes even 3D] medium.</p>
+<p>Of course HTML is not fully appropriate to markup all these functions. Actually it should not even be almost appropriate to do so. But, hey, considering, it once was developed to markup tyoprgaphically and structurally boring [most times even textually boring] scientific articles, it has done quite well.</p>
+<p>HTML along with XML has general problems in marking up<br />
+things like websites:</p>
+<p>HTML and XML are both desinged to markup text.<br />
+Mostly linear text. Therfore it's main structur is tree-like, include the "depth-before-width" mechanism to get it linear.Webdesign, Interfacedesign and Informationdesign, are at least twodimensional, if not threedimensional or [incase of Information Architecture] n-dimensional. If you try to press structures like these in a tree, you'll hav a hard time.</p>
+<p>Menus usually are o the left or on the right of the ?main? content, but in HTML you HAVE to place them befor or afterwards the content. But there a no good reasons for choosing neither one or the other way. But on the otherhand the order of the ?p"-elements inside your content is important, so somewhere is a gap in the semantics of your content?</p>
+<p>This problem is even more obvious at the places where XML tries to markup somethings that's completly un-tree-like: like topic Maps. Sure, you can mark it up, but you have a hard time, getting the information out there in a meaningfull way...
+</p>
+<p>The set of Elements and Attributes, that come up with HTML is nolonger appropriate to the different semantic objects, that are contained inside a website. So webdesigners<br />
+have to look for workarounds: They use blind-tables or divtags, or spans, or whatever...
+</p>
+<p>Now the followers of the path of the pure Markup say, "this is bad! You didn't completly divide Markup from presentation."</p>
+<p>And I say: Sure, I can't. Theres now way to design a state-of-the art website, without leaving the text-orineted-paradigm of HTML. So in a way, you have to hack HTML. But that's no problem, as long as you do not leave the unspoken agreement between the W3C, webdesigners and HTML-Exploiters, like browsers-programmes or searchengine-programmers. This agreement is about the "meaning" of parts of your markup. "h1" should be used to markup the name of your page; "strong" should be used to markup inlinetext which seperates from it's surrounding text in  a way that it is more important... *wow*...</p>
+<p>For the W3Cs sake HTML has the "div" and the "span" Element to group and markup any of your data, if you need it. The only common-meaning, is, that it groups the content inside it's tags together... They could be used unviersally.</p>
+<p>What's a real lack in HTML is the missing of futher<br />
+general Attributes besides "id" and "class" like "type", "meta", "topic", "index", which would really help dividing the different functional levels of a website. As long as we don't have a unviersal Markuplanguage of 2D/3D interactive Interfaces for nonlinear, multimedia Content, we have to workaround with HTML in the way, that we use general Elements and Attributes, so the supprot for that could be a bit better...</p>
+<p>
+I?m not sure wether there will be a better semantic Markuplanuguage for the WWW than HTML, but right now it?s to early to design it, because our medium ist still to young, and things develop to fast, to design an allembracing Markup of 2D/3D interactive Interfaces for multimedia Content.
+</p>
+<p>We have to workaround with HTML but that does not mean, that we ought to produce tag-soup all along. Use HTML, as semantic as it gets, and if you reach the borders of it, hack it! But keep semantics in mind.</p>
+<p>If you act like this, you?ll get 99% XHTML 1.1. valid Markup, that semantically quite fine, but not maybe not as good as it might be in a far more advanced Markuplanguage. So I think,there?s no need for ?the myth of css? or any semi-religous battles around the purity of Markup?</p>
+</div>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 14. 3. 2004</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Ressort:</span>
+        <a href="../../../ressort/markup-remarks.html" rel="ressort">Markup Remarks</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+
+
+    <div id="comments">
+      <!-- start:comments -->
+      <hr/>
+      <h2>Kommentare</h2>
+
+      <!-- Last Comment standing -->
+
+      <!-- end:comments -->
+    </div>
+
+    <!-- start:comment-form -->
+    <div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+    <!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

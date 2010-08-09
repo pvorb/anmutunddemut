@@ -1,0 +1,14 @@
+body {background-color:bone; color:gray; font-family:Verdana, Arial; }
+table {align:center; }
+td{padding:25px; border-width:1px; border-style:solid; border-color:black; text-align:center; letter-spacing:1em;}
+
+table.frame{width:100%;}
+td.frame {border-width:0px; }
+
+strong.red{color:red; }
+
+a:link {text-decoration:none; border-width:0; border-color:black;}
+a:visited {text-decoration:none; border-width:0; }
+a:active {text-decoration:none;  border-width:0; }
+
+img {border-width:0cm; }

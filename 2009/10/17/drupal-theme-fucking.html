@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Drupal Theme Fucking | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2009/10/16/the-veils-sun-gangs" />
+  <link rel="next" href="/node/8123" />
+  <meta name="path" content="/2009/10/17/drupal-theme-fucking" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="8122" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1255781387" />
+  <meta name="created-string" content="17. 10. 2009 - 14:09" />
+  <meta name="changed-timestamp" content="1255790541" />
+  <meta name="changed-string" content="17. 10. 2009 - 16:42" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/drupalthemefucking.jpg" />
+  <meta name="path" content="/2009/10/17/drupal-theme-fucking" />
+  <meta name="node-id" content="8122" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1255781387" />
+  <meta name="created-string" content="17. 10. 2009 - 14:09" />
+  <meta name="changed-timestamp" content="1255790541" />
+  <meta name="changed-string" content="17. 10. 2009 - 16:42" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Maschinen" href="../../../ressort/maschinen" />
+  <link rel="index" title="Drupal" href="../../../lexikon/drupal" />
+  <link rel="index" title="Theme" href="../../../lexikon/theme" />
+  <meta name="keywords" content="Maschinen, Drupal, Theme" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-8122 arg01-node-8122" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2009/10/16/the-veils-sun-gangs.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../node/8123.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-0">  
+      <!-- start:node -->
+      <h2>Drupal Theme Fucking</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/drupalthemefucking.jpg' alt='Drupal Theme Fucking'/></p>
+<!-- ende:teaserimage -->
+<p>Ich weiß, hier lesen wenigstens zwei Drupal-Blogger mit … ich <a href="http://anmutunddemut.de/2009/10/13/die-grosse-buehne">bin ja gerade dabei</a> wieder ein neues Theme zu basteln. Und dieses Mal hab ich keinen Bock mehr, für jedes Feautre und jede Änderung ein Drupal-Modul mit Themeing-Funktionen zu programmieren. Ich will die Freiheit haben, in meinem Theme alle nötigen Rohdaten zu haben und dann dort mein HTML zu bauen. What Theming is all about. Zu dem Zweck werde ich nun doch noch einmal ein Modul schreiben, dass mir diverseste Daten verfügbar macht. Mit folgenden Sachen fange ich schonmal an.</p>
+<p><strong>Die Tabs</strong> sind wohl das Häßlichste was Drupal sich hat einfallen lassen. Im Admin-Bereich geht das noch halbwegs aber auf auf Node-Ebene fühle ich mich echt vergewaltigt, mit den Dingern immer mitten im Artikel. </p>
+<p><strong>Die Links</strong> sind auch ziemlich krank. Nicht nur steht da immer was anderes drin, je nachdem wo man die Node anzeigt … nein, die sind auch obendrein noch kein Teil des Node-Objektes. Was für ein Kack.</p>
+<p><strong>Seitentypen</strong> gibt es in Drupal eine ganze Reihe … Startseite, Terms-Seite, Such-Seite, Node-Seite … leider muss ich mir im Theme ständig mittels arg() selber zusammenreimen, auf was für einem Seitentyp ich mih befinden.</p>
+<p><strong>Nodetype</strong> sind zwar schön und gut und das Node-Objekt, das mir im Rendering zur Verfügung steht ist zwar schon ganz nett, aber es ist superprkatisch, wenn einem ein guter Teil der Informationen auch im CSS zur Verfügung steht. Derzeit hab ich im Theme eine Funktion, die mir diverse CSS-Klassen an mein äußerstes Node-HTML-Element dran hängt</p>
+<p><strong>Die system.css</strong> ist ein <em>fucking pain in the ass</em>. Die werf ich mal gleich als erstes raus. Was mir die auf den Sack geht. Ne, ne, ne. Im Backend mag die ja noch taugen, aber im Frontend ist die echt die Hölle. </p>
+<p><strong>Im Grunde</strong> wird das also ein Modul das zwei Dinge macht:<br />
+1. Es pumpt Daten direkt ins Theme, die dann da als Arrays oder Objekte zu Verfügung stehen oder bestehende Objekte und Arrays ergänz, wie bspw. das Node-Array.<br />
+2. Es stellt Funktionen breit, die ich im Theme verwenden kann um an DATEN ranzukommen.</p>
+<p>Any other Ideas? Gerne auch Erfahrungen? Wo haben euch im Theming, Daten und Infos gefehlt? Sonst noch Vorschläge?</p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 17. 10. 2009</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Ressort:</span>
+        <a href="../../../ressort/maschinen.html" rel="ressort">Maschinen</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/drupal.html" rel="lexicon">Drupal</a>, 
+        <a href="../../../lexikon/theme.html" rel="lexicon">Theme</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://blog.fymmie.de">fym</a> <a href="/2009/10/17/drupal-theme-fucking#comment-7065" id="comment-7065" class="active">#</a>      </p>
+    <p>Na, da bin ich drauf gespannt. Anwenderfreundlicheres Theming hat Drupal so bitter nötig, wie Wordpress guten Code. Mag an meinem Theming-Geschreibsel liegen, aber: wenn ich nach Monaten längerer Zeit nachschauen muss, in welcher Datei/Funktion ich Veränderung x bewerkstelligt habe, dann stinkt das Theming zwangsläufig (abgesehen von meinem wohl miesen Gedächtnis). Anmerkungen: </p>
+<p>Die ersten zwei Punkte verstehe ich nicht ganz. a) sind die <strong>Tabs</strong> doch noch am ehesten leicht rauszuschmeißen/zu modifizieren; "im Artikel" sollten sie ja ohnehin nicht vorkommen(?)<br />
+b) unterschiedliche <strong>Links</strong>? Hm?</p>
+<p><strong>Seitentypen</strong>: Ja, ja und nochmals ja. arg() mittels Modul auf bessere Art und Weise zu abstrahieren wäre ungemein hilfreich. Ein bisschen weniger Drupal &amp; ein bisschen mehr WP-like (Conditional Tags) lautet die Devise.</p>
+<p>Im Übrigen &amp; nur kurz angedacht: Wäre es eine Überlegung wert, auch die Node-Anzahl je Seitentyp per Modul definierbar/einstellbar zu machen? <em>Das</em> hat mir damals beim Theming Kopfschmerzen bereitet. Da ist Drupal ungemein starr.</p>
+<p><strong>Nodetypen</strong>: Was genau sollte da in Hinblick auf CSS zu machen sein? Verstehe ich gerade nicht so ganz.</p>
+<p><em><strong>system.css</strong> is the devil! True story.</em> Bekommt man nicht weg (ich zumindest nicht) und treibt einen in den Wahnsinn (Zählerstand bei mir: 2 Nervenzusammenbrüche).</p>
+<p>Alles schonmal gute, notwendig Ansätze. Und alles, was die Divterie Drupals bekämpft, gehört unterstützt.</p>
+<p>/2cents.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/10/17/drupal-theme-fucking#comment-7066" id="comment-7066" class="active">#</a>      </p>
+    <p>Ja, ja und ja. Ziel der ganzen Unternehmung ist folgendes: Man sollte sein Theme so bauen können, dass jedes HTML-Tag das sich im Quelltext befindet, aus einer Datei kommen kann, die sich im Ordner des Themes befindet (und damit meine ich NICHT die template.php).</p>
+<p>* Tabs: Also ich hab die Tabs schon auf Artikel-Ebene: Edit, View, Dev-Load, Dev-Render etc. und da die Tabs in der Page.tpl stehen und nicht in der node.tpl muss man die halt konditional einbauen. Obendrein werden die ja nicht als mehrdimensionales Array, sondern als HTML-String ans Theme geliefert.</p>
+<p>* Mit "Links" meine ich diesen "Links"-String, der an Nodes dran hängt, in dem "x mal gelesen", "y Kommentare" und so drin steht. Der hängt a) nicht an der node und ist b) auch nicht als Daten im Theme verfügbar sondern nur als Stringkotze.</p>
+<p>* Was genau machen die "Conditional Tags" bei Wordpress?</p>
+<p>* Ich hab in mein Node-Element bpsw. folgende CSS-Klassen einfgefügt: "teaser vs. full", "with-teaserimage", "node-type". Da gehen noch ein paar Sachen. "has-comments vs. no-comments" usw. … halt alles was man im CSS gebrauchen könnte.</p>
+<p>Danke schonmal! </p>
+<p>Ich denke, ich werde den Spaß dann auch mal gleich nach Github werfen.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von drupalBaz <a href="/2009/10/17/drupal-theme-fucking#comment-7067" id="comment-7067" class="active">#</a>      </p>
+    <p>die ganzen system-stylesheets bekommt man mit dem modul stylestripper <a href="http://drupal.org/project/stylestripper" title="http://drupal.org/project/stylestripper">http://drupal.org/project/stylestripper</a> weg -&gt; makes drupaltheming sucks less</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://blog.fymmie.de">fym</a> <a href="/2009/10/17/drupal-theme-fucking#comment-7068" id="comment-7068" class="active">#</a>      </p>
+    <p>Ok, die Handhabung der Tabs-Links hatte ich wohl schon verdrängt. In der Tat nicht schön.</p>
+<p>Ich weiß immer noch nicht, welche Link-Strings du meinst. Bei mir kommt beispielsweise die Angabe über die Anzahl der Kommentare aus $comment_count in der node.tpl.php bzw. auf Modulebene aus dem Node-Objekt selbst. Als reiner Integer.</p>
+<p><a href="http://codex.wordpress.org/Conditional_Tags">Conditional Tags</a>, also Funktionen, die auf eine Bedingung hin prüfen (ist das gerade die Startseite/ein einzelner Eintrag/das Archiv ect). Hier müssen das keine separate Funktionen sein (das wäre auch Overkill, imo), aber eben eine Funktion, die die ganze arg()-Handhabe einfacher abstrahiert?</p>
+<p>Achso. Das "in CSS verfügbar" hatte mich nur irritiert. Also eine Bereitstellung genormter Klassennamen. Okay, ist gekauft.</p>
+<p>Ich seh auf Github noch nichts, btw ;)</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/10/17/drupal-theme-fucking#comment-7069" id="comment-7069" class="active">#</a>      </p>
+    <p>Erstmal: Lüge! Auf Github geht's jetzt hier ab:<br />
+<a href="http://github.com/benthebear/Drupalaska" title="http://github.com/benthebear/Drupalaska">http://github.com/benthebear/Drupalaska</a></p>
+<p>Und das Geilste … direkt von meinem Live-Server eingegittet. Wie kuhl ist das bitte?! Da hab ich jetzt nämlich SSH und Git schon vorinstalliert. Superkuhl!</p>
+<p>Zum Rest: Hab schon gute Fortschritte gemacht heute. Tabs und Links sind jetzt schon als Daten im Theme verfügbar. Doku folgt.<br />
+Zu den Links: Commentcount ist drin. "X mal gelesen" aber bspw. nicht …</p>
+<p>@Conditional Tags: Dafür gibt es eine Reihe von Variablen in der Page.tpl und der Node.tpl:<br />
+<a href="http://drupal.org/node/11812" title="http://drupal.org/node/11812">http://drupal.org/node/11812</a><br />
+<a href="http://drupal.org/node/11816" title="http://drupal.org/node/11816">http://drupal.org/node/11816</a><br />
+Ich werde genau solche Funktionen im Thememe-Modul aber auch noch ergänzen. Die von Woprdpress wissen halt, was Themer wollen.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

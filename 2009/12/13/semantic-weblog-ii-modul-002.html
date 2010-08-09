@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Semantic Weblog II Modul 0.1 | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2009/12/12/10000000-euro" />
+  <link rel="next" href="/2009/12/14/sonnenaufgang" />
+  <meta name="path" content="/2009/12/13/semantic-weblog-ii-modul-002" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="8282" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1260699396" />
+  <meta name="created-string" content="13. 12. 2009 - 11:16" />
+  <meta name="changed-timestamp" content="1260951646" />
+  <meta name="changed-string" content="16. 12. 2009 - 09:20" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/semanticweblogII-002.jpg" />
+  <meta name="path" content="/2009/12/13/semantic-weblog-ii-modul-002" />
+  <meta name="node-id" content="8282" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1260699396" />
+  <meta name="created-string" content="13. 12. 2009 - 11:16" />
+  <meta name="changed-timestamp" content="1260951646" />
+  <meta name="changed-string" content="16. 12. 2009 - 09:20" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Maschinen" href="../../../ressort/maschinen" />
+  <link rel="index" title="Semantic Weblog" href="../../../lexikon/semantic-weblog" />
+  <link rel="index" title="Tripel" href="../../../lexikon/tripel" />
+  <meta name="keywords" content="Maschinen, Semantic Weblog, Tripel" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-8282 arg01-node-8282" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2009/12/12/10000000-euro.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2009/12/14/sonnenaufgang.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-0">  
+      <!-- start:node -->
+      <h2>Semantic Weblog II Modul 0.1</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/semanticweblogII-002.jpg' alt='Semantic Weblog II Modul 0.1'/></p>
+<!-- ende:teaserimage -->
+<p>So Gentlemen, <a href="http://github.com/benthebear/Semantic-Weblog">die ersten Checkins</a> sind ja gelaufen, Konnexus hat <a href="http://konnexus.net/stories/artikellayout-mit-integrierten-topics">spannende Vorschläge</a>, was die Frontend-Funtkionen angeht und ich hab seit gestern Urlaub … voran! </p>
+<p>Mit einem Punkt hatte ich bisher unbehagen: <em>Wie speichern wir die Assoziationstypen?</em> Vermutlich werden dass in einem blog ein halbes bis ein volles Dutzend. Mehr nicht. Dafür extra eine Tabelle anlegen und Schlüssel verwenden, die die SQL Queries wieder komplexer machen … das scheint mir mit Kanonen auf Spatzen zu schießen.</p>
+<p>Schon letztes Wochenende kam mir dann die Idee, die Assozoationstypen einfach als Strings mit in <a href="http://github.com/benthebear/Drupalaska/blob/master/sites/default/modules/semanticweblog/semanticweblog.install#LID54">die Trippel-Tabelle</a> zu stecken. So wie es das Metadaten-System in Wordpress macht. Und gestern kam mir dann eine andere Idee … warum eigentlich nicht auch gleich, Subjekt und Objekt des Tripels auch als String speichern? </p>
+<p>Also statt diesem:<br />
+member1tid: 1234, atid: 5, member2tid: 6789<br />
+lieber jenes:<br />
+subject: Darth Vader, predicate: is father of, object: Luke Skywalker</p>
+<p>Programmiergott Sven wird mich dafür wahrscheinlich in den Coder-Hades schicken, wo die Erinyen der dritten Normalform mich bis ans Ende aller Zeiten foltern. Aber das nette daran wäre, dass man das Modul dann auch für anderen Unfug verwenden kann. Das setzt latürnich voraus, dass zwei Topics nicht die gleiche Schriebung haben dürfen sondern irgendwie differenziert werden müssen, wie bspw. bei der Wikipedia: Adler (Vogel) vs. Adler (Eisenbahn).</p>
+<p>Guter Plan, Jungs?</p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 13. 12. 2009</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Ressort:</span>
+        <a href="../../../ressort/maschinen.html" rel="ressort">Maschinen</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/semantic-weblog.html" rel="lexicon">Semantic Weblog</a>, 
+        <a href="../../../lexikon/tripel.html" rel="lexicon">Tripel</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://ntropie.soup.io/">n¦tropie</a> <a href="/2009/12/13/semantic-weblog-ii-modul-002#comment-7419" id="comment-7419" class="active">#</a>      </p>
+    <p>Das erinnert mich stark an meine Prolog-Zeit. Ich bin dafür, das alles in Prolog zu programmieren! :)</p>
+<p><cite>person(DarthVader).<br />
+person(LukeSkywalker).<br />
+father(DarthVader,LukeSkywalker).<br />
+grandfather(X,Y) :- father(X,Z), mother(Z,Y).<br />
+grandfather(X,Y) :- father(X,Z), father(Z,Y).</cite></p>
+<p>Im Ernst, davon sollte man sich <a href="http://de.wikipedia.org/wiki/Prolog_%28Programmiersprache%29#Grundprinzip">was abschauen</a>. Prolog selber ist im neuen Jahrtausend bloß eeeetwas unpassend für Webanwendungen, was?</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/12/13/semantic-weblog-ii-modul-002#comment-7420" id="comment-7420" class="active">#</a>      </p>
+    <p>Mo! Du alter Rocker! Prolog ist latürnich altes Computerlinugisten und Texttechnologen Urgestein. Uuund in der Tat ließe sich der ganze Semantic Weblog Spaß damit gut programmatisch abbilden. Aber zum einen geht es uns ja erstmal um die Datenerfassung und zum anderen hast Du latürnich völlig recht … nicht, dass man das nicht auch an eine Webanwendung ankoppeln könnte … aber einfach, günstig und für jeden ist das dann nicht. :)</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/12/13/semantic-weblog-ii-modul-002#comment-7423" id="comment-7423" class="active">#</a>      </p>
+    <p>Wie mit Fym gerade besprochen: Kein guter Plan. Wir bleiben bei IDs und zwei Tabellen. </p>
+<p>Hier gibt es nichts zu sehen, bitte gehen sie weiter!</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://codecandies.de">nico___</a> <a href="/2009/12/13/semantic-weblog-ii-modul-002#comment-7424" id="comment-7424" class="active">#</a>      </p>
+    <p>Merk' Dir doch mal folgendes: wenn Du selber sagen kannst »Dafür wird mir Sven den Hals umdrehen«, besteht eine 99.99%ige Sicherheit, dass es Blödsinn ist… ;)</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Three Tier, Four Tier, Two Tier – Zoo Architecture | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2009/04/21/the-next-big-thing" />
+  <link rel="next" href="/2009/04/22/mein-esel-benjamin" />
+  <meta name="path" content="/2009/04/21/three-tier-four-tier-two-tier-zoo-architecture" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="7597" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1240347467" />
+  <meta name="created-string" content="21. 04. 2009 - 22:57" />
+  <meta name="changed-timestamp" content="1268754252" />
+  <meta name="changed-string" content="16. 03. 2010 - 16:44" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/zooarchitecture.jpg" />
+  <meta name="path" content="/2009/04/21/three-tier-four-tier-two-tier-zoo-architecture" />
+  <meta name="node-id" content="7597" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1240347467" />
+  <meta name="created-string" content="21. 04. 2009 - 22:57" />
+  <meta name="changed-timestamp" content="1268754252" />
+  <meta name="changed-string" content="16. 03. 2010 - 16:44" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Maschinen" href="../../../ressort/maschinen" />
+  <link rel="index" title="Javascript" href="../../../lexikon/javascript" />
+  <link rel="index" title="Netz" href="../../../lexikon/netz" />
+  <link rel="index" title="PHP" href="../../../lexikon/php" />
+  <link rel="index" title="Programmieren" href="../../../lexikon/programmieren" />
+  <link rel="index" title="RIA" href="../../../lexikon/ria" />
+  <link rel="index" title="Rich Internet Applications" href="../../../lexikon/rich-internet-applications" />
+  <link rel="index" title="Scalable Vector Graphics" href="../../../lexikon/scalable-vector-graphics" />
+  <link rel="index" title="Skalierbare Vektorgraphiken" href="../../../lexikon/skalierbare-vektorgraphiken" />
+  <link rel="index" title="Software" href="../../../lexikon/software" />
+  <link rel="index" title="SVG" href="../../../lexikon/svg" />
+  <meta name="keywords" content="Maschinen, Javascript, Netz, PHP, Programmieren, RIA, Rich Internet Applications, Scalable Vector Graphics, Skalierbare Vektorgraphiken, Software, SVG" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-7597 arg01-node-7597" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2009/04/21/the-next-big-thing.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2009/04/22/mein-esel-benjamin.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-1">  
+      <!-- start:node -->
+      <h2>Three Tier, Four Tier, Two Tier – Zoo Architecture</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/zooarchitecture.jpg' alt='Three Tier, Four Tier, Two Tier – Zoo Architecture'/></p>
+<!-- ende:teaserimage -->
+<p>Heute hatte ich die große Freude, am <a href="http://mayflower.de">Mayflower</a> Kundenevent in Hamburg teilnehmen zu dürfen. Mal abgesehen davon, dass viele spannende Leute kennen gelernt habe und andere spannende Leute wiedersehen durfte, habe ich was gelernt, was ich den hier lesenen Entwicklern nicht vorenthalten will, v.a. aber für mich selber niederschreiben möchte.</p>
+<p>Eine der Sessions beschäftigte sich damit, wohin die Reise geht in der Software-Entwicklung für's Web. Dafür sollte man erst Mal wissen wo man steht. Stehen tun wir hier. Bei der klassischen <a href="http://en.wikipedia.org/wiki/Multitier_architecture">drei Ebenen Architektur</a>.In der Lamp Webentwicklung hießt das bisher.</p>
+<ol>
+<li>Präsentationsschicht: HTML / CSS</li>
+<li>Geschäftslogik: PHP</li>
+<li>Datenhaltung: MySQL</li>
+</ol>
+<p><br/></br/></p>
+<p>In der Realität sieht das im Web aber gerade anders aus.<br />
+Und zwar nach einer vier Ebenen, drei Säulen Architektur.</p>
+<style type="text/css">
+#tiers td {
+  background-color:lightgray;
+  border:1px solid white;
+}
+</style><div class="volleBreitseite">
+<table id="tiers">
+<tr>
+<td colspan="2">Meine Präsenationsschich: HTML / CSS</td>
+<td>Fremde Präsentationsschicht</td>
+</tr>
+<tr>
+<td>Meine Geschäftslogik in JS</td>
+<td>Fremde Geschäftslogik in JS</td>
+<td>Meine Geschäftslogik in JS</td>
+</tr>
+<tr>
+<td>Meine Geschäftslogik in PHP</td>
+<td>Fremde Geschäftslogik in PHP</td>
+<td>Meine Geschäftslogik in PHP</td>
+</tr>
+<tr>
+<td>Meine Datenhaltung</td>
+<td>Fremde Datenhaltung</td>
+<td>Meine Datenhaltung</td>
+</tr>
+</table>
+</div>
+<p>In der Präsentation ebens sah das nicht so verwirrend aus. Und eigentlich spiegelt es zwei Veränderungen wieder.</p>
+<ol>
+<li>Javascript – das früher nur für Klickibunti da war – übernimmt Teile der Geschäftslogik und bildet damit eine eigene Ebene.</li>
+<li>An den jeweiligen Schnittstellen zwischen den Ebenen können jeweils auch fremde Anwendungen andocken, und zwar sowohl um Daten zu liefern, als auch um Daten zu holen.</li>
+</ol>
+<p>Wenn man will kann man das jetzt wieder auf zwei Ebenen einkochen.</p>
+<ol>
+<li>Die <strong>RIA</strong> in JS/HTML/CSS/SVG/Flash. Entwicklung im Browser.</li>
+<li>Die <strong>Service Cloud</strong> in PHP/Python/Ruby. Entwicklung auf dem Server.</li>
+</ol>
+<p>Mit HTTP/REST sowie HTML/XML/Json als Schnittstellen.</p>
+<p>Einerseits erscheint mir das, als wäre das nichts Neues und eigentlich schon immer so gewesen. Ich will nicht behaupten, Sir Tim hätte sich das so ausgedacht. Aber es ist schon verblüffend, wie die vor so langer Zeit angelegte Architektur jetzt immer deutlicher ihre Kraft entfaltet. Andererseits scheint mir das doch radikal neu. Ich kenne eigentlich keine Anwendung, die vom Kern her auf dieses Szenario ausgerichtet ist. Spannend. Da muss ich mehr drüber nachdenken.</p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 21. 4. 2009</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Ressort:</span>
+        <a href="../../../ressort/maschinen.html" rel="ressort">Maschinen</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/javascript.html" rel="lexicon">Javascript</a>, 
+        <a href="../../../lexikon/netz.html" rel="lexicon">Netz</a>, 
+        <a href="../../../lexikon/php.html" rel="lexicon">PHP</a>, 
+        <a href="../../../lexikon/programmieren.html" rel="lexicon">Programmieren</a>, 
+        <a href="../../../lexikon/ria.html" rel="lexicon">RIA</a>, 
+        <a href="../../../lexikon/rich-internet-applications.html" rel="lexicon">Rich Internet Applications</a>, 
+        <a href="../../../lexikon/scalable-vector-graphics.html" rel="lexicon">Scalable Vector Graphics</a>, 
+        <a href="../../../lexikon/skalierbare-vektorgraphiken.html" rel="lexicon">Skalierbare Vektorgraphiken</a>, 
+        <a href="../../../lexikon/software.html" rel="lexicon">Software</a>, 
+        <a href="../../../lexikon/svg.html" rel="lexicon">SVG</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+
+
+    <div id="comments">
+      <!-- start:comments -->
+      <hr/>
+      <h2>Kommentare</h2>
+
+      <!-- Last Comment standing -->
+
+      <!-- end:comments -->
+    </div>
+
+    <!-- start:comment-form -->
+    <div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+    <!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

@@ -1,0 +1,7 @@
+HeaderName /directory-listing-header.html
+ReadmeName /directory-listing-footer.html
+options +indexes
+AddIcon http://anmutunddemut.de/files/ordner.gif ^^DIRECTORY^^
+AddIcon http://anmutunddemut.de/files/ordner.gif ..
+AddIcon http://anmutunddemut.de/files/datei.gif *.*
+IndexOptions SuppressHTMLPreamble FancyIndexing  FoldersFirst  SuppressDescription SuppressLastModified SuppressSize NameWidth=* 

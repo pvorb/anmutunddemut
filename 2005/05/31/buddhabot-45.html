@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Buddhabot 4.5 | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2005/05/31/soli-deo-gloria" />
+  <link rel="next" href="/2005/06/01/christian-bruckner" />
+  <meta name="path" content="/2005/05/31/buddhabot-45" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="2223" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1117576500" />
+  <meta name="created-string" content="31. 05. 2005 - 23:55" />
+  <meta name="changed-timestamp" content="1197128526" />
+  <meta name="changed-string" content="08. 12. 2007 - 16:42" />
+  <meta name="creator" content="ben_" />
+  <meta name="path" content="/2005/05/31/buddhabot-45" />
+  <meta name="node-id" content="2223" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1117576500" />
+  <meta name="created-string" content="31. 05. 2005 - 23:55" />
+  <meta name="changed-timestamp" content="1197128526" />
+  <meta name="changed-string" content="08. 12. 2007 - 16:42" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Bloggen" href="../../../lexikon/bloggen" />
+  <meta name="keywords" content="Bloggen" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-2223 arg01-node-2223" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2005/05/31/soli-deo-gloria.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2005/06/01/christian-bruckner.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full age-5">  
+      <!-- start:node -->
+      <h2>Buddhabot 4.5</h2>
+
+<div>
+<p>Ha! Nachdem K. krank im Bett verschwunden ist, habe ich die späten Stunden des Tages genutzt und nun <em>endlich</em> die langersehnte objektorientierte Erweiterung für die Artikel des Buddhabot gebaut. Ab jetzt gibt es hier nicht nur Artikel die ich labeln kann, wie in jedem ösigen Blog auch, sondern ich kann Unterklassen, der Klasser Artikel erzeugen, die weitere sturkturierte Informationen enthält. Ich kann diese weiteren Informationen über extra Eingabeformulare erfassen und in meinem Blogbot weiterverarbeiten. Noch mache ich nicht viel damit, aber schon bald werde ich anfangen, meine Wissensresourcen systematisch auszuschöpfen, und ihr seid mit dabei!</p>
+<p>Die erste Klasse ist die Klasse "Zitat", v.a. weil ich da schon ein paar angesammelt habe, die ich schon immer in Weblogeinträge umwandeln wollte. Also flux mit XSLT eine Transformation geschrieben und aus einer XML-Zitaten-Datei 216 XML-Artikel-Dateien gemacht. Jetzt ist der Mai zwar etwas voll, aber der geneigte Leser findet sich da schon zurecht. Damit springe ich übrigens auch umgehend über die magische Marke von 2000 Artikeln. Naja, was soll's. Ich freu mich. So oder so.</p>
+<p>Das ganze ist auch eine schöne Fingerübung für weitere Eigenentwicklungen. Es geht um nicht weniger, als später all das was ich hier im Quelltext mache, den Nutzern als Zusammenklickbaukasten anzubieten. Dynamische benutzerdefinierte Datentypen bei gleichzeitigem Aufbau eines semantischen Netzes. That's what it's all about.<br /><strong>Speicher dein Wissen so wie Du es weißt - und ordentlich!</strong></p>
+<p>Zunächst speichern die neuen Klassen standoff Wissen: der Name, des Autors, das Werk, die Figur - alles prinzipiell tabelarische Daten. Aber das schöne ist, dass ich weiterhin mit einer DTD, resp. einem Relax NG Schema arbeiten kann und während des Entwicklungsprozesses die Informationen erweitern kann. Obwohl es sich dabei praktisch immer um Daten handelt, ist die Speicherung in XML gegenüber einer SQL Datenbank schon jetzt im Vorteil, weil ich derzeit ohne eine Validierung der Daten arbeiten kann und daher die DTD nicht ändern muss. Bei einer SQL-Lösung müsste ich allerdings bei jeder Klasse die Tabellenstruktur anpacken - gar nicht schön, weil ich entweder eine Tabelle hätte, die mit jeder Klasse mehr Spalten bekommt und immer unperformanter wird, oder weil ich umständlich dynamisch mehrer Tabellen anlegen muss.</p>
+<p>Aber der wahre Vorteil kommt erst, wenn ich anfange, selbstdefinierte semantische Elemente in den Mixed Content einzubauen. Dann kann ich auf den gleichen Informationsklassen arbeiten und hole mir Informationen halt sowohl aus den extra Daten der Quellen als auch aus den Fließtexten. Hypertext, here we go! Semantic Web, rock on!</p>
+</div>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 31. 5. 2005</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/bloggen.html" rel="lexicon">Bloggen</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+
+
+    <div id="comments">
+      <!-- start:comments -->
+      <hr/>
+      <h2>Kommentare</h2>
+
+      <!-- Last Comment standing -->
+
+      <!-- end:comments -->
+    </div>
+
+    <!-- start:comment-form -->
+    <div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+    <!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

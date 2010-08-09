@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<chapter>
+<h1>a.</h1>
+	<h2>a.a.</h2>
+	<h2>a.b.</h2>
+		<h3>a.b.a.</h3>
+		<h3>a.b.b.</h3>
+	<h2>a.c.</h2>
+<h1>b</h1>
+	<h2>b.a.</h2>
+	<h2>b.b.</h2>
+<h1>c.</h1>
+	<h2>c.a.</h2>
+		<h3>c.a.a.</h3>
+		<h3>c.a.b.</h3>
+	<h2>c.b.</h2>
+	<h2>c.c.</h2>
+</chapter>

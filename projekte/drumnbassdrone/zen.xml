@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE MA SYSTEM "DTDs/ma.dtd" [ 
+<!ENTITY introduction SYSTEM "Chapters/zen/introduction.xml">
+<!ENTITY chapter1 SYSTEM "Chapters/zen/chapter1.xml">
+<!ENTITY chapter2 SYSTEM "Chapters/zen/chapter2.xml">
+<!ENTITY chapter3 SYSTEM "Chapters/zen/chapter3.xml">
+<!ENTITY chapter4 SYSTEM "Chapters/zen/chapter4.xml">
+<!ENTITY chapter5 SYSTEM "Chapters/zen/chapter5.xml">
+<!ENTITY chapter6 SYSTEM "Chapters/zen/chapter6.xml">
+<!ENTITY chapter7 SYSTEM "Chapters/zen/chapter7.xml">
+<!ENTITY Deshimaru-Roshi1994 SYSTEM "Sourceography/Maindata/zen/Deshimaru-Roshi1994.xml" >
+<!ENTITY Meta_Deshimaru-Roshi1994 SYSTEM "Sourceography/Metadata/zen/Meta_Deshimaru-Roshi1994.xml" >
+<!ENTITY Deshimaru-Roshi1994ben SYSTEM "Sourceography/Userdata/ben/zen/Deshimaru-Roshi1994ben.xml" >
+<!ENTITY Kemistry1998 SYSTEM "Sourceography/Maindata/zen/Kemistry1998.xml" >
+<!ENTITY Kemistry1998ben SYSTEM "Sourceography/Userdata/ben/zen/Kemistry1998ben.xml" >
+<!ENTITY Kodwo1998 SYSTEM "Sourceography/Maindata/zen/Kodwo1998.xml" >
+<!ENTITY Kodwo1998ben SYSTEM "Sourceography/Userdata/ben/zen/Kodwo1998ben.xml" >
+<!ENTITY Niemczyk2000 SYSTEM "Sourceography/Maindata/zen/Niemczyk2000.xml" >
+<!ENTITY Niemczyk2000ben SYSTEM "Sourceography/Userdata/ben/zen/Niemczyk2000ben.xml" >
+<!ENTITY Deshimaru-RoshiTaisen SYSTEM "Sourceography/Persons/zen/Deshimaru-RoshiTaisen.xml">
+<!ENTITY Kemistry SYSTEM "Sourceography/Persons/zen/Kemistry.xml">
+<!ENTITY KodwoEshun SYSTEM "Sourceography/Persons/zen/KodwoEshun.xml">
+<!ENTITY NiemczykRalf SYSTEM "Sourceography/Persons/zen/NiemczykRalf.xml">
+<!ENTITY SchmidtTorsten SYSTEM "Sourceography/Persons/zen/SchmidtTorsten.xml">
+<!ENTITY Storm SYSTEM "Sourceography/Persons/zen/Storm.xml">
+<!ENTITY Keywords_ben_ma SYSTEM "Sourceography/Userdata/ben/zen/Keywords_ben_ma.xml" >
+<!ENTITY Topics_ben_ma SYSTEM "Sourceography/Userdata/ben/zen/Topics_ben_ma.xml" >
+<!ENTITY sourcetypes SYSTEM "Sourceography/sourcetypes.xml">
+<!ENTITY mediatypes SYSTEM "Sourceography/mediatypes.xml">
+<!ENTITY ben SYSTEM "Sourceography/Userdata/ben.xml">
+]>
+<MA>
+<Main>
+&introduction;
+&chapter1;
+&chapter2;
+&chapter3;
+&chapter4;
+&chapter5;
+&chapter6;
+&chapter7;
+</Main>
+<Sourceography>
+<Source>
+&Deshimaru-Roshi1994;
+&Meta_Deshimaru-Roshi1994;
+&Deshimaru-Roshi1994ben;
+</Source>
+<Source>
+&Kemistry1998;
+&Kemistry1998ben;
+</Source>
+<Source>
+&Kodwo1998;
+&Kodwo1998ben;
+</Source>
+<Source>
+&Niemczyk2000;
+&Niemczyk2000ben;
+</Source>
+&Deshimaru-RoshiTaisen;
+&Kemistry;
+&KodwoEshun;
+&NiemczykRalf;
+&SchmidtTorsten;
+&Storm;
+&Keywords_ben_ma;
+&Topics_ben_ma;
+&sourcetypes;
+&mediatypes;
+&ben;
+</Sourceography></MA>

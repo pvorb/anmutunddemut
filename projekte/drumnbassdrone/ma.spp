@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project XSL_XMLUseSet="Yes" XSL_XMLUseFile=".\Code\XSL\html1file.xsl" XSL_XSLUseSet="Yes" XSL_XSLUseFile=".\Data\ma-decl.xml" XSL_DestFolderSet="Yes" XSL_DestFolder=".\Output">
+	<Folder FolderName="XML Files" ExtStr="xml;cml;math;mtx;rdf;smil;svg;wml">
+		<Folder FolderName="Chapters">
+			<File FilePath=".\Data\Chapters\ma\chapter1.xml" HomeFolder="Yes"/>
+			<File FilePath=".\Data\Chapters\ma\chapter2.xml" HomeFolder="Yes"/>
+			<File FilePath=".\Data\Chapters\ma\chapter3.xml" HomeFolder="Yes"/>
+			<File FilePath=".\Data\Chapters\ma\chapter4.xml" HomeFolder="Yes"/>
+			<File FilePath=".\Data\Chapters\ma\chapter5.xml" HomeFolder="Yes"/>
+			<File FilePath=".\Data\Chapters\ma\chapter6.xml" HomeFolder="Yes"/>
+			<File FilePath=".\Data\Chapters\ma\chapter7.xml" HomeFolder="Yes"/>
+			<File FilePath=".\Data\Chapters\ma\introduction.xml" HomeFolder="Yes"/>
+		</Folder>
+		<File FilePath=".\Data\ma-decl.xml" HomeFolder="Yes"/>
+		<File FilePath=".\Data\ma-inst.xml" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="XSL Files" ExtStr="xsl;xslt">
+		<File FilePath=".\Code\XSL\html1file.xsl" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="HTML Files" ExtStr="html;htm;xhtml;asp"/>
+	<Folder FolderName="DTD/Schemas" ExtStr="dtd;dcd;xdr;biz;xsd">
+		<File FilePath=".\Data\DTDs\ma.dtd" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="Entities" ExtStr="ent"/>
+</Project>

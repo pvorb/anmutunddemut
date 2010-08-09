@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Heimweh 0.4.4 – Alle Räder stehen still | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2009/04/02/glauben-0" />
+  <link rel="next" href="/2009/04/03/erdbeeren" />
+  <meta name="path" content="/2009/04/03/heimweh-044-frustration" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="7526" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1238745750" />
+  <meta name="created-string" content="03. 04. 2009 - 10:02" />
+  <meta name="changed-timestamp" content="1279022478" />
+  <meta name="changed-string" content="13. 07. 2010 - 14:01" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/heimweh044.jpg" />
+  <meta name="path" content="/2009/04/03/heimweh-044-frustration" />
+  <meta name="node-id" content="7526" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1238745750" />
+  <meta name="created-string" content="03. 04. 2009 - 10:02" />
+  <meta name="changed-timestamp" content="1279022478" />
+  <meta name="changed-string" content="13. 07. 2010 - 14:01" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Maschinen" href="../../../ressort/maschinen" />
+  <link rel="index" title="On my way to Heimweh" href="../../../serie/on-my-way-to-heimweh" />
+  <link rel="index" title="Komplexität" href="../../../lexikon/komplexitaet.html" />
+  <meta name="keywords" content="Maschinen, On my way to Heimweh, Komplexität" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-7526 arg01-node-7526" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2009/04/02/glauben-0.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2009/04/03/erdbeeren.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-1">  
+      <!-- start:node -->
+      <h2>Heimweh 0.4.4 – Alle Räder stehen still</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/heimweh044.jpg' alt='Heimweh 0.4.4 – Alle Räder stehen still'/></p>
+<!-- ende:teaserimage -->
+<p>So. Jetzt ist es amtlich. Heimweh steckt fest. Nachdem ich großartige <a href="http://anmutunddemut.de/2009/03/29/heimweh-043-dokumente-vs-datenstroeme#comment-6260">Wolfgang die Idee zu verdanken habe</a>, neben Dokumenten und Metadaten auch noch Assets als eigene Entitäten in einer eigenen Tabelle zu speichern und ich von der Idee auch eigentlich ziemlich begeistert war, wollte ich gestern auf der Zugfahrt frisch ans Werk gehen und die wichtigsten Funktionen/Methoden dafür und für die Metadaten zu programmieren. Nachdem ich die Funktionsrümpfe angelegt hatte und ein bisschen nachgedacht hab, hatte ich auch schon keinen Bock mehr.</p>
+<p>Das ist mir ein ein gutes Stück zu komplex geworden. Ich bin auf Besten Wege wieder ein ganz normales CMS zu basteln. Das ist doof. Schlimmstes Anzeichen, dass ich in einer Krise Stecke: Ich habe nicht nur überlegt, wie ich Heimweh-Features nach Drupal bekommen, sondern sogar eine Rückkehr zu Wordpress und den Ausbau meines AAAWP-Plugins "An Advanced Api for Wordpress" in Betracht gezogen. Schlimm. So tief bin ich schon gefallen. Aber noch ist der Fall nicht vorbei. Mal schauen, was von mir nach der entscheidenden Landung überigbleibt.</p>
+<hr/>
+<p>P.S.: Eine anderer Erfahrung, die mich hat bremsen lassen, war, zu sehen, wie Konnexus mit Drupal umgeht. Konnexus ist eigentlich kein Entwickler, sondern Graphiker und Konzepter. Um so wertvoller ist sein "Nicht-Entwickler"-Zugang zu einem CMS wie Drupal:<br />
+Erstens – ich will eine URL zu meiner Site hinzufügen.<br />
+Zweitens – ich will mit ein paar PHP-Funktionen schnell zusammenbasteln, was auf dieser Seite dargestellt werden soll.</p>
+<p>Und das unter folgenden Rahmenbedingungen: Ein Drupal-Modul zu erstellen ist eine zu große Hürde. Konnexus bastelt meistens einen View, erhält damit eine URL und überschreibt dann das Meiste, was auf der Seite des Views passiert in der dazugehörigen Template-Datei.</p>
+<p>Das ist ein ziemlich naheliegender Ansatz, ähnlich der Funktion in Wordpress einzelnen Pages eigene Templates zuuordnen. Darüber muss ich noch mehr nachdenken …</p>
+</hr/>        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 3. 4. 2009</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Ressort:</span>
+        <a href="../../../ressort/maschinen.html" rel="ressort">Maschinen</a>
+        <span class='somespace'> </span>
+        <span class='title'>Serie:</span>
+        <a href="../../../serie/on-my-way-to-heimweh" rel="series">On my way to Heimweh</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/komplexitaet.html" rel="lexicon">Komplexität</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von krut <a href="/2009/04/03/heimweh-044-frustration#comment-6272" id="comment-6272" class="active">#</a>      </p>
+    <p>Drupal - PHP Content Modul</p><p>Wie wärs mit einem Modul mit einem Order<br />
+"Content"</p>
+<p>Dort rein legt man Dateien nach dem Schema<br />
+$foo.php.</p>
+<p>Für $foo wird dann ein Menu Callback angelegt und bei Aufruf wird die Datei geladen und entsprechend ausgegeben.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/04/03/heimweh-044-frustration#comment-6273" id="comment-6273" class="active">#</a>      </p>
+    <p>Noch einfacher!</p><p>Ich würds ja – wenn ich's mit Drupal machen wollen würde – ja so machen, das in der node.tpl noch eine Weiche drin ist, die schaut, ob es eine .tpl Datei mit der ID der Node gibt. ;)</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://konnexus.net">Konstantin</a> <a href="/2009/04/03/heimweh-044-frustration#comment-6276" id="comment-6276" class="active">#</a>      </p>
+    <p>nichtprogrammierer beobachten</p><p>hm. als konzepter, der ich mit ganzem herzen bin, liebe ich modularität. sie skaliert nicht nur, sondern nachhaltig.</p>
+<p>ich weiß nicht, ben_, ob du nicht zu früh schlüsse daraus ziehst, wie ich was bastele. es ist gut darauf ein auge zu haben, wie laien mit sowas umgehen. auf der anderen seite: ich hab mal mit wordpress-rumschrauben angefangen. und da war das so, dass man ne .php einfach reinlegte und was reinschrieb. darauf bin ich also "konditioniert". kann sein, dass andere es anders gelernt haben. und der rest von wordpress, inkl. dem "loop"-konzept usw. war für mich recht wirr, da lobe ich mir den node_load() (ja ja, ich weiß, das es nicht performant ist ...). jedenfalls kann ich mit den node-objekten sehr viel anfangen.</p>
+<p>kann auch gut sein, dass ich bald mal doch ein modul baue. kann auch sein, dass ich dann nur noch module schreibe, weil's so viel besser ist. aber ich als einzelner bin ein tropfen auf dem heißen stein der nichtprogrammierer-masse...</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://www.relativwenigbartwuchs.de">wolfgang</a> <a href="/2009/04/03/heimweh-044-frustration#comment-6278" id="comment-6278" class="active">#</a>      </p>
+    <p>Vom eigenen Code erschrocken?</p><p>Das kann passieren. aber im Grunde bist du nur an einer weiteren Hürde.</p>
+<p>Ich kann deinen Bewegfründen für "heimweh" folgen. Der Wunsch nach einem simplizierten System ist verständlich, wenn man sieht mit wieviel overhead sich große Blogsysteme (oder besser CMS-Systeme) herumschlagen müssen.</p>
+<p>Von Usermanagement bis Trackback, von Prepubliching bis Themesysteme.</p>
+<p>Du solltest dich auf die Dinge konzentrieren, die es sich lohnt zu vereinfachen. Features!</p>
+<p>Eine Datenstruktur, die nur die einfachsten Informationen enthält, ein Datenzugriffskonzept ohne zisch Layer und ein Themesystem wie es einfacher nicht sein könnte.</p>
+<p>Leider, und das ist wahrscheinlich des Pudels Kern, wird man einfache Strukturen nicht in 2 oder 20 PHP-Zeilen unterbringen, gerade wenn man sich an den Funktionen gängiger Systeme misst. Wichtig finde ich, dass du deine vereinfachten Konzepte nicht aus dem Auge verlierst, dass es für eine weitere Entität weiteren Code bedarf ist ja nicht falsch (und nur logisch). Das die Komplexität steigt ist auch nur logisch. Aber da hilft am besten Struktur. </p>
+<p>Ist die Codestruktur deiner aktuellen Entwicklung logisch? </p>
+<p>Kann man den Code lesen? (ohne eine einzige Zeile Kommentar?)</p>
+<p>Verstecken sich hinter den PHP-Dateien die, durch ihre Bezeichnung, erwarteten Funktionen?</p>
+<p>Kann man evtl. durch mehr Bezeichnung mehr transparenz entwicklen?</p>
+<p>Wenn man "angst" bekommt vor dem eigenen Code, hat man den Punkt erreicht, an des es darum geht nocheinmal einen Schritt zurück zu gehen, und evtl. alle bisherige Struktur nochmal zu überdenken.</p>
+<p>Ich sag nur "Code-Poetry". Versuch dich beim Schreiben als Poet zu sehen und bring Poetrie in den Editor :)</p>
+<p>Zeit zur Codenormalisierung hat man später immernoch. Redundanzen stellt man später schneller fest und gerade bei simplizierten Strukturen -ich spreche nicht von "einfachen" Strukturen-, kann man dann auch schneller Code simplizieren.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/04/03/heimweh-044-frustration#comment-6279" id="comment-6279" class="active">#</a>      </p>
+    <p>Naja</p><p>@Konnexus Du hast latürnich nicht ganz unrecht. Und ich weiß latürnich auch, dass Du mit Wordpress-Vorwissen an Drupal heran gehst. Aber: Ich kenne den Effekt ja auch von mir selber. Ein neues Modul zu schreiben ist schon eine Hürde.</p>
+<p>Und nebenbei: Dass node_load() nicht performant ist, ist ja a) nicht Deine Schuld und b) nur richtig, wenn man viele, viele, viele Nodes lädt.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/04/03/heimweh-044-frustration#comment-6280" id="comment-6280" class="active">#</a>      </p>
+    <p>Ja, ja, ja und ja</p><p>@Wolfgang: Du hast latürnich auch recht. Ich denke schon, dass der Code soweit verständlich und lesbar ist, zumal ich ja – bis auf die ganz neuen Sachen – auch alles kommentiert habe. Aber angesichts der bisher eigentlich geringen Komplexität ist der Großteil eigentlich selbsterklärend.</p>
+<p>Was mich innehalten läßt, ist dass ich eigentlich folgendes gedacht hatte: Wenn man die Komplexität eines Blogsystems auf einer Achse abbildet, dann ist das 100 Zeilen Skript, mit dem ich mal angefangen habe, fast ganz links, als dicht bei 0. Dann irgendwann rechts kommen Wordpress und Drupal und ganz rechts dann Typo3 und Reddot. Meine Hoffnung als ich mit Heimweh anfing, war, deutlich näher an meinem 100 Zeilen Skript zu landen als an Wordpress – nicht, was die Menge an Code angeht, denn das schaff ich locker. Sondern halt was die Komplexität angeht. Mit jedem Schritt nähere ich mich aber immer deutlicher der Grenze, an der es näher zu Wordpress oder Drupal ist, als zurück zum Buddhabot. Und wenn ich diesen Punkt überschreite, könnte ich eigentlich auch gleich besser mit einem der näheren Systeme weiter machen.</p>
+<p>Aber – und das verrate ich nur Dir – was mich auch hat zurückschrecken lassen ist nackte Faulheit. 100 Zeilen Code Schreiben ist nicht viel Arbeit. Sogar 1000 Zeilen sind nicht soviel. Wenn man aber ein neues Feature implementieren will und erstmal das halbe Dutzend Funktionsrümpfe anlegt,  das unbedingt nötig ist, dann artet das in Arbeit aus.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von wolfgang2 <a href="/2009/04/03/heimweh-044-frustration#comment-6282" id="comment-6282" class="active">#</a>      </p>
+    <p>erwicht :)</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

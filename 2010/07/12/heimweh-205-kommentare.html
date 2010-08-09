@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Heimweh 2.0.5 – Kommentare und mehr | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2010/07/12/welt-meisterschaft.html" />
+  <link rel="next" href="/2010/07/12/man-verwende-es-sparsam.html" />
+  <meta name="path" content="/2010/07/12/heimweh-205-kommentare.html" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="8755" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1278955920" />
+  <meta name="created-string" content="12. 07. 2010 - 19:32" />
+  <meta name="changed-timestamp" content="1278965245" />
+  <meta name="changed-string" content="12. 07. 2010 - 22:07" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/heimweh-205-kommentare.jpg" />
+  <meta name="path" content="/2010/07/12/heimweh-205-kommentare.html" />
+  <meta name="node-id" content="8755" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1278955920" />
+  <meta name="created-string" content="12. 07. 2010 - 19:32" />
+  <meta name="changed-timestamp" content="1278965245" />
+  <meta name="changed-string" content="12. 07. 2010 - 22:07" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Maschinen" href="../../../ressort/maschinen" />
+  <link rel="index" title="On my way to Heimweh" href="../../../serie/on-my-way-to-heimweh" />
+  <link rel="index" title="Drupal" href="../../../lexikon/drupal" />
+  <meta name="keywords" content="Maschinen, On my way to Heimweh, Drupal" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-8755 arg01-node-8755" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2010/07/12/welt-meisterschaft.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2010/07/12/man-verwende-es-sparsam.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-0">  
+      <!-- start:node -->
+      <h2>Heimweh 2.0.5 – Kommentare und mehr</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/heimweh-205-kommentare.jpg' alt='Heimweh 2.0.5 – Kommentare und mehr'/></p>
+<!-- ende:teaserimage -->
+<p>Ich bin nach meiner Itunes-Abkehr von letzter Woche erneut mit Feuereifer bei der Sache und arbeite fleißig an der Kommentarlösung für Heimweh 2.0. Dabei ist mir der Weg inzwischen klar.</p>
+<p>Unter jeden Artikel kommt hartverdrahtet, also auch mit ins statische HTML das Formular für die Kommentare. Das Formular schickt seine Daten an eine kommentar.php. Die liest den Referer aus, öffnet die HTML-Datei und schreibt den Kommentar ans Ende des Kommentarbereichs. Danach wird eine Mail mit dem Kommentar an mich geschickt. Das mache ich ja jetzt auch, um über neue Kommentare informiert zu werden. Demnächst dient es aber auch noch als als Fallback, falls ich mir einzelne Kommentare selber überschreibe, was bei dem Setup ja passieren kann.<br />
+Nachdem das Skript fertig ist, wird der Kommentator per header-redirect zum Artikel zurückgeschickt, wo sein Kommentar schon auf ihn wartet. Das Funktioniert in einem kleinen Testszenario schon sehr gut, muss aber noch etwas sauberer gebaut werden und auch mit einem Spam-Schutz versehen werden. Jetzt muss ich das Formular nur noch anstatt des Drupal-eigenen Formulars unter den Artikel rendern, damit das Crawler das auch richtig mitnimmt.</p>
+<h3>Fallstricke der Rendering-Engine</h3>
+<p>Überhaupt. Die Vorbereitungen für das HTML-isieren sind doch aufwändiger als ich dachte. Dafür kommen aber auch ein paar spannede Sachen ans Licht. Wie z.B. <a href="http://api.drupal.org/api/function/theme_comment_view/6">theme_comment_view()</a>, was einfach mal ein "&lt;a id=\"comment-$comment-&gt;cid\"&gt;&lt;/a&gt;\n" rausrendert, an der comment.tpl.php vorbei. Ich hab ne Stunde gebraucht, bis das gefunden habe. </p>
+<p>Das finde ich höchst bemerkenswert: Drupal macht das in allen Themes. Mir ist das nicht aufgefallen, in all den Jahren. Erst jetzt wo ich für die Statifizierung wieder Wert auf jede Zeile meine Quelltextes lege, fällt mir sowas ins Auge. Das sehe ich als ein sehr gutes Zeichen dafür, dass ich auf dem richtigen Weg bin.</p>
+<h3>Schlagwortseiten</h3>
+<p>Aber auch die Statifizierung der Schlagwortseiten ist nicht ganz ohne. Es stellt sich die Frage, ob ich diese mit <em>allen</em> Verweisen auf Artikel statifiziere, oder ganz ohne. Paginierung geht ja nicht mehr, bzw. ist ziemlich Unfug. Das Schöne daran: Die Paginierung macht man ja üblicherweise der Performanz wegen, was man jetzt sehr schön an den nicht mehr paginierenden, allein durch runterscrollen sich selbstverlängernden Seiten sehen kann – wie bspw. bei <a href="http://duckduckgo.com/?q=Drupal">Duck Duck Go</a>. Performanz aber kann mir jetzt scheiß egal sein. Um Performanz muss ich mir nicht die geringsten Sorgen machen. Dafür aber ums Layout. Die jetzt schon relativ schlichte Anmutung der Links auf die Artikel erscheint mir für sehr lange Listen, wie sie unweigerlich zu stande kommen, doch nicht angemessen.</p>
+<h3>The lost .html</h3>
+<p>Wann und warum haben wir eigentlich aufgehört sinnvolle Dateiendungen an URLs dran zu machen? Komisch. Für mich ist das jetzt ein kleines Hinderniss. Mein Artikel hießen bisher sowas wie <code>anmutunddemut.de/2010/07/09/duck-duck-go</code> … sowas ist aber nicht praktisch, wenn man den Kram auch als statische Dateien auf der lokalen Festplatte nutzen mag. Entsprechend macht mein Crawler daraus <code>/2010/07/09/duck-duck-go.html</code>. Das heißt aber auch, dass alle automatischen und handgesetzten Links umgeschrieben werden müssen.<br />
+Kein Problem. Nur ein bisschen Arbeit.<br />
+Aber wie auch schon vorher: Das ist ein ziemlich gutes Zeichen dafür, dass ich auf dem richtigen Weg bin.</p>
+<p>Und keine Sorge! Ich richte später per htaccess und mod_rewrite eine automatische Weiterleitung ein, damit die alten URLs auch weiter zu den richtigen Artikeln führen.</p>
+<p>Alles in allem bin ich sehr zufrieden. Es geht voran und bald kann ich wechseln.</p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 12. 7. 2010</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Ressort:</span>
+        <a href="../../../ressort/maschinen.html" rel="ressort">Maschinen</a>
+        <span class='somespace'> </span>
+        <span class='title'>Serie:</span>
+        <a href="../../../serie/on-my-way-to-heimweh" rel="series">On my way to Heimweh</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/drupal.html" rel="lexicon">Drupal</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://mdwp.de">Meinolf Droste</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8890" id="comment-8890" class="active">#</a>      </p>
+    <p>Auf die .html Endungen hättest du auch mit Drupal nicht verzichten müssen. Einfach in pathauto so eintragen.<br />
+Und jetzt gehst du schon ein wenig weg von statischem HTML. Und du wirst wahrscheinlich immer mehr Fälle finden, wo du ein wenig PHP brauchst.</p>
+<p>So sind, vor langer Zeit, CMS entstanden.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8892" id="comment-8892" class="active">#</a>      </p>
+    <p>Richtig. Die .html Endungen hab ich auch prompt mal in pathaupt ergänzt. Wie Du oben in der Adresszeile schon sehen kannst. :)</p>
+<p>Dass ich um ein wenig PHP nicht herum kommen werde,  war ja schon relativ früh klar. Aber abegesehen von meiner letzten Radikalisierungsstufe letzten Donnerstag (was vermutlich auch an der Temperatur im IC lag, wo ich den Text geschrieben habe) hab ich auch nie was anderes behauptet und im Grunde war es ja <a href="http://anmutunddemut.de/2008/10/23/der-blick-deinen-augen-sagt-mir-mehr-ueber-das-glueck-als-die-ganzen-philosophen">von anfang an das Ziel</a>.</p>
+<p>"So sind, vor langer Zeit, CMSe entstanden" … ist ein wunderschöner Satz. Er hebt das evolutionäre unserer Arbeit hervor. Wirklich schön. Danke!</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://www.relativwenigbartwuchs.de">wolfgang</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8895" id="comment-8895" class="active">#</a>      </p>
+    <p>Zwei Sachen hab ich da noch:</p>
+<p>1. Duck Duck Go mach den Reload auf den Seiten aber per JavaScript. Da werden dynamisch die Inhalte geladen, wenn ich am Ende der Seite Scrolle!</p>
+<p>2. Dateiendungen wurden vom Teufel erfunden. Ich hassssse sie. Ich will sie nie, nie wieder sehen ;)<br />
+Ich habe mir zu meinen MT-Zeiten, wo auch statisches HTML erzeugt wurde, immer eine INDEX.HTML angelegt, und den ORDNER sauber benannt. Dann konnte ich die Endung weglassen. Das ist aber in deinem Fall wohl eher unsauber...</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8896" id="comment-8896" class="active">#</a>      </p>
+    <p>@Wolfgang: Was Duck Duck Go macht, ist ja genau das, was ich meine. Dieses Verhalten sieht man ja auf immer mehr Seiten. Die Bing-Bildersuche macht das und auf ein paar Blogs hab ich es auch schon gesehen. Klar laden <em>die&gt;</em> das dynamisch nach. Die müssen sich ja auch noch Sorgen um die Performaz ihrer Systeme machen. Das muss ich nicht. Deswegen kann ich das dynamische ja weglassen.</p>
+<p>Und warum noch gleich sind Datei-Endungen vom Bösen? Ich meine … ich bin da jetzt nicht darauf festgenagelt. Statt /2010/07/09/duck-duck-go.html kann ich auch genauso gut /2010/07/09/duck-duck-go/index.html machen.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://www.relativwenigbartwuchs.de">wolfgang</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8900" id="comment-8900" class="active">#</a>      </p>
+    <p>Zum Nachladen:<br />
+Das könnte sich aber unter Umständen, je nach Browser, negativ auswirken. Früher war das zumindest so, dass das Rendering erst dann anfing, wenn der HTML-Teil komplett geladen wurde!</p>
+<p>Zu den Dateiendungen:<br />
+Ich finde Dateiendungen unnötig. Es gibt eigentlich keinen Grund dafür. Sie stören mich in der Organisation meiner Dateien. Ich habe z.b. zich videos auf meiner Platte. Einige haben die Endung .avi andere .mkv ich bekomme es (in windows!?) einfach nicht hin, die Dateien untereinander zu sortieren, erst dann, wenn ich sie in extra Ordner packe! Auf dem Mac hast du doch auch keine Endungen (wenn du keine haben willst!)</p>
+<p>Gerade im Internet finde ich Dateiendungen noch unnötiger. Warum interessiert es denn den User ob da nun eine HTML-Datei oder eine PHP-Datei liegt?</p>
+<p>In Deinem Fall, also wenn Du einzelne Webseiten organisieren willst, ist der /index.html Ansatz wohl etwas häßlich, da du dann ne ganze Menge Ordner hast! Ich akzeptiere das als nötiges Übel. Alternativ kann man ja noch versuchen, alle URLs ohne .ENDUNG mit .HTML zu versehen (also über .htaccess, oder so).</p>
+<p>Aber halt dich nicht an sowas auf. Gegen ein .HTML am Ende habe ich im Prinzip nichts einzuwenden ;) Es gibt ja niemand eine URL per Hand ein, oder?</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8901" id="comment-8901" class="active">#</a>      </p>
+    <p>@Wolfgang: Dass das Rendering erst los geht, wenn alles HTML da ist, gehört inzwischen glaube ich der Vergangenheit an. Ich hab aber auch nicht vor gewaltige HTML-Dateien zu produzieren. Die Listen sollen höchstens ein paar Hunder Einträge haben. Alles andere macht auch keinen Sinn.</p>
+<p>Zu den Dateiendungen: Oh. Lokal, ohne Umweg über einen Apache geht es in der Tat sofort tadellos ohne Dateiendung. Vorrausgesetzt man dem Finder, mit welcher Anwendung er die Datei aufmachen soll. Auf meinem Webserver geht es auch sofort tadellos. Nur den lokalen Apache in meinem Mac muss ich wohl erst noch konfigurieren. Andererseits: Ich bin ja ein Freund von Dateiendungen. Ich mag, wenn man am Namen erkennen kann, was drin ist. Und ich glaube, ich werde Dich wohl auch nicht als Leser verlieren, wenn ich Dateiendungen in meinen URLs habe, oder?</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://teilnehmer.ws">J.</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8903" id="comment-8903" class="active">#</a>      </p>
+    <p>Kurze Verständnisfrage/ Hinweis: Wenn die Kommentarfunktion den Referer ausliest, meinst du dann mittels PHP? Ich würde das nämlich mittels eines versteckten Input-Feldes machen, dann hast du keinen Stress mit Leuten, die ihre Referer scamblen und hast noch einmal kein PHP. Vielleicht hattest du das aber eh schon vor.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8905" id="comment-8905" class="active">#</a>      </p>
+    <p>@J.: Naja. Also das Skript, dass die Kommentare ins HTML schreibt ist schon HTML. Das schreiben muss ich ja auch irgenwie programmatisch machen.  Das würde mich also nicht wirklich vom PHP befreien. Es würde nur eine Variable im Skript durch eine andere ersetzen.</p>
+<p>Viel wichtiger aber: "Referer scamblen" wtf? Was ist es? Wer macht denn sowas? Und noch viel wichtiger: Wiesu denn bluß? Wiesu denn bluß? Wiesu tut sie su?</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8906" id="comment-8906" class="active">#</a>      </p>
+    <p>Achso … und … ich vergas: Und die Lösung mit dem Referer war deshalb so schön, weil ich so, das Formular einfach in die HTML-Vorlage packen kann und eben nicht mehr irgendwas in das versteckte Inputfeld schreiben muss.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://konnexus.net">Konstantin</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8907" id="comment-8907" class="active">#</a>      </p>
+    <p>"Gerade im Internet finde ich Dateiendungen noch unnötiger. Warum interessiert es denn den User ob da nun eine HTML-Datei oder eine PHP-Datei liegt?"</p>
+<p>Absolut korrekt. Es lebe der User. ben_, das ist nicht ironisch gemeint.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://konnexus.net">Konstantin</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8908" id="comment-8908" class="active">#</a>      </p>
+    <p>"Es gibt ja niemand eine URL per Hand ein, oder?"<br />
+Aber hallo! Natürlich, und mit wachsender Begeisterung. Nur nicht mit Dateiendungen, oder schlimmer noch, Parametern. Obwohl, solange sie hackbar sind ...</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8909" id="comment-8909" class="active">#</a>      </p>
+    <p>Bei .html oder .php bin ich ja noch bei euch. Aber der Unterschied zwischen .rss oder .svg ist ja schon nicht ganz so unwesentlich.</p>
+<p>Und wenn ihr über User reden wollt: Die verstehen ja nicht einmal den Unterschied zwischen der Adressleiste und dem Google-Suchfeld, gescheige denn was eine URL ist. Vermutlich nicht mal, was eine Dateiendung ist. Wobei … DAS noch am ehesten. </p>
+<p>Wir … wir sind Nerds, Jungs, – machen wir uns nichts vor – aber kein User.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von Kleingeist <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8910" id="comment-8910" class="active">#</a>      </p>
+    <p>Hallo,<br />
+nachdem ich nun hier schon seit einiger Zeit freudig mitlese und wirklich gespannt bin wie sich Heimweh entwickelt, muss ich nun doch auch mal einen kleinen Kommentar dazu hierlassen.<br />
+Erstmal muss ich sagen, dass ich das grundsätzliche Verlangen nach Purismus sehr gut nachvollziehen kann. Auch ich hab bspws. vor langer Zeit iTunes den Rücken gekehrt und es bisher noch nicht einmal beruet meine Musik selbst zu verwalten (ID3 Tagging und Sortierung im Dateisystem).<br />
+Insgesamt finde ich den Gedanken zu HTML zurückzukehren auch sehr reizvoll, obwohl ich persönlich wahrscheinlich eine Art PHP Wrapper um das HTML legen würde, der bei bspw. Aufruf die Kommentare in den statischen Artikel einfügt. Dabei muss ich aber natürlich zugeben, dass dies den Vorteil der Geschwindigkeit wieder zunichte machen würde. </p>
+<p>Naja aber darauf wollte eigentlich gar nicht hinaus. Nach dem Lesen des Artikels blieb bei mir nämlich ein großes Fragezeichen:<br />
+<strong>Und was ist mit git?</strong></p>
+<p>Wenn die Kommentare von PHP auf dem Webserver in die Artikel geschrieben werden und erst von dir per FTP zurückgeholt werden müssten um dann zurück ins git zu kommen, fände ich das Ganze nicht wirklich angenehm.<br />
+Hast du schon darüber nachgedacht ob du auch über PHP direkt die Dateien nach dem Einfügen der Kommentare in git updaten kannst? Wäre übrigens dann auch nett um gegebenfalls doch noch auftretenden Spam per revert loszuwerden oder sogar ne Art ModerationsQueue über einen Branch zu realisieren.</p>
+<p>Viele Grüße</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://ntropie.de/">n¦tropie</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8911" id="comment-8911" class="active">#</a>      </p>
+    <p>Dateiendungen im Internet. Hmmm, im Netz gibt's doch bloß Ressourcen, oder? URI = Uniform Resource Identifier.</p>
+<p>"In network contexts, files are regarded as streams of bits and do not have filenames or extensions." (<a href="http://en.wikipedia.org/wiki/Filename_extension#Alternatives">Quelle</a>)</p>
+<p>Vielleicht bin ich durch meine Amiga-Sozialisierung auch bloß uneinsichtiger. Da konnte man (wie auf'm Ur-Mac auch) einfach auf "Monkey Island II" doppelklicken und es lief. Oder auf "Hausarbeit Englisch Februar" und die Textverarbeitung ging auf. Dateiendungen waren für mich immer nur Zusatzinfos (Lizenz.Liesmich oder Zork.Game), bis ich der DOS-Hölle ansichtig wurde. Und dahin wollen wir ja nicht zurück.</p>
+<p>Ansonsten bin ich irre gespannt, was du noch so zaubern wirst. :)</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8912" id="comment-8912" class="active">#</a>      </p>
+    <p>@Kleingeist: Ich freu mich immer besonders, wenn sich die sonst "stillen" Mitleser mal melden. Und ich muss gleich mit einen Gegenfrage anworten: Womit machst Du denn das ID3-Tagging? Dafür fehlt mir auf meinem Mac nämlich noch die richtig Lösung.</p>
+<p>Was git betrifft: Hier zeichnet sich ab, dass das nicht ganz so einfach wird, wie ich mir das vorgestellt habe. Git von Remote aus zum Deployment zu benutzen scheint nicht ganz so einfach zu sein. Ich hab beschlossen erstmal mit eine händischen Git Lösung zu starten. Quasie als Backup-System. Und dann später zu schauen wie man das optimieren kann.<br />
+Git aus PHP heraus zu verwenden, hab ich auch schon in Betracht gezogen. Und für PHP gibt es in der Tat schon eine ganze Reihe von Git-Wrappern. Das scheint kein Hexenwerk zu sein. Aber wie gesagt: Das schaue ich mir später an.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8913" id="comment-8913" class="active">#</a>      </p>
+    <p>@ntropie: Ja. Und gleich darunter steht, warum das im Netz so gut geht: Da wird nämlich ein Mime-Type mitgeschickt, damit der Browser weiß, was er da bekommt.<br />
+Lokal geht das latürnich nur, wenn man das über den Apache laufen läßt. Andererseits: Von dem Kram hab ich echt kaum Ahnung.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://ntropie.de/">n¦tropie</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8922" id="comment-8922" class="active">#</a>      </p>
+    <p>Tja, ich weiß. Bloß ist das vom Standpunkt des Lesers egal, ob php, html, asx oder sonstwas an eine sinnvolle und sprechende URL drangehängt wird, wie hier schon einige gesagt haben. Ich wollte dir nicht widersprechen, dass Heimweh wahrscheinlich Dateiendungen braucht -- bloß, dass die für Webseiten je <em>semantisch</em> sinnvoll gewesen sein sollen.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://www.relativwenigbartwuchs.de">wolfgang</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8923" id="comment-8923" class="active">#</a>      </p>
+    <p>ben_ ich bleib dir natürlich als leser erhalten, mit oder ohne endung! ich mein, ich war gerade sooo kurz davor, latürnich, zu schreiben... das heißt doch schon was, oder?</p>
+<p>btw. ich habe deinen "back2daroots"-Ansatz zum Ansatz genommen mich selbst als Netzautor zu betätigen. Das heißt dein profundes Wissen über die Einrichtung von Drupal habe ich kopiert und auf meine Seite portiert. Stück für stück passe ich gerade takeshi in mein binspired-theme ein (was aktuell noch stark nach kopie aussieht ;)). Ich habe auch schon einen haufen "drafts" mit Texten, die ich irgendwann mal fertig schreiben werden.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://konnexus.net">Konstantin</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8954" id="comment-8954" class="active">#</a>      </p>
+    <p>Ich hab übrigens noch ein Argument, warum Du .html in der URI weglassen solltest. Weil: ich (und auch andere Geeks, die Dein Blog lesen) gucke öfter in der Statusleiste nach, wohin ein Link führt. Da .html zu lesen behindert nur (denn es bringt mir null Mehrwert, wird aber vom Auge mitgelesen).</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2010/07/12/heimweh-205-kommentare.html#comment-8959" id="comment-8959" class="active">#</a>      </p>
+    <p>Tja. Ich fürchte, da werde ich euch entäuschen. Dateiendungen werden kommen. Sind ja schon da. Schon alleine weil sie mir helfen, Dateien zu "verarbeiten", ohne sie öffenen zu müssen.<br />
+Letzlich ist aber eigentlich ausschlaggebender, dass ich Dateiendungen  einfach mag. Das ist wohl der DOS-Boy in mir, der immer noch mit <a href="http://en.wikipedia.org/wiki/XTree">Xtree-Gold</a> durch seine Platte surft.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

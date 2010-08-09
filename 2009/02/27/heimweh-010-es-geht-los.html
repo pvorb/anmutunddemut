@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Heimweh 0.1.0 – Es geht los! | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2009/02/27/innen-und-aussen-%E2%80%93-echt-und-virtuell" />
+  <link rel="next" href="/2009/02/28/geh" />
+  <meta name="path" content="/2009/02/27/heimweh-010-es-geht-los" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="7448" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1235760457" />
+  <meta name="created-string" content="27. 02. 2009 - 19:47" />
+  <meta name="changed-timestamp" content="1235819737" />
+  <meta name="changed-string" content="28. 02. 2009 - 12:15" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/heimweh010.jpg" />
+  <meta name="path" content="/2009/02/27/heimweh-010-es-geht-los" />
+  <meta name="node-id" content="7448" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1235760457" />
+  <meta name="created-string" content="27. 02. 2009 - 19:47" />
+  <meta name="changed-timestamp" content="1235819737" />
+  <meta name="changed-string" content="28. 02. 2009 - 12:15" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="On my way to Heimweh" href="../../../serie/on-my-way-to-heimweh" />
+  <link rel="index" title="Github" href="../../../lexikon/github" />
+  <link rel="index" title="Htaccess" href="../../../lexikon/htaccess" />
+  <link rel="index" title="Quicktags" href="../../../lexikon/quicktags" />
+  <meta name="keywords" content="On my way to Heimweh, Github, Htaccess, Quicktags" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-7448 arg01-node-7448" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2009/02/27/innen-und-aussen-%E2%80%93-echt-und-virtuell.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2009/02/28/geh.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-1">  
+      <!-- start:node -->
+      <h2>Heimweh 0.1.0 – Es geht los!</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/heimweh010.jpg' alt='Heimweh 0.1.0 – Es geht los!'/></p>
+<!-- ende:teaserimage -->
+<p>Yeah! Voran! Mit ein bisschen Starthilfe von <a href="http://www.schreiblogade.de/about/">Patrick</a> sind jetzt <a href="http://github.com/benthebear/heimweh/tree/master">die ersten zaghaften Zeilen Code im Github</a>. Gestern im Zug hatte ich ja, wie schon erwähnt mit dem Menu-Router experimentiert. Jetzt stehen langsam Entscheidungen an. PHP ist inzwischen gesetzt. Damit kenne ich mich zu gut aus, um jetzt was Neues auszuprobieren.</p>
+<p>Zwei Fragen die sich jetzt stellen sind folgende.</p>
+<h3>Wie die XML-Dokumente speichern?</h3>
+<p>Defakto bieten sich drei Möglichkeiten an.<br />
+<b>1. Eine einzige Datei ins Filesystem?</b><br />
+<i>Dafür spricht</i>, dass ich damit prima suchen/ersetzen machen kann.<br />
+<i>Dagegen spricht</i>, dass das evtl. schnell an die Grenze der Performanz stoßen könnte und das Risiko die ganze Datei beim Schreiben zu zersägen groß ist.<br />
+<b>2. Eine Datei pro Dokument ins Filesystem?</b><br />
+<i>Dafür spricht</i>, dass ich den Editor dann auch leicht für alle anderen möglichen Systemdateien gebrauchen kann und keine Datenbank brauche.<br />
+<i>Dagegen spricht</i>, dass ich dieser Art der Datenhaltung nicht traue. Ich bekomme schlicht nicht mit, wenn eine Datei verschwindet. (Hatte ich in meinem alten System schonmal.)<br />
+<b>3. Eine minimalistische Datenbank?</b> Eine Tabelle. Ein Zeile pro Dokument. Drei Spalten: ID, Datum, XML-Quelltext.<br />
+<i>Dafür spricht</i>, dass ich der Datenhaltung traue, die grundsätzlich performant ist und ich <i>zur Not</i> auch noch über die ganze Tabelle suchen kann (das Datum ist schon ein Eingständnis in diese Richtung.)<br />
+<i>Dagegen spricht</i>, dass es eigentlich nicht sooo schön ist.</p>
+<h3>Wie den Code verteilen?</h3>
+<p>Alles PHP in eine Datei?<br />
+Eine Datei pro Klasse?<br />
+Überhaupt: Objektorientiertes PHP?<br />
+Einen Ordner für alle Module?<br />
+Und darin nochmal einen Ordner pro Modul?<br />
+Einen Ordner für alle alle Themes und darin einen Ordner pro Theme?</p>
+<p>Any Opinions?</p>
+<p>Soviele tolle Entscheidungen, die gefällt werden wollen … das macht Spaß!</p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 27. 2. 2009</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Serie:</span>
+        <a href="../../../serie/on-my-way-to-heimweh" rel="series">On my way to Heimweh</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/github.html" rel="lexicon">Github</a>, 
+        <a href="../../../lexikon/htaccess.html" rel="lexicon">Htaccess</a>, 
+        <a href="../../../lexikon/quicktags.html" rel="lexicon">Quicktags</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://www.relativwenigbartwuchs.de">wolfgang</a> <a href="/2009/02/27/heimweh-010-es-geht-los#comment-6227" id="comment-6227" class="active">#</a>      </p>
+    <p>Das sind ja schon ne menge fragen :)</p><p>Ich stehe ja total auf Struktur. Bin da aber nicht so verbohrt wie die JavaJünger. Will heißen ich kann auch anders :)</p>
+<p>&gt; Alles PHP in eine Datei?<br />
+&gt; Eine Datei pro Klasse?</p>
+<p>Strukturell eindeutige Funktionen/Klassen gehören für mich in EINE die Struktur beschreibende Datei. Wichtig! Die Inhaltliche Struktur sollte lesbar und verstehbar sein.</p>
+<p>&gt; Überhaupt: Objektorientiertes PHP?</p>
+<p>Wen's dir hilft!?</p>
+<p>&gt; Einen Ordner für alle Module?<br />
+&gt; Und darin nochmal einen Ordner pro Modul?</p>
+<p>Wenn du genug Module für Packages hast, machst du damit den Code nur besser wartbar. Da du ja nicht viel Struktur haben möchtest, solltest du nicht anfangen zich Ordner zu erzeugen, in denen nachher nur eine Datei enthalten ist.</p>
+<p>Struktur kann man auch mit benamsung schaffen. Packages mit Punkten im Dateinamen zu trennen sieht nett aus :)</p>
+<p>&gt; Einen Ordner für alle alle Themes und darin einen<br />
+&gt; Ordner pro Theme?</p>
+<p>Themes in Ordnern abzulegen macht doch sinn, oder? Dann kann jeder Themer seine Struktur einbringen (heißt der Image-Ordner nun "img" oder"image" oder "bilder" oder "gfx"?).</p>
+<p>Ich würde es im allgemeinen mit der Struktur nicht übertreiben, du willst doch eh ein KISS-System, oder?</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="/user/12">LeSven</a> <a href="/2009/02/27/heimweh-010-es-geht-los#comment-6231" id="comment-6231" class="active">#</a>      </p>
+    <p>Du beschreibst hier teilweise Sachen/Vorgehensweisen (bezogen auf alle Heimweh Texte), da läuft es mir kalt den Rücken runter....</p>
+<p>Aber ich mag dich auch weiterhin, aber zeige mir nie den Quelltext des Monsters, welches du da erschaffen willst ;)</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/02/27/heimweh-010-es-geht-los#comment-6232" id="comment-6232" class="active">#</a>      </p>
+    <p>@Wolfgang</p><p>Ja, ich glaube das klingt sehr logisch und "natürlich" so. Das fühlt sich gut an.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/02/27/heimweh-010-es-geht-los#comment-6233" id="comment-6233" class="active">#</a>      </p>
+    <p>"Das ist ein klassischer Hack", sagte LeSven zu mir</p><p>@LeSven: Ich weiß, Sven, ich weiß. Dir habe ich viel zu verdanken, was Software-Entwicklung betrifft. Vielleicht mehr als jedem anderen. Und ich erinnere mich noch gut daran, wie Du mir damals, als ich schon mal XML in eine relationale Daten gesteckt habe zu mir sagtest: "Das ist ein klassischer Hack."</p>
+<p>Aaaber der Unterschied zu damals ist: Heute weiß ich das und breche diese Regeln bewußt und mit voller Absicht und – und das ist wichtig – nur für mich alleine. Das heißt aber nicht, dass ich Deinen Rat nicht achten würde. Im Gegenteil – ich würde mich sogar sehr, sehr freuen, wenn Du die kalten Rückenrunterläufe etwas genauer beschreiben könntest. Nichts in Heimweh ist in Stein gemeißelt. Im Gegenteil: Be open to new paths and change the direction!</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

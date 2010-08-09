@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Datenhaltung | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2009/02/15/captain-future" />
+  <link rel="next" href="/2009/02/15/github" />
+  <meta name="path" content="/2009/02/15/datenhaltung" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="7332" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1234709979" />
+  <meta name="created-string" content="15. 02. 2009 - 15:59" />
+  <meta name="changed-timestamp" content="1234710046" />
+  <meta name="changed-string" content="15. 02. 2009 - 16:00" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/datenhaltung.jpg" />
+  <meta name="path" content="/2009/02/15/datenhaltung" />
+  <meta name="node-id" content="7332" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1234709979" />
+  <meta name="created-string" content="15. 02. 2009 - 15:59" />
+  <meta name="changed-timestamp" content="1234710046" />
+  <meta name="changed-string" content="15. 02. 2009 - 16:00" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Maschinen" href="../../../ressort/maschinen" />
+  <link rel="index" title="CCK" href="../../../lexikon/cck" />
+  <link rel="index" title="CMS" href="../../../lexikon/cms" />
+  <link rel="index" title="Content Management" href="../../../lexikon/content-management" />
+  <link rel="index" title="Daten" href="../../../lexikon/daten" />
+  <link rel="index" title="Mixed Content Model" href="../../../lexikon/mixed-content-model" />
+  <link rel="index" title="Relationale Datenbanken" href="../../../lexikon/relationale-datenbanken" />
+  <link rel="index" title="Semantic Web" href="../../../lexikon/semantic-web" />
+  <link rel="index" title="SQL" href="../../../lexikon/sql" />
+  <link rel="index" title="XML" href="../../../lexikon/xml" />
+  <meta name="keywords" content="Maschinen, CCK, CMS, Content Management, Daten, Mixed Content Model, Relationale Datenbanken, Semantic Web, SQL, XML" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-7332 arg01-node-7332" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2009/02/15/captain-future.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2009/02/15/github.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-1">  
+      <!-- start:node -->
+      <h2>Datenhaltung</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/datenhaltung.jpg' alt='Datenhaltung'/></p>
+<!-- ende:teaserimage -->
+<p>In letzter Zeit beschäftige ich mich – eigentlich ohne große Not – mit unterschiedlichen Konzepten der Datenhaltung. Ein bisschen was davon möchte ich hier mal zusammenfassen. Erstmal nur so für mich. Ohne Sendungsbewußtsein und Anspruch auf Vollständigkeit oder Korrektheit.</p>
+<h3>Relationale (SQL basierte) Datenbanken</h3>
+<p>Relationale Datenbanken sind immer noch in gewisser Hinsicht das A und O der Datenhaltung. Klassischer Weise überlegt sich der Entwickler dabei vorher welche Informationsstrukturen man denn gerne abbilden möchte und bastelt dann daraus mit viel Gehirnschmalz und evtl. einem Tool wie dem <a href="http://code.google.com/p/wwwsqldesigner/">WWW-SQL-Designer</a> ein normalisierte Datenbankschema. Darauf baut dann die Anwendung auf. Soweit so gut. </p>
+<h4>Vorteile</h4>
+<p>Es ist hocheffektiv und prima performant<br />
+Es ist gut filter- und sortierbar.</p>
+<h4>Nachteile</h4>
+<p>Google hat keinen direkten Zugang zu Datenbanken.<br />
+Datenstrukturen können nicht direkt von Laien erstellt oder erweitert werden.</p>
+<h3>Content Construction Kit kurz CCK</h3>
+<p>CCK ist  eigentlich ein Drupal Modul, dass man sich so aber auch für jedes gute CMS bauen könnte. Es erweitert das oben beschriebene Model relationaler Datenbanken. Die Idee ist ganz einfach: Man kann über ein GUI zu einem bestehenden Content-Typen (Wie bspw. Blogartikel, Tweets, Bookmarks, etc.) weitere Datenfelder hinzufügen. Und zwar alles was das Herz begehert: Datumse, Zahlen, kruze Texte, lange Texte, URLs, Dateienm Flickr-Bilder, Tweets – kurz: Alles. CCK legt dazu dann einfach weitere Datenbanktabellen an und fertig ist die Laube.</p>
+<p>CCK wandert in Drupal 7 nicht umsonst in den Kern, denn es erfüllt einen Bedarf, der bei immer mehr Betreibern von Websites aufkommt: Man möchte nicht nur Artikel schreiben sondern den Kram über den man da schreibt auch sauber erfassen und hinterher sauber weiterverwenden. Ich glaube CCK wird als generisches Feature eine große Zukunft haben, und andere CMSe werden es schnell adaptieren. Uuund: CKK und das Semantic Web sind dufte Kumples.</p>
+<h4>Nachteil</h4>
+<p>Es ist eher inperformant.</p>
+<h4>Vorteil</h4>
+<p>Es kann von Laien erstellt und gepflegt werden.</p>
+<h3>XML</h3>
+<p>XML ist eigentlich zu abstrakt um direkt mit relationalen Datenbanken vergleichbar zu sein. In seinem konkreten Einsatz ist es aber in einigen Punkten durchaus vergleichbar. Wie HTML hat XML seine Wurzeln in einer dokumentzentrierten Vorstellung von Daten. Und es spielt immer dann sein Stärken voll aus, wenn es zur Strukturierung von Dokumenten verwendet wir.</p>
+<h4>Nachteile</h4>
+<p>Volltextsuche / Aspekt-Suche über ein ganzes Korpus geht nicht wirklich gut.<br />
+Für Korpora ist es noch eher inperformant.</p>
+<h4>Vorteile</h4>
+<p>XML-Dokumente sind als URLs erreichbar.<br />
+Erlaubt es Mixed Content Modell abzubilden (OHCO-Modell).<br />
+Von XML-erfahrenen User sehr leicht auf Dokumentebene erweiterbar.</p>
+<h3>DB-XML</h3>
+<p>Für das kleine <a href="http://anmutunddemut.de/tests/mediathek.php">Itunes-Experiment</a> von neulich hab ich auf dem XML-Export-Format von Itunes gearbeitet. Ich hab keine Ahnung, ob Itunes das intern auch verwendet. So wie Itunes sich verhält scheint es mir aber fast so. Das ist durchaus erstaunlich und versetzt mich seither ins Grübeln, denn dieses XML-Format ist in einem sehr hohen Maße generisch. Man könnte es in einem relationalen DB-Schema mit zwei bis vier Tabellen totschlagen.<br />
+Das erstaunliche daran, ist, dass Itunes alle komplexeren Operationen – genau wie ich in meinem kleinen Skript – auf mehrdimensionalen, assoziativen Array zur Laufzeit zu machen scheint. Klar, eine Desktop-Anwendung kann sich das erlauben. Aber mein kleines PHP-Skript scheint damit auch keine Probleme zu haben.</p>
+<h4>Nachteile</h4>
+<p>Das Modell beinhaltet tonnenweise Redundanzen</p>
+<h4>Vorteile</h4>
+<p>Es ist extrem leicht erweiterbar und ähnelt dem Ansatz von CCK</p>
+<p><b>Nachtrag:</b> Der Artikel lag jetzt gut 14 Tage als Draft rum und ich hab ihn immer wieder hier und da erweitert. Und je länger ich ihn hab abhängen lassen, desto mehr wuchs in mir der Wunsch, <a href="http://anmutunddemut.de/2008/10/23/der-blick-deinen-augen-sagt-mir-mehr-ueber-das-glueck-als-die-ganzen-philosophen">doch wieder ein eigenes CMS hochzuziehen</a>. XML ist so geil und Datenbanken so unkuhl. Außerdem will ich wieder alles selber kontrollieren. Alles. Und wenig Code haben. Minimalismus muss.</p>
+<p>… to be continued …</p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 15. 2. 2009</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Ressort:</span>
+        <a href="../../../ressort/maschinen.html" rel="ressort">Maschinen</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/cck.html" rel="lexicon">CCK</a>, 
+        <a href="../../../lexikon/cms.html" rel="lexicon">CMS</a>, 
+        <a href="../../../lexikon/content-management.html" rel="lexicon">Content Management</a>, 
+        <a href="../../../lexikon/daten.html" rel="lexicon">Daten</a>, 
+        <a href="../../../lexikon/mixed-content-model.html" rel="lexicon">Mixed Content Model</a>, 
+        <a href="../../../lexikon/relationale-datenbanken.html" rel="lexicon">Relationale Datenbanken</a>, 
+        <a href="../../../lexikon/semantic-web.html" rel="lexicon">Semantic Web</a>, 
+        <a href="../../../lexikon/sql.html" rel="lexicon">SQL</a>, 
+        <a href="../../../lexikon/xml.html" rel="lexicon">XML</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://tepasse.org/">Tim Tepaße</a> <a href="/2009/02/15/datenhaltung#comment-6115" id="comment-6115" class="active">#</a>      </p>
+    <p>Mit „DB-XML“ meinst Du die <code>~/Music/iTunes/iTunes Music Library.xml</code>? Wenn ja, dann ist das nur eine Metasyntax für hierarchische Datenstrukturen, ähnlich wie JSON oder das schönere <a href="http://yaml.org/" hreflang="en">YAML</a>. In diesem Falle handelt es sich um <a href="http://developer.apple.com/documentation/Darwin/Reference/ManPages/man5/plist.5.html" lang="en">property lists</a>, einer Schreibweise für fast die gleichen Datenstrukturen (Listen, Dictionaries, Zahlen, Strings, Wahrheitswerte), die es auch in JSON gibt. PLists wurden für NextStep als ASCII-Struktur mit geschweiften Klammern eingeführt, mit der Übernahme in Mac OS X dann ver-XML-t und inzwischen gibt es eine Binärversion davon um schneller darauf zugreifen zu können. Für PLists gibt es in Apples Frameworks haufenweise Parser, die daraus richtige Objekte machen; deswegen wird das dort gerne zur Datenspeicherung genommen. Rein auf der syntaktischen Ebene, als potentiell Schreibender ziehe ich bei so etwas YAML vor.</p>
+<p>Weg von der Syntax, hin zu Datenbanken, die Dich eventuell auch interessieren könnten, nämlich zwei Sorten von Dokument-orientierten Datenbanken. Man arbeitet bei diesen nicht zwangsläufig mit einem strengen Schema; kann also nach belieben weitere Daten hinzufügen.</p>
+<p>XML-Datenbanken wie <a href="http://exist.sourceforge.net/" hreflang="en">exist</a> speichern XML-Dokumente, bieten zusätzlich auch noch einen Index über die XML-Struktur an. Man kann dann mit XPath oder XQuery wunderbar Anfragen an die Menge von Dokumenten stellen und diese als neue XML-Dokumente ausgeben. Manche XML-Datenbanken bieten auch integrierte Volltextsuchen an.</p>
+<p>Eine andere, derzeit ziemlich hippe Dokument-orientierte Datenbank ist <a href="http://books.couchdb.org/relax/" hreflang="en">CouchDB</a>; in dieser werden versionierte JSON-Dokumente gespeichert. Spezielle Views auf diese Dokumente werden mittels serverseitigem Javascript erstellt, das dann natürlich direkt auf JSON operieren kann. Auch eine Volltextsuche ist in Arbeit. </p>
+<p>Sowohl exist als auch CouchDB bieten REST-Interfaces über HTTP an. Dazu kommen recht mächtige Admin-Interfaces, die wiederrum auch über HTTP funktionieren. Natürlich setzt dass dann einen eigenen (v)Server voraus; auch sind sie in einigen Teilen noch eher komplex, eher was für Bastler und ähnlich veranlagte; weniger was für die CMS-gewöhnten. Aber sie sind interessant.</p>
+<p>Und natürlich gibt es Triple-Stores, die direkt RDF speichern. ;-)</p>
+<p>(Kein &lt;abbr>, &lt;dfn>, &lt;var>, &lt;blockquote>?)</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/02/15/datenhaltung#comment-6116" id="comment-6116" class="active">#</a>      </p>
+    <p>Wohow</p><p>Für's Erste, weil ich so müde bin: Danke! Bald dann mehr von mir dazu.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/02/15/datenhaltung#comment-6145" id="comment-6145" class="active">#</a>      </p>
+    <p>So Tim, jetzt noch mal mit Muße.</p><p>Ja, Genau das XML Format meine ich. Das witzige daran ist, ja, dass fast die ganze Semantic außerhalb der XML-Elemente liegt. Würde man der Schulbuchmethode wie bei "<a href="http://www.amazon.de/Developing-SGML-DTDs-Model-Markup/dp/0133098818">Developing SGML DTDs</a>" folgen, würde man ja das, was in dem Format als Werte in den key-Elementen drin steht, als Elemente oder attribute definieren, jenachdem.</p>
+<p>Was die Syntax angeht, bin ich als alter Texttechnologe ja ein XML-Kind. Das kenn ich, das kann ich, das lieb ich. :)<br />
+Daher kenne ich mich auch ein bisschen mit XML-Datenbanken aus, muss aber zugeben, dass seit meiner letzten Beschäftigung damit schon etwas Zeit ins Land gegangen sind. Damals war <a href="http://www.softwareag.com/Corporate/products/wm/tamino/default.asp">Tamino die einzige, die halbwegs was brauchbares lief. Und die war aber nicht zu bezahlen.</a></p>
+<p>Daher: Danke für das Update. Insbesondere CouchDB sieht so ziemlich nach dem aus, was ich mir vorstelle. Und ich würde das ja glatt ausprobieren, wenn ja wenn ich nicht den Wunsch und ein bisschen aus den Anspruch hätte, aus den einfachsten Zutaten etwas leckeres zu kochen. PHP5 XML MYSQL je weniger von allem desto besser. So soll es werden. Evtl. tausche ich PHP noch gegen Ruby. Mal schauen, was Basti mir bringt.<br />
+Deswegen lasse ich all die spannenden Sachen <b>für dieses Projekt</b> außen vor, werde sie aber nicht vergessen. </p>
+<p>1000 Dank für den aufwändigen Kommentar und die spannenden Anregungen!</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/02/15/datenhaltung#comment-6146" id="comment-6146" class="active">#</a>      </p>
+    <p><abbr> <dfn> <var> <blockquote></p><p>&lt;abbr&gt; &lt;dfn&gt; &lt;var&gt; &lt;blockquote&gt; hab ich hinzugefügt</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://tepasse.org/">Tim Tepaße</a> <a href="/2009/02/15/datenhaltung#comment-6147" id="comment-6147" class="active">#</a>      </p>
+    <p>Text-Plists waren ja eigentlich mal eine Metasyntax, die Einführung von XML-Plists hat man vermutlich aus der Vermutung gemacht, dass eine eigene Syntax nicht so zugänglich ist, wie eine allgemein bekannte Metasyntax wie XML. Und so hat man ein Metaformat für Datenstrukturen in einer Metasyntax implementiert und wirft damit alles aus dem Fenster, was XML praktisch macht. ;)</p>
+<p>Wenn Du auf der Suche nach simpel bist, ist vielleicht noch dieser Gedanke interessant: Dass das Dateisystem die simpelste und eine der schnellsten Datenbanken überhaupt ist. Es gibt einen Haufen kleiner „CMSe“, die statische Seiten, inklusive Feeds und ähnlichem generieren und auf den Server frachten. Im wesentlichen Skripts, die spezielle Text-Dateien parsen und in HTML und XML wandeln. <a href="http://inessential.com/">Brent Simmons</a> hat im Januar in seinem Weblog ein eigenes System vorgestellt und diverse andere verlinkt. Vielleicht sind da Anregungen drunter.</p>
+<p>Noch ein Beispiel: Github hat <a href="http://pages.github.com/">Github Pages</a> eine Möglichkeit, HTML zu publizieren, indem man einfach mittels git seine Änderungen im Repository auf Github hochlädt und somit als Nebeneffekt die dazugehörigen Webseiten publiziert. CMStechnisch können die Änderungen dann durch wieder so einen Generator statischer Seiten, nämlich <a href="http://github.com/mojombo/jekyll/tree/master">Jekyll</a>gejagt.</p>
+<p>Ich finde an solchen minimalistischen Ideen toll, dass man sein Zeug dort bearbeitet, wo man sich am wohlsten fühlt, für mich dann im eigenen Texteditor in einem minimalsten Metaformat wie z.B. Markdown oder Textile oder Restructured Text, oder, oder, oder, sprich in Textformaten, die der Eingabe angemessen sind und sich nicht mit Textfeldern in Browsern abmühen muss. Das ist aber auch eher eine persönliche Vorliebe, andere mögen anderes lieber.</p>
+<p>Ein weiteres Problem bei statischem ist natürlich der Mangel an dynamischen; keine Kommentare, keine Suche. Aber im Prinzip sollen all diese mini-CMS-Skripts auch nur Anregungen für ein mögliches Backend Deines Minimalst-CMS sein.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

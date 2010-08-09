@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Codex | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2007/12/17/creative-common-sense" />
+  <link rel="next" href="/pages/codex/semantic-weblog-module" />
+  <meta name="path" content="/seite/codex" />
+  <meta name="root" content="../" />
+  <meta name="node-id" content="5520" />
+  <meta name="node-type" content="page" />
+  <meta name="created-timestamp" content="1197883247" />
+  <meta name="created-string" content="17. 12. 2007 - 10:20" />
+  <meta name="changed-timestamp" content="1270317322" />
+  <meta name="changed-string" content="03. 04. 2010 - 19:55" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/codexdrupal.jpg" />
+  <meta name="path" content="/seite/codex" />
+  <meta name="node-id" content="5520" />
+  <meta name="node-type" content="page" />
+  <meta name="created-timestamp" content="1197883247" />
+  <meta name="created-string" content="17. 12. 2007 - 10:20" />
+  <meta name="changed-timestamp" content="1270317322" />
+  <meta name="changed-string" content="03. 04. 2010 - 19:55" />
+  <meta name="creator" content="ben_" />
+  <meta name="keywords" content="" />
+  <link type="text/css" rel="stylesheet" media="all" href="../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../css/takeshi.css" />    
+  <script type="text/javascript" src="/js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-5520 arg01-node-5520" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="/2007/12/17/creative-common-sense" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="/pages/codex/semantic-weblog-module" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node page published full page-full with-teaserimage age-2">  
+      <!-- start:node -->
+      <h2>Codex</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/codexdrupal.jpg' alt='Codex'/></p>
+<!-- ende:teaserimage -->
+<p><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /></p>
+<p>Auf dieser Seite sammele ich alle meine Beiträge zu Drupal und beschreibe, wie mein Setup zum Bloggen mit Drupal 6 hier aussieht.</p>
+<ul>
+<li><a href="#nodetypes">Nodetypen</a></li>
+<li><a href="#coremodules">Kern-Module</a></li>
+<li><a href="#thirdpartymodules">Third Party Module</a></li>
+<li><a href="#ownmodules">Eigene Module</a></li>
+<li><a href="#ownthemes">Eigene Themes</a></li>
+<li><a href="#wordpress">Von Wordpress nach Drupal</a></li>
+<li><a href="#blogging">Bloggen mit Drupal</a></li>
+<li><a href="#cckviews">CCK und Views</a></li>
+<li><a href="#links">Links</a></li>
+</ul>
+<h3 id="nodetypes">Node-Typen</h3>
+<dl>
+<dt>Page</dt>
+<dd>Dieser Nodetyp kommt von Drupals Kern und ich verwende ihn – wie gedacht – für statische Seiten, wie Impressum, Vorwort und dergl.</dd>
+<dt>Story</dt>
+<dd>Dieser Typ kommt ebenfalls mit dem Kern mit und ich verwende ihn für alle Blog-Artikkel, die ich hier veröffentliche. Damit ist er der wichtigste Typ.</dd>
+<dt>Quote</dt>
+<dd>Diesen Typen habe ich ohne ein extra Modul neu angelegt und verwende ihn v.a. für Zitate.</dd>
+<dt>Moblog</dt>
+<dd>Diesen Nodetype bringt mein Modul "Moblog" mit und er ist v.a. dazu da Bilder von meinem Handy abzubilden.</dd>
+<dt>Bookmark</dt>
+<dd>Bookmark Nodes werden v.a. von meinem Modul Feedimporter erzeugt und stammen damit aus meinen ehem. Delicious- und Magnolia-Accounts.</dd>
+<dt>Note</dt>
+<dd>Eine Notiz, wie in einem Zettelkasten. In der Regel ergibt die nur für mich selber Sinn und steht im Zusammenhang mit einem Projekt. Daher landen Notes nicht mit im allgemeinen Feed.</dd>
+</dl>
+<p>Für den Aufbau der Architektur der Node-Typen gilt grundsätzlich, dass man unterschiedliche Nodetypen als unterschiedliche Typen von Dokumenten betrachten sollte, wie Word- Excel und Powerpoint-Dokumente. Wenn ich im Artikel-Anlage-Dialog (bzw. im Node-Creation-Form) für mache Nodes andere Felder und Möglichkeiten haben möchte als für andere, dann sollte man zu dem Zweck einen neuen Nodetypen anlegen.</p>
+<p>So hat ein Bookmark bspw. ein Feld für die URL. Ein Topic hat ein Feld, welchen Term es definiert. Man muss sich aber nicht streng daran halten. Quotes und Moblog Nodes haben bswp. keine Sonderfunktionen.</p>
+<p>Auch bei der Entscheidung, welche Nodes auf die Startseite sollen und welche nicht, sind Node-Typen hilfreich, da man pro Node-Typ einstellen kann, ob er per Default nach der Erstellung auf der Startseite erscheinen soll, oder nicht. Bookmarks und Moblogs landen bei mir bspw. nicht automatisch auf der Startseite.</p>
+<h3 id="coremodules">Aktivierte Kernmodule</h3>
+<p>Drupal kommt im Kern mit einigen Modulen daher, von denen aber ein paar nicht angeschaltet sind. Hier erkläre ich mal welche ich aktiviert habe und wie sie konfiguriert sind.</p>
+<dl>
+<dt>Comment</dt>
+<dd>Ich habe die Kommentare so eingerichtet, dass immer alle unter den Node angezeigt werden, der Subject aus ist und man kein Preview machen muss</dd>
+<dt>Taxonomy </dt>
+<dd>Ich habe vier Vokabulare eingerichtet.
+<ol>
+<li>Ressort</li>
+<li>Serie</li>
+<li>Stichworte</li>
+<li>Projekt</li>
+</ol>
+<p>Ich denke, die erklären sich von selbst. Ressort und Serie sind relativ klein. Da sind nur je ein Dutzend Terme drin und die als Multiselect-Dropdown im Artikel-Anlage-Dialog verwendet werden. Stichworte hingegen sind inzwischen ein ziemlich großes Tagging-Vokabular mit mehr als 4000 Termen. Alle Vokabulare kann man in allen Node-Typen verwenden.<br />
+</p></dd>
+<dt>Path</dt>
+<dd>Path erlaubt alternative URLs für Nodes und so.</dd>
+<dt>Locale</dt>
+<dd>Damit steuere ich die – noch unvollständige – Übersetzung des Themes und aller vom System ausgegebenen Texte.</dd>
+<dt>Search</dt>
+<dd>Die Drupalsuche habe ich natürlich aktiviert. Allerdings dürfen derzeit nur registierte Leser suchen.</dd>
+<dt>Statistics</dt>
+<dd>Das Statistik-Modul verwende ich in erster Linie um die Klicks pro Artikel zu zählen.</dd>
+</dl>
+<p>Wichtig dabei: Die Module Book und insbesondere Blog hab ich nicht aktiviert.</p>
+<h3 id="thirdpartymodules">Third Party Module</h3>
+<dl>
+<dt><a href="http://drupal.org/project/archive">Archive</a></dt>
+<dd>Bietet mir in chronologisches und nach Node-Typen filterbares Archiv.</dd>
+<dt><a href="http://drupal.org/project/pathauto">Pathauto</a></dt>
+<dd>Erstellt schöne URLs für Nodes, Terms und User.</dd>
+<dt><a href="http://drupal.org/project/token">Token</a></dt>
+<dd>Wird für Path Auto benötigt.</dd>
+<dt><a href="http://mollom.com">Mollom</a></dt>
+<dd>Mollm beschützt ich vor Spam</dd>
+<dt><a href="http://drupal.org/project/mollom">Poormanscron</a></dt>
+<dd>Um den Cronjob anzustoßen, der für die Suche und für's Moblog wichtig ist.</dd>
+</dl>
+<h3 id="ownmodules">Eigene Module</h3>
+<dl>
+<dt>Teaserimage</dt>
+<dd><a href="http://anmutunddemut.de/node/5523">Teaserimage</a> ist ein Modul, dass es erlaubt einfach Teaserbilder zu Nodes hinzuzufügen.</dd>
+<dt>Semantic Weblog</dt>
+<dd><a href="http://anmutunddemut.de/node/5521">Das Semantic Weblog Modul</a> vereint eine die journalisitsche Ordnung eines Blogsystems mit der lexikalischen Ordnung eines Wikis.</dd>
+<dt>Notifier</dt>
+<dd>Macht das, was Wordpress schon von sich aus kann: Mails verschicken, wenn es einen neuen Kommentar gibt.</dd>
+<dt>Reactions</dt>
+<dd>Angefangen hat das Modul Stefan Auditor von den <a href="http://erdfisch.de">Erdfischen</a>. Ergänzt um Datenbankspeicherung hat es Marcus Abel vom <a href="http://anmutunddemut.de/2004/01/27/buddhabot-goes-moblog">Digitalkombinat</a>. Die Drupal 6 Version blieb mir und machen tut es folgendes: Es schaut für jede Node nach, ob es Reaktionen zu ihr in der Blogsphäre gibt und speichert diese. Im Grund also das gleiche wie Trackbacks und Pingbacks. Nur über den Umweg Technorati / Google Blogsearch. Dafür aber auch spamfrei.<br />
+</dd>
+<dt>Moblog</dt>
+<dd>Fragt per Cron-Job ein Postfach auf Mails ab und verwandelt diese in Nodes. Moblogging halt.</dd>
+<dt>Dashboard</dt>
+<dd>Dashboard bietet mit ein Schaltzentrale, die ähnliche Inhalte wie das Wordpress-Dashboard mitbringt. U.a. sind da folgende Blöcke drin.
+<ul>
+<li>Mein letzten unveröffntlichen Nodes (Drafts)</li>
+<li>Letzte Kommentare zu meinen Nodes</li>
+<li>Meine letzten veröffetlichten Nodes</li>
+<li>Suchbox</li>
+<li>Quicklinks zu den Artikel-Anlage-Dialogen (Node-Creation-Form)</li>
+<li>Quicklinks zu Adminfunktionen</li>
+<li>Globale Statistiken</li>
+</ul>
+</dd>
+<dt>XML Wellformed</dt>
+<dd>Dieses Modul überprüft jede Node beim Speichern, ob der Text wohlfgeformtes XML ist. Außerdem stellt es eine Liste aller und ihren Wohlgeformtheitsstatus zur Verfügung</dd>
+</dl>
+<p>Wer eigene Module entwickeln will, dem sei v.a. die Drupal API ans Herz gelegt.<br />
+<a href="http://api.drupal.org/api/6" title="http://api.drupal.org/api/6">http://api.drupal.org/api/6</a><br />
+Hooks gehören für den Modul-Entwickler zur wichtigsten Möglichkeit Funktionen zu Drupal hinzuzufügen.<br />
+<a href="http://api.drupal.org/api/group/hooks/6" title="http://api.drupal.org/api/group/hooks/6">http://api.drupal.org/api/group/hooks/6</a></p>
+<h3 id="ownthemes">Eigene Themes</h3>
+<dl>
+<dt>Ferdinand</dt>
+<dd>Ferdinand ist ein neues, ebenfalls minimalistisches Theme basierend auf dem Code von "Mies".</dd>
+<dt>Mies</dt>
+<dd><a href="http://anmutunddemut.de/node/5522">Mies</a> ist mein erstes eigenes Theme basierend auf dem Code von Bluemarine. Mies wird derzeit nicht mehr verwendet.</dd>
+</dl>
+<p>Wer eigene Themes entwicklen will, dem sei v.a. die Drupal Einführung ins Theming ans Herz gelegt.<br />
+<a href="http://drupal.org/node/171194" title="http://drupal.org/node/171194">http://drupal.org/node/171194</a><br />
+Da Drupal – anders als Wordpress – viel Theminglogik aus den Themes heraus in die Module verlagert, mit Hilfe von sog. <em>themable functions</em>, ist wiederum die die API wertvoll, da man über die type ahead Suche schnell die nötigen funktionen findet indem man einfach  "theme_" ins Suchfeld eingibt.<br />
+Infos zu themable Funktions: <a href="http://api.drupal.org/api/group/themeable" title="http://api.drupal.org/api/group/themeable">http://api.drupal.org/api/group/themeable</a><br />
+Infos zu allgemeinen Mechanik: <a href="http://drupal.org/node/341628" title="http://drupal.org/node/341628">http://drupal.org/node/341628</a></p>
+<p>Weitere hilfreiche Seiten:<br />
+Infos zur node.tpl.php: <a href="http://drupal.org/node/11816" title="http://drupal.org/node/11816">http://drupal.org/node/11816</a><br />
+Infos zur page.tpl.php: <a href="http://drupal.org/node/11812" title="http://drupal.org/node/11812">http://drupal.org/node/11812</a><br />
+Infos zur block.tpl.php: <a href="http://drupal.org/node/11813" title="http://drupal.org/node/11813">http://drupal.org/node/11813</a><br />
+Infos zur comments.tpl.php: <a href="http://drupal.org/node/11815" title="http://drupal.org/node/11815">http://drupal.org/node/11815</a></p>
+<h3 id="wordpress">Von Wordpress nach Drupal</h3>
+<p>Die Migration von Wordpress nach Drupal gestaltet sich leider nicht ganz so reibungslos, wie die normale Migration <i>nach</i> Wordpress. Ich habe für die Datenmigration ein eigenes Modul geschrieben, dass auf dem Wordpress-XML-Export arbeitet. Inzwischen gibt es aber auch andere Module:<br />
+<a href="http://drupal.org/project/wp2drupal" title="http://drupal.org/project/wp2drupal">http://drupal.org/project/wp2drupal</a><br />
+<a href="http://drupal.org/project/wordpress_import/" title="http://drupal.org/project/wordpress_import/">http://drupal.org/project/wordpress_import/</a></p>
+<p>Die Kernfunktionen, Page, Post, Comments, Categories und Tags sollten sich in der Regel ganz gut migrieren lassen, da es im Drupal-Kern korrelierende Funktionen gibt. Probleme machen aber nicht nur Daten und Funktionen aus Wordpress Plugins sondern auch der Import der Meta-Daten und Assets.</p>
+<p>Außerdem wollen Dateien wie Bilder migriert werden. Hier gibt es auch einen nicht unerheblichen Unterschied. Wordpress speichert seine Bilder in /uploads.<br />
+Drupal hingegen möchte eigentlich alle Dateien in /files speichern, was ich eigentlich auch uneingeschränkt empfehle. Kopiert man aber alle Bilder von /uploads nach /files passe die Pfade im HTML-Quelltext der Texte nicht mehr. Daher habe ich vor der Migration in der WP-XML-Datei mit Suchen-Ersetzen die Pfade entsprechend angepasst.</p>
+<h3 id="blogging">Bloggen mit Drupal</h3>
+<p>Abschließend möchte ich noch ein paar Worte dazu machen, wie Drupal sich so als System für den einzelnen Blogger verhält. Man muss eines ganz klar sagen: Drupal ist komplexer als Wordpress und damit auch komplizierter zu verwenden.</p>
+<p>Aber schon der Drupal-Kern bringt Funktionen mit, denen sich das eigene Blog flexibler und anspruchsvoller gestalten und pflegen läßt. So bietet z.B. das Block- und Regions-System eine Vielfalt an Gestaltungsmöglichkeiten, mit denen sich das Blog von einem chronologischen Tagebuch in ein vielfältiges Magazin verwandeln läßt.</p>
+<p>Es lohnt sich, nach und nach die einzelnen Aspekte von Drupal auszuprobieren um zu schauen, welche Möglichkeiten sich ergeben.</p>
+<h3 id="cckviews">CCK und Views</h3>
+<p>Die beiden Third Party Module CCK aka <a href="http://drupal.org/project/cck">Content Construction Kit</a> und <a href="http://drupal.org/project/views">Views</a> gehören fraglos zu den mächstigsten Werkzeugen, die derzeit im Open Source Content Management Bereich zu bekommen sind. <i>CCK</i> erlaubt es zu Nodes weitere Datenfelder hinzuzufügen, ohne dass Programmierung nötig wäre. Dabei bietet CCK fast alle gebräuclichen Datenformate und Formular-Elemente in unterschiedlichen Konfigurationen an. <i>Views</i> hingegen ermöglicht es Seiten anzulegen, die unterschiedliche Inhalte aus dem CMS herausfilter und sortieren, wiederum ohne dass Programmierung nötig wäre.</p>
+<p>Einzel und in Kombination kann man mit CCK und Views nicht nur ganze Reihen Plugins / Modulen erstzen, sondern v.a. sich sein Blog und dessen Daten nach den eigenen Bedürfnissen gestalten.</p>
+<h3 id="links">Links</h3>
+<p>Module – Standards<br />
+<a href="http://drupal.org/project/archive" title="http://drupal.org/project/archive">http://drupal.org/project/archive</a><br />
+<a href="http://drupal.org/project/pathauto" title="http://drupal.org/project/pathauto">http://drupal.org/project/pathauto</a><br />
+<a href="http://drupal.org/project/token" title="http://drupal.org/project/token">http://drupal.org/project/token</a></p>
+<p>Module – CCK und Views<br />
+<a href="http://drupal.org/project/cck" title="http://drupal.org/project/cck">http://drupal.org/project/cck</a><br />
+<a href="http://drupal.org/project/views" title="http://drupal.org/project/views">http://drupal.org/project/views</a></p>
+<p>Module – Spam<br />
+<a href="http://drupal.org/project/mollom" title="http://drupal.org/project/mollom">http://drupal.org/project/mollom</a><br />
+<a href="http://mollom.com" title="http://mollom.com">http://mollom.com</a></p>
+<p>Module – Wordpressmigration<br />
+<a href="http://drupal.org/project/wp2drupal" title="http://drupal.org/project/wp2drupal">http://drupal.org/project/wp2drupal</a><br />
+<a href="http://drupal.org/project/wordpress_import/" title="http://drupal.org/project/wordpress_import/">http://drupal.org/project/wordpress_import/</a></p>
+<p>Theming<br />
+<a href="http://drupal.org/theme-guide/6" title="http://drupal.org/theme-guide/6">http://drupal.org/theme-guide/6</a><br />
+<a href="http://drupal.org/project/Themes" title="http://drupal.org/project/Themes">http://drupal.org/project/Themes</a><br />
+<a href="http://drupal.org/project/zen" title="http://drupal.org/project/zen">http://drupal.org/project/zen</a></p>
+<p>API<br />
+<a href="http://api.drupal.org/api/6" title="http://api.drupal.org/api/6">http://api.drupal.org/api/6</a><br />
+<a href="http://api.drupal.org/api/group/hooks/6" title="http://api.drupal.org/api/group/hooks/6">http://api.drupal.org/api/group/hooks/6</a></p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Seite vom 17. 12. 2007</p>
+        
+      <!-- end:footnotes -->
+    </div>
+    
+
+
+    <div id="comments">
+      <!-- start:comments -->
+      <hr/>
+      <h2>Kommentare</h2>
+
+      <!-- Last Comment standing -->
+
+      <!-- end:comments -->
+    </div>
+
+    <!-- start:comment-form -->
+    <div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+    <!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

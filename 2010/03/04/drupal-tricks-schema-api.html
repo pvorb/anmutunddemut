@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Drupal Tricks – Schema API | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2010/03/04/ungeziefer" />
+  <link rel="next" href="/2010/03/05/sonnenaufgang" />
+  <meta name="path" content="/2010/03/04/drupal-tricks-schema-api" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="8470" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1267698343" />
+  <meta name="created-string" content="04. 03. 2010 - 11:25" />
+  <meta name="changed-timestamp" content="1267699184" />
+  <meta name="changed-string" content="04. 03. 2010 - 11:39" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/chrupal.jpg" />
+  <meta name="path" content="/2010/03/04/drupal-tricks-schema-api" />
+  <meta name="node-id" content="8470" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1267698343" />
+  <meta name="created-string" content="04. 03. 2010 - 11:25" />
+  <meta name="changed-timestamp" content="1267699184" />
+  <meta name="changed-string" content="04. 03. 2010 - 11:39" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Maschinen" href="../../../ressort/maschinen" />
+  <link rel="index" title="Drupallernen" href="../../../serie/drupallernen" />
+  <link rel="index" title="Datenbanken" href="../../../lexikon/datenbanken" />
+  <link rel="index" title="Drupal" href="../../../lexikon/drupal" />
+  <link rel="index" title="Schema" href="../../../lexikon/schema" />
+  <meta name="keywords" content="Maschinen, Drupallernen, Datenbanken, Drupal, Schema" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-8470 arg01-node-8470" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2010/03/04/ungeziefer.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2010/03/05/sonnenaufgang.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-50">  
+      <!-- start:node -->
+      <h2>Drupal Tricks – Schema API</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/chrupal.jpg' alt='Drupal Tricks – Schema API'/></p>
+<!-- ende:teaserimage -->
+<p>Ein geiles Feature in Drupal ist die <a href="http://drupal.org/node/146843">Schema API</a>. Man definiert die Datenbankstrukturen zu einem Modul in einem Array, ebenso wie Ergänzungen und Veränderungen in späteren Versionen des Moduls. So kann man Module sauber installieren, updaten und deinstallieren. Das ist nicht ganz so professionell wie ein Objektpersistenter Datenbanklayer, aber immerhin professioneller, als Create-Table Anweisungen irgendwo im Modul-Code.</p>
+<p>Leider muss man dafür eigentlich wissen, wie man eine gewünschte Datenbankstruktur richtig beschreibt. Meistens hab ich einfach Schemas anderen Module kopiert und angepasst. Auf dem Wege hab ich mir mal meine Teaserimage-Tabelle zersägt, was schon zeigt, dass das nicht ganz der richtig Weg ist. </p>
+<p>Fuchsiger ist folgendes: Man installiert und aktiviert das <a href="http://drupal.org/project/schema">Schema Modul</a>. Dann legt man die Tabellen, die man gerne hätte mit dem phpMyAdmin an. Dann sucht man sich unter <em>admin/build/schema/inspect</em> das Schema-Array raus und kopiert es in die .install Datei des Moduls. Dann die Tabellen wieder löschen und das Modul installieren. Fertig.</p>
+<p>Tip von <a href="http://drupal.org/user/28074">Sanduhrs</a></p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 4. 3. 2010</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Ressort:</span>
+        <a href="../../../ressort/maschinen.html" rel="ressort">Maschinen</a>
+        <span class='somespace'> </span>
+        <span class='title'>Serie:</span>
+        <a href="../../../serie/drupallernen" rel="series">Drupallernen</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/datenbanken.html" rel="lexicon">Datenbanken</a>, 
+        <a href="../../../lexikon/drupal.html" rel="lexicon">Drupal</a>, 
+        <a href="../../../lexikon/schema.html" rel="lexicon">Schema</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+
+
+    <div id="comments">
+      <!-- start:comments -->
+      <hr/>
+      <h2>Kommentare</h2>
+
+      <!-- Last Comment standing -->
+
+      <!-- end:comments -->
+    </div>
+
+    <!-- start:comment-form -->
+    <div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+    <!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

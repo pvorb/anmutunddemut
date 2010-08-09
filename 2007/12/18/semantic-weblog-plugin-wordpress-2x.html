@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Semantic Weblog Plugin for Wordpress 2.x | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2007/12/18/back-elfenbeinturm" />
+  <link rel="next" href="/2007/12/18/bright-eyes-cassadaga" />
+  <meta name="path" content="/2007/12/18/semantic-weblog-plugin-wordpress-2x" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="5537" />
+  <meta name="node-type" content="page" />
+  <meta name="created-timestamp" content="1197995680" />
+  <meta name="created-string" content="18. 12. 2007 - 17:34" />
+  <meta name="changed-timestamp" content="1198144183" />
+  <meta name="changed-string" content="20. 12. 2007 - 10:49" />
+  <meta name="creator" content="ben_" />
+  <meta name="path" content="/2007/12/18/semantic-weblog-plugin-wordpress-2x" />
+  <meta name="node-id" content="5537" />
+  <meta name="node-type" content="page" />
+  <meta name="created-timestamp" content="1197995680" />
+  <meta name="created-string" content="18. 12. 2007 - 17:34" />
+  <meta name="changed-timestamp" content="1198144183" />
+  <meta name="changed-string" content="20. 12. 2007 - 10:49" />
+  <meta name="creator" content="ben_" />
+  <meta name="keywords" content="" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-5537 arg01-node-5537" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2007/12/18/back-elfenbeinturm.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2007/12/18/bright-eyes-cassadaga.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node page published full page-full age-2">  
+      <!-- start:node -->
+      <h2>Semantic Weblog Plugin for Wordpress 2.x</h2>
+
+<p>The Plugin makes use of the Post-Metadata system to store more Semantic Data. In the End it aims to enable Wordpress to be a form of extreme lightweight Ontology Editor and Ontology. The fact that the Wordpress Post-Metadata-System is created as a Triplestore, allows to create typed semantic Statements between Nodes (Posts/Pages) and Strings (pure Strings or URLs) or other Nodes (Posts/Pages).</p>
+<p><a href="#setup">1. Setup</a><br /><br />
+<a href="#write">2. Adding Metadata</a><br /><br />
+<a href="#display">3. Displaying Metadata within a Post</a><br /><br />
+<a href="#register">4. Displaying Metadata within Register-Pages</a><br /><br />
+<a href="#block">5. Displaying the Register Block in your Theme.</a><br /><br />
+<a href="#download"><strong>6. Download</strong></a><br /><br />
+Further Reading:<br /></p>
+<p><a href="http://anmutunddemut.de/codex/semantic-weblog-plugin/semantic-weblog-roadmap/">Roadmap</a>, <a href="http://anmutunddemut.de/codex/semantic-weblog-plugin/semantic-weblog-todos/">ToDos</a>, <a href="http://anmutunddemut.de/codex/semantic-weblog-plugin/semantic-weblog-history/">History</a></p>
+<h3><a name="setup"></a>1. Setup</h3>
+<ol>
+<li><strong>Be sure</strong> to have the <a href="http://anmutunddemut.de/codex/aaawp">AAAWP</a> Plugin setup and running <strong>before</strong> you setup the Semantic Weblog!</li>
+<li>The most important part of the plugin is already installed, the fantatsic Wordpress Post-Meta-Data-Triple-Store.<br /><br />
+  So it does not need any further Database Tables.</li>
+<li><a name="prefix"></a>The Plugin finds the Metadata which are meant to be used with it, via a Prefix within the key Column of the Post-Metadata-Table, which has to be added to the Key.<br /><br />
+  The default Prefix is “sw_”. You may change this prefix within the class “semanticweblog” within function “__construct”.<br /><br />
+  A configuration possibility within the Worpress Backend will be added soon!</li>
+</ol>
+<h3><a name="write"></a>2. Add Metadata to Posts</h3>
+<p>To add Metadata to a Posts, just use your <a href="http://anmutunddemut.de/codex/semantic-weblog-plugin/">Prefix</a>  and the desired semantic Key and the desired Value. </p>
+<p>You can do this even without the Plugin activated. This is quite beautifull as you can use the data gathered later maybe in a different way without having to migrate them.</p>
+<p>Expample 1:</p>
+<ol>
+<li>You want to state that a Post is in the Movie “Star Wars”.</li>
+<li>Within the “Create New Post”-Form or the “Edit Post”-Form you scroll down to the “Custom Fields” Box below the Textarea.</li>
+<li>You enter “sw_movie” into the “Key” input field, and “Star Wars” into the “Value” input field.<br /><br />
+(NOTICE: if you chose “sw_” as Key-Prefix. see 1. Setup. If you changed the default prefix, use that one.)</li>
+<li>You press the “Add custom field” button. </li>
+<li>Done</li>
+</ol>
+<p>If you have used a key before, you can look if it appears in the Key-Selection-Form.<br /><br />
+Wordpress by default does only add about 20 keys into the dropdown. So Keys you have<br /><br />
+already used may not appeare there. But don’t worry. Just write the in the input form.</p>
+<p>That’s all. You can use as many Keys as you want, but I</p>
+<h3><a name="publish"></a>3. Display Metadata in the Template</h3>
+<p>Right now there is no function to display Metadata automatically by this plugin within any Theme. So you have to integrate it by yourself. But as the Access to the Metadata is part of the Wordpress Core it is not very difficult.</p>
+<p><em>Notice:</em> I’ll be adding more functions (e.g. “Template Tags”) soon. Right now, you can use all <strong>functions</strong> which come with the module. But do yourself a favour and don’t try to call the Methods defined within den Semanticweblog Class from a tempalte.</p>
+<p>Within the Loop you can use the following line to get all Custom fields</p>
+<p>$customs = get_post_custom( $post_id = 0 );</p>
+<p>The result is a multidimensional array, which may look like this:</p>
+<pre>Array
+
+    [sw_Director] =&gt; Array
+        (
+            [0] =&gt; Lucas, George
+            [1] =&gt; Rottenberry, Gene
+        )
+
+    [sw_Actor] =&gt; Array
+        (
+            [0] =&gt; Ford, Harrison
+            [1] =&gt; Shattner, William
+        )
+
+    [sw_Movie] =&gt; Array
+        (
+            [0] =&gt; Star Wars
+            [1] =&gt; Star Trek
+        )
+
+    [sw_Keyword] =&gt; Array
+        (
+            [0] =&gt; Science Fiction
+            [1] =&gt; Spaceships
+        )
+
+)
+
+</pre><p>And you can iterate like this:</p>
+<pre>// Iterate on the keys
+foreach ($customs as $key=&gt;$values){
+	// Different ifs for groups of Keys:
+	if( $key == "sw_Actor" or $key == "sw_Director"){
+	  // Display Name of the Key
+		?&gt;&lt;h3&gt;&lt;?=sw_clean_key($key)?&gt;&lt;/h3&gt;
+		&lt;ul&gt;
+		&lt;?
+		// Iterate on the single Metadata per Key
+		foreach ($values as $value){
+			// Display single Metadata
+			?&gt;&lt;li&gt;&lt;?=$value?&gt;&lt;/li&gt;&lt;?
+		}
+		?&gt;
+
+		&lt;/ul&gt;
+		&lt;?
+	// Further keys
+	}elseif($key == "sw_Movie"){
+		...
+	}else{
+		// default Keys
+	}
+
+}
+</pre><p>As the Keys of the Array are the Keys which you entered in the custom field,<br /><br />
+you may work on the systematically, within the foreach like this:</p>
+<h3><a name="register"></a>4. Create Register-Pages</h3>
+<p>To Create Pages with gather together all the precious Metadata you’ve gathered, you only have to do a few things.</p>
+<ol>
+<li>Doublicate you Template for static Pages and rename it to “register.php”. You may choose another name, if you like. And you’ll have to do this step only once, for all Register-Pages.</li>
+<li>Change the “Template Name”-Comment within the Template to /* Template Name: Register */</li>
+<li>Add these Lines within your Post-Text-div:<br />
+<pre>&lt;?sw_theme_letters($_GET['letter']);?&gt;
+&lt;?sw_theme_register($post_id, $_GET["letter"]);?&gt;
+		</pre><p>And make sure, they are within "The Loop"!
+</p></li>
+<li>Create a static Page</li>
+<li>Assign the “Register”-Template to that page</li>
+<li>Add as Customdata for each key you have used in you regular Posts a Metadata in which the key is “sw_indexfor” and the value is the key you would like this page to be the register for. For Example:
+<ul>
+<li>Within you posts you have the Realtions “sw_Actor” and “sw_Director”</li>
+<li>You want to have a register for both of them, and you already created a Page “People” and done the steps above</li>
+<li>Add the custom field with the key “sw_indexfor” and the value “sw_Actor”.</li>
+<li>Add the custom field with the key “sw_indexfor” and the value “sw_Director”</li>
+</ul>
+</li>
+<li>Done</li>
+</ol>
+<p>With that Mechanism, you can create several Registers each for as many Relation-Types you want. Of course can even use one Relations-Type in more than one Register.</p>
+<p>I suggest to have at least one Register, which is the Index for all Relation-Types you use.</p>
+<h3><a name="block"></a>5. Add Register Block to your Theme</h3>
+<h3><a name="download"></a>6. Download</h3>
+<p>Rightclick! Save Target as! Unzip! Upload to wp-content/plugins!</p>
+<ol>
+<li><a href="http://anmutunddemut.de/files/aaawp.php.zip">aaawp.php.zip</a></li>
+<li><a href="http://anmutunddemut.de/files/semanticweblog.php.zip">semanticweblog.php.zip</a></li>
+</ol>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Seite vom 18. 12. 2007</p>
+        
+      <!-- end:footnotes -->
+    </div>
+    
+
+
+    <div id="comments">
+      <!-- start:comments -->
+      <hr/>
+      <h2>Kommentare</h2>
+
+      <!-- Last Comment standing -->
+
+      <!-- end:comments -->
+    </div>
+
+    <!-- start:comment-form -->
+    <div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+    <!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Heimweh 0.4.3 – Dokumente und Datenströme | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2009/03/30/sonne" />
+  <link rel="next" href="/2009/03/30/sonnenuntergang" />
+  <meta name="path" content="/2009/03/29/heimweh-043-dokumente-vs-datenstroeme" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="7510" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1238441176" />
+  <meta name="created-string" content="30. 03. 2009 - 21:26" />
+  <meta name="changed-timestamp" content="1238431929" />
+  <meta name="changed-string" content="30. 03. 2009 - 18:52" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/heimweh043.jpg" />
+  <meta name="path" content="/2009/03/29/heimweh-043-dokumente-vs-datenstroeme" />
+  <meta name="node-id" content="7510" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1238441176" />
+  <meta name="created-string" content="30. 03. 2009 - 21:26" />
+  <meta name="changed-timestamp" content="1238431929" />
+  <meta name="changed-string" content="30. 03. 2009 - 18:52" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="On my way to Heimweh" href="../../../serie/on-my-way-to-heimweh" />
+  <meta name="keywords" content="On my way to Heimweh" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-7510 arg01-node-7510" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2009/03/30/sonne.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2009/03/30/sonnenuntergang.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-1">  
+      <!-- start:node -->
+      <h2>Heimweh 0.4.3 – Dokumente und Datenströme</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/heimweh043.jpg' alt='Heimweh 0.4.3 – Dokumente und Datenströme'/></p>
+<!-- ende:teaserimage -->
+<p>Außer am Theme habe ich ja jetzt in der letzten Woche nichts mehr an Heimweh gemacht. Dass, das mit den Kommentaren so nicht klappt, hat mich schwer aus der Bahn geworfen. Nicht weil ich nicht weiß, wie es weitergehen könnte, sondern weil es ein Hinweis auf ein konzeptuelles Problem ist: Alle Daten in einem XML-Objekt zu halten, ist dann ein Problem, sobald es für das Objekt mehrere parallel einlaufenden Datenquellen gibt. Trackbacks, Blogreactions, Klickcounter und ähnliche Funktionen und insbesonder meine Konzept für Blogevolution stellen damit also ein Problem da. Grundsätzlich gibt es eine ganze Reihe von Lösungen für das Problem.</p>
+<h3>1. Nach hinten verschieben</h3>
+<p>Die beiden XML-zentrierten Enterprise CMSe, mit denen ich bisher gearbeite habe hatten auch deutlichem Schwerpunkt auf redaktionelle Inhalte. Sie verschieben dieses Problem gerne aus dem Redaktionsprozess heraus. Bei Zeit Online haben wir aus dem Grund noch Drupal und weitere Systeme als Ergänzung. Un die Wissen Media AG (ehem. Bertelsmann Lexikon Verlag, wo ich das Vergüngen hatte, Anfang des Jahrzehtns ein Jahr zu arbeiten) hat das redaktionelle CMS ebenfalls von den Anwendungen getrennt, die Webseiten wie Wissen.de antreiben. </p>
+<p>Diese Lösung scheidet für mich aus, weil ich nur ein System habe und auch keine große Lust auf eine zweistufige Architektur hab.</p>
+<h3>2. Normalisierung</h3>
+<p>OS-WebCMSe wie Typo3, Drupal oder Wordpress – die sich so große Architekturen nicht leisten können und wollen – lösen das Problem in der Regel durch Datenbank-Normalisierung. Man splittet alle Informationen in Tabellen und Spalten auf und kann so fleißig auf alle einzelen lesen und schreiben.</p>
+<p>Diese Lösung scheidet für mich ebenfalls aus, denn wenn ich das gewollt hätte, hätte ich auch gleich bei Drupal bleiben können.</p>
+<h3>3. Concurrent Versioning</h3>
+<p>Läßt man die Tatsache außer Acht, dass es sich bei dem, was ich da speichern will nicht um Code sondern um Dokumente handelt, könnte man behaupten, dass genau zur Lösung dieses Problems CVSe erfunden wurden. Und in der Tat ist es gar nicht sooo abwegig. Die ersten Leute speichern schon natürlichsprachlichen Content bei Github.</p>
+<p>Diese Lösung scheidet für mich leider auch aus, weil ein CVS als Vorraussetzung für Blog doch ein bisschen das Gegenteil von Minimalistisch ist und nicht zu Grundausstattung eine durchschnittlichen 10 Euro/Monat Hosting Paketes ist. Die alternative Nutzung eines öffentlichen CVS wie Github scheidet ebenfalls aus, da es die "Mein Content gehört mir"-Regel brechen würde.</p>
+<h3>4. Your code speaks</h3>
+<p>Eine Regel von <a href="http://anmutunddemut.de/2009/02/28/heimweh-011-getting-real-revised">Getting Real</a> lautet, dass man auf den bisher geschriebenen Code hören soll. Welche Lösung schlägt er vor. Wenn ich mir Heimweh so anschaue bieten sich zwei Lösung an: Erstens könnte ich Kommentare auch als Dokumente begreifen und mit in die Dokumenten-Tabelle stecken. Das hätte zur Folge, dass ich bei den Abfragen über diese Tabelle immer dann filtern müsste, wenn ich nur Beiträge haben möchte, was wohl in der Mehrzahl der Fällte der Fall sein wird. Nicht so schön.</p>
+<p>Zweitens könnte ich Kommentare als Metadaten begreifen und mit in die Metadaten-Tabelle stecken. Das hätte zur Folge, dass ich Einzeldaten der Kommentare, wie Uhrzeit, Name, Homepage und Text als gekapseltes XML in diese Tabelle stopfen müssten. Da ich diese Grenze ja eh schon überschritten habe, kann mir das eigentlich auch egal sein. Die Vorteile aber überwiegen klar: Ich kann jeden Kommentar einzeln und unabhängig vom Dokument speicher und bearbeiten. Außerdem brauche ich eh einen Mechanismus, der alle Metadaten zu einem Dokument aus der Metadaten-Tabell zieht. Da wäre also nicht mal besonders viel zusätzlicher Aufwand mit verbunden.</p>
+<p>Jetzt wo ich das so runtergeschrieben habe, scheint die Lösung auf der Hand zu liegen.</p>
+<h3>Was wir gelernt haben</h3>
+<p>Ich muss mir meine XML-Struktur nochmal gut anschauen und ggf. so überarbeiten, dass jene Teile des Dokuments die parallel bearbeitet werden können müssen als Metadaten gespeichert werden.</p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 30. 3. 2009</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Serie:</span>
+        <a href="../../../serie/on-my-way-to-heimweh" rel="series">On my way to Heimweh</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von wolfgang2 <a href="/2009/03/29/heimweh-043-dokumente-vs-datenstroeme#comment-6260" id="comment-6260" class="active">#</a>      </p>
+    <p>Ich versteh nicht ganz, warum du logische Einheiten nicht in physisch getrennte xml dateien ablegst?<br />
+Es muss ja nicht gleich normalisiert werden, aber zumindenstens logisch getrennt. Metadaten, Dokumente und externer Content können doch in unabhängigen XML Strukturen residieren, oder?</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/03/29/heimweh-043-dokumente-vs-datenstroeme#comment-6261" id="comment-6261" class="active">#</a>      </p>
+    <p>Wider das Dateisystem</p><p>Ich misstraue dem Dateisystem. Mein aller, allererstes eigenes Blogsystem basierte auf Einzeldateien. Irgendwann musste ich aber feststellen, dass definitiv Dateien verschwunden waren. Keine Ahnung wann und wie aber sie waren weg. Seither traue ich nur dem, was ich in eine Datenbank legen kann.</p>
+<p>Und da trenne ich ja in der Tat schonmal Dokument und Metadaten. Nur für "externer Content" hab ich noch keine Tabelle. Das hatte ich – wenn auch nur ganz kurz – auch angedacht, dann aber verworfen. Warum weiß ich gar nicht mehr. Ist vielleicht eine gar nicht so schlechte Idee. "Assets" quasie … klingt eigentlich viel logischer, jetzt, wo Du's sagst. Das machich. Drei Tabellen ist auch dufte. Drei Tabellen mit je drei Spalten. Das ist schön.</p>
+<p>Oder meintest Du was anderes?</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

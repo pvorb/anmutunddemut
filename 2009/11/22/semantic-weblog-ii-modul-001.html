@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Semantic Weblog II Modul 0.0.1 | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2009/11/21/in-googles-hand" />
+  <link rel="next" href="/2009/11/23/remate" />
+  <meta name="path" content="/2009/11/22/semantic-weblog-ii-modul-001" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="8231" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1258898928" />
+  <meta name="created-string" content="22. 11. 2009 - 15:08" />
+  <meta name="changed-timestamp" content="1258900027" />
+  <meta name="changed-string" content="22. 11. 2009 - 15:27" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/semanticweblog-ii-001.jpg" />
+  <meta name="path" content="/2009/11/22/semantic-weblog-ii-modul-001" />
+  <meta name="node-id" content="8231" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1258898928" />
+  <meta name="created-string" content="22. 11. 2009 - 15:08" />
+  <meta name="changed-timestamp" content="1258900027" />
+  <meta name="changed-string" content="22. 11. 2009 - 15:27" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Maschinen" href="../../../ressort/maschinen" />
+  <link rel="index" title="Drupal" href="../../../lexikon/drupal" />
+  <link rel="index" title="Minimalismus" href="../../../lexikon/minimalismus" />
+  <link rel="index" title="Modul" href="../../../lexikon/modul" />
+  <link rel="index" title="Semantic Weblog" href="../../../lexikon/semantic-weblog" />
+  <meta name="keywords" content="Maschinen, Drupal, Minimalismus, Modul, Semantic Weblog" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-8231 arg01-node-8231" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2009/11/21/in-googles-hand.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2009/11/23/remate.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-0">  
+      <!-- start:node -->
+      <h2>Semantic Weblog II Modul 0.0.1</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/semanticweblog-ii-001.jpg' alt='Semantic Weblog II Modul 0.0.1'/></p>
+<!-- ende:teaserimage -->
+<p>Ok, Jungs. Alles zurück auf Start. Ich hab eben das Semantic Weblog Modul aus meinem Git-Repository entfernt … wobei … vielleich pack ichs wieder rein uns nenn das neue gleich anders. Wie dem auch sei. Wie Konnexus, Fym und ich bei <a href="http://konnexus.net/stories/free-topic-maps-free-speech#comments">Konnexus bekaspert</a> haben, wird es einen Neuanfang geben. Das entscheidende Stichwort hat Fym neulich in einem anderen Zusammenhang gegeben: "<a href="http://blog.fymmie.de/blogoff/03/11/2009/blogoff-211#comment-1204">Minimalismus, Minimalismus!</a>".</p>
+<h3>Topics = Terms</h3>
+<p>Dich wichtigsten Änderungen zuerst. Topics sind im alten Modul ja als Nodes modeliert. Das ist zu umständlich. Topics werden im neuen Modul als Terms umgesetzt. Das kommt auch der Verwendung in Drupal näher. Mit Drupal 7 können wir die Terms/Topics dann auch – dank Field in Core – um beliebige weitere Informationen ergänzen, die auch bisher schon angedacht waren, wie:<br />
+~ Lexikalische Sortierung<br />
+~ Public Identifier<br />
+~ Wikipedia-Pendant<br />
+~ Vereinfachte (Delicious) Schreibung</p>
+<h3>Assoziations-Typen = ???</h3>
+<p>Im alten Modul sind Assoziationstypen auch als Nodes realisiert. Das fühlte sich von Anfang an komisch an. Eigentlich sollte ich die als eigene Dateneinheiten abbilden, überlege aber noch, ob ich sie der Einfachheit halber als Terms in einem eigenen Vokabular gestalte. Mal schauen. Any Opinions on that?</p>
+<h3>Assoziationen = Tabelle oder RDF?</h3>
+<p>Auch hier bin ich mir noch nicht ganz sicher. Drei Wege bieten sich hier an.</p>
+<p><strong>Erstens:</strong> Bisher lungern die Assoziationen ja in einer eigenen sechsspaltigen Tabelle rum. AssocID, nid1, role1, assoc-type, nid2, role2. Hier könnte ich einfach "nid" durch "tid" ersetzen und los geht's.</p>
+<p><em>Vorteil:</em> Ich kann Teile des Codes wiederverwenden.</p>
+<p><em>Nachteil:</em> Ich muss eine "verhältnismäßig große" Code-Basis selber pflegen.</p>
+<p><strong>Zweitens:</strong> Es gibt schon im Drupal-Kern eine dreispaltige Tabelle "term_relation" mit den Spalten "trid", "tid1", "tid2". Man könnte eine Tabelle danebenlegen, die für jede trid noch den Assoziations-Typ definiert. </p>
+<p><em>Vorteil:</em> Eng am Drupal-Core.</p>
+<p><em>Nachteil:</em> Häßliche SQL-Queries, WENN der Assoziationstyp relevant ist.</p>
+<p><strong>Drittens:</strong> Das RDF-Modul. RDF macht ja eigentlich genau das. Tripel speichern. Leider hab ich mir das Modul noch nicht recht ansehen können. Und ich habe es nicht selber geschrieben. Ich weiß nicht, wie schnell das nach Drupal 7 portiert werden wird.</p>
+<p><em>Vorteil:</em> Potentiell mächtiger und kompatibler zu weiteren Semantic Web Anwendungen.</p>
+<p><em>Nachteil:</em> Minimalismus ist anders.</p>
+<h3>One Module zu rule them all</h3>
+<p>Die Aufteilung der Funktionen auf drei Module war keine so gute Idee, wie ich finden muss. Ich werde das der Übersichtlichkeit wegen auf mehrere Dateien verteilen, die aber in einem einizgen Modul zusammenfassen. Das macht – hoffentlich – das ganze etwas einfacher.</p>
+<h3>Interface des Assoziationsanlage-Dialogs</h3>
+<p>Da Topics ja jetzt über den Tag-Mechanismus von Drupal denkbar einfach erstellt werden können, ist die Assiziations-Analge das gößte Hinderniss. Also muss der so einfach wie möglich werden. Hierfür sind drei Wege angedacht.</p>
+<p><strong>Erstens:</strong> Ein Fieldset im Node-Creation-Form (oder Beitrags-Analge-Dialog) das aus drei Feldern besteht.<br />
+a) Type-Ahead-Input-Feld für den ersten Term<br />
+b) Drop-Down für den Assoziationstyp<br />
+c) Type-Ahead-Input-Feld für den zweiten Term<br />
+Klickt man auf "Assoziation anlegen", wird die Assoziation per Javascript im Hintergrund erzeugt, wie bei Wordpress Options seit jeher.</p>
+<p><strong>Zweitens:</strong> Ein Block, der das gleich Formular enthält, das so aber an beliebiger Stelle eingesetzt werden kann.</p>
+<p><strong>Drittens:</strong> Ein "local Task" am Term mit dem Titel "associate".<br />
+Frontendediting, galore!</p>
+<h3>Register und Tags-Block</h3>
+<p>Das Register und den Tags-Block wird es latürnich auch wieder geben.</p>
+<p>Voran!</p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 22. 11. 2009</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Ressort:</span>
+        <a href="../../../ressort/maschinen.html" rel="ressort">Maschinen</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/drupal.html" rel="lexicon">Drupal</a>, 
+        <a href="../../../lexikon/minimalismus.html" rel="lexicon">Minimalismus</a>, 
+        <a href="../../../lexikon/modul.html" rel="lexicon">Modul</a>, 
+        <a href="../../../lexikon/semantic-weblog.html" rel="lexicon">Semantic Weblog</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von neb <a href="/2009/11/22/semantic-weblog-ii-modul-001#comment-7251" id="comment-7251" class="active">#</a>      </p>
+    <p>Ist RDF mit Drupal 7 nicht eh im Core?</p>
+<p>Hatte sowas vernommen. Dass zB bei jedem Node Autor, Datum, Titel etc. mit "bekannten" Vokabularen als RDF dargestellt werden. Automatisch. Ohne zutun und ohne Wissen des Nutzers. Sehr geil. Drupal bringt RDF auf den Massenmarkt :D</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://www.marctv.de">MarcTV</a> <a href="/2009/11/22/semantic-weblog-ii-modul-001#comment-7252" id="comment-7252" class="active">#</a>      </p>
+    <p>Wenn ich so etwas lese, frage ich mich immer ob das nicht alles etwas vorbei an dem ist, wie Benutzer wirklich unsere Seiten nutzen. Ich habe noch nie eine Seite anhand von diesen Tags benutzt. Meistens ist es die Hauptnavi die ich für so etwas benutze. </p>
+<p>Und ist diese ganze "Wir taggen unsere Texte selber" nicht total 2005 wenn man sich die Entwicklung von OpenCalais usw. ansieht? Muss ich im Jahr 2012 überhaupt noch Tags selber setzten? Aber letztendlich läuft doch alles auf die Frage hinaus: Wieso hast Du noch keine XBOX 360 - selbst <a href="http://twitter.com/pbakaus/status/5927539625">Paul hat nun eine</a>. =D</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/11/22/semantic-weblog-ii-modul-001#comment-7253" id="comment-7253" class="active">#</a>      </p>
+    <p>@neb: Ja. Soweit ich das verstanden habe, ist eine RDF-Repräsentation von Daten die in Drupal eh schon als semantische Einheiten gespeichert werden drin. Aber – soweit ich weiß – kein RDF-Triplestore. </p>
+<p>Das finde ich ja eine der merkwürdigsten Sachen an Drupal … man weiß vorher immer nicht so genau, was man mit der nächsten Version tatsächlich bekommt. Das muss man sich mühsam zusammenfusseln.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/11/22/semantic-weblog-ii-modul-001#comment-7254" id="comment-7254" class="active">#</a>      </p>
+    <p>@MarcTV: DAS ist der Unterschied zwischen Deinem Blog und meinem Blog. Du blogst für die Leser, für den Ruhm. Ich blogge für mich, für den Zettelkasten. Mein Blog ist mein Garten. Da sitze ich drin, trinke meinen Kaffee und genieße die Aussicht. Dein Blog ist ein Vorgarten für die Nachbarn und die, die mit dem Auto dran vorbeifahren.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://www.joeladami.net">Joël</a> <a href="/2009/11/22/semantic-weblog-ii-modul-001#comment-7257" id="comment-7257" class="active">#</a>      </p>
+    <p>OT: (Ich kann ja zu so Zeugs nie was sagen, obwohl ich es sehr faszinierend finde!) Würde es dir sehr weh tun, die Anzahl der Kommentare in der Artikelübersicht auf deiner Startseite zu verlinken? Vielleicht so, dass man sofort zu den Kommentaren springen kann? Mir ist gerade aufgefallen, dass ich das praktisch finden würde. Ist aber nur so ein Einfall.</p>
+<p>Ich finds übrigens schön, dass du uns in deinen Garten läßt und Kaffee anbietest. Hast es ja auch nett hier.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://konnexus.net">Konstantin</a> <a href="/2009/11/22/semantic-weblog-ii-modul-001#comment-7258" id="comment-7258" class="active">#</a>      </p>
+    <p>ja ja ja.<br />
+freue mich schon auf's neue modul wie ein kind auf weihnachten. </p>
+<p>assoziations-typen:<br />
+find ich als terms cool. einfach zu bedienen. einfach zu handlen. ein haufen funktionen gibt drupal schon gratis mit dazu.</p>
+<p>assoziationen:<br />
+k.a. - tabelle hört sich für mich am besten an. die assoziations-typen werden wir brauchen. ich blicke die implikationen aber grad nicht.</p>
+<p>interface:<br />
+ja! endlich einfacher. endlich frontend. endlich kann ich <a href="http://konnexus.net/studio/konnexus.net/concept.pdf">meine skizzen</a> auch umsetzen.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://konnexus.net">Konstantin</a> <a href="/2009/11/22/semantic-weblog-ii-modul-001#comment-7259" id="comment-7259" class="active">#</a>      </p>
+    <p>@marctv: man muss schon ein genießer des wissens in seinem zettelkasten-garten sein. für die anderen gibt's ne xbox360. trotzdem, guter punkt, @marctv. ich würde nicht ausschließend, sondern gergänzend arbeiten.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://codecandies.de">nico___</a> <a href="/2009/11/22/semantic-weblog-ii-modul-001#comment-7260" id="comment-7260" class="active">#</a>      </p>
+    <p>Dein Blog ist ein Schweineblog, mein Blog ist ein feines Blog,<br />
+dein Blog ist ein Schweineblog, regelrechtes Schweineblog, iiiiiih, das stinkt, mein Blog ist ein feines Blog, gutes Blog,<br />
+erlesen starkes und schönes Blog. Dein Blog ist iiiiiih, ääääääh,<br />
+'n richtiges Schweineblog ist dein Blog, ein ganz grosses Schweineblog, regelrechte Schweineblog ist dein Blog, iiiiiih, hör doch mal selber, <a href="http://blip.fm/profile/nicobruenjes/blip/28112020/DJ_Koze-Deine_Reime_Sind_Schweine" title="http://blip.fm/profile/nicobruenjes/blip/28112020/DJ_Koze-Deine_Reime_Sind_Schweine">http://blip.fm/profile/nicobruenjes/blip/28112020/DJ_Koze-Deine_Reime_Si...</a></p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://konnexus.net">Konstantin</a> <a href="/2009/11/22/semantic-weblog-ii-modul-001#comment-7261" id="comment-7261" class="active">#</a>      </p>
+    <p>@nico____ volltreffer! respekt.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/11/22/semantic-weblog-ii-modul-001#comment-7263" id="comment-7263" class="active">#</a>      </p>
+    <p>@Joël: Done.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/11/22/semantic-weblog-ii-modul-001#comment-7264" id="comment-7264" class="active">#</a>      </p>
+    <p>@nico_: Also <i>der Link</i> ist 'ne Frechheit! Das liegt schließlich auf meiner Festplatte. :)</p>
+<p><a href="http://www.lastfm.de/music/Ammer+Einheit/_/Ulrike+Meinhof+Paradise,+Vorspiel,+Die+Fuenfte">Stadtguerilla!</a></p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/11/22/semantic-weblog-ii-modul-001#comment-7265" id="comment-7265" class="active">#</a>      </p>
+    <p>@Konnexus: Ich werde die Assoziationstypen doch nicht als Terms machen. Terms sind ja dazu da, Nodes auszuzeichnen. Aber das machen wir damit ja gar nicht.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von dropBaz <a href="/2009/11/22/semantic-weblog-ii-modul-001#comment-7267" id="comment-7267" class="active">#</a>      </p>
+    <p>terms, ist damit die taxonmie gemeint? lassen die sich wirklich mit neuen inhaltfeldern anreichern? dachte das gilt nur für nodes????</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/11/22/semantic-weblog-ii-modul-001#comment-7268" id="comment-7268" class="active">#</a>      </p>
+    <p>@DropBaz: Also so wie ich Florian Loretan auf dem Drupal-Camp in Köln verstanden habe ermöglicht <a href="http://drupalcamp.de/node/125">Fields in Core</a>, ALLES mit neuen Inhaltsfelder zu erweitern. Nodes, User, Terms, Kommentare, ja sogar externe Quellen. In Drupal 7 kannst Du dann für jedes Deiner Flickr Bilder, jedes Delicious Bookmark, jedes Deiner Vimeo Video, kurz alles was eine URL hat, eine Repräsentation in Deinem Drupal machen und es um beliebige Felder ergänzen.</p>
+<p>Hier die vorläufige <a href="http://api.drupal.org/api/group/field/7">Field API</a>.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

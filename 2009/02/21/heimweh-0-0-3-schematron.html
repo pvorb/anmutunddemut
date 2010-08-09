@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Heimweh 0.0.3 – Schematron | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2009/02/20/umschlagba" />
+  <link rel="next" href="/2009/02/21/samstag" />
+  <meta name="path" content="/2009/02/21/heimweh-0-0-3-schematron" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="7405" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1235199612" />
+  <meta name="created-string" content="21. 02. 2009 - 08:00" />
+  <meta name="changed-timestamp" content="1279022533" />
+  <meta name="changed-string" content="13. 07. 2010 - 14:02" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/heimweg003.jpg" />
+  <meta name="path" content="/2009/02/21/heimweh-0-0-3-schematron" />
+  <meta name="node-id" content="7405" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1235199612" />
+  <meta name="created-string" content="21. 02. 2009 - 08:00" />
+  <meta name="changed-timestamp" content="1279022533" />
+  <meta name="changed-string" content="13. 07. 2010 - 14:02" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Maschinen" href="../../../ressort/maschinen" />
+  <link rel="index" title="On my way to Heimweh" href="../../../serie/on-my-way-to-heimweh" />
+  <link rel="index" title="CCK" href="../../../lexikon/cck" />
+  <link rel="index" title="Komplexität" href="../../../lexikon/komplexitaet.html" />
+  <link rel="index" title="Schematron" href="../../../lexikon/schematron" />
+  <link rel="index" title="XML" href="../../../lexikon/xml" />
+  <meta name="keywords" content="Maschinen, On my way to Heimweh, CCK, Komplexität, Schematron, XML" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-7405 arg01-node-7405" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2009/02/20/umschlagba.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2009/02/21/samstag.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-1">  
+      <!-- start:node -->
+      <h2>Heimweh 0.0.3 – Schematron</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/heimweg003.jpg' alt='Heimweh 0.0.3 – Schematron'/></p>
+<!-- ende:teaserimage -->
+<p>Dies ist im Grunde die Fortfürhung des <a href="http://anmutunddemut.de/2009/02/19/heimweh-0-0-2">XML-Artikels</a> zu <i>Heimweh</i>. Beschäftigt man sich mit XML-Dokumenten (und nicht mit API-Antworten, die XML auch sind; oder Feeds oder solchem Geraffel) dann gibt es drei Wege. </p>
+<p><b>Der erste Weg</b> sieht vor, dass es eine Grammatik (Schema) gibt, die beschreibt, wie man die XML-Dokumente, mit denen man arbeiten möchte, aufbauen kann. Das ist so ähnlich wie ein Datenbankschema, nur ein bisschen freier. Dabei gilt: Ein Dokument ist <b>erst dann valide</b> – und sollte erst weiterverarbeitet werden – <b>wenn es der Grammatik genügt</b>. Ein kleines Schema erlaubt dabei nur eine kleine Menge von Variationen valider Dokumente. Je größer und komplexer das Schema wird, desto mehr komplexer werden auch die Dokumentvariationen, die sich damit möglicherweise bilden lassen. Genau wie bei einer Datenbank auch: Je mehr Tabellen und Spalten ich habe, desto komplexere Daten kann ich damit halten.</p>
+<p><b>Der zweite Weg</b> – der übliche im Web – sieht auch vor, dass es eine Grammatik gibt. Die Dokumente werden aber vor der Verarbeitung aber nicht validiert. Ich glaube fast, niemand validiert ernsthaft Dokumente im Netz. Ob Dokumente valide sind oder nicht spielt keine Rolle. Hauptsache, die verarbeitende Anwendung crasht nicht. Dessen kann man sich aber leider nie wirklich sicher sein. Eigentlich ist es ein Weg ohne Schemas und häufig wird auch genau so gearbeitet. Man schaut sich eine Beispiel XML-Datei an und programmiert dann eine Anwendung darum herum. Die Beschränkung der Komplexität liegt in der Anwendung.</p>
+<p><b>Der dritte Weg</b> – und dies ist der Weg von <a href="http://www.schematron.com/">Schematron</a> – geht davon aus, das zuersteinmal jedes XML-Dokument valide ist. Danach erst wird mit Hilfe des Schemas geschaut, ob in dem Dokument nicht irgendwelche unerwünschten oder interessanten Sachen passiert. Dies ist im Grund genau der umgekehrte erste Weg. Je kleine das Schematron-Schema ist, desto komplexer, vielfältiger und variationsreicher können die Dokumente sein, die diesem Schema genügen. Mit jeder neuen Regeln in meinem Schema schränke ich den Raum der Dokument weiter ein.</p>
+<p><b>Warum erzähle ich das alles?</b> Ganz einfach, weil ich Schematron und die Datenphilosophie dahinter für <i>Heimweh</i> verwenden will – das ist wie gemacht für mich. Die Idee ist denkbar einfach. <i>Heimweh</i> besteht im Kern aus einem XML-Editor (Quicktags), den ich je nach Bedarf – on the fly – mit beliebigen neuen Tags anreichern kann. Egal ob im Fließtext oder davor oder dahinter. Alles in einer Textarea. Keine 20 HTML-Formulare. Hauptsache Semantik. </p>
+<p>Rendern oder weiterverarbeiten kann ich das dann hinterher immer noch. HMTL5 und RDFa haben gezeigt, das man nicht-HMTL-Tags auch mal einfach so standardmäßig rausrendern kann.</p>
+<p>Im Grund habe ich damit die gleiche Freiheit wie durch CCK und sogar noch mit dem Vorteil, dass ich mir direkt während der Anlage neue Felder/Tags ausdenken kann.</p>
+<p>Schematron soll mir dann helfen, über all die Tags die Übersicht zu behalten. Mich zu informieren, wenn ich Tags falsch geschrieben habe oder komisch ineinander schachtele. Schematron kann Nachrichten auswerfen wie </p>
+<ul>
+<li>"In Deinem Dokument fehlt ein title-Element, soll das so?"</li>
+<li>"Da ist ein leeres topic-Element in Deinem Dokument. Mach das mal lieber voll."</li>
+<li>"Das a-Element hat kein href-Attribut, das ist eine ganz schlechte Idee."</li>
+</ul>
+<p>Das kuhle an Schematron: Es wirf wirklich ganz genau solche Meldungen aus. Nicht so kryptischen Kram, wie ihn DTD/XSD basierte Validatoren auswerfen. Aber wirklich wichtig ist die Grundposition: Erstmal sind alle neuen Tags gut und richtig. Semantik ist super. Und was noch super ist: Schematron-Schemata sind selber wieder XML d.h. ich kann sie mit meinem kleinen XML-Editor bearbeiten.</p>
+<h3>Zusammenfassung</h3>
+<p>Im Zentrum von Heimweh wird ein Quicktags-basierter Web-XML-Editor stehen, mit dem ich beliebig vielfältig XML-Dokumente erstelle. Alle XML-Dokumente werden – vorausgesetzt, sie sind wohlgeform – gespeichert. Beim speichern hilft mir Schematron, die Kontrolle über all das XML zu behalten.</p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 21. 2. 2009</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Ressort:</span>
+        <a href="../../../ressort/maschinen.html" rel="ressort">Maschinen</a>
+        <span class='somespace'> </span>
+        <span class='title'>Serie:</span>
+        <a href="../../../serie/on-my-way-to-heimweh" rel="series">On my way to Heimweh</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/cck.html" rel="lexicon">CCK</a>, 
+        <a href="../../../lexikon/komplexitaet.html" rel="lexicon">Komplexität</a>, 
+        <a href="../../../lexikon/schematron.html" rel="lexicon">Schematron</a>, 
+        <a href="../../../lexikon/xml.html" rel="lexicon">XML</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://konnexus.net">konnexus_unplugged</a> <a href="/2009/02/21/heimweh-0-0-3-schematron#comment-6178" id="comment-6178" class="active">#</a>      </p>
+    <p>sehr spannend das alles, ben. bitte weiter schreiben!</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/02/21/heimweh-0-0-3-schematron#comment-6179" id="comment-6179" class="active">#</a>      </p>
+    <p>Schon weiter geschrieben hab.</p><p>Ich hab schon weiter geschrieben. Heimweh 0.0.4 - 0.0.9 liegen schon fast fertig im Drafts Ordner. Als Vorschau vielleicht die kommenden Themen:<br />
+Heimweh 0.0.4 – Metadaten<br />
+Heimweh 0.0.5 – Drupal<br />
+Heimweh 0.0.6 – Theming<br />
+Heimweh 0.0.7 – Github<br />
+Heimweh 0.0.8 – Semantic Weblog<br />
+Heimweh 0.0.9 – Suchen</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://www.relativwenigbartwuchs.de">wolfgang</a> <a href="/2009/02/21/heimweh-0-0-3-schematron#comment-6180" id="comment-6180" class="active">#</a>      </p>
+    <p>einen vorteil hat deine geschreibe jetzt schon. meine linksammlung wächst :)</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="/user/45">DieRaecherin</a> <a href="/2009/02/21/heimweh-0-0-3-schematron#comment-6182" id="comment-6182" class="active">#</a>      </p>
+    <p>Faszinierend</p><p>Freue mich schon jetzt auf die weiteren Heimweh-Folgen. Heimweh in Häppchen. Spitze.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://konnexus.net">konnexus_unplugged</a> <a href="/2009/02/21/heimweh-0-0-3-schematron#comment-6184" id="comment-6184" class="active">#</a>      </p>
+    <p>0.0.8</p><p>ich bin total auf die folge 0.0.8 gespannt. schließlich hab ich dank ben_ einige erfahrungen mit dem semantic weblog machen dürfen.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/02/21/heimweh-0-0-3-schematron#comment-6187" id="comment-6187" class="active">#</a>      </p>
+    <p>0.0.8 wird ziemlich unspektakulär</p><p>@Konnexus: Ohne Dich entäuschen zu wollen, 0.0.8 wird nicht sooo spektakulär. Das ist ja das gute daran. Ich möchte endlich ein System haben, mit dem ich das ziemlich einfach machen kann. Und defakto hab ich dafür schon fast alles beisammen. Ein Vorgeschmack:<br />
+Einfach in das Topic "Ivan Illich" &lt;isa&gt;Person&lt;/isa&gt;<br />
+Oder in das Topic "Internet" &lt;subclass&gt;Medium&lt;/subclass&gt;<br />
+Oder in das Topic "Bielefeld" &lt;partof&gt;Deutschland&lt;/partof&gt;</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von fymmie <a href="/2009/02/21/heimweh-0-0-3-schematron#comment-6190" id="comment-6190" class="active">#</a>      </p>
+    <p>0.0.8 interessiert mich -- aus gegebenem Anlass -- auch am meisten. Das wäre eine Flexibilität, die ich mir für meine WP-Versuche wünschen würde. Hm.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://konnexus.net">konnexus_unplugged</a> <a href="/2009/02/21/heimweh-0-0-3-schematron#comment-6197" id="comment-6197" class="active">#</a>      </p>
+    <p>@ben_: passt doch! also: einfach heisst doch keineswegs unspektakulär, ganz im gegenteil. sonst wäre mite ja auch total unspektakulär. oder basecamp. einfach = super = nehm ich.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

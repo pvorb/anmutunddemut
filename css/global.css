@@ -1,0 +1,24 @@
+/* Global CSS Classes which should apply to all Themes*/
+
+
+.gedankenpause {
+  margin-top:4em;
+}
+
+.onespace {
+	margin-left:1em;
+}
+
+.twospace {
+	margin-left:2em;
+}
+
+.threespace {
+	margin-left:3em;
+}
+
+
+/* My own Clickcounter */
+#click {
+	display:none;
+}

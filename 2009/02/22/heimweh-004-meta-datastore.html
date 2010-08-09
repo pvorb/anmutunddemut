@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Heimweh 0.0.4 – Metadaten | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2009/02/21/der-saengerkrieg-der-heidehasen" />
+  <link rel="next" href="/2009/02/22/zum-barocken-wesen-der-alten-medien" />
+  <meta name="path" content="/2009/02/22/heimweh-004-meta-datastore" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="7408" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1235289610" />
+  <meta name="created-string" content="22. 02. 2009 - 09:00" />
+  <meta name="changed-timestamp" content="1235294279" />
+  <meta name="changed-string" content="22. 02. 2009 - 10:17" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/heimweh004.jpg" />
+  <meta name="path" content="/2009/02/22/heimweh-004-meta-datastore" />
+  <meta name="node-id" content="7408" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1235289610" />
+  <meta name="created-string" content="22. 02. 2009 - 09:00" />
+  <meta name="changed-timestamp" content="1235294279" />
+  <meta name="changed-string" content="22. 02. 2009 - 10:17" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="On my way to Heimweh" href="../../../serie/on-my-way-to-heimweh" />
+  <link rel="index" title="Metadaten" href="../../../lexikon/metadaten" />
+  <link rel="index" title="Relationale Datenbanken" href="../../../lexikon/relationale-datenbanken" />
+  <link rel="index" title="SQL" href="../../../lexikon/sql" />
+  <link rel="index" title="Wordpress" href="../../../lexikon/wordpress" />
+  <link rel="index" title="XML" href="../../../lexikon/xml" />
+  <meta name="keywords" content="On my way to Heimweh, Metadaten, Relationale Datenbanken, SQL, Wordpress, XML" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-7408 arg01-node-7408" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2009/02/21/der-saengerkrieg-der-heidehasen.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2009/02/22/zum-barocken-wesen-der-alten-medien.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-1">  
+      <!-- start:node -->
+      <h2>Heimweh 0.0.4 – Metadaten</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/heimweh004.jpg' alt='Heimweh 0.0.4 – Metadaten'/></p>
+<!-- ende:teaserimage -->
+<p>Bis hier hin bin ich <a href="http://anmutunddemut.de/category/serie/on-my-way-to-heimweh">bekannte Wege</a> gegangen. Jetzt kommt eine Abzweigung, die ich noch nie genommen habe. Egal, ob ich jedes meiner XML-Dokumente in eine Datei speichere, alle Dokumente in einer Datei speichere oder jedes Dokument in eine Zelle einer Datenbank stopfe – ein Problem bleibt mir erhalten: Wie mache ich Operation auf allen Dokumenten? Wie bekomme ich die letzten 10 Artikel? Wie bekomme ich bekomme ich alle Artikel zu einem Stich- oder Schlagwort? Wie bekomme ich alle Stichworte?</p>
+<p>Als Antworten auf diese Frage habe ich eine Idee: Jedes Mal wenn ein XML-Dokument gespeichert wird, zerlege ich es in eine Menge von Tripeln die wir folgt aufgebaut sind:<br />
+"<i>Dokument</i>", "<i>Name des XML-Elementes</i>", "<i>Wert des XML-Elementes</i>" oder in Kürze ID, KEY, VALUE.<br />
+Das speichere ich in eine Datenbank und auf der kann ich dann fleißig strukturierte Abfragen machen. Die Architektur kenne ich schon aus dem Wordpress Metadaten-System und bei Zeit Online nutzen wir auch sowas. Für die meisten Abfragen sollte das ziemlich gut funktionieren. Könnten ein bisschen fusselige Abfragen werden, wenn es um zwei oder mehr Eigenschaften geht, aber sollte eigentlich nichts unmögliches sein.</p>
+<p>Ok. Könnte klappen. Die Idee ist jetzt, dass ich diese SQL-Queries in meine XML-Dokumente mit reinschreiben kann, in einer XML-Syntax. Auf drei Spalten kann man ja soooviel unterschiedliche anfragen nicht machen. Da ließe sich eine extra Syntax ausdenken. Jedes mal wenn dann in einem meiner Dokumente so ein XML-Query steht, wird der ausgeführt und das Ergebnis an der Stelle entsprechend als Content eingefügt und latürnich später gerendert.</p>
+<p>Die Idee habe ich noch aus der Wolke. "<i>Gepeicherte Suchanfragen</i>". In der Wolke war das ein eigener Inhaltstyp, wie ein Artikel und wir hatten einen hübschen Klickibunti Suchanfragen-Anlage Dialog. Den kann ich mir jetzt schenken. Den bastele ich selber mit XML. Einfach ein schlichtes XML-Query-Format. Kuhl!</p>
+<p>Auf diese Weise kann ich mir mit dem gleichen Dialog, der mich Artikel anlegen läßt auch dynamische Übersichtsseiten anlegen. Zucker! Das gefällt mir! So wirds gemacht! Voran!</p>
+<hr/>
+<p>Nebenbei: Das Projekt schreitet auch bereits im Sinne einer Code-Basis voran. Habe gestern nebenbei einen XML-Exporter für Drupal geschrieben, der mir jede Node als XML-Repräsentation rauswirft. Leider reicht die Rechenleistung meines Hosting-Paketes nicht aus, um alle auf einmal rauszuwerfen. Daher wird wohl noch ein kleines Javascript-Dings her.</p>
+<p>Ich freue mich aber schon riesig, mein ganzes Blog wieder in einer XML-Datei zu haben. Das fühlt sich einfach gut an. Da kann man auch prima "Suchen/Ersetzen" drauf machen und Einzelne Sachen drauf zählen. Ich sollte das wirklich ernsthaft ins Betracht ziehen, alle Daten immer in einer Datei zu speichern.</p>
+</hr/>        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 22. 2. 2009</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Serie:</span>
+        <a href="../../../serie/on-my-way-to-heimweh" rel="series">On my way to Heimweh</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/metadaten.html" rel="lexicon">Metadaten</a>, 
+        <a href="../../../lexikon/relationale-datenbanken.html" rel="lexicon">Relationale Datenbanken</a>, 
+        <a href="../../../lexikon/sql.html" rel="lexicon">SQL</a>, 
+        <a href="../../../lexikon/wordpress.html" rel="lexicon">Wordpress</a>, 
+        <a href="../../../lexikon/xml.html" rel="lexicon">XML</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://konnexus.net">konnexus_unplugged</a> <a href="/2009/02/22/heimweh-004-meta-datastore#comment-6183" id="comment-6183" class="active">#</a>      </p>
+    <p>ok,<br />
+ich hoffe diesen part verstanden zu haben. kann aber auch sein, dass nicht :-)<br />
+sehe ich das richtig? - doch ne datenbank? also sql? ich dachte du verzichtest darauf. aber hier macht es sinn.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/02/22/heimweh-004-meta-datastore#comment-6186" id="comment-6186" class="active">#</a>      </p>
+    <p>Ja. Richtig.</p><p>Ich bin mir da noch nicht 100% einig. Wenn ich auf die Datenbank verzichte, muss ich entweder bei jedem Aufruf <i>alle</i> Artikel laden oder mir ein ausgefuchstes System ausdenken, mit dem ich die dynamischen Seiten – als quasie statisches Abfallprodukt – produzieren. </p>
+<p>Außerdem … haben wir hier einen Tripel-Store, Konnexus, was ja für Punkt 0.0.8 ja nicht ganz unhilfreich sein könnte. ;]</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://www.relativwenigbartwuchs.de">wolfgang</a> <a href="/2009/02/22/heimweh-004-meta-datastore#comment-6195" id="comment-6195" class="active">#</a>      </p>
+    <p>Back to the roots?</p><p>Zu Anfang habe ich den statisch/dynamischen Ansatz von MovableType geliebt. Es hatte einfach scharm, alle daten auch wirklich auf der Platte liegen zu haben, gerade wenn sie jederzeit erneut erzeugt werden konnten. Das einzige was mich etwas irritiert ist die "oneFileDatabase" mit XML. Klar die XML-Strukturen können flexibelst aufgebohrt werden. Aber was erzeugt das für einen Overhead?</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/02/22/heimweh-004-meta-datastore#comment-6198" id="comment-6198" class="active">#</a>      </p>
+    <p>Ja, ein bischen, latürnich.</p><p>Ja. Latürnich, back to the roots! Das ist sinn und Zweck der Veranstaltung. Aber nicht, ohne das Gelernte mitzunehmen. Ich bin mir ja auch auch immer noch nicht sicher, wie genau ich meine XML-Dokumente speichern soll. Alle in eine Datei zu stecken ist schon kuhl, weil man dann auch supereinfach "suchen/ersetzen" drauf machen kann. Das ist eigentlich wirklich fett.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://konnexus.net">Konstantin</a> <a href="/2009/02/22/heimweh-004-meta-datastore#comment-6200" id="comment-6200" class="active">#</a>      </p>
+    <p>suchen/ersetzen kannst du doch mit jedem ein bisschen größeren texteditor auch über einen ordner an dateien machen. textmate ist prima, zend wird das wohl aber hallo gut können. oder welches suchen/ersetzen meinst du? ein maschinelles müsste ja auch relativ einfach zu coden sein.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/02/22/heimweh-004-meta-datastore#comment-6201" id="comment-6201" class="active">#</a>      </p>
+    <p>ach, ach ja</p><p>Aber sowas traue ich immer nicht.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://www.teilnehmer.ws">Jan</a> <a href="/2009/02/22/heimweh-004-meta-datastore#comment-6202" id="comment-6202" class="active">#</a>      </p>
+    <p>Bitte? Feigheit ist der Wegweiser ins Heimweh? Das ist ja wohl nicht dein Ernst.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/02/22/heimweh-004-meta-datastore#comment-6204" id="comment-6204" class="active">#</a>      </p>
+    <p>@Jan</p><p>Wegen "sowas traue ich immer nicht"? Das heißt nicht "traue ich MICHT nicht" sondern ich traue, den Anwendungen nicht, die sowas machen. Das läuft dann über x-hundert FTP-Request. Das ist mir ziemlich nicht geheuer und im ganzen ein ziemlich unsauberer Weg.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

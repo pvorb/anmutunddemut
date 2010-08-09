@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Valid XHTML, XML and that fluffy Schematron-Fox | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2004/03/21/dichter-und-denker" />
+  <link rel="next" href="/2004/03/21/xml-in-php-5-whats-new" />
+  <meta name="path" content="/2004/03/21/valid-xhtml-xml-and-that-fluffy-schematron-fox" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="1042" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1079877840" />
+  <meta name="created-string" content="21. 03. 2004 - 15:04" />
+  <meta name="changed-timestamp" content="1235116095" />
+  <meta name="changed-string" content="20. 02. 2009 - 08:48" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/bilby-schematron.jpg" />
+  <meta name="path" content="/2004/03/21/valid-xhtml-xml-and-that-fluffy-schematron-fox" />
+  <meta name="node-id" content="1042" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1079877840" />
+  <meta name="created-string" content="21. 03. 2004 - 15:04" />
+  <meta name="changed-timestamp" content="1235116095" />
+  <meta name="changed-string" content="20. 02. 2009 - 08:48" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Markup Remarks" href="../../../ressort/markup-remarks" />
+  <link rel="index" title="Schematron" href="../../../lexikon/schematron" />
+  <link rel="index" title="XHTML" href="../../../lexikon/xhtml" />
+  <link rel="index" title="XML" href="../../../lexikon/xml" />
+  <meta name="keywords" content="Markup Remarks, Schematron, XHTML, XML" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-1042 arg01-node-1042" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2004/03/21/dichter-und-denker.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2004/03/21/xml-in-php-5-whats-new.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-6">  
+      <!-- start:node -->
+      <h2>Valid XHTML, XML and that fluffy Schematron-Fox</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/bilby-schematron.jpg' alt='Valid XHTML, XML and that fluffy Schematron-Fox'/></p>
+<!-- ende:teaserimage -->
+<div>
+<p>Via Anne van Kesterens weblog entry "<a href="http://annevankesteren.nl/archives/2004/03/markdown">Markdown</a>" I got into a discussion on The Validity and Wellformedness of XHTML and XML Documents: John Gruber has developed <a href="http://daringfireball.net/projects/markdown/">markdown</a> for his weblog <a href="http://daringfireball.net/">daring fireball</a>. Markdown is somekinda plugin for Weblogengines, that allows to enter wiki-like text into your editor, which will be transformed into valid XHTML.</p>
+<p>If I got it right, he came up with this Idea after reading the articla "<a href="http://diveintomark.org/archives/2004/01/14/thought_experiment">thought experiment</a> from Mark Pilgrims weblog "Dive into Mark".The point of that article is, the we should not use strict XML-implentations [neither browsers nor servers] because ... yeah why exactly? You'd better read the article for the whole argumentation. The conclusion is, that XML is a too fragile System, if only endusers should validate <em>and</em> implementations are strict.</p>
+<p>I agree, with both of them. There should be a way, to be able to easily enter text into a form, without typing tags or concerning valdity all the time. As I have a strong antipathy for Wikis, I'm not a friend of the "Markdown" system, although the general approach is fine: A mixed text, html interface, that converts it's content into XHTML.</p>
+<p>I encountered the problem of Validity and Wellformedness<br />
+a few times myself, as this weblogs runs it's own dtd for teh weblog entries, and the PHP-Library tow ork with onl works with wellformed XML, <strong>and</strong> shuts down the whole PHP-Process, if it has to cope with a not wellformed XML-Document</p>
+<p>Anyway the Concept of Wellformedness and Validity is based in the western concept of language: First you got the rules, and you can generate vaild expressions with these rules and your lexicon.</p>
+<p>Asian languages work different: first you got words, and you can combine them quite free to generate meaning. Schematron tries to apply this language-approach to XML-Data:Schematron assumes that all XML-Documents are valid, except those who match certain rules, which you have to define in a Schematron-Schema.</p>
+<p>With this approach you get a by far a wider range of ?valid? XML-Documents, and still are able to produce Software that works wirth these data, as you define which combinations if elements are not valid</p>
+<p>Another great Aspect of Schematron is, that you can define your the output of your pareser. Usually, if you got an not wellformed or invalid document, the output of an XML-parser is so cryptic, that only XML-Experts know how to solve the problems. In Schematron you write the "error"-messages by your self. They are a vital part of the Schema. So the output of a Schematron valitation is usefull even to users who are not that familiar with xml.
+</p>
+<p><strong>And</strong> Schematron has a friendly, fluffy Fox as it's mascot. This is great because it's always nice to have a friendly fluffy compagnion on your website in these economically hard times.</p>
+<p>I hope, the combination of both will lead to a wider and easier use xml.</p>
+</div>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 21. 3. 2004</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Ressort:</span>
+        <a href="../../../ressort/markup-remarks.html" rel="ressort">Markup Remarks</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/schematron.html" rel="lexicon">Schematron</a>, 
+        <a href="../../../lexikon/xhtml.html" rel="lexicon">XHTML</a>, 
+        <a href="../../../lexikon/xml.html" rel="lexicon">XML</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+
+
+    <div id="comments">
+      <!-- start:comments -->
+      <hr/>
+      <h2>Kommentare</h2>
+
+      <!-- Last Comment standing -->
+
+      <!-- end:comments -->
+    </div>
+
+    <!-- start:comment-form -->
+    <div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+    <!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

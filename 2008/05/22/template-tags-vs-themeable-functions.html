@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Template Tags vs. Themeable Functions | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2008/05/22/rock-and-roll" />
+  <link rel="next" href="/2008/05/22/kommentare-verfolgen" />
+  <meta name="path" content="/2008/05/22/template-tags-vs-themeable-functions" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="6064" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1211453581" />
+  <meta name="created-string" content="22. 05. 2008 - 12:53" />
+  <meta name="changed-timestamp" content="1211454273" />
+  <meta name="changed-string" content="22. 05. 2008 - 13:04" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/TTvsTF.jpg" />
+  <meta name="path" content="/2008/05/22/template-tags-vs-themeable-functions" />
+  <meta name="node-id" content="6064" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1211453581" />
+  <meta name="created-string" content="22. 05. 2008 - 12:53" />
+  <meta name="changed-timestamp" content="1211454273" />
+  <meta name="changed-string" content="22. 05. 2008 - 13:04" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Drupal" href="../../../lexikon/drupal" />
+  <link rel="index" title="Programmieren" href="../../../lexikon/programmieren" />
+  <link rel="index" title="Typographik" href="../../../lexikon/typographik" />
+  <link rel="index" title="Wordpress" href="../../../lexikon/wordpress" />
+  <meta name="keywords" content="Drupal, Programmieren, Typographik, Wordpress" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-6064 arg01-node-6064" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2008/05/22/rock-and-roll.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2008/05/22/kommentare-verfolgen.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-2">  
+      <!-- start:node -->
+      <h2>Template Tags vs. Themeable Functions</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/TTvsTF.jpg' alt='Template Tags vs. Themeable Functions'/></p>
+<!-- ende:teaserimage -->
+<p>Ich hab in den letzten Wochen etwas tiefer in Drupals Theming Philososphie gucken können und will versuchen hier ein bisschen was von dem, was ich verstanden habe, hier mal zusammenzufassen. Hinweise, Tips und Korrekturen sind willkommen.</p>
+<p>Ich glaube inzwischen, dass der Erfolg von Wordpress nicht zuletzt auf das simplizistische Renedring-System über Template Tags zurückzuführen ist. Wordpress' Weg ist der, über einzelne Funktionen in der Regel v.a. Daten in die Template-Dateien zu pumpen. Die können da dann gethemet werden, wie der Webdesigner lustig ist. Das hat einen <b>Vorteil</b>: Wenn man nur HTML, aber keine Programmiersprache beherrscht kommt man trotzdem schnell zu guten Ergebnissen. Das hat aber auch einen zentralen <b>Nachteil</b>: Neue Plugins müssen entweder von Hand und nachträglich in bestehende Themes eingebunden werden und pumpen Ihre Inhalte mit in bestehende Einheiten - die eigentlich nicht dazu gedacht sind.</p>
+<p>Drupal geht einen anderen Weg: zum einen gibt es mehr Layout-bezogene Konzepte, wie Blöcke, Regionen, Links und änhliches. An diese Konzepte kann sich jeder Modul-Entwickler über Hooks anhängen und Funktionen direkt aus dem Modul ins Frontend pumpen. Das führt dazu, dass man sich als Drupal-Entwickler kaum Gedanken um das Frontend machen muss sondern Features und Funktionen gleich sauber in Konzepten ablegen kann.</p>
+<p>Zum anderen gibt es Themeable Functions, die dann zu tragen kommen, wenn man doch mal mit den vorhandenen Konzepte nicht auskommt. Jedes Mal wenn man als Modul-Entwickler HTML-Code aus dem Modul auswerfen muss, packt man das in eine themeable Function. Die kann dann später vom Theme-Entwickler durch eine eigenen Funktion überschrieben werden - Drupal Form der Vererbung. Das führt aber auch dazu, dass man als Webdesigner, so seine Sorgen mit Drupal hat, denn es stellt sich stets die Frage: woher kommt jetzt dieser Fitzel HTML?</p>
+<p>Abschließend kann man sagen:<br />
+Drupal = gut für Modul-Entwickler<br />
+Wordpress = gut für Webdesigner<br />
+*</p>
+<h3>Warum das alles?</h3>
+<p>Jetzt kommt der eigentlich spannende Punkt. Mal abgesehen vom geisteswissenschaftlichen Impetus, alles zu Systematisieren, allem eine Theorie überstüplen zu wollen. Überlege ich seit einiger Zeit, das Themening System von Drupal, um Tempate-Tags zu ergänzen. Und inzwischen glaube ich sogar, dass man mit ein paar Tagen Aufwand sogar ein Modul schreiben kann, dass es ermöglicht, Wordpress Themes direkt in Drupal laufen zu lassen. Das wäre witzig.</p>
+<hr />
+* Erstaunlicher Weise gelten sogar die Umkehrschlüsse: Die Lernkurve für Drupal Themer geht zwar erst steil los, flacht dann aber sehr schnell ab und man braucht schier ewig, bis man hinter alles hintergestiegen ist. Gleichzeitig sind meine Erfahrungen mit der Plugin-Entwicklung für Wordpress infernalisch.
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 22. 5. 2008</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/drupal.html" rel="lexicon">Drupal</a>, 
+        <a href="../../../lexikon/programmieren.html" rel="lexicon">Programmieren</a>, 
+        <a href="../../../lexikon/typographik.html" rel="lexicon">Typographik</a>, 
+        <a href="../../../lexikon/wordpress.html" rel="lexicon">Wordpress</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://blog.fymmie.de">fym</a> <a href="/2008/05/22/template-tags-vs-themeable-functions#comment-5023" id="comment-5023" class="active">#</a>      </p>
+    <p>Das wäre nicht nur witzig, das wäre auch ein weiterer Anreiz für meine Faulheit zum Wechsel. Aber ob es so gut ist, dass man damit 0815-WP'ler wie mich rüberholt, ohne dass sie sich wirklich mit dem Theme-System von Drupal auseinandersetzen müssen? </p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="/user/80">eigentor</a> <a href="/2008/05/22/template-tags-vs-themeable-functions#comment-5098" id="comment-5098" class="active">#</a>      </p>
+    <p>Jaja, das Drupal Universum</p><p>Ich habe das nie so empfunden, dass Drupal schwierig zu themen sei. Aber ich komme langsam dahinter, dass es für die meisten so ist (ich selber bin auch eher Tüftler statt Designer, auch wenn das die Worte meines ersten Agenturchefs waren und ich es deshalb lange nicht akzeptieren wollte ;)  )</p>
+<p>Es gibt ja andere Theming Engines, die man einbinden kann und die solche Tags anbieten. Da beisst sich die Katze aber relativ schnell in den Schwanz: sämtliche Tutorials behandeln nur PHPTemplate.</p>
+<p>Man sollte einige recht positive Entwicklungen alledings nicht verschweigen: es wird daran gearbeitet. Vor allem Drupal 6 bringt Neuerungen fürs Theming die zwar erst beim zweiten Hinsehen, dann aber nachhaltig sensationell sind. Man kann alles noch viel konsequenter und einfacher überschreiben und muss sich die Sachen nicht über Firebug immer mühsam zusammensuchen.</p>
+<p>Und: Gerade der Entwickler der heftigsten Mindf*** Module (wer das wohl sein mag) engagiert sich für Design und Theming, wie man in diesem seinem (wie ich finde) sehr guten Vortrag sehen kann. <a href="http://www.slideshare.net/merlinofchaos/drupal-6-theming/" title="http://www.slideshare.net/merlinofchaos/drupal-6-theming/">http://www.slideshare.net/merlinofchaos/drupal-6-theming/</a></p>
+<p>D.h: Zumindest einer, der mitten in der Entwicklergemeinde aktiv ist, hat den Schuss gehört. Das hat nicht zu unterschätzende (positive) Konsequenzen. Zudem gibt es <a href="http://www.topnotchthemes.com/" title="http://www.topnotchthemes.com/">http://www.topnotchthemes.com/</a> Stephanie und  Christoper, die ersten wirklich prominenten Drupal Themer (prominent insofern, als sie deutlich in Erscheinung treten). Ihre Themes finde ich deutlich überdurchschnittlich (z.B. das Design von amnesty.org ist einfach fantastisch - gerade weil es das Auge fast verletzt, aber man muss mal das Thema der Website überlegen. Gutes Design ist welches, das sich auf jeden Fall auch unterscheidet. Insofern herzlichen Glückwunsch zu Anmutunddemut. </p>
+<p>Am Anfang war es mir zu weiss und "unformatiert" aber mittlerweile gette ich den Point). Der Ball rollt definitiv langsam, und Manu oder St. Petersburg würden uns immer noch mit 5:o nach Hause schicken. Aber wenn ich an 4.7 und das damalige Admin Theme denke: er rollt überhaupt. Je mehr grossartig designte Drupal-Seiten es geben wird, umso mehr wird auch auf die Designer gehört werden.</p>
+<p>Was vorerst m.E. nicht passieren wird, ist, dass Drupal kompatibel zum Ruckizucki-Ansatz wird. Wäre kein Schaden, dauert aber noch locker 2-3 Jahre (Wir können ja ein Tippspiel veranstalten ;)  )</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

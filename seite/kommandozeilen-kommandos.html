@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Kommandozeilen Kommandos | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2007/12/31/information-architecture-institute" />
+  <link rel="next" href="/2007/12/31/democratize-web-publishing-and-web-development" />
+  <meta name="path" content="/seite/kommandozeilen-kommandos" />
+  <meta name="root" content="../" />
+  <meta name="node-id" content="5601" />
+  <meta name="node-type" content="page" />
+  <meta name="created-timestamp" content="1199095737" />
+  <meta name="created-string" content="31. 12. 2007 - 11:08" />
+  <meta name="changed-timestamp" content="1278690906" />
+  <meta name="changed-string" content="09. 07. 2010 - 17:55" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/kommandos.jpg" />
+  <meta name="path" content="/seite/kommandozeilen-kommandos" />
+  <meta name="node-id" content="5601" />
+  <meta name="node-type" content="page" />
+  <meta name="created-timestamp" content="1199095737" />
+  <meta name="created-string" content="31. 12. 2007 - 11:08" />
+  <meta name="changed-timestamp" content="1278690906" />
+  <meta name="changed-string" content="09. 07. 2010 - 17:55" />
+  <meta name="creator" content="ben_" />
+  <meta name="keywords" content="" />
+  <link type="text/css" rel="stylesheet" media="all" href="../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../css/takeshi.css" />    
+  <script type="text/javascript" src="/js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-5601 arg01-node-5601" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="/2007/12/31/information-architecture-institute" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="/2007/12/31/democratize-web-publishing-and-web-development" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node page published full page-full with-teaserimage age-2">  
+      <!-- start:node -->
+      <h2>Kommandozeilen Kommandos</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/kommandos.jpg' alt='Kommandozeilen Kommandos'/></p>
+<!-- ende:teaserimage -->
+<p>In the beginning there was the commandline.<br />
+Es gibt eine Welt, in die man als PHP-Programmierer inzwischen nicht mehr sooft muss. Wenn man sich aber auf die Kommandozeile begibt, dann sollte man nicht vergessen ein paar gute Freunde mitzunhemen.</p>
+<h3>Vi</h3>
+<dl>
+<dt>Datei am Ende Öffnen</dt>
+<dd>vi datei.endung +</dd>
+<dt>Seite runter / Seite hoch</dt>
+<dd>
+ctrl f - wie <strong>f</strong>orward<br />
+ctrl b - wie <strong>b</strong>ackward</dd>
+<dt>Vorwärts suchen</dt>
+<dd>/Suchbegriff</dd>
+<dt>Rückwärtssuchen</dt>
+<dd>?Suchbegriff</dd>
+<dt>Weitersuchen</dt>
+<dd>n (wie <code>n</code>ext)</dd>
+</dl>
+<h3>My Top</h3>
+<p>mytop -h localhost -u USER -p PASSWORD -d ''</p>
+<h3>tail</h3>
+<p>tail -f datei.endung -n NummerDerZeilen</p>
+<h3>Zip</h3>
+<p>Einen Ordner rekursiv mit Passwortschutz zippen<br />
+zip -r -e [name-der-zip-datei] [name-des-ordners]</p>
+<h3>Tunneln</h3>
+<p>ssh -L2222:zielserver.domain.de:22 <a href="mailto:benutzer@tunnelserver.domain.de">benutzer@tunnelserver.domain.de</a><br />
+Dann kann man über Port 2222 eine SFTP Verbindung zu localhost öffnen, mit dem Benutzernamen und dem Passwort, dass man auf dem Zielserver hat.</p>
+<hr/>
+<h3>Apache</h3>
+<h3>Apache Restart</h3>
+<p>netstat -a(n)t | sort | less   (um zu sehen, mit wem alles (nicht mehr)   gesprochen wird)<br />
+/etc/init.d/apache2 stop<br />
+netstat -ant | grep (-c) :80     (wiederholt, ich warte gerne bis alle Verbindungen wirklich weg vom Fenster sind, auch die FIN_WAIT-Reste)<br />
+/etc/init.d/apache2 start</p>
+<h3>Apache Benchmark</h3>
+<p>ab -c [Anzahl der simultanen Request] -n [Anzahl der Request]</p>
+<hr/>
+<h3>Ordner und Dateien </h3>
+<h4>Anzahl der Dateien in einem Ordner</h4>
+<p>ls -1 | wc -l<br />
+und rekrusiv<br />
+ls -R -1 | wc -l</p>
+<h4>Größe einen Verzeichnisses, rekursiv</h4>
+<p>du . -c -s -h</p>
+<h4>Dateien finden, die größer sind als 200MB</h4>
+<p>find / -type f -size +200000k -exec ls -lh {} \; | awk '{ print $9 ": " $5 }' </p>
+<h4>Symbolische Links anlegen</h4>
+<p>ln -s /ordner/nocheinordner/ziel name</p>
+<h4>grep</h4>
+<p>Findet eine Zeichenkette in allen Dateien des aktuellen Ordners<br />
+grep zeichenkette * </p>
+<p>Alle Vorkommen von xyz in Datei.name zählen.<br />
+grep 'xyz'  datei.name | wc -l</p>
+<hr/>
+<h3>User</h3>
+<h4>User anlegen</h4>
+<p>adduser Username<br />
+useradd -G Gruppe -p Passwort Username</p>
+<h4>Passwort eines Users ändern</h4>
+<p>passwd Username</p>
+<h4>User eine Gruppe hinzufügen</h4>
+<p>usermod -g www Username</p>
+<hr/>
+<h3>SVN</h3>
+<h3>Initialer Checkout</h3>
+<p>svn co <a href="http://svn.example.com/svn/mein-projekt" title="http://svn.example.com/svn/mein-projekt">http://svn.example.com/svn/mein-projekt</a></p>
+<h3>Ein Verzeichnis ins Repoistory einfügen</h3>
+<p>svn add name-des-verzeichnisses/</p>
+<h3>Ein Verzeichnis einchecken</h3>
+<p>svn ci name-des-verzeichnisses/ -m "Grund des Checkins"</p>
+<h3>Mein Verzeichnis aktualisieren</h3>
+<p>svn update</p>
+<hr/>
+<h3><a id="git"/>Git</a></h3>
+<h4>Globales Setup</h4>
+<p>  git config --global user.name "MeinName"<br />
+  git config --global user.email <a href="mailto:meine-email@example.xom">meine-email@example.xom</a></p>
+<h4>Lokales Repository erstellen</h4>
+<p>  mkdir mein-projekt<br />
+  cd mein-projekt<br />
+  git init</p>
+<h4>Initiale Synchronisation</h4>
+<p>  git remote add origin git@github.com:mein-user-name-bei-github/mein-projekt.git<br />
+  git push origin master</p>
+<h4>Ein Verzeichnis ins Repoistory einfügen</h4>
+<p>git add name-des-verzeichnisses/</p>
+<h4>Eine DAtei aus dem Repository entfernen</h4>
+<p>git rm name-der-datei</p>
+<h4>Ein ganzes Verzeichnis aus dem Repository entfernen</h4>
+<p>git rm -r name-des-verzeichnisses/</p>
+<h4>Ein Verzeichnis einchecken</h4>
+<p>git commit name-des-verzeichnisses/ -m "Grund des Checkins"</p>
+<h4>Lokales Reository mit dem Master synchronisieren</h4>
+<p>git push origin master oder<br />
+git push</p>
+<h4>Einen entfernten Fork hinzufügen</h4>
+<p>git remote add namedesforks git://github.com/user/projekt.git</p>
+<h4>Einen entfernten Fork ziehen</h4>
+<p>git fetch namedesforks</p>
+<h4>Zwei Repos mergen</h4>
+<p>git merge namedesforks/namedesmasters</p>
+<h4>Einen entfernten Fork ziehen (fetch und merge)</h4>
+<p>git pull namedesforks namedesrepositories</p>
+<h4>Einen Branch erstellen</h4>
+<p>git checkout -b namedesbranches</p>
+<h4>Sich von Branch zu Branch schwingen</h4>
+<p>git checkout namedesbranches</p>
+<h4>Alle Branches lokalen anzeigen</h4>
+<p>git branch</p>
+<h4>Alle Branches, auch remote anzeigen</h4>
+<p>git branch -a</p>
+<hr/>
+<h3>Konsole auf dem Mac</h3>
+<h4>Shortcuts einrichten</h4>
+<p>vi .bash_profile<br />
+alias shortcut='long command which does - something'</p>
+<hr/>
+<h3>Linux Version herausfinden</h3>
+<p>cat /etc/apt/sources.list</p>
+</hr/></hr/></hr/></hr/></hr/></hr/></hr/>        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Seite vom 31. 12. 2007</p>
+        
+      <!-- end:footnotes -->
+    </div>
+    
+
+
+    <div id="comments">
+      <!-- start:comments -->
+      <hr/>
+      <h2>Kommentare</h2>
+
+      <!-- Last Comment standing -->
+
+      <!-- end:comments -->
+    </div>
+
+    <!-- start:comment-form -->
+    <div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+    <!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

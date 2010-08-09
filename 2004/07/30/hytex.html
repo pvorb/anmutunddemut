@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>HyTex | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2004/07/30/my-private-heimtierpark" />
+  <link rel="next" href="/2004/07/30/sonnenuntergang-grillen" />
+  <meta name="path" content="/2004/07/30/hytex" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="1287" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1091192940" />
+  <meta name="created-string" content="30. 07. 2004 - 15:09" />
+  <meta name="changed-timestamp" content="1268754541" />
+  <meta name="changed-string" content="16. 03. 2010 - 16:49" />
+  <meta name="creator" content="ben_" />
+  <meta name="path" content="/2004/07/30/hytex" />
+  <meta name="node-id" content="1287" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1091192940" />
+  <meta name="created-string" content="30. 07. 2004 - 15:09" />
+  <meta name="changed-timestamp" content="1268754541" />
+  <meta name="changed-string" content="16. 03. 2010 - 16:49" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Maschinen" href="../../../ressort/maschinen" />
+  <link rel="index" title="DTD" href="../../../lexikon/dtd" />
+  <link rel="index" title="Hytex" href="../../../lexikon/hytex" />
+  <link rel="index" title="SVG" href="../../../lexikon/svg" />
+  <link rel="index" title="Topic Maps" href="../../../lexikon/topic-maps" />
+  <link rel="index" title="XML" href="../../../lexikon/xml" />
+  <link rel="index" title="XSLT" href="../../../lexikon/xslt" />
+  <meta name="keywords" content="Maschinen, DTD, Hytex, SVG, Topic Maps, XML, XSLT" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-1287 arg01-node-1287" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2004/07/30/my-private-heimtierpark.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2004/07/30/sonnenuntergang-grillen.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full age-6">  
+      <!-- start:node -->
+      <h2>HyTex</h2>
+
+<div>
+<p>Eigentlich wollte ich das hier schon vor ein paar Wochen machen,<br />
+aber dann kam doch alles anders, und bis eben hab ich gedacht,<br />
+ich würde dashier erst in ein paar Monaten machen aber jetzt ist doch alles anders.</p>
+<p>Meine Arbeit für das <a href="http://www.hytex.info">Hytex</a> Projekt ist beendet, bis auf ein bischen Dokumentation. Hytex steht für Hypertextualisierung auf textgrammatischer Grundlage. Ziel des <a href="">DFG</a>-Projekts war, zu zeigen, dass Probleme, die bei der Hypertextualisierung von linear-konzipierten Fachtexten entstehen mit bestimmten Strategien gelöst werden können. Meine aufgabe im Projekt bestand v.a. darin die technische Umsetzung dieser Lösung zu entwickeln. Dabei gab es für mich zwei besondere Herausforderungen:</p>
+<dl>
+<dt>1. Die Transformation unifizierter XML Daten in ein HMTL-Präsentation mittles XSLT</dt>
+<dd>
+<p>Wenn man Informationen unterschiedlichen Typs in ein XML-Dokument bekommen möchte, bietet es sich an, das selbe Dokument mehrfach nach<br />
+unterschiedlichen DTDs zu annotieren. Möchte man jetzt aber alle Informationsebenen gleichzeitig in einer Präsentation nutzen,<br />
+so müssen die Daten zuerst unifiziert werden, d.h. dass alle<br />
+annotierten Dokumente wieder zu einem zusammengeführt werden.<br />
+Auf diesen unifizierten Daten zu arbeiten ist aus sicht eines XSLT-Programmieres ein echte Herausforderung:</p>
+<p>Denn zwar kann man bei Unifizierungsprozess anngeben, wie welche<br />
+Elemente welcher ebene ineinander geschachtelt werden, aber tortzdem werden die Eltern-Kind-Relationen zerstört resp. durch Ancestor-Descendant-Relationen ersetzt, was das Arbeiten extrem erschwert, da die Eltern-Kind-Relation von zentraler semantischer Bedeutung ist.</p>
+<p>Um die Transformationen der unterschiedlichen Ebenen von einander<br />
+zu trennen haben wir massiven Gebrauch von zwei Techniken in XSLT gemach: Zum einen haben wir in einem Stylesheet mehrfache transformationen nacheinander gemacht, die jeweiligen Zwischenergebnisse in Variablen gespeichert und auf diesen dann in einem anderen Modus weitergearbeitet. Zum anderen haben wir Modi benutzt um die unterschiedlichen XML Ebenen voneinander zu trennen.</p>
+<p>Im Endeffekt bekommt man damit sehr saubere Stylesheets, allerdings werden diese mit der Zeit so komplex, dass das de:buggen immmer schwieriger wird und zu anderen sind die ERgebnisdaten der Unifizierung zeimlich unberechenbar, was bei so komplexen Stylesheets eine Anpassung ebenfalls erschwert.</p>
+</dd>
+<dt>2. Die Visualisierung und Integration einer XML Topic Map in die HTML-SVG-Präsentation.</dt>
+<dd>
+<p>Die Visualisierung der XML-TopicMap war mir eine besondere Freude. Die Visualisierung sollte in SVG erfolgen, was eine Transformation aus XSLT nahlegte. Leider musst ich gleich zu Beginn feststellen, dass XSLT keine trigonometrischen Funktionen hat, was schwierig ist, wenn man Daten visualiseren will. Desweitern musste ich feststellen, das XTM kein besonders tolles Format ist, um es mit XSLT zu bearbeiten, weil alle wirklich wichtigen Beziehungen über ID-IDREFS abgebildet werden. Deshalb musste ich auch hier wieder mit mehrfachen Zwischenschritten transformieren: erst die Topicmaps in ein besser lesbares Formt für semantische Netze, dann in ein Prävisualisierungsformat und dann nach SVG.</p>
+<p>Es sei aber wänht das die Endlösung trotzallem sehr elegant ist und und es eine große Freude ist ordentlich mit XSLT zu programmieren</p>
+</dd>
+</dl>
+</div>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 30. 7. 2004</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Ressort:</span>
+        <a href="../../../ressort/maschinen.html" rel="ressort">Maschinen</a>
+        <span class='somespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/dtd.html" rel="lexicon">DTD</a>, 
+        <a href="../../../lexikon/hytex.html" rel="lexicon">Hytex</a>, 
+        <a href="../../../lexikon/svg.html" rel="lexicon">SVG</a>, 
+        <a href="../../../lexikon/topic-maps.html" rel="lexicon">Topic Maps</a>, 
+        <a href="../../../lexikon/xml.html" rel="lexicon">XML</a>, 
+        <a href="../../../lexikon/xslt.html" rel="lexicon">XSLT</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+
+
+    <div id="comments">
+      <!-- start:comments -->
+      <hr/>
+      <h2>Kommentare</h2>
+
+      <!-- Last Comment standing -->
+
+      <!-- end:comments -->
+    </div>
+
+    <!-- start:comment-form -->
+    <div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+    <!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Ultima Ratio XML-Namespaces | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2008/05/24/designing-social-web" />
+  <link rel="next" href="/2008/05/24/setting-sails-green-and-gray-ocean" />
+  <meta name="path" content="/2008/05/24/ultima-ratio-xml-namespaces" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="6073" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1211615348" />
+  <meta name="created-string" content="24. 05. 2008 - 09:49" />
+  <meta name="changed-timestamp" content="1211616587" />
+  <meta name="changed-string" content="24. 05. 2008 - 10:09" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/gegenwartvonxml.jpg" />
+  <meta name="path" content="/2008/05/24/ultima-ratio-xml-namespaces" />
+  <meta name="node-id" content="6073" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1211615348" />
+  <meta name="created-string" content="24. 05. 2008 - 09:49" />
+  <meta name="changed-timestamp" content="1211616587" />
+  <meta name="changed-string" content="24. 05. 2008 - 10:09" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="Delicious" href="../../../lexikon/delicious" />
+  <link rel="index" title="Namespaces" href="../../../lexikon/namespaces" />
+  <link rel="index" title="XML" href="../../../lexikon/xml" />
+  <meta name="keywords" content="Delicious, Namespaces, XML" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-6073 arg01-node-6073" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2008/05/24/designing-social-web.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2008/05/24/setting-sails-green-and-gray-ocean.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-2">  
+      <!-- start:node -->
+      <h2>Ultima Ratio XML-Namespaces</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/gegenwartvonxml.jpg' alt='Ultima Ratio XML-Namespaces'/></p>
+<!-- ende:teaserimage -->
+<p>Ich hab ja die Tage schon ein Delicious-Importer Modul geschrieben, dass über die Delicious-RSS-Feeds die Lesezeichen automatisch in Drupal importiert. Ganz fertig ist das noch nicht, aber es gab was spannendes zu beobachten. In einem handelsüblichen Delicious-Feed wie <a href="http://feeds.delicious.com/rss/konnexus">dem vom Konnexus</a> verbirgt sicht dies:</p>
+<pre>
+&lt;rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:cc="http://web.resource.org/cc/"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/"&gt;
+</pre><p><br/></br/></p>
+<p>Nicht weniger als 8 Namespaces und natürlich ist er valide, so ist das mit Namespaces. Und eigentlich ist das ja eine gute Sache. So kommen in den RSS-Feed noch Daten rein, die ihn reicher machen. Trotzdem habe ich irgendwie das Gefühl, dass das nicht ganz im Sinne des Erfinders ist. Denn obschon der Feed valide ist und von jedem Feedreader gefressen wird, ist die Ergänzung um weitere Semantik doch irgendwie merkwürdig. </p>
+<p>Ich meine, die Idee war doch, dass man ein Format hat, dass man in einem Schema beschreibt und dann für das Schema eine Anwendung baut. Wenn ich jetzt meine Instanzen beliebig mit Semantik erweitern kann muss ich doch auch meine Anwendungen im Grund beliebig erweitern. </p>
+<p>Ich weiß, ich weiß ... RDF sieht das ein bischen anders, und vielleicht bin ich da auch nur ein bischen zu oldschool. *seufz*</p>
+<hr/>
+<p>Nachtrag: Außerdem scheint PHPs SimpleXML Namespaces vollständig zu ignorieren und zwar in dem Sinne, dass es die Elemente einfach nicht in SimpleXML-Objekte umwandelt. Das ist in meinem Fall etwas ärgerlich, weil vom Feed ungefähr gar nichts überig blieb. Deswegen habe ich erstmal alle Namespaces per Regulärem Ausdruck rausgeworfen.</p>
+</hr/>        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 24. 5. 2008</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/delicious.html" rel="lexicon">Delicious</a>, 
+        <a href="../../../lexikon/namespaces.html" rel="lexicon">Namespaces</a>, 
+        <a href="../../../lexikon/xml.html" rel="lexicon">XML</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="/user/90">mbo</a> <a href="/2008/05/24/ultima-ratio-xml-namespaces#comment-5058" id="comment-5058" class="active">#</a>      </p>
+    <p>dürfen</p><p>_ben , da hast sich ein Wortdreher eingeschlichen. Es müsste nämlich "kann ich nun auch meine Anwendungen im Grund beliebig erweitern" lauten... ;)</p>
+<p>Wgen deinem Nachtrag: Probier mal <a href="http://blog.gauner.org/2007/08/30/xml-dokumente-mit-namespaces-in-php5simplexml-verarbeiten/" title="http://blog.gauner.org/2007/08/30/xml-dokumente-mit-namespaces-in-php5simplexml-verarbeiten/">http://blog.gauner.org/2007/08/30/xml-dokumente-mit-namespaces-in-php5si...</a></p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2008/05/24/ultima-ratio-xml-namespaces#comment-5060" id="comment-5060" class="active">#</a>      </p>
+    <p>Ah, ja, ne, is klar</p><p>Danke für den Link. Über die richtige Wortwahl unterhalten wir uns nochmal.</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

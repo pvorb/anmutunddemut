@@ -1,0 +1,9 @@
+html {font-size:12pt; font-family:Arial; line-height:150%;background-color:black;color:white}
+body  { background-color: black;}
+h1 {font-size:150%; font-family:Arial; letter-spacing:1em;}
+h1.panther {font-family:system; letter-spacing:0.5em;}
+h2 {font-size:125%; font-family:Arial; letter-spacing:1em}
+a:link {text-decoration:none; color:#808080; border-width:0cm; }
+a:visited {text-decoration:none; color:#808080; border-width:0cm; }
+a:active {text-decoration:none; color:#808080; border-width:0cm; }
+img {border-width:0cm; }

@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Heimweh 0.3 – Datenbank angestöpselt | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />
+  <link rel="prev" href="/2009/03/16/beunruhigend-ruhig" />
+  <link rel="next" href="/2009/03/26/fruehling" />
+  <meta name="path" content="/2009/03/16/heimweh-03-datenbank-angestoepselt" />
+  <meta name="root" content="../../../" />
+  <meta name="node-id" content="7483" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1237216523" />
+  <meta name="created-string" content="16. 03. 2009 - 16:15" />
+  <meta name="changed-timestamp" content="1238319115" />
+  <meta name="changed-string" content="29. 03. 2009 - 11:31" />
+  <meta name="creator" content="ben_" />
+  <meta name="teaserimage" content="/files/heimweh030.jpg" />
+  <meta name="path" content="/2009/03/16/heimweh-03-datenbank-angestoepselt" />
+  <meta name="node-id" content="7483" />
+  <meta name="node-type" content="story" />
+  <meta name="created-timestamp" content="1237216523" />
+  <meta name="created-string" content="16. 03. 2009 - 16:15" />
+  <meta name="changed-timestamp" content="1238319115" />
+  <meta name="changed-string" content="29. 03. 2009 - 11:31" />
+  <meta name="creator" content="ben_" />
+  <link rel="index" title="On my way to Heimweh" href="../../../serie/on-my-way-to-heimweh" />
+  <meta name="keywords" content="On my way to Heimweh" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node sidebars-0 arg0-node arg1-7483 arg01-node-7483" onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p><span class='backandforth'><span class='headericon backwardslink'><a href="../../../2009/03/16/beunruhigend-ruhig.html" title="rückwärts">«</a></span> <span class='headericon forwardslink'><a href="../../../2009/03/26/fruehling.html" title="vorwärts">»</a></span></span> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <!-- ende:header -->
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node" class="node story published full story-full with-teaserimage age-1">  
+      <!-- start:node -->
+      <h2>Heimweh 0.3 – Datenbank angestöpselt</h2>
+
+<!-- start:teaserimage -->
+<p class='teaserimage'><img src='http://anmutunddemut.de/files/heimweh030.jpg' alt='Heimweh 0.3 – Datenbank angestöpselt'/></p>
+<!-- ende:teaserimage -->
+<p>Habe heute die Tabellen und die Datenbank angestöpselt. Da ich wenig Ahnung von Datenbankoptimierung habe, lesen sich die Create Table Statements für Kenner und Könner wohl eher amüsant. Mir reichen sie aber für's Erste und damit ist die Hauptbedingung erfüllt. Gerne nehem ich latürnich sachdienliche Hinweise entgegen.</p>
+<pre>
+ CREATE TABLE `heimweh_documents` (
+`id` INT NOT NULL ,
+`date` DATETIME NOT NULL ,
+`xml` LONGTEXT NOT NULL ,
+PRIMARY KEY ( `id` ) ,
+INDEX ( `date` ) ,
+FULLTEXT (
+`xml`
+)
+) ENGINE = MYISAM ;
+
+
+ CREATE TABLE `heimweh_metadata` (
+`mid` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`subject` TEXT NOT NULL ,
+`predicate` TEXT NOT NULL ,
+`object` LONGTEXT NOT NULL ,
+FULLTEXT (
+`subject` ,
+`predicate` ,
+`object`
+)
+) ENGINE = MYISAM ;
+</pre><p>
+Was noch nicht so ganz unerwähnt bleiben soll ist folgendes. Heimweh unterstützt Mysql. Mehr nicht. Dementsprechend gibt auch keinen Datenbankabstraktionslayer und keine Wrapper-Klasse. Die Datenbank wird in der index.php angezapft und danach in den Modulen einfach mit den mysql_query und mysql_fetch_x Funktionen angesprochen. Fertig. Weniger ist mehr.</p>
+        
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom 16. 3. 2009</p>
+      <p class='meta-topics'>~  
+        <span class='title'>Serie:</span>
+        <a href="../../../serie/on-my-way-to-heimweh" rel="series">On my way to Heimweh</a>
+      </p>        
+      <!-- end:footnotes -->
+    </div>
+    
+  <div id="comments">
+  <hr/>
+
+
+    <h2 class="comments">Kommentare</h2>
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://tosh.at">tosh</a> <a href="/2009/03/16/heimweh-03-datenbank-angestoepselt#comment-6248" id="comment-6248" class="active">#</a>      </p>
+    <p>myisam vs innodb</p><p>mysql bietet ja mehrere storage engines an, gab es bestimmte gründe weshalb du dich für myisam entschieden hast? innodb dürfte ein paar interessante verbesserungen bieten die mysql näher an ein postgresql featureset heranbringen.</p>
+<p><a href="http://en.wikipedia.org/wiki/InnoDB" title="http://en.wikipedia.org/wiki/InnoDB">http://en.wikipedia.org/wiki/InnoDB</a></p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+    <div class="comment">
+      <!-- start:kommentar -->
+      <hr />
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> <a href="/2009/03/16/heimweh-03-datenbank-angestoepselt#comment-6249" id="comment-6249" class="active">#</a>      </p>
+    <p>Bestimmte Gründe</p><p>Jaha. Da gab es zwei bestimmte Gründe: Erstens, der phpMyAdmin hatte es vorgeschlagen. Zweitens, ich habe keinen blassen Schimmer was das ist. Werde aber Dank Deiner Hilfe diesem Misstand jetzt mal beseitigen. </p>
+<p>1000 Dank!</p>
+      <!-- ende:kommentar -->   	
+    </div>
+
+
+  </div>
+
+<!-- start:comment-form -->
+<div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+<!-- end:comment-form -->
+
+    <!-- ende: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="http://anmutunddemut.de/impressum">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- ende:footer -->
+  </div>
+    
+</body>
+</html>

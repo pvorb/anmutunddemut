@@ -1,0 +1,102 @@
+/* CSS File for the MA by Benjamin Birkenhake */ 
+
+
+/* Projectwide Stylesheets */
+html {font-size:8pt; font-family:Verdana; margin:5%; line-height:150%;}
+body  { background-color: lightgrey; color:slategray}
+h1 {font-size:125%; font-weight:900; font-family:Verdana;  color:slategray; text-align:center; text-transform:uppercase;}
+h2 {font-size:120%; font-weight:900; font-family:Verdana;  color:lightslategray; text-align:center; text-transform:uppercase;}
+h3 {font-size:115%; font-weight:900; font-family:Verdana;  color:lightslategray; text-align:center; text-transform:uppercase;}
+h4 {font-size:110%; font-weight:900; font-family:Verdana;  color:lightslategray; text-align:center; text-transform:uppercase;}
+h5 {font-size:105%; font-weight:900; font-family:Verdana;  color:lightslategray; text-align:center; text-transform:uppercase;}
+a:link {text-decoration:none; color:slategray}
+a:visited {text-decoration:none; color:slategray}
+a:active {text-decoration:none; color:slategray}
+
+
+/* STylesheets for the Source [Code] O Graphy */
+div.scog-view {
+	margin-top:20px;
+	padding:10px;
+	text-align:left; 
+	border-width:1px;
+	border-color:slategray;  
+	border-style: dashed;
+}
+div.scog-view-lables{font-weight:900; text-transform:uppercase; }
+div.scog-menu {
+	margin-top:4px;
+	text-align:center;
+	padding:5px;
+	
+}
+div.scog-menu {
+	margin-top:4px;
+	padding:5px;
+	text-align:center;
+	border-width:1px;
+	border-color:slategray;  
+	border-style: dashed;
+}
+div.scog-menu-info {
+	margin-top:4px;
+	color:black; 
+	text-align:center;
+	padding:5px;
+	
+}
+div.scog-form {
+	margin-top:20px;
+	padding:10px;
+	color:black; 
+	text-align:left; 
+	border-width:1px;
+	border-color:slategray;  
+	border-style: dashed;
+}
+
+table.scog-view {
+	padding:5px;
+	table-layout:fixed;
+	font-size:8pt; 
+	font-family:Verdana;
+	line-height:150%; 
+	border-width:0px;
+	
+}
+
+table.scog-menu {
+	padding:5px;
+	table-layout:fixed;
+	font-size:8pt; 
+	font-family:Verdana;
+	line-height:100%; 
+	border-width:0px;
+	
+}
+tr.scog {
+		border-width:0px;
+}
+td.scog-left {
+		width:20%;
+		text-align:left;
+		border-width:0px;
+}
+td.scog-center {
+		width:60%;
+		text-align:center;
+		border-width:0px;
+}
+td.scog-right {
+		width:20%;
+		text-align:right;
+		border-width:0px;
+}
+form.scog {font-size:8pt; font-family:Verdana; line-height:100%;}
+select.scog {font-size:7pt; font-family:Verdana; line-height:100%;}
+input.scog {font-size:7pt; font-family:Verdana; line-height:100%;}
+
+
+
+
+
