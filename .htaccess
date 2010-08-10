@@ -1,7 +1,7 @@
 HeaderName /php/directory-listing-header.html
 ReadmeName /php/directory-listing-footer.html
 options +indexes
-AddIcon http://anmutunddemut.de/files/ordner.gif ^^DIRECTORY^^
-AddIcon http://anmutunddemut.de/files/ordner.gif ..
-AddIcon http://anmutunddemut.de/files/datei.gif *.*
+AddIcon http://anmutunddemut.de/images/myicons/ordner.gif ^^DIRECTORY^^
+AddIcon http://anmutunddemut.de/images/myicons/ordner.gif ..
+AddIcon http://anmutunddemut.de/images/myicons/datei.gif *.*
 IndexOptions SuppressHTMLPreamble FancyIndexing  FoldersFirst  SuppressDescription SuppressLastModified SuppressSize NameWidth=* 
