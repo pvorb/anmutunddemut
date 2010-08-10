@@ -1,3 +1,9 @@
+/* CSS für das Theme "Takeshi" auf anmut und demut 
+
+	@author: benjamin birkehake <benjamin@birkenhake.org>
+
+*/
+
 /* ========== At first, set Defaults back to zero ========== */
 ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,table,tr,td,thead,tbody{
 	margin:0px;
@@ -6,8 +12,14 @@ ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,tab
 	border:0px;
 }
 
+/* Add marigins again */
+
 ul, ol, dd{
 	padding-left:2em;
+}
+
+h2, h3, p, ul, ol, dl, table, pre {
+	margin-bottom:2em;	
 }
 
 
@@ -269,20 +281,7 @@ hr{
 	left:20px;
 }
 
-#node  p,
-#node  ul,
-#node  ol,
-#node  dl,
-#node  table,
-#node pre,
-.comment  p,
-.comment  ul,
-.comment  ol,
-.comment  dl,
-.comment  table,
-.comment pre{
-	margin-bottom:2em;	
-}
+
 
 .page-node .teaserimage  {	
 	position:absolute;
