@@ -14,13 +14,12 @@ ul, ol, dd{
 
 
 
-/* set the basics 100e2r */
+/* Set the basics 100e2r */
 
 html, body, textarea {
 	font:100%/1.45 Georgia, serif;	
 	line-height: 145%;		
 }
-
 
 a {
 	border:0px;
@@ -35,35 +34,12 @@ a img {
 	border:0px;
 }
 
-td{
-	padding-left:5px;
-}
 
 
 
 
 
-/* correction of some of drupals defaults */
-
-.item-list .pager{
-	font-size:110%;	
-	margin:4em;
-}
-
-.item-list ul.pager li {
-	margin:0;
-	padding:0.3em;
-}
-
-.feed-icon{
-	display:none;	
-}
-
-
-
-
-
-/* take care of layout */
+/* Das grobe Layout */
 
 .region {
 	width:1150px;
@@ -96,19 +72,14 @@ td{
 	min-width:1110px;	
 }
 
-#pre {
-  
-}
-
-#post {
-  padding-top:10px;  
-}
-
 .clear {
   clear:both;
 }
 
-/* Subregion inside the Arena*/
+
+
+
+/* Subregion inside the Arena   */
 
 #node,
 #lexicon,
@@ -125,7 +96,6 @@ td{
   margin-bottom:2em;  
 }
 
-
 #node,
 #lexicon,
 #footnotes,
@@ -139,16 +109,7 @@ td{
 
 
 
-/* Some basic pages */
-
-
-
-
-
-
-
 /* Header */
-
 
 #header a{
 	color:white;	
@@ -161,24 +122,18 @@ td{
 #header h1, 
 #header p{
 	display:inline;
-	font-size:16px;
-	
+	font-size:16px;	
 }
 
 #header h1 {
 	margin-left:0px;
 }
 
-
-
 #header p{
   position:absolute;
   right:20px;
   margin-right:20px;	
 	padding-left:175px;
-
-
-
 }
 
 .backandforth {
@@ -192,20 +147,18 @@ td{
 
 
 
+
 /* Footer */
 
 #buttons {
   text-align:right; 
 }
 
-
-
 #buttons img{
  	margin-left:0;
 	margin-right:27px;
 	width:155px;
 }
-
 
 #digitalistbesser, #impressum{	
 	text-transform:uppercase;
@@ -219,22 +172,97 @@ td{
 
 
 
+/* Homepage */
 
-
-/* Nodes */
-
-.node {
-	clear:both;
-	width:530px;
-	margin-left:180px;
-	margin-bottom:2em;	
+.page-homepage .teaserimage {	
+	position:absolute;
+	left:787px;
 }
+
+.page-homepage .teaserimage img {
+	width:161px;
+	border:1px solid lightgrey;
+}
+
+.readmore{
+	margin-top:-1em;
+	text-align:right;
+}
+
+
+
+
+
+/* Directory Listings des Apache Servers */
+
+.page-directory pre{
+	font:100%/1.45 Georgia, serif;	
+	line-height: 145%;
+}
+
+.page-directory #arena hr{
+	display:none;
+}
+
+
+
+
+/* Fließtextelemente */
 
 h2 {
 	margin-bottom:0.5em;
 }
 
+h3{
+	margin-bottom:1em;
+	clear:both;
+}
 
+blockquote {
+	border-left:3px solid black;
+	padding-left:2em;
+}
+
+img {
+	max-height:550px;
+	max-width:550px;	
+}
+
+td{
+	padding-left:5px;
+}
+
+hr{
+  border:0;
+  height:3px;
+  color:black;
+  background:black;  
+  text-align:left;
+  margin-top:2em;
+}
+
+#arena hr, 
+#footer hr{
+  margin-left:0px;
+  margin-top:2em;
+  margin-bottom:2em;  
+}
+
+
+
+
+
+
+
+/* Artikel  */
+
+.node, #node {
+	clear:both;
+	width:35em;	
+	margin-left:180px;
+	margin-bottom:2em;	
+	min-height:350px;
+}
 
 .metadata{
 	position:absolute;
@@ -256,125 +284,7 @@ h2 {
 	margin-bottom:2em;	
 }
 
-.full .tabs {
-	display:none;
-}
-
-.page-node #node {
-	min-height:350px;
-}
-
-#footnotes .somespace {
-	margin-left:2em;
-}
-
-
-
-
-
-/* Regular Teasers  */
-
-.teaser{
-	min-height:6em;	
-}
-
-
-
-
-
-
-
-
-/* Archive and Taxonomy */
-
-
-
-.page-term .teaser,
-.page-archive .teaser{
-  margin-left:50px;
-}
-
-.page-term .teaser hr,
-.page-archive .teaser hr{
- margin:0px 0px 1em 0px !important;
- height:1px;
-}
-
-.page-term .node,
-.page-archive .node{
- width:1050px;
-}
-
-
-
-
-.page-term .term-list,
-.page-term .association-list {
-	margin-left:180px;
-}
-
-.page-term .term-list .title{
-	position:absolute;
-	left:355px;
-	
-}
-
-.page-term .teaser .commentcount{
-	position:absolute;
-	left:950px;
-}
-
-
-.page-directory pre{
-	font:100%/1.45 Georgia, serif;	
-	line-height: 145%;
-}
-
-.page-directory #arena hr{
-	display:none;
-}
-
-
-
-
-
-
-/* inline elements */
-
-.node blockquote {
-	border-left:3px solid black;
-	padding-left:2em;
-}
-
-.node img {
-	max-height:550px;
-	max-width:550px;	
-}
-
-.node h3{
-	margin-bottom:1em;
-}
-
-
-
-
-
-
-
-
-
-/* homepage */
-.teaser .teaserimage {	
-	position:absolute;
-	left:787px;
-}
-
-.teaser .teaserimage img {
-	width:161px;
-	border:1px solid lightgrey;
-}
-
-.page-node  .teaserimage  {	
+.page-node .teaserimage  {	
 	position:absolute;
 	left:800px;
 	top:35px;
@@ -384,33 +294,62 @@ h2 {
 	width:330px;
 }
 
-.readmore{
-	margin-top:-1em;
-	text-align:right;
+.volleBreitseite, 
+.moblog-full {
+	margin-left:-180px;
+	margin-top:-13px;
 }
 
-hr{
-  border:0;
-  height:3px;
-  color:black;
-  background:black;  
-  text-align:left;
-  margin-top:2em;
+.volleBreitseite img,
+.moblog-full img {
+	max-width:1110px;
+	max-height:650px;
 }
 
-#arena hr, #footer hr{
-  margin-left:0px;
-  margin-top:2em;
-  margin-bottom:2em;  
+.marginalie{
+	margin-left:-180px;
+	float:left;
+	clear:left;
+	width:160px;
 }
 
-#arena .node hr{ 
-  margin-left:-180px;
+.marginalie img{
+	max-width:160px;
+}
+
+.glosse{
+	position:absolute;
+	left:800px;
+}
+
+.glosse img{
+	max-width:330px;
+}
+
+.moblog-teaser img{
+	max-height:250px;
+	max-width:250px;
+}
+
+.halbeSpalte{
+  width:45%;
+}
+
+.linkeSpalte{ 
+  clear:both;
+  float:left;
+}
+.rechteSpalte{
+  float:right;
 }
 
 
 
-/* footnotes */
+
+
+
+
+/*  Fussnoten  */
 #footnotes {
 	width:1110px;
 }	
@@ -423,7 +362,11 @@ hr{
 
 
 
-/* kommentare */
+
+
+
+
+/* Kommentare */
 
 #comments {	
 	width:1110px;
@@ -432,20 +375,16 @@ hr{
 #comments h2 {	
 	padding-top:1em;
 	margin-bottom:2em;
-	
-
 }
 
 .comment {
 	margin-left:180px;
 	margin-bottom:3em;	
-	width:550px;
-	
+	width:550px;	
 }
 
 .comment .metadata{
-	margin-left:740px;
-	
+	margin-left:740px;	
 }
 
 .comment hr{
@@ -455,7 +394,6 @@ hr{
 	background:black;
 	width:840px;	
 }
-
 
 .comment .submitted{
 	text-align:right;
@@ -470,115 +408,7 @@ hr{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* anmut und demut */
-
-.full .volleBreitseite, 
-.moblog-full {
-	margin-left:-180px;
-	margin-top:-13px;
-}
-
-.full  .volleBreitseite img,
-.moblog-full img {
-	max-width:1110px;
-	max-height:650px;
-}
-
-.node .marginalie{
-	margin-left:-180px;
-	float:left;
-	clear:left;
-	width:160px;
-}
-
-.node .marginalie img{
-	max-width:160px;
-}
-
-.node .glosse{
-	position:absolute;
-	left:800px;
-}
-
-.node .glosse img{
-	max-width:330px;
-}
-
-.moblog-teaser img{
-	max-height:250px;
-	max-width:250px;
-}
-
-
-#themessages{
-	position:absolute;
-	top:100px;
-	left:170px;
-	border:1px solid black;
-	
-	padding:10px;
-	background-color:white;
-	z-index:10;
-}
-
-.hideme {
-	text-align:right;	
-}
-
-.hideme a{
-	color:gray;
-}
-
-
-.page-node .halbeSpalte{
-  width:45%;
-}
-
-.page-node .linkeSpalte{ 
-  clear:both;
-  float:left;
-}
-
-.page-node .rechteSpalte{
-  float:right;
-}
-
-.page-node h3{ 
-  clear:both;
-}
-
-
-
-
-
-
-/* semantic weblog styles */
-
-.taxonomy-term-description{
-  width:550px;
-  margin-left:180px;
-  margin-bottom:4em;
-}
-
-.taxonomy-term-content-title{
-  margin-bottom:1em;
-}
-
-/* Heimweh Preparations */
+/* Kommentar-Formular*/
 
 #comment-form {
 	margin-left:180px;
@@ -587,7 +417,6 @@ hr{
 #comment-form hr{
 	margin-left:-180px;
 }
-
 
 #comment-form h2{
 	margin-top:1em;
@@ -598,11 +427,6 @@ hr{
 #comment-form p,
 #comment-form h2{
 	margin-bottom:10px;
-}
-
-
-#comment-form label {
-	
 }
 
 #comment-form span {
