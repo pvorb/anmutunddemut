@@ -4,11 +4,12 @@
 // Do something here
 
 // Tiny Clicktracker
+/*
 if($_SERVER["HTTP_REFERER"]!=""){
   $file = fopen("counter.txt", "a+");
   fwrite($file, time()." | ".$_SERVER["HTTP_REFERER"]."\n");
   fclose($file);
-}
+}*/
 
 // Finally create and deliver image here
 header ("Content-type: image/png");
