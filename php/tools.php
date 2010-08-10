@@ -41,7 +41,7 @@ function debug($mixed){
 // ######### Sanitization Tools
 
 function sanitize_text($text){
-	$clean = strip_tags($text, "<a><i><b><em><strong><blockquote><q><ul><ol><li>");
+	$clean = stripslashes(strip_tags($text, "<a><i><b><em><strong><blockquote><q><ul><ol><li>"));
 	return $clean;
 }
 

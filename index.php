@@ -153,7 +153,8 @@
   
   <div>
     <hr/>
-    <h2>Archiv</h2>
+    <h2>Ordner</h2>
+    Archiv:
     <a href="2001">2001</a>
     <a href="2002">2002</a>
     <a href="2003">2003</a>
@@ -164,6 +165,11 @@
     <a href="2008">2008</a>
     <a href="2009">2009</a>
     <a href="2010">2010</a>
+    <span class="threespace">
+    Themen: 
+    <a href="ressort">Ressorts</a>
+    <a href="serie">Serien</a>
+    <a href="lexikon">Lexikon</a>
   </div>
 
   <!-- ende: arena -->  

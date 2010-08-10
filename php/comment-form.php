@@ -1,7 +1,7 @@
   <hr/>
   <h2>Schreibe einen Kommentar</h2>
   <form action="http://anmutunddemut.de/php/comment.php" method="POST">
-    
+    <div id="userdata">
     <p>
       <label for="edit-name">Dein Name: </label> 
       <input type="text" maxlength="60" name="name" id="edit-name" size="30" value="" class="form-text" />
@@ -17,8 +17,9 @@
       <label for="edit-homepage">Homepage: </label> 
       <input type="text" maxlength="255" name="homepage" id="edit-homepage" size="30" value="" class="form-text" /> 
     </p>
+    </div>
     
     <textarea name="text"> </textarea>
     
-    <p><input type="submit"></p>
+    <p><input id="submit" type="submit" value="Kommentar abschicken"></p>
   </form>
