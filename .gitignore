@@ -2,3 +2,4 @@ files/
 php/counter.txt
 .DS_Store
 .fseventsd/
+rss.xml
