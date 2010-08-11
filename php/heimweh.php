@@ -47,7 +47,7 @@ function document_get_rss($path){
   $output .= "    <title>".$document["title"]."</title>\n";
   $output .= "    <link>".BASE.$path."</link>\n";  
   $output .= "    <description>\n";
-  $output .= htmlspecialchars(str_replace("src='", " width='300' src='".BASE.str_replace("../", "",directory_get_folder_from_path("../".$path))."/", $document["teaserimage"]));
+  $output .= htmlspecialchars(str_replace("src='", " width='300' src='".BASE.str_replace("../", "",directory_get_folder_from_path($path))."/", $document["teaserimage"]));
   $output .= htmlspecialchars($document["text"]);
   $output .= "    </description>\n";  
   $datestring = $document["date"][0]." ".date_number_to_month_english($document["date"][1])." ".$document["date"][2];

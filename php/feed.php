@@ -28,6 +28,7 @@ print '<?xml version="1.0" encoding="utf-8"?>';
     <description>Kirchenlieder für die Ungläubigen seit 2001</description>
     <language>de</language>
     <atom:link href="http://anmutunddemut.de/rss.xml" rel="self" type="application/rss+xml" />
+    <?=document_get_rss("../2010/08/11/geheimauftrag-mauritius.html")?>
     <?=document_get_rss("../2010/08/10/bakkushan.html")?>
   </channel>
 </rss>

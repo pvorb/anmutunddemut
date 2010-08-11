@@ -47,6 +47,20 @@
     </div>
     -->
     
+    <div class="node">   	    
+    		<h2 class="title"><a href="2010/08/11/geheimauftrag-mauritius.html">Geheimauftrag Mauritius</a></h2>
+    		<p class="metadata">
+    			<span class="date">11. 08. 2010<br/></span>
+    			<span class="commentcount"><?="".document_get_commentcount("2010/08/11/geheimauftrag-mauritius.html")?> Kommentare</span>		
+    		</p>
+
+        <div class="content">
+            <p class='teaserimage'><img src='2010/08/11/geheimauftrag-mauritius.jpg' alt='Aufmacherbild'/></p>    
+            <p>Der vierte Band der Aubrey und Maturin Reihe – was für eine Freude. Der Band ist nicht besser als die vorherigen auch, was aber immer noch ziemlich großartig ist. Ich würde die Bände nicht als große Literatur bezeichnen. Sie sind eine seltsame Mischung aus hoher Literatur und Trivialliteratur, deren Geheimnis in der Leichtigkeit und gleichzeitigen Liebenswertigkeit liegt.</p>
+    	 	    <p class='readmore'><a href="2010/08/11/geheimauftrag-mauritius.html">Weiterlesen …</a></p>    
+    	 	</div>    
+    </div>
+    
     <!-- node --> 
     
     <div class="node">   	    
