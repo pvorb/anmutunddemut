@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+  <?php require_once("php/heimweh.php"); ?>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
   <title>anmut und demut | Kirchenlieder für die Ungläubigen seit 2001</title>
     <meta name="Generator" content="Drupal 6"/>
@@ -34,7 +35,8 @@
     <div class="node">   	    
     		<h2 class="title"><a href=""></a></h2>
     		<p class="metadata">
-    			<span class="date"> 2010<br/></span>		
+    			<span class="date"> 2010<br/></span>
+    			<span class="commentcount"><?="".document_get_commentcount("")?> Kommentare</span>		
     		</p>
 
         <div class="content">
@@ -50,7 +52,8 @@
     <div class="node">   	    
     		<h2 class="title"><a href="2010/08/10/bakkushan.html">Bakkushan – Bakkushan</a></h2>
     		<p class="metadata">
-    			<span class="date">10. 08. 2010<br/></span>		
+    			<span class="date">10. 08. 2010<br/></span>	
+    			<span class="commentcount"><?="".document_get_commentcount("2010/08/10/bakkushan.html")?> Kommentare</span>	
     		</p>
 
         <div class="content">
@@ -65,7 +68,8 @@
 <div class="node">   	    
 		<h2 class="title"><a href="2010/08/06/what-we-say-no-to.html">What we say no to</a></h2>
 		<p class="metadata">
-			<span class="date">6. 8. 2010<br/></span>		
+			<span class="date">6. 8. 2010<br/></span>
+			<span class="commentcount"><?="".document_get_commentcount("2010/08/06/what-we-say-no-to.html")?> Kommentare</span>		
 		</p>
 	
     <div class="content">
@@ -79,9 +83,10 @@
     <!-- node --> 
     
 <div class="node">    	    
-		<h2 class="title"><a href="/2010/08/06/cast-away.html">Cast Away</a></h2>
+		<h2 class="title"><a href="2010/08/06/cast-away.html">Cast Away</a></h2>
 		<p class="metadata">
-			<span class="date">6. 8. 2010<br/></span>		
+			<span class="date">6. 8. 2010<br/></span>	
+			<span class="commentcount"><?="".document_get_commentcount("2010/08/06/cast-away.html")?> Kommentare</span>	
 		</p>
 	
     <div class="content">
@@ -94,9 +99,10 @@
     <!-- node --> 
     
 <div class="node">    	    
-		<h2 class="title"><a href="/2010/08/05/das-ende-von-wave.html">Das Ende von Wave</a></h2>
+		<h2 class="title"><a href="2010/08/05/das-ende-von-wave.html">Das Ende von Wave</a></h2>
 		<p class="metadata">
-			<span class="date">5. 8. 2010<br/></span>		
+			<span class="date">5. 8. 2010<br/></span>
+			<span class="commentcount"><?="".document_get_commentcount("2010/08/05/das-ende-von-wave.html")?> Kommentare</span>		
 		</p>
 	
     <div class="content">
@@ -108,9 +114,10 @@
     <!-- node --> 
 
 <div class="node">    	    
-		<h2 class="title"><a href="/2010/08/04/never-underestimate-the-daylight.html">Never underestimate the daylight</a></h2>
+		<h2 class="title"><a href="2010/08/04/never-underestimate-the-daylight.html">Never underestimate the daylight</a></h2>
 		<p class="metadata">
-			<span class="date">4. 8. 2010<br/></span>		
+			<span class="date">4. 8. 2010<br/></span>
+			<span class="commentcount"><?="".document_get_commentcount("2010/08/04/never-underestimate-the-daylight.html")?> Kommentare</span>		
 		</p>
 	
     <div class="content">
@@ -121,9 +128,10 @@
     <!-- node --> 
 
 <div class="node">    	    
-		<h2 class="title"><a href="/2010/08/04/virtuelles-privates-netzwerk.html">Virtuelles, privates Netzwerk</a></h2>
+		<h2 class="title"><a href="2010/08/04/virtuelles-privates-netzwerk.html">Virtuelles, privates Netzwerk</a></h2>
 		<p class="metadata">
-			<span class="date">4. 8. 2010<br/></span>			
+			<span class="date">4. 8. 2010<br/></span>
+			<span class="commentcount"><?="".document_get_commentcount("2010/08/04/virtuelles-privates-netzwerk.html")?> Kommentare</span>			
 		</p>
 	
     <div class="content">
@@ -136,9 +144,10 @@
     <!-- node --> 
 
 <div class="node">    	    
-		<h2 class="title"><a href="/2010/08/03/reductio-ad-naturum.html">Reductio ad Naturam</a></h2>
+		<h2 class="title"><a href="2010/08/03/reductio-ad-naturum.html">Reductio ad Naturam</a></h2>
 		<p class="metadata">
-			<span class="date">3. 8. 2010<br/></span>			
+			<span class="date">3. 8. 2010<br/></span>
+			<span class="commentcount"><?="".document_get_commentcount("2010/08/03/reductio-ad-naturum.html")?> Kommentare</span>			
 		</p>
 	
     <div class="content">
@@ -151,9 +160,10 @@
     <!-- node --> 
 
 <div class="node">    	    
-		<h2 class="title"><a href="/2010/08/03/das-schicksal-von-nazis-ist-mir-komplet">Das Schicksal von Nazis ist mir komplett gleichgültig</a></h2>
+		<h2 class="title"><a href="2010/08/03/das-schicksal-von-nazis-ist-mir-komplet.html">Das Schicksal von Nazis ist mir komplett gleichgültig</a></h2>
 		<p class="metadata">
 			<span class="date">3. 8. 2010<br/></span>
+			<span class="commentcount"><?="".document_get_commentcount("2010/08/03/das-schicksal-von-nazis-ist-mir-komplet.html")?> Kommentare</span>
 		</p>
 	
     <div class="content">
@@ -165,9 +175,10 @@
     <!-- node --> 
 
 <div class="node">    	    
-		<h2 class="title"><a href="/2010/08/03/hamburg.html">Hamburg</a></h2>
+		<h2 class="title"><a href="2010/08/03/hamburg.html">Hamburg</a></h2>
 		<p class="metadata">
-			<span class="date">3. 8. 2010<br/></span>			
+			<span class="date">3. 8. 2010<br/></span>
+			<span class="commentcount"><?="".document_get_commentcount("2010/08/03/hamburg.html")?> Kommentare</span>			
 		</p>
 	
     <div class="content">
@@ -178,9 +189,10 @@
     <!-- node --> 
 
 <div class="node">    	    
-		<h2 class="title"><a href="/2010/08/02/richardkiez-mein-kiez.html">Richardkiez – mein Kiez</a></h2>
+		<h2 class="title"><a href="2010/08/02/richardkiez-mein-kiez.html">Richardkiez – mein Kiez</a></h2>
 		<p class="metadata">
-			<span class="date">2. 8. 2010<br/></span>			
+			<span class="date">2. 8. 2010<br/></span>
+			<span class="commentcount"><?="".document_get_commentcount("2010/08/02/richardkiez-mein-kiez.html")?> Kommentare</span>			
 		</p>
 	
     <div class="content">

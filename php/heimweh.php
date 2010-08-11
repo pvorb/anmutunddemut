@@ -11,7 +11,7 @@ require_once("tools.php");
 // ########## Several Functions to work on documents
 
 function document_load($path){
-  $path = "../".$path;
+  $path = $path;
   
   $document["path"] = $path;
   $document["title"] = "";
@@ -31,7 +31,7 @@ function document_load($path){
     $document["teaserimage"] = mark_get_mark("teaserimage", $file);
     $document["text"] = mark_get_mark("text", $file);
     $document["date"] = date_strtotime_german(mark_get_mark("date", $file));
-    $document["commentcount"] = substr_count( $file, '<!-- start:kommentar -->');
+    $document["commentcount"] = "".substr_count( $file, '<!-- start:kommentar -->');
   }else{
     $document["messages"][] = "Document doesn't exist at ".$path;
   }
@@ -56,8 +56,12 @@ function document_get_rss($path){
   $output .= "    <dc:creator>ben_</dc:creator>\n";
   $output .= "    <guid isPermaLink='false'>$path at http://anmutunddemut.de </guid>";  
   $output .= "  </item>\n"; 
-  return $output;
-  
+  return $output;  
+}
+
+function document_get_commentcount($path){
+  $document = document_load($path);
+  return $document["commentcount"];
 }
 
 
