@@ -1,6 +1,6 @@
 <?php
 
-require_once("php/functions.php");
+require_once("php/tools.php");
 
 function makefile($result, $i, $type){
 	if($result->code=="200"){
