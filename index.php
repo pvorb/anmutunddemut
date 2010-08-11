@@ -28,12 +28,42 @@
 	
   <div id="arena" class="region">      
     <!--- start:arena -->    
-	
+    
+    
+	  <!-- 
+    <div class="node">   	    
+    		<h2 class="title"><a href=""></a></h2>
+    		<p class="metadata">
+    			<span class="date"> 2010<br/></span>		
+    		</p>
 
+        <div class="content">
+            <p class='teaserimage'><img src='' alt='Aufmacherbild'/></p>    
+            <p></p>
+    	 	    <p class='readmore'><a href="">Weiterlesen …</a></p>    
+    	 	</div>    
+    </div>
+    -->
+    
+    <!-- node --> 
+    
+    <div class="node">   	    
+    		<h2 class="title"><a href="2010/08/10/bakkushan.html">Bakkushan – Bakkushan</a></h2>
+    		<p class="metadata">
+    			<span class="date">10. 08. 2010<br/></span>		
+    		</p>
 
+        <div class="content">
+            <p class='teaserimage'><img src='2010/08/10/bakkushan.jpg' alt='Aufmacherbild'/></p>    
+            <p><i>… und alles war aus Gold …</i></p>
+    	 	    <p class='readmore'><a href="2010/08/10/bakkushan.html">Weiterlesen …</a></p>    
+    	 	</div>    
+    </div>
+
+    <!-- node --> 
 
 <div class="node">   	    
-		<h2 class="title"><a href="/2010/08/06/what-we-say-no-to.html">What we say no to</a></h2>
+		<h2 class="title"><a href="2010/08/06/what-we-say-no-to.html">What we say no to</a></h2>
 		<p class="metadata">
 			<span class="date">6. 8. 2010<br/></span>		
 		</p>
@@ -46,7 +76,8 @@
 	 	</div>    
 </div>
 
-
+    <!-- node --> 
+    
 <div class="node">    	    
 		<h2 class="title"><a href="/2010/08/06/cast-away.html">Cast Away</a></h2>
 		<p class="metadata">
@@ -60,7 +91,8 @@
 	 	</div>    
 </div>
 
-
+    <!-- node --> 
+    
 <div class="node">    	    
 		<h2 class="title"><a href="/2010/08/05/das-ende-von-wave.html">Das Ende von Wave</a></h2>
 		<p class="metadata">
@@ -73,6 +105,7 @@
     </div>    
 </div>
 
+    <!-- node --> 
 
 <div class="node">    	    
 		<h2 class="title"><a href="/2010/08/04/never-underestimate-the-daylight.html">Never underestimate the daylight</a></h2>
@@ -85,6 +118,7 @@
 	 	</div>    
 </div>
 
+    <!-- node --> 
 
 <div class="node">    	    
 		<h2 class="title"><a href="/2010/08/04/virtuelles-privates-netzwerk.html">Virtuelles, privates Netzwerk</a></h2>
@@ -99,6 +133,7 @@
 	 	</div>    
 </div>
 
+    <!-- node --> 
 
 <div class="node">    	    
 		<h2 class="title"><a href="/2010/08/03/reductio-ad-naturum.html">Reductio ad Naturam</a></h2>
@@ -113,6 +148,7 @@
 	 	</div>   
 </div>
 
+    <!-- node --> 
 
 <div class="node">    	    
 		<h2 class="title"><a href="/2010/08/03/das-schicksal-von-nazis-ist-mir-komplet">Das Schicksal von Nazis ist mir komplett gleichgültig</a></h2>
@@ -126,6 +162,7 @@
    	</div>    
 </div>
 
+    <!-- node --> 
 
 <div class="node">    	    
 		<h2 class="title"><a href="/2010/08/03/hamburg.html">Hamburg</a></h2>
@@ -137,6 +174,8 @@
           <img src='http://anmutunddemut.de/files/moblog-c901/DSC04093.JPG' alt='Hamburg' />
     </div>    
 </div>
+
+    <!-- node --> 
 
 <div class="node">    	    
 		<h2 class="title"><a href="/2010/08/02/richardkiez-mein-kiez.html">Richardkiez – mein Kiez</a></h2>
@@ -150,25 +189,26 @@
 	 	</div>    
 </div>
 
+    <!-- node --> 
   
   <div>
     <hr/>
     <h2>Ordner</h2>
     Archiv:
-    <a href="2001">2001</a>
-    <a href="2002">2002</a>
-    <a href="2003">2003</a>
-    <a href="2004">2004</a>
-    <a href="2005">2005</a>
-    <a href="2006">2006</a>
-    <a href="2007">2007</a>
-    <a href="2008">2008</a>
-    <a href="2009">2009</a>
+    <a href="2001">2001</a> |
+    <a href="2002">2002</a> |
+    <a href="2003">2003</a> |
+    <a href="2004">2004</a> |
+    <a href="2005">2005</a> |
+    <a href="2006">2006</a> |
+    <a href="2007">2007</a> |
+    <a href="2008">2008</a> |
+    <a href="2009">2009</a> |
     <a href="2010">2010</a>
     <span class="threespace">
     Themen: 
-    <a href="ressort">Ressorts</a>
-    <a href="serie">Serien</a>
+    <a href="ressort">Ressorts</a> |
+    <a href="serie">Serien</a> |
     <a href="lexikon">Lexikon</a>
   </div>
 
