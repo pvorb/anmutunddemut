@@ -5,3 +5,49 @@ AddIcon http://anmutunddemut.de/images/myicons/ordner.gif ^^DIRECTORY^^
 AddIcon http://anmutunddemut.de/images/myicons/ordner.gif ..
 AddIcon http://anmutunddemut.de/images/myicons/datei.gif *.*
 IndexOptions SuppressHTMLPreamble FancyIndexing  FoldersFirst  SuppressDescription SuppressLastModified SuppressSize NameWidth=* 
+
+# Various rewrite rules.
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+
+	RewriteCond %{HTTP_HOST} ^cybercaesar\.de$ [NC]
+  RewriteRule ^(.*)$ http://anmutunddemut.de/$1 [L,R=301]
+  RewriteCond %{HTTP_HOST} ^www\.cybercaesar\.de$ [NC]
+  RewriteRule ^(.*)$ http://anmutunddemut.de/$1 [L,R=301]
+  RewriteCond %{HTTP_HOST} ^cybersamurai\.de$ [NC]
+  RewriteRule ^(.*)$ http://anmutunddemut.de/$1 [L,R=301]
+  RewriteCond %{HTTP_HOST} ^www\.cybersamurai\.de$ [NC]
+  RewriteRule ^(.*)$ http://anmutunddemut.de/$1 [L,R=301]
+  RewriteCond %{HTTP_HOST} ^buddhabot\.de$ [NC]
+  RewriteRule ^(.*)$ http://anmutunddemut.de/$1 [L,R=301]
+  RewriteCond %{HTTP_HOST} ^www\.buddhabot\.de$ [NC]
+  RewriteRule ^(.*)$ http://anmutunddemut.de/$1 [L,R=301]
+  RewriteCond %{HTTP_HOST} ^www\.schlachtross\.org$ [NC]
+  RewriteRule ^(.*)$ http://anmutunddemut.de/$1 [L,R=301]
+  RewriteCond %{HTTP_HOST} ^schlachtross\.org$ [NC]
+  RewriteRule ^(.*)$ http://anmutunddemut.de/$1 [L,R=301]
+  RewriteCond %{HTTP_HOST} ^www\.anmutunddemut\.de$ [NC]
+  RewriteRule ^(.*)$ http://anmutunddemut.de/$1 [L,R=301]
+	
+	RewriteBase /
+  
+  RewriteRule atom.xml$ http://anmutunddemut.de/rss.xml [L,QSA]
+	RewriteRule wp-ti-feed.php$ http://anmutunddemut.de/rss.xml [L,QSA]
+	RewriteRule wp-ti-feed1.php$ http://anmutunddemut.de/rss.xml [L,QSA]
+	RewriteRule wp-ti-feed2.php$ http://anmutunddemut.de/rss.xml [L,QSA]
+	RewriteRule wp-ti-feed3.php$ http://anmutunddemut.de/rss.xml [L,QSA]
+	RewriteRule wp-ti-feed4.php$ http://anmutunddemut.de/rss.xml [L,QSA]
+	RewriteRule wp-ti-feed5.php$ http://anmutunddemut.de/rss.xml [L,QSA]
+	RewriteRule wp-ti-feed6.php$ http://anmutunddemut.de/rss.xml [L,QSA]
+  RewriteRule wp-ti-feed7.php$ http://anmutunddemut.de/rss.xml [L,QSA]  
+  RewriteRule feeds/rss.xml http://anmutunddemut.de/rss.xml [L,QSA]
+	RewriteRule	comments/feed http://anmutunddemut.de/crss [L,QSA] 
+  RewriteRule classic.php$ http://anmutunddemut.de [L,QSA]
+
+	RewriteCond %{REQUEST_FILENAME} -f
+	RewriteRule ^ %{REQUEST_FILENAME} [L]
+
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME}.html -f
+	RewriteRule ^ %{REQUEST_FILENAME}.html [L,R=302]
+</IfModule>

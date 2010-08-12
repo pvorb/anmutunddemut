@@ -48,6 +48,20 @@
     -->
     
     <div class="node">   	    
+    		<h2 class="title"><a href="2010/08/12/heimweh-2-1-verantwortung.html">Heimweh 2.1 – Verantwortung</a></h2>
+    		<p class="metadata">
+    			<span class="date">12. 08. 2010<br/></span>
+    			<span class="commentcount"><?="".document_get_commentcount("2010/08/12/heimweh-2-1-verantwortung.html")?> Kommentare</span>		
+    		</p>
+
+        <div class="content">
+            <p class='teaserimage'><img src='2010/08/12/heimweh-2-1.jpg' alt='Aufmacherbild'/></p>    
+            <p>Heimweh ist live. Und ich denke über Verantwortung nach.</p>
+    	 	    <p class='readmore'><a href="2010/08/12/heimweh-2-1-verantwortung.html">Weiterlesen …</a></p>    
+    	 	</div>    
+    </div>
+    
+    <div class="node">   	    
     		<h2 class="title"><a href="2010/08/11/geheimauftrag-mauritius.html">Geheimauftrag Mauritius</a></h2>
     		<p class="metadata">
     			<span class="date">11. 08. 2010<br/></span>
