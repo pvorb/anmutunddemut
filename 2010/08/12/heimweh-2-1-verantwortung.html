@@ -41,14 +41,14 @@
         <p class='teaserimage'><img src='heimweh-2-1.jpg' alt='Aufmacherbild'/></p>
         <!-- end:teaserimage -->
 
-        <!-- start:text-->
+        <!-- start:text -->
         <p>Bei Heimweh passiert gerade nicht soviel bemerkenswertes. Ich arbeite in erster Linie daran, 
           das  HTML für die Statifizierung und den Crawler zu perfektionieren. Das ist doch einiges an Arbeit. 
           Aber sie macht viel Spaß und lohnt sich.</p>
         <p>Es gibt aber doch noch etwas Erwähnenswertes: Gestern abend hab ich mal wieder ein sehr nette 
           Gesrpäch mit dem großen <a href="http://ntropie.de/">Mo</a>, während dessen er diese bemerkenswerten 
           Sätze fallen ließ:</p>
-        <blockquote><p>"Du ignorierst doch bewusst alles Fortschritte im Bereich Redaktionssysteme mit 
+        <blockquote><p>"Du ignorierst doch bewusst alle Fortschritte im Bereich Redaktionssysteme mit 
           deinem <em>Heimweh</em>. Das ist für dich ok, weil du es kannst. Aber was ist mit den Leuten da 
           draußen, die das nicht können? Die benutzen ein schlechtes Redaktionssystem, weil Du ihnen kein 
           besseres gegeben hast."</p>
@@ -74,11 +74,12 @@
           <li>Textmate aufbohren, um die Artikel-Anlage zu erleichtern.</li>
           <li>.htaccess Umleitung für die alten URLs ohne .html einrichten.</li>
           <li>Homepage und RSS-Feed leichter pflegbar machen.</li>
+          <li>Schematron zur Auswerung meiner Dokumente benutzen.</li>
         </ul>
         
         <p>Sonst noch was?</p>
        
-        <!-- end:text-->
+        <!-- end:text -->
       
       <!-- end:node -->  
     </div>        
@@ -89,7 +90,7 @@
       <!-- start:footnotes -->
       <hr/> 
       <h2>Fußnoten</h2>  
-      <p class="meta-basics">~ Artikel vom  2010</p>
+      <p class="meta-basics">~ Artikel vom <!-- start:date -->12. 08. 2010<!-- end:date --></p>
 
       <p class='meta-topics'>~  
         <span class='title'>Ressort:</span>
@@ -112,7 +113,47 @@
         <h2 class="comments">Kommentare</h2>
     
 
-        <!-- Last Comment standing -->
+        
+  <div class="comment">
+      <!-- start:kommentar -->
+      <hr>
+      <p class="metadata">von wolfgang
+      <a href="http://anmutunddemut.de/2010/08/12/heimweh-2-1-verantwortung.html#comment-1" id="comment-1" class="active">#</a>      </p>
+     <p> Cool finde ich das :)</p>
+<p>Bei mir ist es ja etwas ruhig geworden, aber nur, weil ich mich gerade intensivst mit drupal und all den schönen Modulen beschäftigt habe.</p>
+<p>Daher kann ich dir hier ja mal was helfen :=)</p>
+<p>Das könnte deine .htaccess sein:</p>
+<p>RewriteCond %{REQUEST_FILENAME} -f<br />
+RewriteRule ^ %{REQUEST_FILENAME} [L]</p>
+<p>RewriteCond %{REQUEST_FILENAME} -d<br />
+RewriteCond %{REQUEST_FILENAME}.html -f<br />
+RewriteRule ^ %{REQUEST_FILENAME}.html [L]</p>
+<p># der erste teil ist einfach :) der Teil wo jemand evtl.<br />
+# ALTER_NAME/ geschrieben hat wohl eher schwer!<br />
+#RewriteCond %{HTTP_HOST} ^(.*)/$ [NC]<br />
+#RewriteRule ^(.*)/$ $1.html [L,QSA]</p>
+
+     <!-- ende:kommentar -->
+  </div>
+
+
+  
+  <div class="comment">
+      <!-- start:kommentar -->
+      <hr>
+      <p class="metadata">von wolfgang
+      <a href="http://anmutunddemut.de/2010/08/12/heimweh-2-1-verantwortung.html#comment-2" id="comment-2" class="active">#</a>      </p>
+     <p>hubs was verpatzt</p>
+<p> RewriteCond %{REQUEST_FILENAME} -d</p>
+<p>muss heißen</p>
+<p> RewriteCond !%{REQUEST_FILENAME} -d</p>
+<p>PS: Wie wär es mit einem Cookie um den Kommentarnamen zu speichern?</p>
+
+     <!-- ende:kommentar -->
+  </div>
+
+
+  <!-- Last Comment standing -->
 
       </div>
 
