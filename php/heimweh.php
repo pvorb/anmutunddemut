@@ -45,7 +45,7 @@ function document_get_rss($path){
   $output  = "";
   $output .= "  <item>\n";
   $output .= "    <title>".$document["title"]."</title>\n";
-  $output .= "    <link>".BASE.$path."</link>\n";  
+  $output .= "    <link>".BASE.str_replace("../", "",$path)."</link>\n";  
   $output .= "    <description>\n";
   $output .= htmlspecialchars(str_replace("src='", " width='300' src='".BASE.str_replace("../", "",directory_get_folder_from_path($path))."/", $document["teaserimage"]));
   $output .= htmlspecialchars($document["text"]);

@@ -188,7 +188,11 @@ function string_add_leading_zeros($string, $n){
 function string_get_string_between($start, $end, $haystack){
   $pieces = array();
   
-  $pieces = explode($start, $haystack);
+  $pieces = explode($start, $haystack);  
+  if(count($pieces)==1){
+    //print_r($start.$end);
+    //print $haystack;
+  }
   $rest   = $pieces[1];   
   
   $pieces = explode($end, $rest);
