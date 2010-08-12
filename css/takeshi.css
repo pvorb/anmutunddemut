@@ -201,6 +201,27 @@ a img {
 	text-align:right;
 }
 
+.page-homepage .topic{
+	float:left;
+	margin-right:5px;
+}
+
+.page-homepage .topic img{
+	width:550px;
+}
+
+.page-homepage .topic h3{
+	font-size:150%;
+}
+
+.page-homepage #blogroll {
+	min-height:200px;
+}
+
+.page-homepage #blogroll li{
+	float:left;
+	margin-left:25px;
+}
 
 
 
@@ -268,7 +289,7 @@ hr{
 
 /* Artikel  */
 
-.node, #node {
+.node, #node, #lexicon {
 	clear:both;
 	width:35em;	
 	margin-left:180px;
@@ -283,13 +304,15 @@ hr{
 
 
 
-.page-node .teaserimage  {	
+.page-node .teaserimage,
+.page-term .teaserimage  {	
 	position:absolute;
 	left:800px;
 	top:35px;
 }
 
-.page-node .teaserimage img {
+.page-node .teaserimage img,
+.page-term .teaserimage img {
 	width:330px;
 }
 

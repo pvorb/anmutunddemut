@@ -4,7 +4,7 @@
   <?php require_once("php/heimweh.php"); ?>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
   <title>anmut und demut | Kirchenlieder für die Ungläubigen seit 2001</title>
-    <meta name="Generator" content="Drupal 6"/>
+  <meta name="Generator" content="heimweh 2.0"/>
   <meta http-equiv="content-language" content="de" />
   <!-- Get rid of those f*ckin Bots -->
   <meta name="robots" content="noindex, nofollow" />
@@ -236,6 +236,139 @@
     <a href="ressort">Ressorts</a> |
     <a href="serie">Serien</a> |
     <a href="lexikon">Lexikon</a>
+  </div>
+  
+  <div id="">
+    <hr/>
+    <h2>Schwerpunkte</h2>
+    <div class="topic">
+      <a href="lexikon/architektur.html"><img src="images/themen/architektur.jpg"/></a>
+      <h3><a href="lexikon/architektur.html">Architektur</a></h3>
+    </div>
+    <div class="topic">
+      <a href="lexikon/literatur.html"><img src="images/themen/literatur.jpg"/></a>
+      <h3><a href="lexikon/literatur.html">Literatur</a></h3>
+    </div>
+    
+    <div class="topic">
+      <a href="lexikon/aubrey-und-maturin-reihe.html"><img src="images/themen/aubrey-und-maturin.jpg"/></a>
+      <h3><a href="lexikon/aubrey-und-maturin-reihe.html">Aubrey und Maturin</a></h3>
+    </div>
+    <div class="topic">
+      <a href="lexikon/warhammer-40k.html"><img src="images/themen/warhammer40k.jpg">
+      <h3><a href="lexikon/warhammer-40k.html">Warhammer 40.000</a></h3>
+    </div>
+    
+    <div class="topic">
+      <a href="lexikon/google.html"><img src="images/themen/google.jpg"/></a>
+      <h3><a href="lexikon/google.html">Google</a></h3>
+    </div>
+    <div class="topic">
+      <a href="lexikon/apple.html"><img src="images/themen/apple.jpg"/></a>
+      <h3><a href="lexikon/apple.html">Apple</a></h3>
+    </div>    
+    
+    <div class="topic">
+      <a href="lexikon/cyberpunk.html"><img src="images/themen/cyberpunk.jpg"/></a>
+      <h3><a href="lexikon/cyberpunk.html">Cyberpunk</a></h3>
+    </div>
+    <div class="topic">
+      <a href="lexikon/japan.html"><img src="images/themen/japan.jpg"/></a>
+      <h3><a href="lexikon/japan.html">Japan</a></h3>
+    </div>
+    
+    <div class="topic">
+      <a href="lexikon/netz.html"><img style="border:1px solid gray; width:548px;"  src="images/themen/netz.jpg"/></a>
+      <h3><a href="lexikon/netz.html">Netz</a></h3>
+    </div>
+    <div class="topic">
+      <a href="lexikon/text.html"><img style="border:1px solid gray; width:548px;"  src="images/themen/text.jpg"/></a>
+      <h3><a href="lexikon/text.html">Text</a></h3>
+    </div>
+    
+    <!-- 
+    <div class="topic">
+      <a href="lexikon/"><img src="images/themen/"/></a>
+      <h3><a href="lexikon/"></a></h3>
+    </div>
+    -->
+      
+  </div>
+  
+  <div id="blogroll" class="clear">
+    <hr/>
+    <h2>Blogroll</h2>
+    <ul>     
+      <li><a href="http://www.ackerundvieh.net/">Acker und Vieh</a></li>
+      <li><a href="http://aheadwork.de/">aHeadwork</a></li>
+      <li><a href="http://andremoch.de/">André</a></li>
+      <li><a href="http://blog.arnalyse.de/">Arnalyse</a></li>
+      <li><a href="http://bass-blog.de/">Bass-Blog</a></li>
+      <li><a href="http://blogh.de/">Blog Age</a></li>
+      <li><a href="http://chefarztfrau.de/">Chefarztfraulicher Beobachter</a></li>
+      <li><a href="http://codecandies.de/">Codecandies</a></li>
+      <li><a href="http://www.coldheat.de/">Coldheat</a></li>
+      <li><a href="http://cyberer.wordpress.com/">Cyberer</a></li>
+      <li><a href="http://digitalistbesser.wordpress.com/">Digital ist besser</a></li>
+      <li><a href="http://www.dominik-schwarz.net/">Dominik</a></li>
+      <li><a href="http://dreisamblog.de/">Dreisam</a></li>
+      <li><a href="http://www.elfengleich.de/">Elfengleich</a></li>
+      <li><a href="http://www.endeneu.de/">Endeneu</a></li>
+      <li><a href="http://vonmeppen.blogger.de/">Erasmus von Meppen</a></li>
+      <li><a href="http://www.felixwilleke.com/">Felix</a></li>
+      <li><a href="http://ich-partizipiere.de/">Ich partizipiere</a></li>
+      <li><a href="http://www.indigoidian.de/">Indigoidian</a></li>
+      <li><a href="http://www.joeladami.net/">Joël</a></li>
+      <li><a href="http://killefit.net/blog/">Killefit</a></li>
+      <li><a href="http://konnexus.net/">Konnexus</a></li>
+      <li><a href="http://www.kopfzeiler.org/blog/">Kopfzeiler</a></li>
+      <li><a href="http://www.falk-lueke.de/">Kühlschranknotzien</a></li>
+      <li><a href="http://dirkhesse.com/ligneclaire">Ligne Claire</a></li>      
+      <li><a href="http://lnrt.de/">LNRT</a></li>
+      <li><a href="http://www.malte-welding.com/">Malte</a></li>            
+      <li><a href="http://marctv.de/">MarcTV</a></li>
+      <li><a href="http://www.markus-freise.de/">Markus</a></li>
+      <li><a href="http://kunststoff.martialblog.de/">Martialblog</a></li>
+      <li><a href="http://verollet.de/">Mischa</a></li>
+      <li><a href="http://blog.fymmie.de/">Nichts</a></li>
+      <li><a href="http://mianiemand.blogspot.com/">Mia Niemand</a></li>
+      <li><a href="http://ntropie.de/">Ntropie</a></li>      
+      <li><a href="http://powerbook.blogger.de/">Powerbook-Blogger</a></li>
+      <li><a href="http://relativwenigbartwuchs.de/">relativwenigbartwuchs</a></li>
+      <li><a href="http://www.ruhepuls.ws/">Ruhepuls</a></li>      
+      <li><a href="http://moblog.sascha-hagemann.de/">Sascha</a></li>
+      <li><a href="http://www.schmitzchen.org/index.html">Schmitzchen</a></li>
+      <li><a href="http://teilnehmer.ws/">Teilnehmer</a></li>
+      <li><a href="http://threelittlebirds.de/">threelittlebirds</a></li>
+      <li><a href="http://wirres.net/">Wirres</a></li>
+      <li><a href="http://www.zweipunknull.de/">Zwei Punk Null</a></li>      
+      <!-- 
+      <li><a href=""></a></li>
+      -->
+    </ul>
+  </div>
+  
+  <div id="News" class="clear">
+    <hr/>
+    <h2>Journalistisches … </h2>    
+    <a href="http://tagesschau.de" title="Öffentlichrechtlich forever!"><img src="http://anmutunddemut.de/files/favicons/ard.png"/></a>
+    <a href="http://thebolditalic.com" title="The Bold Italic"><img src="http://anmutunddemut.de/files/favicons/thebolditalic.png" /></a>
+    <a href="http://cnn.com" title="CNN"><img src="http://anmutunddemut.de/files/favicons/cnn.png" /></a>
+    <a href="http://dctp.tv" title="dctp"><img src="http://anmutunddemut.de/files/favicons/dctp.png" /></a>
+    <a href="http://geo.de" title="GEO"><img src="http://anmutunddemut.de/files/favicons/geo.png" /></a>
+    <a href="http://guardian.co.uk" title="Guardian"><img src="http://anmutunddemut.de/files/favicons/guardian.png" /></a>
+    <a href="http://rivva.de" title="Rivva"><img src="http://anmutunddemut.de/files/favicons/rivva.png" /></a>
+    <a href="http://spon.de" title="Spon"><img src="http://anmutunddemut.de/files/favicons/spon.png" /></a>
+    <a href="http://stern.de" title="Stern"><img src="http://anmutunddemut.de/files/favicons/stern.png" /></a>
+    <a href="http://sueddeutsche.de" title="Sueddeutsche"><img src="http://anmutunddemut.de/files/favicons/sueddeutsche.png" /></a>
+    <a href="http://taz.de" title="taz"><img src="http://anmutunddemut.de/files/favicons/taz.png" /></a>
+    <a href="http://times.com" title="The New York Times"><img src="http://anmutunddemut.de/files/favicons/nytimes.png" /></a>
+    <a href="http://tputh.com" title="The Tputh"><img src="http://anmutunddemut.de/files/favicons/tputh.png" /></a>
+    <a href="http://welt.de" title="Die Welt"><img src="http://anmutunddemut.de/files/favicons/welt.png" /></a>
+    <a href="http://www.heute.de" title="Öffentlichrechtlich forever!"><img src="http://anmutunddemut.de/files/favicons/zdf.png"/></a>
+    <a href="http://www.zeit.de/index" title="ZEIT ONLINE - Mein Arbeitgeber"><img src="http://anmutunddemut.de/files/favicons/zeit.png" /></a>
+
+    ... to be continued ...
   </div>
 
   <!-- ende: arena -->  
