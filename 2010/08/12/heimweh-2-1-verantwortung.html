@@ -70,14 +70,25 @@
           <li>Checken ob der Export vollständig war.</li>
           <li>Defekte Exporte reparieren.</li>
           <li>Kommentarfunktion mit Email-Benachrichtgung ausstatten.</li>
+          <li>RSS-Feed für alle Kommentare.</li>
           <li>Moblog wieder anwerfen.</li>
           <li>Textmate aufbohren, um die Artikel-Anlage zu erleichtern.</li>
           <li>.htaccess Umleitung für die alten URLs ohne .html einrichten.</li>
-          <li>Homepage und RSS-Feed leichter pflegbar machen.</li>
+          <li>Homepage und RSS-Feed leichter pflegbar machen.</li>  
           <li>Schematron zur Auswerung meiner Dokumente benutzen.</li>
+          <li>Alle Artikel zu wohlgeformten XML machen.</li>
+          <li>Cookie für Kommentator-Daten – <em>Danke, Wolfgang!</em></li>
+          <li>Webfrontend für schnelles Erstellen von HTML-Dateien.</li>
+          <li>Indexer zum durchbrausen der Ordnerstruktur.</li>
+          <li>Meine Schmuckstücke wieder aufpolieren.</li>
         </ul>
         
         <p>Sonst noch was?</p>
+       
+        <p>Nachtrag: Was auch schon funktioniert, sind die Apache Directory Listings: <a href="http://anmutunddemut.de/2001/">Jahr 2001</a>, 
+          <a href="http://anmutunddemut.de/ressort/">alle Ressorts</a> und <a href="http://anmutunddemut.de/lexikon/">das Lexikon</a> 
+          [Aber Obacht! 900KB HTML *grins*].</p>
+        <p>Ach und … Erfahrungsbericht kommt auch bald.</p>
        
         <!-- end:text -->
       
@@ -119,19 +130,26 @@
       <hr>
       <p class="metadata">von wolfgang
       <a href="http://anmutunddemut.de/2010/08/12/heimweh-2-1-verantwortung.html#comment-1" id="comment-1" class="active">#</a>      </p>
-     <p> Cool finde ich das :)</p>
-<p>Bei mir ist es ja etwas ruhig geworden, aber nur, weil ich mich gerade intensivst mit drupal und all den schönen Modulen beschäftigt habe.</p>
-<p>Daher kann ich dir hier ja mal was helfen :=)</p>
-<p>Das könnte deine .htaccess sein:</p>
+     <p> Cool finde ich das :)
+</p>
+<p>Bei mir ist es ja etwas ruhig geworden, aber nur, weil ich mich gerade intensivst mit drupal und all den schönen Modulen beschäftigt habe.
+</p>
+<p>Daher kann ich dir hier ja mal was helfen :=)
+</p>
+<p>Das könnte deine .htaccess sein:
+</p>
 <p>RewriteCond %{REQUEST_FILENAME} -f<br />
-RewriteRule ^ %{REQUEST_FILENAME} [L]</p>
+RewriteRule ^ %{REQUEST_FILENAME} [L]
+</p>
 <p>RewriteCond %{REQUEST_FILENAME} -d<br />
 RewriteCond %{REQUEST_FILENAME}.html -f<br />
-RewriteRule ^ %{REQUEST_FILENAME}.html [L]</p>
+RewriteRule ^ %{REQUEST_FILENAME}.html [L]
+</p>
 <p># der erste teil ist einfach :) der Teil wo jemand evtl.<br />
 # ALTER_NAME/ geschrieben hat wohl eher schwer!<br />
 #RewriteCond %{HTTP_HOST} ^(.*)/$ [NC]<br />
-#RewriteRule ^(.*)/$ $1.html [L,QSA]</p>
+#RewriteRule ^(.*)/$ $1.html [L,QSA]
+</p>
 
      <!-- ende:kommentar -->
   </div>
@@ -143,11 +161,110 @@ RewriteRule ^ %{REQUEST_FILENAME}.html [L]</p>
       <hr>
       <p class="metadata">von wolfgang
       <a href="http://anmutunddemut.de/2010/08/12/heimweh-2-1-verantwortung.html#comment-2" id="comment-2" class="active">#</a>      </p>
-     <p>hubs was verpatzt</p>
-<p> RewriteCond %{REQUEST_FILENAME} -d</p>
-<p>muss heißen</p>
-<p> RewriteCond !%{REQUEST_FILENAME} -d</p>
+     <p>hubs was verpatzt
+</p>
+<p> RewriteCond %{REQUEST_FILENAME} -d
+</p>
+<p>muss heißen
+</p>
+<p> RewriteCond !%{REQUEST_FILENAME} -d
+</p>
 <p>PS: Wie wär es mit einem Cookie um den Kommentarnamen zu speichern?</p>
+
+     <!-- ende:kommentar -->
+  </div>
+
+
+  
+  <div class="comment">
+      <!-- start:kommentar -->
+      <hr>
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> 
+      <a href="http://anmutunddemut.de/2010/08/12/heimweh-2-1-verantwortung.html#comment-3" id="comment-3" class="active">#</a>      </p>
+     <p> Kuhl! Danke!<br />
+Hab noch den 302er daran gemacht.<br />
+Funktioniert 1A.
+</p>
+<p>RewriteCond %{REQUEST_FILENAME} -f<br />
+RewriteRule ^ %{REQUEST_FILENAME} [L]
+</p>
+<p>RewriteCond %{REQUEST_FILENAME} !-d<br />
+RewriteCond %{REQUEST_FILENAME}.html -f<br />
+RewriteRule ^ %{REQUEST_FILENAME}.html [L,R=302]
+</p>
+<p>Cookies für Kommentare ist ne prima Idee.<br />
+Kommt auch.
+</p>
+<p>Nebenbei, Blog und Code sind latürnich auf Github – zumindest solange der Platz da reicht.<br />
+http://github.com/benthebear/anmutunddemut</p>
+
+     <!-- ende:kommentar -->
+  </div>
+
+
+  
+  <div class="comment">
+      <!-- start:kommentar -->
+      <hr>
+      <p class="metadata">von H.i.r.s.m
+      <a href="http://anmutunddemut.de/2010/08/12/heimweh-2-1-verantwortung.html#comment-4" id="comment-4" class="active">#</a>      </p>
+     <p> Schön, irgendwann woll'n dann doch wohl alle ins Eigenheim. Bin ja doch etwas gespannt und werd es mal 'installieren' *hihi*.</p>
+
+     <!-- ende:kommentar -->
+  </div>
+
+
+  
+  <div class="comment">
+      <!-- start:kommentar -->
+      <hr>
+      <p class="metadata">von <a href="http://konnexus.net">Konstantin</a> 
+      <a href="http://anmutunddemut.de/2010/08/12/heimweh-2-1-verantwortung.html#comment-5" id="comment-5" class="active">#</a>      </p>
+     <p>Weißt Du was ziemlich hirnverdreht ist? Du sagst, dass Du das CMS simplifizierst, aber dann benutzt Du lauter Umkonfigurationen.</p>
+<p>Textmate aufbohren?<br />
+Apache konfigurieren?<br />
+Das ist doch nicht "simpel". Und ich glaube auch nicht, dass Textmate aufbohren auch nachhaltig (in Deinem Sinne) ist.</p>
+<p>Nicht dass wir uns nicht missverstehen - was Du machst ist großartig, zumindest beim Zugucken. Und die Performance Deines Blogs, die Performance! Traumhaft!</p>
+
+     <!-- ende:kommentar -->
+  </div>
+
+
+  
+  <div class="comment">
+      <!-- start:kommentar -->
+      <hr>
+      <p class="metadata">von <a href="http://www.arnalyse.de">Arne Seemann</a> 
+      <a href="http://anmutunddemut.de/2010/08/12/heimweh-2-1-verantwortung.html#comment-6" id="comment-6" class="active">#</a>      </p>
+     <p>Ich dachte schon ich halluziniere, aber Konstantin bestärkt mich in der folgenden Äußerung:<br />
+Holy Moly ist dein Blog rot-ze-schnell!<br />
+Erst jetzt merk ich wie langsam Drupal war :) </p>
+
+     <!-- ende:kommentar -->
+  </div>
+
+
+  
+  <div class="comment">
+      <!-- start:kommentar -->
+      <hr>
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> 
+      <a href="http://anmutunddemut.de/2010/08/12/heimweh-2-1-verantwortung.html#comment-7" id="comment-7" class="active">#</a>      </p>
+     <p> @Konstantin: Da hast Du latürnich nicht unrecht, aaaber … erstens, ist Simplifizierung ist im Zusammenhang mit Heimweh ja kein Selbstzweck. Sie ist nur Mittel um meine Entfremdung von der Code-Basis, die dieses Blog antreibt zu reduzieren. Wenn ich's wirklich richtig simpel haben wollen würde, würde ich wohl nur PDFs in Netz stellen … hm … spannende Idee … *grins*<br />
+Nein, im Ernst: 20 Zeilen Apache Konfiguration und Einrichten von ein paar Makros im Textmate ("aufbohren" war da wohl das falsche Wort, es geht in erster Linie darum, die Werkzeuge, die der Textmate bietet ertmal für mich zu entdecken und entsprechend einzurichten) – das ist schon simpel im Vergleich zu 200.000 Zeilen Drupal-Code und einem Dutzend eigener Module.</p>
+<p>Es geht darum, das Gefühl wiederzuerlangen, alles, alles, alles was hier passiert vollständig bis zur letzten Zeile Code zu verstehen und zu beherrschen. Und das ist einfacher je weniger Zeilen es sind. Heißt aber nicht, dass es gar keine Zeilen mehr sein dürfen.</p>
+
+     <!-- ende:kommentar -->
+  </div>
+
+
+  
+  <div class="comment">
+      <!-- start:kommentar -->
+      <hr>
+      <p class="metadata">von wolfgang
+      <a href="http://anmutunddemut.de/2010/08/12/heimweh-2-1-verantwortung.html#comment-8" id="comment-8" class="active">#</a>      </p>
+     <p> ben_ ich lege deinen letzten Kommentar mal meinem Chef vor :) Ich jammere immer rum, wenn wir 3rd Party Tools/Dlls einsetzen!</p>
 
      <!-- ende:kommentar -->
   </div>
