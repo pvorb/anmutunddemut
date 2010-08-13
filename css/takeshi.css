@@ -320,6 +320,7 @@ hr{
 .moblog-full {
 	margin-left:-180px;
 	margin-top:-13px;
+	width:1110px;
 }
 
 .volleBreitseite img,
@@ -365,6 +366,19 @@ hr{
   float:right;
 }
 
+.weiss-auf-schwarz{
+	background-color:black;
+	color:whitesmoke;	
+}
+
+.weiss-auf-schwarz hr{
+	background-color:whitesmoke;	
+}
+
+.weiss-auf-schwarz a{
+	color:whitesmoke;	
+	text-decoration:underline;
+}
 
 
 
