@@ -10,7 +10,7 @@ foreach($file as $line){
   $aliase[] = $array[0];
   $name = "../".trim($array[1]).".html";
   if(!file_exists($name)){
-    //print "ERROR: ".$name."\n";
+    print "Cannot find File: ".$name."\n";
     //die;
     
   }
@@ -24,7 +24,7 @@ foreach($file2 as $line){
   $array = array();
   $array = explode(";", $line);
   if(!in_array("node/".trim($array[0]), $aliase)){
-    print $array[0]." - ".$array[1]."\n";
+    print "Cannot find Node: ".$array[0]." - ".$array[1];
     $counter ++;
   }
   
