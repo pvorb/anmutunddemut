@@ -23,7 +23,7 @@
   <div id="header" class="region">
     <!-- start:header -->  
     <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
-    <p> <a title="Impressum" href="http://anmutunddemut.de/impressum">?</a></p> 
+    <p> <a title="Impressum" href="http://anmutunddemut.de/seiten/impressum.html">?</a></p> 
     <!-- ende:header -->
   </div>
 	
@@ -271,6 +271,15 @@
     <div class="topic">
       <a href="lexikon/warhammer-40k.html"><img src="images/themen/warhammer40k.jpg">
       <h3><a href="lexikon/warhammer-40k.html">Warhammer 40.000</a></h3>
+    </div>
+    
+    <div class="topic">
+      <a href="lexikon/tiere.html"><img src="images/themen/tiere.jpg"/></a>
+      <h3><a href="lexikon/tiere.html">Tiere</a></h3>
+    </div>    
+    <div class="topic">
+      <a href="ressort/menschen.html"><img src="images/themen/menschen.jpg"/></a>
+      <h3><a href="ressort/menschen.html">Menschen</a></h3>
     </div>
     
     <div class="topic">
