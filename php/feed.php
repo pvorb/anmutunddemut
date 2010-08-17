@@ -27,7 +27,12 @@ print '<?xml version="1.0" encoding="utf-8"?>';
     <link>http://anmutunddemut.de</link>
     <description>Kirchenlieder für die Ungläubigen seit 2001</description>
     <language>de</language>
-    <atom:link href="http://anmutunddemut.de/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://anmutunddemut.de/rss.xml" rel="self" type="application/rss+xml" />  
+    2010/08/15/heimweh-211-erste-erfahrungen.html
+    <?=document_get_rss("../2010/08/15/heimweh-211-erste-erfahrungen.html")?>
+    <?=document_get_rss("../2010/08/14/ein-krieg-ist-verloren.html")?>
+    <?=document_get_rss("../2010/08/14/planb.html")?>
+    <?=document_get_rss("../2010/08/13/deep-space-nine.html")?>
     <?=document_get_rss("../2010/08/12/heimweh-2-1-verantwortung.html")?>
     <?=document_get_rss("../2010/08/11/geheimauftrag-mauritius.html")?>
     <?=document_get_rss("../2010/08/10/bakkushan.html")?>

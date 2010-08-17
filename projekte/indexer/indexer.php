@@ -35,11 +35,13 @@ $items = 0;
 
 function directory2array($path){
 	$handle=opendir($path);
-	$counter=0;
+	
 	while ($file = readdir ($handle)){
-			$directoryarr[$counter]=$file;
-			$counter=$counter+1;
+	    if(substr($file, 0,1)!="." and $file!="privat"){
+			  $directoryarr[]=$file;			 
+			}
 	}
+	
 	sort ($directoryarr);
   closedir($handle);
 	return $directoryarr;
@@ -54,16 +56,17 @@ function dir2list($path, $level, $number){
   global $items;
      
   if ($level==1){
-    echo "<ul id=\"id-".$number."\" style=\"visibility:visible; display:\">\n";
+    echo "<ul id=\"id-".$number."\" style=\"visibility:visible; display:block;\">\n";
   }else{
-    echo "<ul id=\"id-".$number."\" style=\"visibility:hidden; display:none\">\n";
+    echo "<ul id=\"id-".$number."\" style=\"visibility:hidden; display:none;\">\n";
   }
     $dir = directory2array($path);
-    $counter=2;
-    $end= count($dir);
+   
+    $counter=0;
+    $end = count($dir);
     //DEBUGGIN
     //echo "<p>End: ".$end."</p>";
-    if ($end <=2){
+    if ($end == 0){
       echo "<li><em>nil</em></li>";
     }
     while ($counter< $end){
@@ -83,12 +86,12 @@ function dir2list($path, $level, $number){
     }
     
     $dir = directory2array($path);
-    $counter=2;
+    $counter=0;
     $end= count($dir);
     //DEBUGGIN
     //echo "<p>End: ".$end."</p>";
     while ($counter< $end){
-    if(is_file(($path."/".$dir[$counter]))){
+    if(is_file($path."/".$dir[$counter]) ){
         echo"<li><img src=\"http://anmutunddemut.de/files/datei.gif\" alt=\"Ordner\"/> ".$dir[$counter];
         if (eregi(".html", $dir[$counter])
             or eregi (".xml", $dir[$counter])
@@ -126,9 +129,11 @@ function dir2list($path, $level, $number){
 //########### Hier beginnt das Skript ##################################
 
 $startzeit = microtime();
-$folder = "../../files";
+$folder = "../../";
 echo"<h1>Indexer of $folder</h1>\n";
 dir2list($folder, "1", "1");
+
+
 
 $pos1 = strpos($startzeit, " ");
 $startsek = substr($startzeit, $pos1);

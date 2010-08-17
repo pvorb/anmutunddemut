@@ -54,8 +54,8 @@ a img {
 /* Das grobe Layout */
 
 .region {
-	width:1150px;
-	min-width:1150px;
+	width:1078px;
+	min-width:1078px;
 	margin:0px;
 	padding:0px;
 }
@@ -72,16 +72,16 @@ a img {
 #arena {
 	padding:20px 0px 0px 0px;
 	margin:0px 40px 0px 20px;
-	width:1110px;
-	min-width:1110px;	
+	width:1078px;
+	min-width:1078px;	
 }
 
 #footer {	
   clear:both;	
 	padding:0px 0px 20px 0px;
 	margin:0px 20px 0px 20px;
-	width:1110px;
-	min-width:1110px;	
+	width:1078px;
+	min-width:1078px;	
 }
 
 .clear {
@@ -97,7 +97,7 @@ a img {
 #lexicon,
 #associations,
 #occurrences {
-	margin-left:180px;
+	margin-left:183px;
 }
 
 #node h2,
@@ -167,9 +167,8 @@ a img {
 }
 
 #buttons img{
- 	margin-left:0;
-	margin-right:27px;
-	width:155px;
+ 	margin-left:14px;
+	width:163px;
 }
 
 #digitalistbesser, #impressum{	
@@ -186,9 +185,13 @@ a img {
 
 /* Homepage */
 
+.page-homepage .node{
+	min-height:240px;
+}
+
 .page-homepage .teaserimage {	
 	position:absolute;
-	left:787px;
+	left:813px;
 }
 
 .page-homepage .teaserimage img {
@@ -203,11 +206,15 @@ a img {
 
 .page-homepage .topic{
 	float:left;
-	margin-right:5px;
+	
+}
+
+.page-homepage #topics .second{
+	margin-left:20px;
 }
 
 .page-homepage .topic img{
-	width:550px;
+	width:529px;
 }
 
 .page-homepage .topic h3{
@@ -257,8 +264,8 @@ blockquote {
 }
 
 img {
-	max-height:550px;
-	max-width:550px;	
+	max-height:529px;
+	max-width:529px;	
 }
 
 td{
@@ -291,8 +298,8 @@ hr{
 
 .node, #node, #lexicon {
 	clear:both;
-	width:35em;	
-	margin-left:180px;
+	width:529px;	
+	margin-left:183px;
 	margin-bottom:2em;	
 	min-height:350px;
 }
@@ -307,46 +314,55 @@ hr{
 .page-node .teaserimage,
 .page-term .teaserimage  {	
 	position:absolute;
-	left:800px;
+	left:813px;
 	top:35px;
 }
 
 .page-node .teaserimage img,
 .page-term .teaserimage img {
-	width:330px;
+	width:286px;
 }
 
-.volleBreitseite, 
-.moblog-full {
-	margin-left:-180px;
+.volleBreitseite{
+	margin-left:-183px;
 	margin-top:-13px;
-	width:1110px;
+	width:1078px;
+} 
+
+.volleBreitseite img{
+	max-width:1078px;
+	max-height:1078px;
 }
 
-.volleBreitseite img,
+
+
 .moblog-full img {
-	max-width:1110px;
+	max-width:834px;
 	max-height:650px;
 }
 
 .marginalie{
-	margin-left:-180px;
+	margin-left:-183px;
 	float:left;
 	clear:left;
-	width:160px;
+	width:163px;
 }
 
 .marginalie img{
-	max-width:160px;
+	max-width:163px;
+}
+
+.marginalien-absatz{
+	min-height:163px;
 }
 
 .glosse{
 	position:absolute;
-	left:800px;
+	left:813px;
 }
 
 .glosse img{
-	max-width:330px;
+	max-width:285px;
 }
 
 .moblog-teaser img{
@@ -380,6 +396,12 @@ hr{
 	text-decoration:underline;
 }
 
+.spitzmarke{
+	position:absolute;
+	left:20px;
+	font-size:150%;
+}
+
 
 
 
@@ -387,8 +409,12 @@ hr{
 
 /*  Fussnoten  */
 #footnotes {
-	width:1110px;
+	width:1078px;
 }	
+
+#footnotes p {
+	margin-bottom:0em;
+}
 
 #mytabs li{
 	display:inline;
@@ -405,7 +431,7 @@ hr{
 /* Kommentare */
 
 #comments {	
-	width:1110px;
+	width:1078px;
 }
 
 #comments h2 {	
@@ -414,13 +440,13 @@ hr{
 }
 
 .comment {
-	margin-left:180px;
+	margin-left:183px;
 	margin-bottom:3em;	
-	width:550px;	
+	width:529px;	
 }
 
 .comment .metadata{
-	margin-left:770px;	
+	margin-left:732px;	
 }
 
 .comment hr{
@@ -428,7 +454,7 @@ hr{
 	height:1px;
 	color:black;
 	background:black;
-	width:840px;	
+	width:834px;	
 }
 
 .comment .submitted{
@@ -438,7 +464,7 @@ hr{
 }
 
 .comment img {
-	max-width:500px;
+	max-width:529px;
 }
 
 
@@ -447,7 +473,7 @@ hr{
 /* Kommentar-Formular*/
 
 #comment-form {
-	margin-left:180px;
+	margin-left:183px;
 }
 
 #comment-form #userdata{
@@ -455,13 +481,13 @@ hr{
 }
 
 #comment-form hr{
-	margin-left:-180px;
+	margin-left:-183px;
 }
 
 #comment-form h2{
 	margin-top:1em;
 	margin-bottom:1em;
-	margin-left:-180px;
+	margin-left:-183px;
 }
 
 #comment-form p,
@@ -486,6 +512,6 @@ hr{
 }
 
 #comment-form textarea{
-	width:500px;
+	width:529px;
 	height:350px;
 }

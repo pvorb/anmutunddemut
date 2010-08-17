@@ -29,7 +29,12 @@ function document_load($path){
     //$document["source"] = $file;
     $document["title"] = string_get_string_between("<h2>", "</h2>", mark_get_mark("node", $file));
     $document["teaserimage"] = mark_get_mark("teaserimage", $file);
-    $document["text"] = mark_get_mark("text", $file);
+    $text = mark_get_mark("text", $file);
+    $text = str_replace("../../", "../", $text);
+    $text = str_replace("../../", "../", $text);
+    $text = str_replace("../../", "../", $text);
+    $text = str_replace('href="../', 'href="http://anmutunddemut.de/', $text);
+    $document["text"] = $text;
     $document["date"] = date_strtotime_german(mark_get_mark("date", $file));
     $document["commentcount"] = "".substr_count( $file, '<!-- start:kommentar -->');
   }else{
