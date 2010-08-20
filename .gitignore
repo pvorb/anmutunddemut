@@ -2,6 +2,7 @@ files/
 php/counter.txt
 .DS_Store
 .fseventsd/
+.Trashes/
 rss.xml
 privat/
 drafts/
