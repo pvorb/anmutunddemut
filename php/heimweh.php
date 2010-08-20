@@ -27,7 +27,7 @@ function document_load($path){
   if(file_exists($path)){
     $document["messages"][] = "Document exist at ".$path;
     $file = @file_get_contents($path);
-    //$document["source"] = $file;
+    $document["source"] = $file;
     $document["title"] = string_get_string_between("<h2>", "</h2>", mark_get_mark("node", $file));
     $document["teaserimage"] = mark_get_mark("teaserimage", $file);
     $text = mark_get_mark("text", $file);
@@ -94,3 +94,7 @@ function homepage_load_nodes(){
   array_pop($nodes);
   return $nodes;
 }
+
+// ########## Functions for all Files
+
+function heimweh_get_all_files(){}

@@ -230,6 +230,90 @@ a img {
 	margin-left:25px;
 }
 
+.page-homepage #heimweh {
+	width:529px; 
+	margin-left:529px; 
+	text-align:right; 
+	min-height:150px;
+}
+
+.page-homepage #heimweh i{
+	width:529px; 
+	margin-left:529px; 
+	text-align:right; 
+	min-height:150px;
+}
+
+.page-homepage #heimweh img {
+	position:absolute; 
+	left:44px;
+}
+
+.page-homepage #destages  {
+	/*display:table-row;*/
+	
+}
+
+.page-homepage #destages div {
+	display:table-cell;
+	width:529px;
+	padding-left:50px;
+	padding-top:15px;
+	font-family:Arial;
+	
+}
+
+.page-homepage #destages div img {
+	float:left;
+	margin-left:-50px;
+
+}
+
+.page-homepage #destages div h3 {
+	font-size:200%;
+	margin-bottom:10px;
+}
+
+.page-homepage #destages div a{
+	color:black;
+}
+
+.page-homepage #destages div p {
+		
+}
+
+.page-homepage #destages #sdt {
+	padding-left:110px;
+}
+
+.page-homepage #destages #fdt {
+	padding-left:130px;
+}
+
+
+/* Suche */
+
+#search input{
+	font-family:Georgia;
+	font-size:150%;
+	font-style:italic;
+	margin-bottom:20px;
+	border:1px solid black;
+}
+
+#search #q{
+	width:560px;
+}
+
+.page-homepage #search{
+	margin-left:163px;
+}
+
+.page-search #arena form,
+.page-search #arena ol{
+	margin-left:163px;
+}
+
 
 
 

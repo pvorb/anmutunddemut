@@ -72,7 +72,7 @@ function directory_to_array($path){
 	$handle = opendir ($path);
 	$counter = 0;
 	while (false !== ($file = readdir ($handle))) {
-		if(!($file=="." or $file=="..")){
+		if(!($file=="." or $file==".." or substr($file, 0,1)==".")){
 			$array[$counter] = $file;
 			$counter++;
 		}
@@ -82,6 +82,25 @@ function directory_to_array($path){
 	}
 	return $array;
 }
+
+function directory_to_array_recursive($path, $result = array()){
+  
+  $array = directory_to_array($path);
+  foreach($array as $fileorfolder){
+    //print "$fileorfolder";
+    if(is_dir($path."/".$fileorfolder) and !($fileorfolder=="." or substr($fileorfolder, 0,1)==".")){
+      //print "Folder:".$path."/".$fileorfolder."\n";
+      $result = directory_to_array_recursive($path."/".$fileorfolder, $result);
+    }else{
+      //print "File".$path."/".$fileorfolder."\n";
+      $result[$path."/".$fileorfolder] = $path."/".$fileorfolder;
+    }
+  }
+  return $result;
+  
+}
+
+
 
 function directory_get_folder_from_path($path){
   if(is_dir($path)){

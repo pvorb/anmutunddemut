@@ -22,3 +22,11 @@
 #click {
 	display:none;
 }
+
+/* Hide Magnolia Stuff */
+
+.magnolia_thumb,
+.magnolia_links,
+.magnolia_tags{
+	display:none;
+}
