@@ -53,8 +53,10 @@ function document_get_rss($path){
   $output .= "    <title>".$document["title"]."</title>\n";
   $output .= "    <link>".BASE.str_replace("../", "",$path)."</link>\n";  
   $output .= "    <description>\n";
-  $output .= htmlspecialchars(str_replace("src='", " width='300' src='".BASE.str_replace("../", "",directory_get_folder_from_path($path))."/", $document["teaserimage"]));
-  $output .= htmlspecialchars($document["text"]);
+  $output .= htmlspecialchars(str_replace("src='", " width='300' src='".BASE.str_replace("../", "", directory_get_folder_from_path($path))."/", $document["teaserimage"]));
+  $text    = str_replace("src='", " width='300' src='".BASE.str_replace("../", "", directory_get_folder_from_path($path))."/", $document["text"]);
+  $text    = str_replace('src="', ' width="300" src="'.BASE.str_replace("../", "", directory_get_folder_from_path($path))."/", $text);
+  $output .= htmlspecialchars($text);
   $output .= "    </description>\n";  
   $datestring = $document["date"][2].string_add_leading_zeros($document["date"][1],2).string_add_leading_zeros($document["date"][0],2)."T8:00";
   $timestamp = strtotime($datestring);

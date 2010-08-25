@@ -293,11 +293,15 @@ a img {
 
 /* Suche */
 
+#search {
+	margin-bottom:50px;
+	margin-top:50px;
+}
+
 #search input{
 	font-family:Georgia;
 	font-size:150%;
-	font-style:italic;
-	margin-bottom:20px;
+	font-style:italic;	
 	border:1px solid black;
 }
 
