@@ -37,7 +37,7 @@ if($vars["name"]!="" and $vars["text"]!=""){
         $kommentar  = "\n";
         $kommentar .= '  <div class="comment">'."\n"; 
         $kommentar .= '      <!-- start:kommentar -->'."\n"; 
-        $kommentar .= '      <hr>'."\n"; 
+        $kommentar .= '      <hr />'."\n"; 
         if($vars["homepage"]!=""){
           $kommentar .= '      <p class="metadata">von <a href="'.$vars["homepage"].'">'.$vars["name"].'</a> '."\n";
         }else{
