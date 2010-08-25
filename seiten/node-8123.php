@@ -20,7 +20,7 @@
   <meta name="changed-timestamp" content="1257324746" />
   <meta name="changed-string" content="04. 11. 2009 - 09:52" />
   <meta name="creator" content="ben_" />
-  <meta name="keywords" content="" />
+  
   <link type="text/css" rel="stylesheet" media="all" href="/css/global.css" />
   <link type="text/css" rel="stylesheet" media="all" href="/css/takeshi.css" />    
   <script type="text/javascript" src="/js/functions.js"> </script>

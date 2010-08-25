@@ -63,32 +63,32 @@
 <p>Man kann inzwischen zwischen zwei Installationen unterscheiden: Minimal und Standard. Ich hab mal Standard genommen.</p>
 <h3>Admin-Leiste</h3>
 <p>D7 kommt per Default wieder mit Garland daher. Aaaber, wenn man Admin ist, bekommt man eine Admin Leiste über die Seite. </p>
-<p class="volleBreitseite"><img src="http://anmutunddemut.de/files/d7-adminbar.png" alt="" /></p>
+<p class="volleBreitseite"><img src="http://anmutunddemut.de/files/d7-adminbar.png" /></p>
 <p>Die Admin-Leiste teilt sich dabei in zwei Leisten. Oben, weiß auf schwarz, die harte Admin-Leiste. Die Links dadrin scheinen fix zu sein. Darunter, einklappbar, die Shortcut-Leiste. Perse sind hier das Dashboard, Add Content und Find Content verlinkt. Aber man kann jede Seite im Backend mit dem kleinen Plus-Icon hinter dem Titel der Seite zu den Shortcuts hinzufügen und den ganzen Spaß sortieren.</p>
 <h3>Administratoren</h3>
 <p>Ich nehme an, die Admin-Leiste bekommt nur zu sehen, wer Administrator ist. Zu dem Zweck (und zu vielen anderen Zwecken) gibt es neben Anonymous User, und Authenticated User noch eine dritte Rolle, die per Default mit dabei ist: Administrator.</p>
 <h3>Backend</h3>
 <p>Das frühere Startseite des Backends /admin wurde durch eine ganze Reihe von Einstiegsseiten ersetzt und sogar durch ein – frei konfigurierbares – Dashboard ergänzt. Da kann ich meines ja wegwerfen. Alles unter /admin/* sieht jetzt auch optisch anders aus, kommt mit einem dezenten beigen Header daher.</p>
-<p><img src="http://anmutunddemut.de/files/d7-confnmodules.png" alt="" /></p>
+<p><img src="http://anmutunddemut.de/files/d7-confnmodules.png" /></p>
 <h3>Blöcke</h3>
 <p>Eine weitere Neuerung: Blöcke in der Seitenspalte lassen sich jetzt vom Frontend aus bearbeiten, wenn man als Admin eingelogt ist. Das haben sie wohl bei Views abgeschaut.</p>
-<p><img src="http://anmutunddemut.de/files/d7-blocks.jpg" alt="" /></p>
+<p><img src="http://anmutunddemut.de/files/d7-blocks.jpg" /></p>
 <h3>Vertical Tabs</h3>
 <p>Das Vertical Tabs Modul, das ich hier seit <a href="http://blog.fymmie.de/09/11/2009/f5-dr%C3%BCcken-alles-neu-gemacht%E2%80%A6">einem Tip von Fym</a> auch verwende, ist wie angekündigt in den Kern gewandert und erleichtert dort u.a. das Node-Creation Formular.</p>
-<p><img src="http://anmutunddemut.de/files/d7-node-creation.jpg" alt="" /></p>
+<p><img src="http://anmutunddemut.de/files/d7-node-creation.jpg" /></p>
 <p>Was auf dem Screenshot auch zu sehen ist: Für Artikel-Nodes ist ein Teaserbild per Default mit dabei. Hier zieht man mit Wordpress gleich, die das auch seit kurzem haben.</p>
 <h3>Fields in Core</h3>
 <p>In … der … Tat sind Fields jetzt im Kern. Ich kann an so ziemlich alles weitere Felder dranklatschen und die Reihenfolge der Felder sortieren.</p>
-<p><img src="http://anmutunddemut.de/files/d7-fields-add.jpg" alt="" /></p>
+<p><img src="http://anmutunddemut.de/files/d7-fields-add.jpg" /></p>
 <p>Mann, Mann, Mann hier haben die Jungs und Mädels echt ganze Arbeit geleistet.</p>
-<p><img src="http://anmutunddemut.de/files/d7-fields-display.png" alt="" /><br />
+<p><img src="http://anmutunddemut.de/files/d7-fields-display.png" /><br />
 Man beachte die Reiter "Basic, RSS, und Search" oben rechts! Außerdem gibt es scheinbar einen Haufen "Labels" und "Formate", die dem geneigten Themer dann vermutlich zur Verfügung stehen … irgendwie. Das werde ich mir mal in der nächsten Zeit ansehen.</p>
 <h3>Unter der Motorhaube</h3>
 <p>Die etwas mehr als zwei MB große Zip-Datei entpuppt sich 905 Dateien und Ordnern die 10 MB auf der Platte fressen. Die Datenbank hat – nachdem ich alle Module angeworfen habe, die ich im Kern für nötig halte – 79 Tabellen. Die meisten neuen Tabellen dürften wohl auf der Konto von Fields gehen.</p>
 <p>Was ich auch gesehen habe: Die Tabelle, die Term-Relationen enthalten kann, wurde ebenso wie die Synonym Tabelle ersatzlos gestrichen. Den Spaß kann man ja jetzt mit Fields machen.</p>
 <h3>RDFa</h3>
 <p>Das RDF-Modul im Kern ist auch da, zeichnet sich aber scheinbar nur für den RDFa Output der semantisch bekannten Einheiten aus. </p>
-<p class="volleBreitseite"><img src="http://anmutunddemut.de/files/d7-rdfa.jpg" alt="" /></p>
+<p class="volleBreitseite"><img src="http://anmutunddemut.de/files/d7-rdfa.jpg" /></p>
 <p>Nagut. Fields in Core UND ein RDF-Triple-Store wäre auch wirklich ein bisschen zu viel verlangt für eine Version.</p>
 <h3>Theming</h3>
 <p>Während ich mich so durch Backend geklickert hab', wuchs in meinem Hinterkopf unweigerlich eine dunkle Frage: "Oh mein Gott, wer soll dafür je ein zweites Theme schreiben?". Ein Blick in die tpl-Dateien offenbart keine große Hexerei. Es gibt jetzt zwei lustige neue Funktionen:<br />
