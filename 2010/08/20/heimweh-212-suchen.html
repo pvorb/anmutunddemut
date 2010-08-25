@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <title>Heimweh 2.1.2 – Suchen | anmut und demut</title>
+  <meta name="Generator" content="Heimweh"/>
+  <meta http-equiv="content-language" content="de" />
+  <!-- Get rid of those f*ckin Bots -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="DuckDuckBot" content="index, follow" />
+  <meta name="description" content="anmut und demut | Kirchenlieder für die Ungläubigen seit 2001" />      
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/global.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="../../../css/takeshi.css" />    
+  <script type="text/javascript" src="../../../js/functions.js"> </script>
+</head>
+<body  class="page-node " onload="loader();">	
+  
+  <div id="header" class="region">
+    <!-- start:header -->  
+    <h1><a title="Startseite" href="http://anmutunddemut.de">anmut und demut</a></h1> 
+    <p>
+      <span class='backandforth'>
+        <span class='headericon backwardslink'><a href="../../../" rel="prev" title="rückwärts">«</a></span> 
+        <span class='headericon forwardslink'><a href="../../../2010/08/21/sich-selber-unangespitzt-in-den-boden-rammen.html"  rel="next" title="vorwärts">»</a></span>
+      </span> 
+      <a title="Impressum" href="../../../seiten/impressum.html" rel="impress">?</a>
+    </p> 
+    <!-- end:header -->
+
+  </div>
+	
+  <div id="arena" class="region">      
+    <!--- start:arena -->    
+      <div id="node">  
+        <!-- start:node -->
+        <h2>Heimweh 2.1.2 – Suchen</h2>
+
+        <!-- start:teaserimage -->
+        <p class='teaserimage'><img src='heimweh-212-suchen.jpg' alt='Aufmacherbild'/></p>
+        <!-- end:teaserimage -->
+
+        <!-- start:text -->
+        <p>Nach ein paar kleineren Fixes und Verbesserungen, freue ich mich, heute mal einen etwas größeren
+          Fortschritt präsentieren zu drüfen: Es gibt wieder eine <a href="../../../php/suche.php">Volltextsuche</a>.</p>
+        <p>Eigentlich wollte ich ja Duck Duck Go als Suche verwenden, aber irgendwie werde ich da nicht indiziert.
+          Abgesehen davon ist es vielleicht echt geschickter, das in der eigenen Hand zu behalten. Dann hatte ich
+          aus Performanz-Gründen erwogen, eine Datenbank aufzusetzen, merkte dann bei den Vorbereitungen aber,
+          dass ich mal erstmal eine Liste mit den Pfaden zu allen zu durchsuchenden Dateien bräuchte. Als ich
+          die hatte, dachte ich mir, "versuch doch mal in alle Dateien reinzugucken, mal schauen, ob's klappt." 
+          Und siehe da. Es klappt. Mit gut 12.000 Dokumenten. Aufmachen, reingucken, zumachen. Sehr lustig.</p>
+        <p>Derzeit ist die Suche eine ziemlich einfacher Volltextsuche, die den Suchstring in den – vom HTML
+          befreiten – Dokumenten sucht. Keine Suchoperatoren, keine Filter, nur chronologische Sortierung. Das
+          reicht aber schon mal für 85% aller Suchen, die ich für gewöhnlich so mache. Weitere Suchfunktionen
+          kommen dann später, je nach Bedarf.</p>
+        <p>Nebenbei: Da ich <a href="http://github.com/benthebear/anmutunddemut/blob/master/php/suche.php">keine Trennung zwischen Geschäftslogik und Darstellungsebene</a> 
+          habe, ergibt sich der lustige Effekt, dass die Treffer nacheinander auftauchen, man dem Suchskript quasie
+          beim Suchen zusehen kann. Hab ich ewig nicht gesehen, sowas. Und es freut mich.</p>
+        <!-- end:text -->
+      
+      <!-- end:node -->  
+    </div>        
+        
+    
+       
+    <div id="footnotes">
+      <!-- start:footnotes -->
+      <hr/> 
+      <h2>Fußnoten</h2>  
+      <p class="meta-basics">~ Artikel vom  <!-- start:date -->20. 08. 2010<!-- end:date --></p>
+
+      <p class='meta-topics'>~  
+        <span class='title'>Ressort:</span>
+        <a href="../../../ressort/maschinene.html" rel="ressort">Maschinen</a>        
+
+        <span class='threespace'> </span>         
+        <span class="title">Serie:</span>
+        <a href="../../../serie/on-my-way-to-heimweh.html" rel="series">On my Way to Heimweh.</a>
+
+       
+        <span class='threespace'> </span>
+        <span class='title'>Lexikon:</span>
+        <a href="../../../lexikon/suchmaschine.html.html" rel="lexicon">Suchmaschine</a>
+        <!--
+        <a href="../../../lexikon/.html" rel="lexicon"></a>
+        <a href="../../../lexikon/.html" rel="lexicon"></a>
+        <a href="../../../lexikon/.html" rel="lexicon"></a>
+        <a href="../../../lexikon/.html" rel="lexicon"></a>
+        -->
+      </p>        
+      <!-- end:footnotes -->
+
+    </div>
+    
+      <div id="comments">
+        <hr/>
+        <h2 class="comments">Kommentare</h2>
+    
+
+        
+  <div class="comment">
+      <!-- start:kommentar -->
+      <hr>
+      <p class="metadata">von <a href="http://www.genitis.org">Paul</a> 
+      <a href="http://anmutunddemut.de/2010/08/20/heimweh-212-suchen.html#comment-1" id="comment-1" class="active">#</a>      </p>
+     <p>Ich bin beeindruckt. Das macht dein Server mit? Effizient ist jedenfalls was anderes. Vermutlich hätte sonst niemand versucht, eine Volltextsuche so umzusetzen, aber der ben_ macht’s – großartig! Irgendwie dachte ich nach dem Lesen des Texts, dass nun doch eine DB dahinter läuft, aber der Code sagt was anderes. :-) Mit einer Datenbank hätte es womöglich erst Treffer gegeben, sobald alles durchsucht wurde – jetzt sieht es eher nach einer modernen Ajax-Applikation aus, die die Treffer dynamisch nachlädt. Genial. Vielleicht wäre es aber sinnvoller, die neuesten Treffer zuerst anzuzeigen – im Normalfall sollten die eher erwünscht sein.
+</p>
+<p>Das mit DuckDuckGo ist so eine Sache. Ich hab persönlich sogar Probleme, meine Website überhaupt in deren Index zu bekommen. Geschweige denn mehrere Seiten indiziert zu bekommen. Gibt man Genitis ein, so kommt nur was von wegen Genitiv usw. Naja, ist vielleicht nicht der sinnvollste Name, um gefunden zu werden, aber Google versteht’s zumindest. Da es halt nur eine kleinere Suchmaschine mit eigenem Spider ist, haben die vermutlich nicht die benötigten Kapazitäten, um persönliche Blogs zu indizieren.</p>
+
+     <!-- ende:kommentar -->
+  </div>
+
+
+  
+  <div class="comment">
+      <!-- start:kommentar -->
+      <hr>
+      <p class="metadata">von <a href="http://anmutunddemut.de">ben_</a> 
+      <a href="http://anmutunddemut.de/2010/08/20/heimweh-212-suchen.html#comment-2" id="comment-2" class="active">#</a>      </p>
+     <p> *hihi* Ja, ich hatte eigentlich auch nicht gedacht, dass der Server das mitmacht. Aber da ich immer nur eine Datei nach der anderen einlese, scheint der Speicherverbrauch relativ klein zu sein. Und ich hab inzwischen – glaub ich – auch ganz ordentlichen Rechenleistung bei meinem Hoster.  Ich lass mir die Tage mal Laufzeit und Speicherverbrauch der Seite ausgeben.</p>
+
+     <!-- ende:kommentar -->
+  </div>
+
+
+  <!-- Last Comment standing -->
+
+      </div>
+
+      <!-- start:comment-form -->
+      <div id="comment-form" show="embed" href="http://anmutunddemut.de/php/comment-form.php">Kommentarformular hier</div>
+      <!-- end:comment-form -->
+
+    <!-- end: arena -->  
+  </div>  
+      
+  <div id="footer" class="region"> 
+    <!-- start:footer -->
+    <hr/>
+    <p id="buttons">
+      <a href="http://www.magpie-girl.com/small-is-beautiful-bloggers-manifesto/" ><img src="http://anmutunddemut.de/files/buttons/small_is_beautifull.jpg"  alt="small is beautifull" /></a>
+      <a href="http://www.adfreeblog.org/"><img  src="http://anmutunddemut.de/files/buttons/art_not_ads.jpg" alt="art not ads"/></a> 
+      <img  src="http://anmutunddemut.de/files/buttons/atomkraft_nein_danke.jpg" alt="atomkraft – nein danke" />
+    </p>
+    <hr/>
+    <p id="minipressum">
+      <span id="impressum">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/">cc</a> 2001 - 2010
+        <a href="../../../seiten/impressum.html">Benjamin Birkenhake</a>
+      </span>
+      <span  id="digitalistbesser" title="Rescued by Tocotronic since 1995">Digital ist besser</span>
+
+    </p>      
+    <p id="click"><img src="http://anmutunddemut.de/php/click.php" /></p>
+    <!-- end:footer -->
+  </div>
+    
+</body>
+</html>

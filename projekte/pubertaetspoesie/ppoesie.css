@@ -1,0 +1,15 @@
+html {font-size:12pt; font-family:Arial;}
+body  {background-color:cornflowerblue; color:white; }
+div.title {position:absolute; top:10px; left:180px;}
+div.menu {font-size:8pt; font-weight:bold; letter-spacing:0.2em; position:absolute; top:140px; left:100px;}
+div.content-j {font-size:10pt; text-align:justify; position:absolute; top:140px; left:430px;width:430px;}
+div.content-l {font-size:10pt; text-align:left; position:absolute; top:140px; left:430px;width:430px;}
+div.content-c {font-size:10pt; text-align:center; position:absolute; top:140px; left:430px;width:430px;}
+i.title {font-weight:bold; font-style:oblique; letter-spacing:0.4em;}
+b.rev {background-color:white; color:cornflowerblue;}
+a:link {text-decoration:none; color:white; border-width:0cm; }
+a:visited {text-decoration:none; color:white; border-width:0cm; }
+a:active {text-decoration:none; color:white; border-width:2cm; }
+A:bb:hover { text-decoration: underline; }
+img {border-width:0cm; }
+
