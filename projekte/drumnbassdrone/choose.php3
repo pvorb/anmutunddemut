@@ -20,7 +20,7 @@
 <a href="choose.php3?flag=6">Scanned Space</a><br>
 <a href="choose.php3?flag=7">dnb::poem <b class="vio">[</b>2<b class="vio">]</b></a><br>
 <a href="choose.php3?flag=8">SpaceDrone</a><br>
-<a href="kemistrystorm1.php3">Kemistry & Storm <b class="vio">[</b>1<b class="vio">]</b></a><br>
+<a href="kemistrystorm1.php3">Kemistry &amp; Storm <b class="vio">[</b>1<b class="vio">]</b></a><br>
 <a href="choose.php3?flag=9">Talking Samples</a><br>
 <a href="choose.php3?flag=10">CellDrone</a><br>
 <a href="choose.php3?flag=11">EnergyDrone</a><br>

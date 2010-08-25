@@ -30,7 +30,7 @@ function getFavicon($url) {
                 $favicon = fread($HTTPRequest, 8192);
                 $HTTPRequestData = stream_get_meta_data($HTTPRequest);
                 fclose($HTTPRequest);
-                if (!$HTTPRequestData['timed_out'] && strlen($favicon) < 8192) {
+                if (!$HTTPRequestData['timed_out'] &&amp; strlen($favicon) < 8192) {
                     return $faviconURL;
                 }
             }

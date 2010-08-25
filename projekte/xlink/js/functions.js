@@ -59,7 +59,7 @@ function ajaxManager() {
 		if (x) {
 			x.onreadystatechange = function() {
 				// Vigilant fuer Veraenderungen an X.
-				if(x.readyState == 4 && x.status == 200) { // 4 heisst "complete" (0 = uninitialized, 1 = loading, 2 = loaded, 3 = interactive)
+				if(x.readyState == 4 &&amp; x.status == 200) { // 4 heisst "complete" (0 = uninitialized, 1 = loading, 2 = loaded, 3 = interactive)
 					el = document.getElementById(args[2]);
 					el.innerHTML = x.responseText;          // "Place the data into an element and display it"
 				}//if
@@ -107,7 +107,7 @@ function semanticweblog_send_assoc(baseurl){
 
   http_request.onreadystatechange =
   function() {
-     if ((http_request.readyState == 4) && (http_request.status == 200)) {
+     if ((http_request.readyState == 4) &&amp; (http_request.status == 200)) {
         if(append) {
            document.getElementById(target).innerHTML += "<br/>"+http_request.responseText; // Attach the Result
         }else{

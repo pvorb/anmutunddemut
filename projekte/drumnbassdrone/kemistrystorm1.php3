@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>drum::n::bassdrone[Kemistry & Storm]</title>
+<title>drum::n::bassdrone[Kemistry &amp; Storm]</title>
 
 <link rel="stylesheet" href="dnbdrone.css" type="text/css">
 
@@ -43,10 +43,10 @@
 		echo "
 		<b>\"Oh this is ladies night, and the feel is right Oh this is ladies night, 
 		oh what a night.\"</b><br>
-		(Lil' Kim & Konsorten, \"Ladies Night [Not Tonight]\")<br>
+		(Lil' Kim &amp; Konsorten, \"Ladies Night [Not Tonight]\")<br>
 		";
 		echo "</div>";
-		echo "<div class=sourcechoose>::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		echo "<div class=sourcechoose>::Kemistry &amp; Storm::<br>Groove[55]<br><br><br>
 		<img src=\"kemi.jpg\"><br>
 		Kemi Olusanya \"DJ Kemistry\"<br>
 		starb am<br>
@@ -96,7 +96,7 @@ Athletik spürbar. Die Wahl der Worte, die Wahl der Platten – Damenwahl?
 		echo "<img src='dnbdrone.jpg' border=no border></a></div>";
 		echo "<div class=sourcechoose>
 		<b class='vio'>[</b>Intro</b><b class='vio'>]</b><br><br>
-		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		::Kemistry &amp; Storm::<br>Groove[55]<br><br><br>
 		<img src=\"kemi.jpg\"><br>
 		Kemi Olusanya \"DJ Kemistry\"<br>
 		starb am<br>
@@ -156,7 +156,7 @@ Deutschland ist dicht dran.
 		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
 		echo "<div class=sourcechoose>
 		<b class='vio'>[</b>I</b><b class='vio'>]</b><br><br>
-		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		::Kemistry &amp; Storm::<br>Groove[55]<br><br><br>
 		<img src=\"kemi.jpg\"><br>
 		Kemi Olusanya \"DJ Kemistry\"<br>
 		starb am<br>
@@ -211,7 +211,7 @@ keinem mehr trauen will.
 		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
 		echo "<div class=sourcechoose>
 		<b class='vio'>[</b>II</b><b class='vio'>]</b><br><br>
-		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		::Kemistry &amp; Storm::<br>Groove[55]<br><br><br>
 		<img src=\"kemi.jpg\"><br>
 		Kemi Olusanya \"DJ Kemistry\"<br>
 		starb am<br>
@@ -261,7 +261,7 @@ wissen, wie man mit manchen Sachen umgeht.
 		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
 		echo "<div class=sourcechoose>
 		<b class='vio'>[</b>III</b><b class='vio'>]</b><br><br>
-		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		::Kemistry &amp; Storm::<br>Groove[55]<br><br><br>
 		<img src=\"kemi.jpg\"><br>
 		Kemi Olusanya \"DJ Kemistry\"<br>
 		starb am<br>
@@ -312,7 +312,7 @@ Daß wir mehr versuchen müssen.
 		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
 		echo "<div class=sourcechoose>
 		<b class='vio'>[</b>IV</b><b class='vio'>]</b><br><br>
-		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		::Kemistry &amp; Storm::<br>Groove[55]<br><br><br>
 		<img src=\"kemi.jpg\"><br>
 		Kemi Olusanya \"DJ Kemistry\"<br>
 		starb am<br>
@@ -375,7 +375,7 @@ dieser ganze Kram, wir kümmern uns wirklich noch sehr darum.
 		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
 		echo "<div class=sourcechoose>
 		<b class='vio'>[</b>V</b><b class='vio'>]</b><br><br>
-		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		::Kemistry &amp; Storm::<br>Groove[55]<br><br><br>
 		<img src=\"kemi.jpg\"><br>
 		Kemi Olusanya \"DJ Kemistry\"<br>
 		starb am<br>
@@ -439,7 +439,7 @@ hat Dego dann wirklich rausgeschmissen
 		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
 		echo "<div class=sourcechoose>
 		<b class='vio'>[</b>VI</b><b class='vio'>]</b><br><br>
-		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		::Kemistry &amp; Storm::<br>Groove[55]<br><br><br>
 		<img src=\"kemi.jpg\"><br>
 		Kemi Olusanya \"DJ Kemistry\"<br>
 		starb am<br>
@@ -498,7 +498,7 @@ außergewöhnliches Stück präsentieren kannst.
 		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
 		echo "<div class=sourcechoose>
 		<b class='vio'>[</b>VII</b><b class='vio'>]</b><br><br>
-		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		::Kemistry &amp; Storm::<br>Groove[55]<br><br><br>
 		<img src=\"kemi.jpg\"><br>
 		Kemi Olusanya \"DJ Kemistry\"<br>
 		starb am<br>
@@ -579,7 +579,7 @@ für immer verschwunden.
 		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
 		echo "<div class=sourcechoose>
 		<b class='vio'>[</b>VIII</b><b class='vio'>]</b><br><br>
-		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		::Kemistry &amp; Storm::<br>Groove[55]<br><br><br>
 		<img src=\"kemi.jpg\"><br>
 		Kemi Olusanya \"DJ Kemistry\"<br>
 		starb am<br>
@@ -651,7 +651,7 @@ Autos. Ja, das war sehr gut.
 		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
 		echo "<div class=sourcechoose>
 		<b class='vio'>[</b>IX</b><b class='vio'>]</b><br><br>
-		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		::Kemistry &amp; Storm::<br>Groove[55]<br><br><br>
 		<img src=\"kemi.jpg\"><br>
 		Kemi Olusanya \"DJ Kemistry\"<br>
 		starb am<br>
@@ -703,7 +703,7 @@ zukommen hören: \"Auf jetzt!\". Das ganze Programm.
 		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
 		echo "<div class=sourcechoose>
 		<b class='vio'>[</b>X</b><b class='vio'>]</b><br><br>
-		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		::Kemistry &amp; Storm::<br>Groove[55]<br><br><br>
 		<img src=\"kemi.jpg\"><br>
 		Kemi Olusanya \"DJ Kemistry\"<br>
 		starb am<br>
@@ -746,7 +746,7 @@ In Deutschland sowieso nicht.
 		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
 		echo "<div class=sourcechoose>
 		<b class='vio'>[</b>XI</b><b class='vio'>]</b><br><br>
-		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		::Kemistry &amp; Storm::<br>Groove[55]<br><br><br>
 		<img src=\"kemi.jpg\"><br>
 		Kemi Olusanya \"DJ Kemistry\"<br>
 		starb am<br>
@@ -827,7 +827,7 @@ Kopfzerbrechen machen, wo sich was jetzt hinentwickelt und warum.
 		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
 		echo "<div class=sourcechoose>
 		<b class='vio'>[</b>XII</b><b class='vio'>]</b><br><br>
-		::Kemistry & Storm::<br>Groove[55]<br><br><br>
+		::Kemistry &amp; Storm::<br>Groove[55]<br><br><br>
 		<img src=\"kemi.jpg\"><br>
 		Kemi Olusanya \"DJ Kemistry\"<br>
 		starb am<br>
@@ -846,7 +846,7 @@ Kopfzerbrechen machen, wo sich was jetzt hinentwickelt und warum.
 		echo "<div class=super>";
 		echo "<a href='index.html'>";
 		echo "<img src='dnbdrone.jpg' border=no border></a></div><br>";
-		echo "<div class=sourcechoose>::Kemistry & Storm::<br>Groove[55]<br><br>Groove[55]<br>
+		echo "<div class=sourcechoose>::Kemistry &amp; Storm::<br>Groove[55]<br><br>Groove[55]<br>
 		<img src=\"kemi.jpg\"><br>
 		Kemi Olusanya \"DJ Kemistry\"<br>
 		starb am<br>
