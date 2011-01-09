@@ -86,7 +86,7 @@ $mailkommentar.= "Link: ".$_SERVER["HTTP_REFERER"]."#comment-$number \n\n";
 $mailmessage  = "Hi Du,\n\nEs gibt einen neuen Komemntar zum Beitrag ".$_SERVER["HTTP_REFERER"]."\n\n";
 $mailmessage .= $mailkommentar;
 
-// Deuggin'
+// Debuggin'
 $mailmessage .= "De:Buggin Start:\n";
 $mailmessage .= implode("\n", $messages)."\n\n";
 $mailmessage .= "De:Buggin Ende:\n";

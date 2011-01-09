@@ -89,12 +89,12 @@ function makepath($folder, $filename){
 }
 
 // Get all Nodes
-/*
+
 for($i=1; $i<9000; $i++){
   $result = "";
   $result = http_request("http://anmutunddemut.de/node/".$i."?crawler=true");
   makefile($result, $i, "node");    
-}*/
+}
 
 // Get all Terms
 

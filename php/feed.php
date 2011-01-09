@@ -7,7 +7,7 @@
 
 
 include ("heimweh.php");
-
+$nodes = xml_load_nodes("../");
 
 //print count($nodes);
 //print_r($nodes);
@@ -31,7 +31,7 @@ print '<?xml version="1.0" encoding="utf-8"?>';
     <?php
     
     foreach($nodes as $node){
-      print document_get_rss("../".$node);
+      print document_get_rss("../".$node["path"]);
     }
     
     ?> 

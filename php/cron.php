@@ -1,3 +1,5 @@
+<title>Heimweh Cronjob</title>
+<h1>Heimweh Cronjob</h1>
 <?php
 
 /* My tiny little Cron Job 
@@ -8,6 +10,7 @@
 
 */
 
+print "<p>Cronjob starts at ".date("d. m. Y. h:i", time())." [".time()."]</p>";
 
 // ########## Load my Heimweh
 require_once("heimweh.php");
@@ -22,5 +25,11 @@ $file = fopen("../rss.xml", "w+");
 fwrite($file, $result->data);
 fclose($file);
 
+print "<p>Generated RSS Feed.</p>";
 
+// ########## Do some Moblogging, maybe
+
+include("moblog.php");
+
+print "<p>Cronjob ends at ".date("d. m. Y. h:i", time())." [".time()."]</p>";
 

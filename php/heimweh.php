@@ -4,12 +4,25 @@
 // ########## Load General Tools
 require_once("config.php");
 require_once("tools.php");
-require_once("nodes.php");
+
 
 
 
 
 // ########## Several Functions to work on documents
+
+function document_init(){
+  $document["path"] = "";
+  $document["title"] = "";
+  $document["date"] = "";
+  $document["text"] = "";
+  $document["teaserimage"] = "";
+  $document["commentcount"] = "";
+  $document["status"] = "";
+  $document["source"] = "";
+  $document["messages"] = array();
+  return $document;
+}
 
 function document_load($path){
   $path = $path;
@@ -52,12 +65,12 @@ function document_get_rss($path){
   $output .= "  <item>\n";
   $output .= "    <title>".$document["title"]."</title>\n";
   $output .= "    <link>".BASE.str_replace("../", "",$path)."</link>\n";  
-  $output .= "    <description>\n";
-  $output .= htmlspecialchars(str_replace("src='", " width='300' src='".BASE.str_replace("../", "", directory_get_folder_from_path($path))."/", $document["teaserimage"]));
-  $text    = str_replace("src='", " width='300' src='".BASE.str_replace("../", "", directory_get_folder_from_path($path))."/", $document["text"]);
-  $text    = str_replace('src="', ' width="300" src="'.BASE.str_replace("../", "", directory_get_folder_from_path($path))."/", $text);
+  $output .= " <description>\n";
+  $output .= htmlspecialchars(str_replace("src='", " width='300' src='", $document["teaserimage"]));
+  $text = str_replace("src='", " width='300' src='", $document["text"]);
+  $text = str_replace('src="', ' width="300" src="', $text);
   $output .= htmlspecialchars($text);
-  $output .= "    </description>\n";  
+  $output .= " </description>\n";  
   $datestring = $document["date"][2].string_add_leading_zeros($document["date"][1],2).string_add_leading_zeros($document["date"][0],2)."T8:00";
   $timestamp = strtotime($datestring);
   $output .= "    <pubDate>".date("r", $timestamp)."</pubDate>\n";
@@ -72,6 +85,11 @@ function document_get_commentcount($path){
   return $document["commentcount"];
 }
 
+
+function document_count_rows($path){
+  $document  = document_load($path);
+  return substr_count($document["source"], "<tr>");
+}
 
 
 // ########## Several Function to work with crop marks.
@@ -95,6 +113,11 @@ function homepage_load_nodes(){
   array_shift($nodes);
   array_pop($nodes);
   return $nodes;
+}
+
+function xml_load_nodes($path = ""){
+  $xml = simplexml_load_file($path."admin/nodes.xml");
+  return $xml;
 }
 
 // ########## Functions for all Files

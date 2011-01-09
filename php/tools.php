@@ -187,9 +187,19 @@ function clean_ascii_string($string){
 
 function clean_file_name($string){
 	if(is_string($string)){
-		$string = clean_replace_xmlentities($string);
-		$string = clean_replace_umlaute($string);
-		$string = preg_replace("/\s/",  "_", $string);
+	  $string = clean_replace_xmlentities($string);
+    $string = clean_strip_quotations($string);   
+    $string = clean_replace_umlaute($string);
+    $string = str_replace(" ", "_", $string);
+    $string = str_replace("&quot", "", $string);
+    $string = str_replace("&amp", "", $string);
+    $string = str_replace("&", "", $string);
+    $string = preg_replace("/\s/",  "_", $string);
+    $string = preg_replace("/\W/",  "", $string);
+    $string = str_replace("_", "-", $string);
+    $string = strtolower($string);
+		
+	
 	}
 	return $string;
 
@@ -301,6 +311,22 @@ function date_number_to_month_english($number){
   $months[10] = "October";
   $months[11] = "November";
   $months[12] = "December";
+  return $months[$number];
+}
+
+function date_number_to_month_german($number){
+  $months[1] = "Januar";
+  $months[2] = "Februar";
+  $months[3] = "März";
+  $months[4] = "April";
+  $months[5] = "Mai";
+  $months[6] = "Juni";
+  $months[7] = "Juli";
+  $months[8] = "August";
+  $months[9] = "September";
+  $months[10] = "Oktober";
+  $months[11] = "November";
+  $months[12] = "Dezember";
   return $months[$number];
 }
 
