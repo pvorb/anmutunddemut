@@ -6,3 +6,4 @@ define("MOBLOG_PORT"  "110"),
 define("MOBLOG_USER"  "");
 define("MOBLOG_PASSWORD"  "");
 define("MOBLOG_FOLDER"  "../files/");
+define("DATE_START",  2001);
