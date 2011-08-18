@@ -39,6 +39,11 @@ if($vars["name"]!="" and $vars["text"]!=""){
         $kommentar .= '      <!-- start:kommentar -->'."\n"; 
         $kommentar .= '      <hr />'."\n"; 
         if($vars["homepage"]!=""){
+
+          // Nach "//" suchen (von http://) und, falls nicht vorhanden, "http://" vorne anfügen
+          if (strpos($vars['homepage'], '//') === false)
+            $vars['homepage'] = 'http://'.$vars["homepage"];
+
           $kommentar .= '      <p class="metadata">von <a href="'.$vars["homepage"].'">'.$vars["name"].'</a> '."\n";
         }else{
           $kommentar .= '      <p class="metadata">von '.$vars["name"]."\n";
